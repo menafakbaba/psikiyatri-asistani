@@ -14,7 +14,7 @@ try:
     api_key = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=api_key)
 except Exception as e:
-    st.error("⚠️ API Anahtarı bulunamadı! Lütfen Streamlit ayarlarından 'GEMINI_API_KEY' ekleyin.")
+    st.error("⚠️ API Anahtarı hatası! Lütfen Streamlit Secrets ayarlarını kontrol et.")
     st.stop()
 
 # --- SABİTLER ---
@@ -26,7 +26,6 @@ def notlari_yukle():
     """GitHub'daki metin dosyasını okur."""
     if not os.path.exists(DOSYA_ADI):
         return None
-    
     try:
         with open(DOSYA_ADI, "r", encoding="utf-8") as f:
             return f.read()
@@ -34,8 +33,8 @@ def notlari_yukle():
         return None
 
 def gemini_cevapla(soru, baglam, tur):
-    # GÜNCEL VE HIZLI MODEL: gemini-1.5-flash
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    # EN GÜVENLİ MODEL: gemini-pro (Her sürümde çalışır)
+    model = genai.GenerativeModel('gemini-pro')
     
     if tur == "soru":
         prompt = f"""
@@ -58,9 +57,6 @@ def gemini_cevapla(soru, baglam, tur):
         **Soru X:** ...
         A) ...
         B) ...
-        C) ...
-        D) ...
-        E) ...
         
         **Doğru Cevap:** ...
         **Açıklama:** ... (Neden doğru olduğunu notlara atıf yaparak kısaca açıkla)
@@ -69,11 +65,15 @@ def gemini_cevapla(soru, baglam, tur):
         {baglam}
         """
     
-    response = model.generate_content(prompt)
-    return response.text
+    try:
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"⚠️ Hata oluştu: {str(e)}. Lütfen daha sonra tekrar deneyin."
 
 # --- ARAYÜZ ---
 st.title("🧠 Psikiyatri Kıdem Sınavı Platformu")
+st.caption("Model: Gemini Pro | Sürüm: v1.2")
 st.markdown("---")
 
 # Notları Yükleme Durumu
