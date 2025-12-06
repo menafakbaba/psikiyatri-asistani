@@ -1,0 +1,428 @@
+================================================================================
+KAYNAK: Nesne-İlişkilei-Kuramı.pdf
+================================================================================
+NESNE İLİŞKİLERİ KURAMI
+Genel Bakış:
+- Nesne ilişkileri, üretken ilişkiler kurma yeteneği ve içselleştirilmiş tutumlardır. Erken dönem bakıcılarla etkileşimler, diğerleriyle ilişkileri belirler.
+- Nesne: Dürtünün hedefini oluşturan kişi veya şeydir.
+- Kendilik: Dış dünyadan ayrı algılanan bütün birey.
+- Dışsal Nesne: Gerçek kişi. İçsel Nesne: O kişinin zihinsel temsili/imgesi.
+
+TEMEL SAYILTILAR:
+- Kendiliğin oluşması için "öteki" ile deneyimlerin içselleştirilmesi şarttır.
+- Temel sorun: Bağımsızlık ihtiyacı ile başkalarına duyulan ihtiyaç arasındaki dengedir.
+- Gelişim süreci: Bir kişi psikolojisinden (intrasubjektivite), iki kişi psikolojisine (intersubjektivite) geçiştir.
+
+TEORİSYENLER VE GÖRÜŞLERİ:
+1. Melanie Klein:
+   - Paranoid-Şizoid Pozisyon: Bebek anneyi (memeyi) iyi ve kötü olarak böler. (Bölme savunma mekanizması).
+   - Depresif Pozisyon: Bebek iyi ve kötü nesnenin aynı kişi olduğunu anlar, suçluluk ve onarma çabası başlar. Bütünleşme sağlanır.
+2. Donald Winnicott:
+   - "Yeterince İyi Anne": Bebeğin ihtiyaçlarına duyarlı anne.
+   - Geçiş Nesnesi (Transitional Object): Battaniye, oyuncak ayı gibi, anne yokken güven sağlayan nesne.
+   - Gerçek Kendilik vs. Sahte Kendilik: Annenin aşırı müdahalesi veya ilgisizliği sahte kendiliğe yol açar.
+3. Margaret Mahler (Ayrılma-Bireyselleşme):
+   - Normal Otizm (0-2 ay): Dış dünyadan habersizlik.
+   - Sembiyoz (2-6 ay): Anneyle bir bütün olma.
+   - Ayrılma-Bireyselleşme (6-24 ay): Farklılaşma, Uygulama, Yeniden Yakınlaşma.
+   - Nesne Sürekliliği: Annenin yokluğunda onun imgesini zihinde tutabilme.
+4. Otto Kernberg:
+   - Sınır (Borderline) Kişilik örgütlenmesi üzerine odaklanır. İyi ve kötü kendilik/nesne tasarımlarının bütünleşememesini (bölme) vurgular.
+
+TERAPİ HEDEFİ:
+- Bölünmüş (iyi/kötü) parçaları bütünleştirmek.
+- Nesne sürekliliğini sağlamak.
+- Olgun bir kendilik-nesne ilişkisi geliştirmek.
+
+================================================================================
+KAYNAK: Yaşlılarda Bipolar ve anx.pdf
+================================================================================
+YAŞLILIKTA BİPOLAR BOZUKLUK
+Epidemiyoloji:
+- Yaşlı bipolar (Geriatrik Bipolar) tanımı genellikle 50 yaş ve üzeri için kullanılır.
+- 65 yaş üzeri bipolar oranı %0.5 civarındadır.
+- Yaşlılarda bipolar bozukluk sıklıkla nörobilişsel bozukluklarla (demans) karışabilir.
+
+Klinik Özellikler (Gençlere Kıyasla):
+- Manik dönemler daha az şiddetlidir.
+- Psikotik özellikler daha sık görülür.
+- Bilişsel işlevler daha düşüktür.
+- Karma özellikli (depresif ve manik belirtilerin bir arada olduğu) tablolar daha sıktır.
+- Hızlı döngü daha az görülür (farklı çalışmalar farklı sonuçlar verebilir).
+
+Tedavi:
+- Mani Tedavisi: Lityum ve Valproat ilk tercihtir. Ketiapin ikinci sıradadır.
+- Lityum: Yaşlılarda renal klerens azaldığı için düşük doz (150-300 mg) başlanmalı, kan düzeyi 0.4-0.6 mEq/L hedeflenmelidir. Nöroprotektif etkisi vardır (Demans riskini azaltabilir).
+- Valproat: Tolere edilebilirliği iyidir ancak tremor, sedasyon ve amonyak artışına dikkat edilmelidir.
+- Antipsikotikler: Düşük doz başlanmalı, metabolik yan etkiler ve düşme riski izlenmelidir.
+- Depresyon Tedavisi: Lurasidon ve Ketiapin önerilir. Lamotrijin de güvenli bir seçenektir. Antidepresanlar mani kayması riski nedeniyle dikkatli kullanılmalıdır.
+
+YAŞLILIKTA ANKSİYETE BOZUKLUKLARI
+- En sık görülen psikiyatrik durumlardan biridir.
+- Yaygın Anksiyete Bozukluğu (YAB) en sık görülen tiptir.
+- Belirtiler sıklıkla bedensel (somatik) yakınmalarla örtülür, bu yüzden tanı atlanabilir.
+- Düşme Korkusu: Yaşlılara özgü bir fobi türü olarak kabul edilebilir.
+
+Tedavi:
+- İlk Tercih: SSRI (Sertralin, Essitalopram) veya SNRI (Venlafaksin, Duloksetin).
+- İkinci Tercih: Pregabalin, Buspiron.
+- Benzodiazepinler: Düşme, kırık ve bilişsel yıkım riski nedeniyle yaşlılarda UZUN SÜRELİ KULLANILMAMALIDIR. Kısa süreli ve düşük doz tercih edilmelidir.
+
+================================================================================
+KAYNAK: TransaksiyonelAnaliz.pdf
+================================================================================
+TRANSAKSİYONEL ANALİZ (TA) - Eric Berne
+Temel Felsefe:
+- İnsanlar "OK"dir (Değerlidir).
+- Herkes düşünebilir.
+- İnsanlar kendi kaderlerini belirler ve bu kararları değiştirebilirler.
+
+YAPI ÇÖZÜMLEMESİ (EGO DURUMLARI):
+1. Ebeveyn (Parent): Öğretilen yaşam kavramı. Kuralcı, koruyucu veya eleştirel olabilir. (Meli/Malı'lar).
+2. Yetişkin (Adult): Düşünülen yaşam kavramı. Mantıklı, objektif, şimdi ve burada ile ilgilenen veri işlemcisi.
+3. Çocuk (Child): Hissedilen yaşam kavramı. Doğal, dürtüsel, yaratıcı veya uyumlu/isyankar olabilir.
+
+İLETİŞİM TÜRLERİ (TRANSAKSİYONLAR):
+1. Tamamlayıcı (Paralel): İletişim açıktır ve sonsuza kadar sürebilir. (Örn: Yetişkin -> Yetişkin).
+2. Çapraz: Beklenmedik bir ego durumundan cevap gelmesidir. İletişim kopar. (Örn: Yetişkin sorusuna Ebeveyn gibi azarlayarak cevap vermek).
+3. Gizli: Açık mesajın altında gizli bir psikolojik mesaj vardır. (Örn: "Kahveme gel" aslında cinsel bir davet olabilir).
+
+OYUNLAR:
+- Oyunlar, gizli transaksiyonlar içeren ve sonunda "kötü hissettiren" (raket duygu) tekrarlayıcı davranış kalıplarıdır.
+- Karpman Drama Üçgeni: Kurban, Zalim, Kurtarıcı. Oyunlarda kişiler bu roller arasında gidip gelir.
+
+YAŞAM SENARYOSU:
+- Çocuklukta (genellikle 5 yaşına kadar) alınan, bilinçdışı yaşam planıdır.
+- Güdüleyiciler (Sürücüler): Mükemmel Ol, Güçlü Ol, Acele Et, Hoşnut Et, Çok Çalış.
+
+TERAPİ AMACI:
+- Bireyi özerkleştirmek (Farkındalık, Kendiliğindenlik, Yakınlık).
+- "Ben OK'im, Sen OK'sin" yaşam pozisyonuna geçmek.
+
+================================================================================
+KAYNAK: NPTsunum.pdf
+================================================================================
+NÖROPSİKOLOJİK TESTLER
+1. Mini Mental Test (MMT):
+   - Hızlı bilişsel tarama testidir.
+   - Oryantasyon, kayıt, dikkat, hesaplama, hatırlama ve lisanı ölçer.
+   - Toplam 30 puandır. Eğitim düzeyine göre kesme puanı değişir. (Eğitimlilerde 24 altı şüpheli).
+   - Demans ve depresyon ayrımında tek başına yeterli olmayabilir.
+
+2. Diğer Testler:
+   - Benton Yüz Tanıma Testi: Sağ hemisfer (yüz tanıma) işlevini ölçer.
+   - Çizgi Yönünü Belirleme Testi: Görsel-mekansal algıyı ölçer (Sağ parietal).
+   - İşaretleme Testi: Görsel tarama, dikkat, ihmal sendromunu (Neglect) ölçer.
+   - İz Sürme Testi (Trail Making A-B): A formu dikkati, B formu (bir harf bir sayı) yürütücü işlevleri ve set değiştirmeyi (esnekliği) ölçer. Frontal lob işlevidir.
+   - Rey Karmaşık Figür Testi: Görsel yapılandırma ve görsel belleği ölçer.
+   - Stroop Testi: Dikkati, tepki ketlemesini (dürtü kontrolü) ve enterferansa direnci ölçer. Frontal lob testidir. (Renkleri söylerken yazıyı okumama).
+   - Wisconsin Kart Eşleme Testi (WCST): Soyutlama, set değiştirme, perseverasyon (takılıp kalma) ölçer. Frontal lob (Dorsolateral prefrontal korteks) hasarına çok duyarlıdır.
+   - Londra Kulesi: Planlama ve problem çözme becerisini ölçer.
+
+================================================================================
+KAYNAK: Şizofrenide Tedavi Algoritmaları.pdf
+================================================================================
+ŞİZOFRENİ TEDAVİ ALGORİTMALARI
+Genel İlkeler:
+- Antipsikotik (AP) ilaçlar tedavinin temel taşıdır.
+- İkinci Nesil (Atipik) AP'ler (SGA), Birinci Nesil (Tipik) AP'lere (FGA) göre yan etki profili (daha az EPS) nedeniyle genelde ilk tercihtir. Ancak etkinlik açısından Klozapin hariç büyük fark yoktur.
+
+Tedavi Aşamaları:
+1. İlk Atak:
+   - Düşük dozla başlanır.
+   - Yanıt için en az 2-4 hafta beklenir.
+   - Yanıt yoksa başka bir AP'ye geçilir.
+   - İdame tedavisi ilk ataktan sonra en az 1 yıl (bazı kaynaklarda 18 ay) sürmelidir.
+
+2. Çoklu Atak / Kronik Dönem:
+   - İdame tedavisi en az 2-5 yıl veya ömür boyu sürebilir.
+   - İlaç uyumu için Uzun Etkili Enjeksiyonlar (Depo/LAI) önerilir.
+
+3. Tedaviye Dirençli Şizofreni:
+   - Tanım: En az iki farklı AP (biri atipik olmalı) yeterli doz ve sürede kullanılmasına rağmen yanıt alınamaması.
+   - Altın Standart Tedavi: KLOZAPİN.
+   - Klozapin Endikasyonları: Tedaviye direnç, İntihar riski (anti-suicidal etkisi kanıtlanmış tek AP), Şiddetli EPS/Tardif Diskinezi varlığı, Saldırganlık.
+   - Klozapin Takibi: Nötropeni/Agranülositoz riski nedeniyle ilk 18 hafta haftalık, sonra aylık kan sayımı (hemogram) şarttır. Miyokardit riski de vardır.
+
+Yan Etki Yönetimi:
+- Akut Distoni: Antikolinerjikler (Biperiden, Difenhidramin).
+- Parkinsonizm: Doz azaltma, ilaç değişimi veya Antikolinerjik ekleme.
+- Akatizi (Yerinde duramama): Beta-bloker (Propranolol), Benzodiazepin. Antikolinerjikler çok etkili değildir.
+- Tardif Diskinezi: VMAT2 İnhibitörleri (Valbenazin, Deutetrabenazin). Antikolinerjikler TD'yi kötüleştirebilir!
+- Metabolik Sendrom: Kilo alımı, diyabet, lipid bozukluğu. En riskli ilaçlar: Klozapin, Olanzapin. En az riskli: Aripiprazol, Ziprasidon, Lurasidon.
+
+================================================================================
+KAYNAK: Psikoterapi.pdf
+================================================================================
+PSİKODİNAMİK PSİKOTERAPİ
+Temel Kavramlar:
+- Freud'un teorisine dayanır. Bilinçdışı süreçler, içsel çatışmalar ve çocukluk yaşantıları odaklıdır.
+- Amaç: Bilinçdışını bilinçli hale getirmek, egoyu güçlendirmek, içgörü kazandırmak.
+
+Teknikler:
+1. Serbest Çağrışım: Hastanın aklına geleni sansürsüzce anlatması. Temel kuraldır.
+2. Aktarım (Transferans): Hastanın geçmişindeki önemli figürlere (anne, baba) yönelik duygu ve tutumlarını terapiste yansıtmasıdır. Terapinin en önemli aracıdır.
+3. Karşıt Aktarım (Counter-transference): Terapistin hastaya karşı hissettiği, kendi geçmişinden kaynaklanan duygusal tepkilerdir. Terapist bunu fark etmeli ve süreci bozmasına izin vermemelidir.
+4. Direnç: Değişime karşı gösterilen bilinçli veya bilinçdışı zorluk çıkarma (randevuya gelmeme, susma vb.).
+5. Rüya Analizi: Bilinçdışına giden kral yolu. Gizli ve görünür içerik analiz edilir.
+6. Yorumlama: Terapistin hastanın getirdiği materyali anlamlandırıp ona sunması.
+
+Süreç:
+- Başlangıç, Orta (Derinlemesine çalışma) ve Sonlandırma evreleri vardır.
+- Terapist genellikle "boş ekran" (yansız) duruşunu korur.
+
+================================================================================
+KAYNAK: inflamasyon 2768-6698-28-12-356.pdf
+================================================================================
+İNFLAMASYON VE GEÇ YAŞAM DEPRESYONU (LLD)
+Hipotez:
+- Geleneksel monoamin hipotezi (serotonin/noradrenalin eksikliği) LLD'yi, özellikle tedaviye dirençli vakaları açıklamada yetersiz kalmaktadır.
+- "İnflamasyon Hipotezi": Yaşlanma ile artan sistemik inflamasyon (inflammaging) depresyona neden olur.
+
+Mekanizmalar:
+1. Sitokinler: Yaşlılarda IL-6, TNF-alfa, IL-1beta gibi pro-inflamatuar sitokinler artar. Bunlar "hastalık davranışı"na (yorgunluk, anhedoni, iştahsızlık) neden olur.
+2. Triptofan/Kinürenin Yolağı: İnflamasyon, IDO enzimini aktive eder. Triptofan serotonin yerine kinürenine dönüşür. Serotonin azalır, nörotoksik metabolitler (kinolinik asit) artar.
+3. BDNF: İnflamasyon, nöroplastisiteyi sağlayan BDNF'yi (Beyin Türevli Nörotrofik Faktör) azaltır.
+4. HPA Aksı: Sitokinler HPA aksını (stres sistemi) sürekli aktive eder, kortizol artar, hipokampal atrofi gelişir.
+5. Bağırsak-Beyin Aksı: Yaşlanma ile bağırsak geçirgenliği artar ("sızdıran bağırsak"), bakteriyel toksinler kana karışıp inflamasyonu tetikler.
+6. NLRP3 İnflamazomu: Yaşlanma ile artan hücresel stres, NLRP3 inflamazomunu aktive ederek kronik inflamasyona yol açar.
+
+Tedavi Yaklaşımları:
+- Anti-inflamatuar ilaçların (NSAİİ, Sitokin inhibitörleri) antidepresanlara eklenmesi bazı hastalarda (özellikle CRP'si yüksek olanlarda) faydalı olabilir.
+- Omega-3 yağ asitleri, Egzersiz, Akdeniz diyeti anti-inflamatuar etkiyle depresyona iyi gelebilir.
+
+================================================================================
+KAYNAK: yaşlılıkta-psikoz-2024_Otomatik-kaydedilme_.pdf
+================================================================================
+YAŞLILIKTA PSİKOZ
+Genel Bilgiler:
+- Yaşlılarda psikoz sık görülür. En sık neden DEMANS'tır (özellikle Alzheimer ve Lewy Cisimcikli Demans).
+- "6 D" Kuralı (Psikoz Nedenleri): Deliryum, Drugs (İlaçlar), Disease (Hastalık), Depression (Depresyon), Dementia (Demans), Delusional Disorder (Sanrılı Bozukluk).
+
+Ayırıcı Tanı:
+1. Birincil Psikozlar: Şizofreni (Erken, Geç, Çok Geç Başlangıçlı), Sanrılı Bozukluk.
+2. İkincil Psikozlar: Tıbbi durumlar (İYE, pnömoni, elektrolit bozukluğu), İlaç toksisitesi (antikolinerjikler, steroidler), Madde kullanımı.
+
+Şizofreni Tipleri:
+- Erken Başlangıçlı (EOS): <40 yaş. Negatif belirtiler ve bilişsel yıkım belirgindir.
+- Geç Başlangıçlı (LOS): 40-60 yaş. Kadınlarda daha sıktır (östrojen koruyuculuğunun bitmesi). Paranoid sanrılar ön plandadır, negatif belirtiler daha azdır.
+- Çok Geç Başlangıçlı (VLOS): >60 yaş. "Şizofreni benzeri psikoz" da denir. Genellikle duyusal kusurlar (sağırlık, körlük) ve sosyal izolasyon ile ilişkilidir. Beyin yapısal anormallikleri daha fazladır. Tardif diskinezi riski çok yüksektir.
+
+Demansta Psikoz:
+- Alzheimer: Hastaların %30-50'sinde görülür. Çalınma (hırsızlık) sanrıları, evde yabancıların yaşadığı sanrısı, Capgras sendromu (yakınlarının yerine sahtelerinin geçtiği inancı) sıktır.
+- Lewy Cisimcikli Demans: Detaylı, renkli, canlı GÖRSEL halüsinasyonlar tipiktir. Antipsikotiklere aşırı duyarlılık vardır.
+
+Tedavi:
+- Önce tıbbi nedenleri (deliryum) dışla.
+- İlaç dışı yöntemler dene.
+- İlaç gerekiyorsa: "Düşük başla, yavaş git".
+- Atipik antipsikotikler (Risperidon, Ketiapin, Olanzapin) düşük dozda tercih edilir.
+- Demans hastalarında antipsikotik kullanımı mortalite (inme ve ani ölüm) riskini artırır (FDA Kara Kutu Uyarısı).
+
+================================================================================
+KAYNAK: sunum1psikiyatri-1.pdf & sunum1psikiyatri 1.pdf
+================================================================================
+BİLİM FELSEFESİ VE İSTATİSTİK
+Bilim Tarihi ve Felsefesi:
+- Thales: İlk filozof ve bilim insanı kabul edilir (Milet Okulu).
+- Ockham'lı William (Ockham'ın Usturası): "Basitlik ilkesi". Bir olayı açıklayan en basit açıklama, genellikle en doğru olandır. Gereksiz varsayımlardan kaçınılmalıdır.
+- Francis Bacon: Tümevarım (Induction) yöntemini sistemleştirdi. Gözlemden genele gitmek.
+- Karl Popper: "Yanlışlanabilirlik" ilkesi. Bilimselliğin ölçütü doğrulanabilirlik değil, yanlışlanabilirliktir. "Bütün kuğular beyazdır" demek için tüm kuğuları görmek yetmez, bir tane siyah kuğu görmek teoriyi çürütür.
+- Thomas Kuhn: "Paradigma" kavramı. Bilim doğrusal ilerlemez, devrimsel sıçramalarla (paradigma kayması) ilerler. Normal bilim -> Kriz -> Devrim -> Yeni Paradigma.
+
+İstatistiksel Kavramlar:
+- Normal Dağılım (Çan Eğrisi): Verilerin ortalama etrafında simetrik dağılması.
+- Standart Sapma: Verilerin ortalamadan ne kadar saptığının ölçüsü.
+- Güvenirlik (Reliability): Ölçümün tutarlılığı. (Tekrar ölçüldüğünde aynı sonucu veriyor mu?).
+- Geçerlik (Validity): Ölçümün doğruluğu. (Ölçmek istediği şeyi mi ölçüyor?).
+- MMPI (Minnesota Çok Yönlü Kişilik Envanteri): Psikiyatride paradigmalardan yararlanan en iyi örneklerden biri olarak sunulmuş.
+================================================================================
+KAYNAK: yaşlılık2024.pdf
+================================================================================
+GERİATRİK PSİKİYATRİYE GİRİŞ
+Epidemiyoloji:
+- Türkiye'de yaşlı nüfus (65+) oranı artmaktadır (2021'de %9.7). 2060'ta %22.6 olması bekleniyor.
+- Yaşlanma Türleri:
+  - Kronolojik: Takvim yaşı.
+  - Biyolojik: Fizyolojik değişimler.
+  - Psikolojik: Uyum ve mental fonksiyon değişimi.
+  - Sosyal: Rol ve statü değişimi.
+
+Yaşlanma Teorileri:
+- Genomik kararsızlık, Telomer kısalması, Epigenetik değişiklikler, Proteostaz kaybı, Mitokondriyal disfonksiyon.
+
+Yaşlanan Beyin:
+- Ağırlık azalır, nöron kaybı olur (ancak sanıldığı kadar dramatik değildir), sinaptik kayıp, dendritik budanma.
+- Bilişsel Değişimler: İşlem hızı yavaşlar, epizodik bellek zayıflar. Ancak kristalize zeka (kelime dağarcığı, genel bilgi) korunur.
+
+Psikososyal Uyum:
+- Erikson: Benlik Bütünlüğüne karşı Umutsuzluk evresi.
+- Emeklilik ve Eş Kaybı en büyük stresörlerdir.
+- Başarılı Yaşlanma: Hastalığın olmaması + Yüksek bilişsel/fiziksel işlev + Yaşama aktif katılım.
+
+================================================================================
+KAYNAK: Geriatrik Psikofarmakoloji (yaşlılık2024.pdf içinden)
+================================================================================
+FARMAKOKİNETİK DEĞİŞİKLİKLER
+1. Absorpsiyon (Emilim):
+   - Mide asidi azalır (pH artar), boşalma zamanı uzar.
+   - Genelde emilim hızı yavaşlar ama toplam emilen miktar çok değişmez.
+
+2. Dağılım:
+   - Vücut suyu azalır -> Suda çözünen ilaçların (Lityum, Etanol) kan düzeyi ARTAR.
+   - Vücut yağı artar -> Yağda çözünen ilaçların (Benzodiazepinler, birçok antipsikotik) yarı ömrü UZAR, vücutta birikir.
+   - Albümin azalır -> Proteine bağlanan ilaçların serbest kısmı artar (Toksisite riski).
+
+3. Metabolizma (Karaciğer):
+   - Karaciğer kan akımı ve kütlesi azalır.
+   - Faz 1 reaksiyonları (Oksidasyon) YAŞLA AZALIR (Diazepam, Alprazolam birikir).
+   - Faz 2 reaksiyonları (Konjugasyon) YAŞTAN ETKİLENMEZ (Lorazepam, Oksazepam, Temazepam güvenlidir - "LOT" kuralı).
+
+4. Atılım (Böbrek):
+   - Böbrek kan akımı ve GFR azalır.
+   - Serum kreatinin seviyesi normal olsa bile böbrek fonksiyonu azalmış olabilir (kas kütlesi azaldığı için).
+   - Lityum, Gabapentin gibi böbrekten atılan ilaçların dozu düşürülmelidir.
+
+FARMAKODİNAMİK DEĞİŞİKLİKLER
+- Reseptör duyarlılığı artar.
+- Özellikle Benzodiazepinlere, Antikolinerjiklere ve Dopamin antagonistlerine (Antipsikotikler) hassasiyet çok artar. Düşük dozda bile sedasyon, düşme, deliryum ve EPS görülür.
+
+UYGUNSUZ İLAÇ KULLANIMI (BEERS KRİTERLERİ)
+- Kaçınılması Gerekenler:
+  - Uzun etkili Benzodiazepinler (Diazepam).
+  - Tersiyer TCA'lar (Amitriptilin, İmipramin) -> Antikolinerjik ve hipotansif etki.
+  - Antipsikotikler (Davranışsal sorunlar için rutin kullanım önerilmez, inme riski).
+  - Antikolinerjikler (Deliryum riski).
+
+TEDAVİ İLKELERİ
+- "Düşük başla, yavaş git" (Start low, go slow).
+- Genç erişkin dozunun 1/4'ü veya 1/2'si ile başlanmalıdır.
+
+================================================================================
+KAYNAK: yaşlılarda depresif bozukluk.pdf & yaşlılarda-depresif-bozukluk.pdf
+================================================================================
+YAŞLILIKTA DEPRESYON
+Klinik Özellikler:
+- "Hüzün taşımayan depresyon" (Depression without sadness) sık görülür.
+- Somatik yakınmalar, hipokondriyazis, apati, anhedoni, motivasyon kaybı, psikomotor yavaşlama ön plandadır.
+- Bilişsel bozulma (Psödodemans) sıktır; dikkat ve yürütücü işlevler bozulur.
+- İntihar riski (özellikle yaşlı erkeklerde) çok yüksektir ve planlı intiharlar daha sıktır.
+
+Depresyon-Demans İlişkisi:
+- Depresyon demansın hem risk faktörü hem de prodromal (öncü) belirtisi olabilir.
+- Vasküler depresyon hipotezi: Beyindeki iskemik lezyonlar (beyaz madde hiperintensiteleri) depresyona yol açar. Yürütücü işlev bozukluğu, psikomotor yavaşlama ve tedaviye direnç ile karakterizedir.
+
+Tedavi:
+1. Antidepresanlar:
+   - SSRI: Sertralin ve Essitalopram ilk tercihtir (etkileşim az, güvenli).
+   - SNRI: Venlafaksin, Duloksetin (ağrı eşlik ediyorsa).
+   - Bupropiyon: Apati ve retardasyon varsa.
+   - Mirtazapin: Uykusuzluk ve iştahsızlık varsa (sedasyon ve kilo alımı yapar).
+   - Vortioksetin: Bilişsel işlevlere olumlu etkisi olabilir.
+   - Kaçınılacaklar: Trisiklikler (Amitriptilin) ve Paroksetin (antikolinerjik yan etki).
+2. EKT: Yaşlılarda çok etkilidir, özellikle psikotik depresyon ve yeme reddinde hayat kurtarıcıdır.
+3. Psikoterapi: BDT, Sorun Çözme Terapisi.
+
+================================================================================
+KAYNAK: inflamasyon 2768-6698-28-12-356.pdf
+================================================================================
+İNFLAMASYON VE GEÇ YAŞAM DEPRESYONU (LLD)
+- İnflamasyon Hipotezi: Yaşlanma ile artan sistemik inflamasyon (inflammaging), depresyon patogenezinde rol oynar.
+- Biyobelirteçler: IL-6, TNF-alfa, CRP artışı.
+- Mekanizma:
+  - Sitokinler IDO enzimini aktive eder -> Triptofan azalır (Serotonin azalır) -> Kinürenin ve nörotoksik metabolitler artar.
+  - BDNF azalır (nöroplastisite bozulur).
+  - HPA aksı bozulur (kortizol artar).
+  - Mikroglia aktivasyonu ve nöroinflamasyon.
+- Tedavi Potansiyeli: Anti-inflamatuar ilaçlar (NSAİİ, Minosiklin, Sitokin inhibitörleri), Omega-3, Egzersiz.
+
+================================================================================
+KAYNAK: Şizofrenide Tedavi Algoritmaları.pdf
+================================================================================
+ŞİZOFRENİ TEDAVİSİ
+Genel Yaklaşım:
+- Antipsikotik (AP) başlanmalı. SGA (Atipik) genelde ilk tercihtir (yan etki profili nedeniyle).
+- İlk atakta tedavi en az 1 yıl (genelde 18 ay) sürmeli. Çoklu atakta 2-5 yıl veya ömür boyu.
+
+Tedaviye Dirençli Şizofreni:
+- Tanım: En az 2 farklı AP (biri atipik) yeterli doz ve sürede (4-6 hafta) başarısız olursa.
+- Tedavi: KLOZAPİN (Tek kanıta dayalı ilaç).
+- Klozapin Başlama: Düşük doz (12.5 mg), yavaş titrasyon.
+- Klozapin Takibi: Nötropeni riski için kan sayımı (İlk 18 hafta haftalık).
+- Klozapin Yan Etkileri: Sialore (aşırı tükürük), sedasyon, kilo alımı, kabızlık (ileus riski!), miyokardit, nöbet.
+
+Uzun Etkili Enjeksiyonlar (Depo AP):
+- Uyum sorunu olanlarda veya hasta tercihinde kullanılır.
+- Oral tedavi ile stabilizasyon sağlandıktan sonra geçilir.
+
+Yan Etki Yönetimi:
+- Akut Distoni: Antikolinerjik (Biperiden).
+- Parkinsonizm: Doz azalt / İlaç değiştir / Antikolinerjik ekle.
+- Akatizi: Beta-bloker (Propranolol), BZD. (Antikolinerjik etkisizdir).
+- Tardif Diskinezi: VMAT2 İnhibitörleri (Valbenazin, Deutetrabenazin). Antikolinerjikler durumu kötüleştirir, kesilmeli!
+- Metabolik Sendrom: İlaç değişimi (Aripiprazol, Ziprasidon, Lurasidon metabolik açıdan nötrdür), Metformin, Diyet/Egzersiz.
+
+================================================================================
+KAYNAK: Psikoterapi.pdf
+================================================================================
+PSİKODİNAMİK PSİKOTERAPİ
+- Amaç: Bilinçdışı çatışmaları bilince çıkarmak, egoyu güçlendirmek.
+- Temel Kavramlar:
+  - Serbest Çağrışım: Aklına geleni sansürsüz anlatma.
+  - Aktarım (Transferans): Hastanın geçmiş figürlere (ebeveyn) ait duygularını terapiste yansıtması.
+  - Karşıt Aktarım (Counter-transference): Terapistin hastaya duygusal tepkisi.
+  - Direnç: Değişime karşı koyma (randevuya gelmeme, susma).
+  - Yorumlama: Terapistin bağlantıları göstermesi.
+  - Rüya Analizi: Bilinçdışına giden kral yolu.
+
+================================================================================
+KAYNAK: TransaksiyonelAnaliz.pdf
+================================================================================
+TRANSAKSİYONEL ANALİZ (TA) - Eric Berne
+- Ego Durumları:
+  - Ebeveyn (P): Öğretilen (Kuralcı veya Koruyucu).
+  - Yetişkin (A): Düşünen (Mantıklı, Veri işleyen).
+  - Çocuk (C): Hisseden (Doğal veya Uyumlu).
+- Transaksiyonlar: Tamamlayıcı (Paralel), Çapraz (İletişim kopar), Gizli.
+- Yaşam Pozisyonları:
+  - Ben OK'im, Sen OK'sin (Sağlıklı).
+  - Ben OK değilim, Sen OK'sin (Depresif).
+  - Ben OK'im, Sen OK değilsin (Paranoid).
+  - Ben OK değilim, Sen OK değilsin (Umutsuz/Şizoid).
+- Oyunlar: Gizli mesajlar içeren, "kötü hisle" biten tekrarlayıcı kalıplar (Karpman Drama Üçgeni: Kurban-Zalim-Kurtarıcı).
+
+================================================================================
+KAYNAK: yaşlılıkta psikoz 2024[Otomatik kaydedilme].pdf & yaşlılıkta-psikoz-2024_Otomatik-kaydedilme_.pdf
+================================================================================
+YAŞLILIKTA PSİKOZ
+Etiyoloji:
+- En sık neden DEMANS'tır (Alzheimer, Lewy Cisimcikli).
+- İkincil nedenler (Deliryum, İlaçlar, Metabolik) dışlanmalıdır ("6 D" kuralı).
+
+Geç Başlangıçlı Şizofreni (LOS):
+- 40-60 yaş arası başlar.
+- Kadınlarda sıktır.
+- Paranoid sanrılar ön plandadır, halüsinasyonlar sıktır.
+- Negatif belirtiler ve formel düşünce bozukluğu NADİRDİR (Gençlere göre farkı budur).
+- Bilişsel yıkım daha azdır.
+- Tedaviye yanıtı iyidir, daha düşük doz AP gerekir.
+
+Çok Geç Başlangıçlı Şizofreni Benzeri Psikoz (VLOS):
+- 60 yaş üstü başlar.
+- Genelde duyusal kusurlar (sağırlık, körlük) ve sosyal izolasyon zemininde gelişir.
+- Tardif diskinezi riski yüksektir.
+
+Tedavi:
+- Atipik antipsikotikler (Risperidon, Ketiapin, Olanzapin, Aripiprazol) düşük dozda.
+- Demans hastalarında AP kullanımı mortaliteyi artırır (Black box uyarısı), dikkatli olunmalı.
+
+================================================================================
+KAYNAK: sunum1psikiyatri-1.pdf
+================================================================================
+BİLİM VE İSTATİSTİK
+- Paradigma (Thomas Kuhn): Bilimsel devrimlerin yapısı.
+- Yanlışlanabilirlik (Karl Popper): Bilimselliğin ölçütü.
+- Tümevarım (Bacon) vs Tümdengelim.
+- Ockham'ın Usturası: En basit açıklama en iyisidir.
+- MMPI: Kişilik envanteri örneği.
+- Güvenirlik (Tutarlılık) ve Geçerlik (Doğruluk).
