@@ -20,10 +20,40 @@ except Exception as e:
 # --- SABİTLER ---
 DOSYA_ADI = "bilgi_bankasi.txt"
 
+# --- AKILLI MODEL SEÇİCİ (TEŞHİS MODU) ---
+@st.cache_resource
+def get_working_model():
+    """API anahtarının erişebildiği modelleri bulur ve en iyisini seçer."""
+    try:
+        available_models = []
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                available_models.append(m.name)
+        
+        # Tercih sıramız (En iyiden en eskiye)
+        preferred_order = [
+            'models/gemini-1.5-flash',
+            'models/gemini-1.5-pro',
+            'models/gemini-1.0-pro',
+            'models/gemini-pro'
+        ]
+        
+        # Listemizde olan ve erişebildiğimiz ilk modeli seç
+        for model_name in preferred_order:
+            if model_name in available_models:
+                return model_name
+        
+        # Hiçbiri yoksa listeden ilk bulduğunu al
+        if available_models:
+            return available_models[0]
+            
+        return None
+    except Exception as e:
+        return None
+
 # --- FONKSİYONLAR ---
 @st.cache_data(show_spinner=False)
 def notlari_yukle():
-    """GitHub'daki metin dosyasını okur."""
     if not os.path.exists(DOSYA_ADI):
         return None
     try:
@@ -32,18 +62,9 @@ def notlari_yukle():
     except Exception as e:
         return None
 
-def gemini_cevapla(soru, baglam, tur):
-    # Denenecek modeller listesi (En hızlıdan en güçlüye)
-    model_listesi = [
-        'gemini-1.5-flash',
-        'gemini-1.5-pro',
-        'gemini-1.0-pro',
-        'gemini-pro'
-    ]
+def gemini_cevapla(soru, baglam, tur, model_ismi):
+    model = genai.GenerativeModel(model_ismi)
     
-    son_hata = ""
-
-    # Prompt Hazırlığı
     if tur == "soru":
         prompt = f"""
         Sen uzman bir Psikiyatri hocasısın. Aşağıdaki DERS NOTLARINI tek gerçek kaynağın olarak kullan.
@@ -72,22 +93,22 @@ def gemini_cevapla(soru, baglam, tur):
         DERS NOTLARI:
         {baglam}
         """
-
-    # Modelleri sırayla dene
-    for model_ismi in model_listesi:
-        try:
-            model = genai.GenerativeModel(model_ismi)
-            response = model.generate_content(prompt)
-            return response.text # Başarılı olursa cevabı döndür ve çık
-        except Exception as e:
-            son_hata = str(e)
-            continue # Hata verirse bir sonraki modeli dene
-            
-    return f"⚠️ Üzgünüm, tüm modeller meşgul veya erişilemez durumda. Hata detayı: {son_hata}"
+    
+    response = model.generate_content(prompt)
+    return response.text
 
 # --- ARAYÜZ ---
 st.title("🧠 Psikiyatri Kıdem Sınavı Platformu")
-st.caption("Sürüm: v2.0 (Auto-Model-Switch)")
+
+# Modeli Belirle
+working_model = get_working_model()
+
+if not working_model:
+    st.error("⚠️ HATA: API anahtarınız hiçbir modele erişemiyor. Lütfen Google AI Studio'dan yeni bir anahtar alıp deneyin.")
+    st.stop()
+else:
+    st.caption(f"✅ Aktif Model: {working_model}")
+
 st.markdown("---")
 
 # Notları Yükleme Durumu
@@ -95,10 +116,10 @@ with st.spinner("Bilgi Bankası Yükleniyor..."):
     notlar = notlari_yukle()
 
 if not notlar:
-    st.error(f"⚠️ '{DOSYA_ADI}' dosyası bulunamadı! Lütfen GitHub'a bu isimle yüklediğinden emin ol.")
+    st.error(f"⚠️ '{DOSYA_ADI}' dosyası bulunamadı! GitHub'a yüklediğinden emin ol.")
     st.stop()
 else:
-    st.success(f"✅ Bilgi Bankası Hazır! ({len(notlar)} karakter)")
+    st.success(f"📚 Bilgi Bankası Hazır! ({len(notlar)} karakter)")
 
 # Sekmeler
 tab1, tab2 = st.tabs(["💬 Soru & Cevap", "📝 Test Oluştur"])
@@ -109,8 +130,11 @@ with tab1:
     if st.button("Cevapla", type="primary"):
         if soru:
             with st.spinner("Dr. Gemini notları tarıyor..."):
-                cevap = gemini_cevapla(soru, notlar, "soru")
-                st.markdown(cevap)
+                try:
+                    cevap = gemini_cevapla(soru, notlar, "soru", working_model)
+                    st.markdown(cevap)
+                except Exception as e:
+                    st.error(f"Bir hata oluştu: {e}")
         else:
             st.warning("Lütfen bir soru yazın.")
 
@@ -120,7 +144,10 @@ with tab2:
     if st.button("Testi Oluştur", type="primary"):
         if konu:
             with st.spinner("Sınav kağıdı hazırlanıyor..."):
-                test = gemini_cevapla(konu, notlar, "test")
-                st.markdown(test)
+                try:
+                    test = gemini_cevapla(konu, notlar, "test", working_model)
+                    st.markdown(test)
+                except Exception as e:
+                    st.error(f"Bir hata oluştu: {e}")
         else:
             st.warning("Lütfen bir konu başlığı girin.")
