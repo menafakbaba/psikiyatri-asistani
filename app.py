@@ -33,9 +33,17 @@ def notlari_yukle():
         return None
 
 def gemini_cevapla(soru, baglam, tur):
-    # EN GÜVENLİ MODEL: gemini-pro (Her sürümde çalışır)
-    model = genai.GenerativeModel('gemini-pro')
+    # Denenecek modeller listesi (En hızlıdan en güçlüye)
+    model_listesi = [
+        'gemini-1.5-flash',
+        'gemini-1.5-pro',
+        'gemini-1.0-pro',
+        'gemini-pro'
+    ]
     
+    son_hata = ""
+
+    # Prompt Hazırlığı
     if tur == "soru":
         prompt = f"""
         Sen uzman bir Psikiyatri hocasısın. Aşağıdaki DERS NOTLARINI tek gerçek kaynağın olarak kullan.
@@ -64,16 +72,22 @@ def gemini_cevapla(soru, baglam, tur):
         DERS NOTLARI:
         {baglam}
         """
-    
-    try:
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        return f"⚠️ Hata oluştu: {str(e)}. Lütfen daha sonra tekrar deneyin."
+
+    # Modelleri sırayla dene
+    for model_ismi in model_listesi:
+        try:
+            model = genai.GenerativeModel(model_ismi)
+            response = model.generate_content(prompt)
+            return response.text # Başarılı olursa cevabı döndür ve çık
+        except Exception as e:
+            son_hata = str(e)
+            continue # Hata verirse bir sonraki modeli dene
+            
+    return f"⚠️ Üzgünüm, tüm modeller meşgul veya erişilemez durumda. Hata detayı: {son_hata}"
 
 # --- ARAYÜZ ---
 st.title("🧠 Psikiyatri Kıdem Sınavı Platformu")
-st.caption("Model: Gemini Pro | Sürüm: v1.2")
+st.caption("Sürüm: v2.0 (Auto-Model-Switch)")
 st.markdown("---")
 
 # Notları Yükleme Durumu
