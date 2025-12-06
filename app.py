@@ -34,7 +34,7 @@ def notlari_yukle():
         return None
 
 def gemini_cevapla(soru, baglam, tur):
-    model = genai.GenerativeModel('gemini-pro')
+   model = genai.GenerativeModel('gemini-1.5-flash')
     
     if tur == "soru":
         prompt = f"""
