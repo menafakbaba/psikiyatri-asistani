@@ -30,7 +30,7 @@ def get_pdf_text(pdf_docs):
 
 def get_gemini_response(input_text, pdf_text, prompt_type):
     # Model Seçimi (Hız ve maliyet için Flash ideal)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-pro')
     
     if prompt_type == "Soru Sor":
         base_prompt = f"""
