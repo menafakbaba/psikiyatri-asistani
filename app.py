@@ -18,38 +18,92 @@ primary_color = "#3A0CA3"
 secondary_color = "#F72585"
 bg_color = "#F8F9FA"
 
-# CSS Tasarımı
+# Güçlendirilmiş CSS
 st.markdown(f"""
     <style>
-    .stApp {{ background-color: {bg_color}; }}
-    h1, h2, h3, h4 {{ color: {primary_color} !important; }}
+    /* Arka planı zorla uygula */
+    .stApp {{
+        background-color: {bg_color};
+    }}
+    
+    /* Başlık renkleri */
+    h1, h2, h3, h4 {{
+        color: {primary_color} !important;
+    }}
+    
+    /* Banner */
     .banner {{
         background: linear-gradient(135deg, {primary_color} 0%, #7209B7 100%);
-        padding: 25px; border-radius: 20px; color: white; margin-bottom: 20px; text-align: center;
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }}
+    
+    /* Soru Kartı */
     .question-card {{
-        background-color: white; padding: 20px; border-radius: 15px;
-        border-left: 5px solid {secondary_color}; margin-bottom: 20px;
-        font-size: 18px; font-weight: 600; color: #333;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        border-left: 5px solid {secondary_color};
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
     }}
-    .stButton button {{ width: 100%; border-radius: 10px; height: auto; padding: 10px; font-weight: 500; }}
-    .result-card {{ background-color: white; padding: 40px 20px; border-radius: 30px; text-align: center; margin-top: 20px; }}
-    #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
+    
+    /* Butonlar */
+    div.stButton > button {{
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background-color: white;
+        color: #333;
+        font-weight: 500;
+        transition: all 0.3s;
+    }}
+    div.stButton > button:hover {{
+        background-color: #F3E5F5;
+        border-color: {primary_color};
+        color: {primary_color};
+    }}
+    
+    /* Primary Butonlar (Mor Olanlar) */
+    div.stButton > button[kind="primary"] {{
+        background-color: {primary_color};
+        color: white;
+        border: none;
+    }}
+    div.stButton > button[kind="primary"]:hover {{
+        background-color: #4800b0;
+        color: white;
+    }}
+
+    /* Sonuç Kartı */
+    .result-box {{
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }}
+    
+    #MainMenu {{visibility: hidden;}}
+    footer {{visibility: hidden;}}
+    header {{visibility: hidden;}}
     </style>
 """, unsafe_allow_html=True)
 
-# --- STATE YÖNETİMİ (GÜNCELLENDİ) ---
-
-# URL'den kullanıcı adını kontrol et (Hatırlama Özelliği)
+# --- STATE YÖNETİMİ ---
+# URL'den kullanıcı adını kontrol et
 query_params = st.query_params
 url_user = query_params.get("kullanici", None)
 
 if 'user_name' not in st.session_state:
-    # Eğer URL'de isim varsa onu kullan, yoksa Misafir yap
-    if url_user:
-        st.session_state.user_name = url_user
-    else:
-        st.session_state.user_name = "Misafir"
+    st.session_state.user_name = url_user if url_user else "Misafir"
 
 if 'current_page' not in st.session_state:
     st.session_state.current_page = 'home'
@@ -66,35 +120,43 @@ if 'is_correct' not in st.session_state:
 
 # --- VERİTABANI FONKSİYONLARI ---
 
-def get_data_connection():
+def get_connection():
     return st.connection("gsheets", type=GSheetsConnection)
 
 def fetch_leaderboard():
     try:
-        conn = get_data_connection()
-        # ttl=0 önbelleği kapatır, her zaman en güncel veriyi çeker
+        conn = get_connection()
+        # ttl=0 önbelleği kapatır
         df = conn.read(worksheet="Sayfa1", ttl=0)
+        # Sütun isimlerini temizle (boşluk vs varsa)
+        df.columns = df.columns.str.strip()
         return df
-    except Exception:
+    except Exception as e:
+        # Hata durumunda boş dön ama hatayı logla (Geliştirme için)
+        print(f"Veri çekme hatası: {e}")
         return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
 def save_score_to_db():
     try:
-        conn = get_data_connection()
+        conn = get_connection()
+        # Mevcut veriyi oku
         existing_data = conn.read(worksheet="Sayfa1", ttl=0)
         
+        # Yeni satır
         new_entry = pd.DataFrame([{
             'Kullanıcı': st.session_state.user_name,
             'Skor': st.session_state.score,
             'Tarih': pd.to_datetime('today').strftime('%Y-%m-%d %H:%M')
         }])
         
+        # Birleştir
         updated_data = pd.concat([existing_data, new_entry], ignore_index=True)
+        
+        # Güncelle
         conn.update(worksheet="Sayfa1", data=updated_data)
-        return True
+        return True, "Başarılı"
     except Exception as e:
-        st.error(f"Kayıt hatası: {e}")
-        return False
+        return False, str(e)
 
 # --- QUIZ FONKSİYONLARI ---
 
@@ -114,7 +176,6 @@ def start_quiz():
     st.session_state.score = 0
     st.session_state.answer_submitted = False
     
-    # Kullanıcı adını URL'e kaydet (Sayfa yenilense de gitmesin)
     if st.session_state.user_name != "Misafir":
         st.query_params["kullanici"] = st.session_state.user_name
         
@@ -126,7 +187,7 @@ def submit_answer(option):
     current_q = st.session_state.quiz_data[st.session_state.question_index]
     st.session_state.answer_submitted = True
     if option == current_q['dogru_cevap']:
-        st.session_state.score += 10 # Her soru 10 puan olsun (Daha heyecanlı)
+        st.session_state.score += 10
         st.session_state.is_correct = True
     else:
         st.session_state.is_correct = False
@@ -137,8 +198,6 @@ def next_question():
         st.session_state.question_index += 1
         st.rerun()
     else:
-        with st.spinner('Puanın Liderlik Tablosuna Yazılıyor...'):
-            save_score_to_db()
         st.session_state.current_page = 'result'
         st.rerun()
 
@@ -147,12 +206,10 @@ def next_question():
 def home_page():
     st.write(f"👋 **Merhaba, {st.session_state.user_name}**")
     
-    # İsim alanı (Eğer URL'de isim yoksa göster)
     if st.session_state.user_name == "Misafir":
         name = st.text_input("Yarışmak için adını gir:", placeholder="Adınız...")
         if name:
             st.session_state.user_name = name
-            # İsmi anında URL'e işle
             st.query_params["kullanici"] = name
             st.rerun()
 
@@ -184,10 +241,8 @@ def quiz_page():
     idx = st.session_state.question_index
     q_data = st.session_state.quiz_data[idx]
     
-    # İlerleme Çubuğu
     st.progress((idx + 1) / total_q)
     
-    # Puanı Canlı Göster
     st.markdown(f"""
     <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
         <span>Soru {idx + 1} / {total_q}</span>
@@ -204,7 +259,7 @@ def quiz_page():
                 st.rerun()
     else:
         if st.session_state.is_correct:
-            st.success("✅ Doğru Cevap! (+10 Puan)")
+            st.success("✅ Doğru Cevap!")
         else:
             st.error("❌ Yanlış Cevap!")
             st.write(f"Doğru Cevap: **{q_data['dogru_cevap']}**")
@@ -212,9 +267,49 @@ def quiz_page():
         with st.expander("ℹ️ Açıklama", expanded=True):
             st.info(q_data.get('aciklama', 'Açıklama yok.'))
             
-        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir ve Kaydet 🏁"
+        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
             next_question()
+
+def result_page():
+    # Sayfa ilk yüklendiğinde kaydetmeyi dene
+    if 'score_saved' not in st.session_state:
+        status, msg = save_score_to_db()
+        if status:
+            st.toast("Skor başarıyla kaydedildi!", icon="✅")
+            st.session_state.score_saved = True
+        else:
+            st.error(f"Skor kaydedilemedi! Hata: {msg}")
+            st.warning("Lütfen Google Sheet 'client_email' adresine Editör yetkisi verdiğinizden emin olun.")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    total_q = len(st.session_state.quiz_data)
+    
+    st.markdown(f"""
+        <div class="result-box">
+            <div style="font-size: 60px;">🎉</div>
+            <h2 style="color: {primary_color};">Sınav Bitti!</h2>
+            <p style="font-size: 18px;">Sayın <b>{st.session_state.user_name}</b>,</p>
+            <hr>
+            <div style="font-size: 16px; color: #555;">Toplam Skorun</div>
+            <h1 style="color: {secondary_color}; font-size: 50px; margin: 0;">
+                {st.session_state.score}
+            </h1>
+        </div>
+    """, unsafe_allow_html=True)
+    
+    st.write("")
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button("🏠 Ana Sayfa", use_container_width=True):
+            if 'score_saved' in st.session_state: del st.session_state.score_saved
+            st.session_state.current_page = 'home'
+            st.rerun()
+    with c2:
+        if st.button("🏆 Liderlik Tablosu", type="primary", use_container_width=True):
+            if 'score_saved' in st.session_state: del st.session_state.score_saved
+            st.session_state.current_page = 'leaderboard'
+            st.rerun()
 
 def leaderboard_page():
     st.markdown(f"<h3 style='text-align:center; color:{primary_color}'>🏆 Canlı Liderlik Tablosu</h3>", unsafe_allow_html=True)
@@ -222,49 +317,35 @@ def leaderboard_page():
     with st.spinner('Veriler Google Sheets\'ten çekiliyor...'):
         df = fetch_leaderboard()
     
-    if not df.empty:
-        # Puanı sayıya çevir (Hata önlemek için)
-        df['Skor'] = pd.to_numeric(df['Skor'], errors='coerce').fillna(0)
-        
-        # En yüksek skor en üstte
-        df = df.sort_values(by=['Skor', 'Tarih'], ascending=[False, False]).reset_index(drop=True)
-        df.index += 1
-        
-        st.dataframe(
-            df, 
-            use_container_width=True,
-            column_config={
-                "Skor": st.column_config.ProgressColumn("Skor", format="%d", min_value=0, max_value=100), # Max puanı artırdım
-                "Tarih": st.column_config.TextColumn("Tarih"),
-                "Kullanıcı": st.column_config.TextColumn("Yarışmacı")
-            }
-        )
+    if not df.empty and 'Skor' in df.columns:
+        try:
+            # Skor sütununu sayıya çevir
+            df['Skor'] = pd.to_numeric(df['Skor'], errors='coerce').fillna(0)
+            # Sırala
+            df = df.sort_values(by=['Skor', 'Tarih'], ascending=[False, False]).reset_index(drop=True)
+            df.index += 1
+            
+            st.dataframe(
+                df, 
+                use_container_width=True,
+                column_config={
+                    "Skor": st.column_config.ProgressColumn("Skor", format="%d", min_value=0, max_value=100),
+                    "Tarih": st.column_config.TextColumn("Tarih"),
+                    "Kullanıcı": st.column_config.TextColumn("Yarışmacı")
+                }
+            )
+        except Exception as e:
+             st.error(f"Tablo format hatası: {e}")
+             st.dataframe(df) # Ham veriyi göster
     else:
-        st.info("Henüz kimse yarışmadı.")
+        st.info("Henüz kimse yarışmadı veya veritabanı bağlantısı kurulamadı.")
+        st.write("Google Sheets ayarlarını ve sütun isimlerinin (Kullanıcı, Skor, Tarih) doğru olduğundan emin olun.")
 
     if st.button("⬅ Ana Menü", use_container_width=True):
         st.session_state.current_page = 'home'
         st.rerun()
 
-def result_page():
-    st.markdown(f"""
-        <div class="result-card">
-            <h1>🎉</h1>
-            <h2 style="color:{primary_color}">Tebrikler {st.session_state.user_name}!</h2>
-            <p>Puanın başarıyla kaydedildi.</p>
-            <h1 style="color:{secondary_color}; font-size:50px;">{st.session_state.score} Puan</h1>
-        </div>
-    """, unsafe_allow_html=True)
-    
-    st.write("")
-    if st.button("🏆 Sıralamanı Gör", type="primary", use_container_width=True):
-        st.session_state.current_page = 'leaderboard'
-        st.rerun()
-    if st.button("🏠 Ana Sayfa", use_container_width=True):
-        st.session_state.current_page = 'home'
-        st.rerun()
-
-# --- YÖNLENDİRME ---
+# --- YÖNLENDİRİCİ ---
 if st.session_state.current_page == 'home': home_page()
 elif st.session_state.current_page == 'quiz': quiz_page()
 elif st.session_state.current_page == 'leaderboard': leaderboard_page()
