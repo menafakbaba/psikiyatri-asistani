@@ -415,7 +415,7 @@ def leaderboard_page():
     st.markdown(f"""
     <div style="text-align:center; margin-bottom:20px;">
         <h2 style="color:{primary_color};">🏆 Liderlik Tablosu</h2>
-        <p style="color:#666;">Yarışmacıların <b>en son</b> aldıkları puanlara göre sıralanır</p>
+        <p style="color:#666;">Yarışmacılar <b>en son</b> aldıkları puanlara göre sıralanır</p>
     </div>
     """, unsafe_allow_html=True)
     
