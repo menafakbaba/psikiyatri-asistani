@@ -1,0 +1,2095 @@
+[
+  {
+    "id": "1.1",
+    "soru": "Bir hastayla psikiyatrik görüşme yapmak için aşağıdaki ilk adımlardan hangisi en uygundur?",
+    "secenekler": [
+      "A. Hastanın onayını alma",
+      "B. Aile ve hastayla birlikte görüşme teklifi",
+      "C. Hastanın değiştirmek istediği sürecin unsurlarını belirleme",
+      "D. Güvenlik değerlendirmesi yapma",
+      "E. HIPAA maddelerini ve gizlilik sınırlarını gözden geçirme"
+    ],
+    "dogru_cevap": "A. Hastanın onayını alma",
+    "aciklama": "Tanışmanın ardından görüşmeye devam etmek için onay alınmalıdır (kaynak 559). Görüşmenin niteliği ve süresi açıklanmalı ve süreçte değişen unsurlara ilişkin hastanın geri bildirim vermesi teşvik edilmelidir (kaynak 560)."
+  },
+  {
+    "id": "1.2",
+    "soru": "Aşağıdaki unsurlardan hangisi empatiyi özdeşleşmeden ayırır?",
+    "secenekler": [
+      "A. Nesnelliği koruma yeteneği",
+      "B. Zayıf sınırlarla ilişki",
+      "C. Duyguyu deneyimleyebilmek",
+      "D. Hekim tükenmişliği ile yüksek ilişki",
+      "E. Durumun doğru anlaşılması"
+    ],
+    "dogru_cevap": "A. Nesnelliği koruma yeteneği",
+    "aciklama": "Terapötik ilişkide nesnelliği koruma yeteneği empatiyi özdeşleşmeden ayırır (kaynak 564). Özdeşleşmede terapist duyguyu hem yaşar hem anlar; bu da sınır sorunlarına ve tükenmişliğe yol açabilir (kaynak 565–566)."
+  },
+  {
+    "id": "1.3",
+    "soru": "Kişi merkezli yaklaşım, geleneksel yaklaşımın aksine, görüşme sırasında aşağıdaki hususlardan hangisine odaklanır?",
+    "secenekler": [
+      "A. Psikiyatristin uzmanlığı",
+      "B. Hastanın içgörü düzeyi",
+      "C. Hastanın öznel deneyimi",
+      "D. Tıbbi tanı",
+      "E. Görüşmenin yapısal yönleri"
+    ],
+    "dogru_cevap": "C. Hastanın öznel deneyimi",
+    "aciklama": "Kişi merkezli yaklaşım, hastanın öznel deneyimine ve duygularına odaklanır; klasik tıbbi modelden farklıdır (kaynak 575)."
+  },
+  {
+    "id": "1.4",
+    "soru": "Bir psikiyatrik görüşmede açık uçlu soruların kullanılmasının temel avantajı nedir?",
+    "secenekler": [
+      "A. Görüşmeyi hızlandırması",
+      "B. Hastanın yanıtlarının sınırlı olması",
+      "C. Hastanın daha fazla bilgi paylaşmasını sağlaması",
+      "D. Tanı koymayı kolaylaştırması",
+      "E. Görüşmenin yapısal hale gelmesi"
+    ],
+    "dogru_cevap": "C. Hastanın daha fazla bilgi paylaşmasını sağlaması",
+    "aciklama": "Açık uçlu sorular hastanın kendi kelimeleriyle daha geniş bilgi vermesine olanak tanır; özellikle ilk görüşmelerde önemlidir (kaynak 579)."
+  },
+  {
+    "id": "1.5",
+    "soru": "Yansıtma (reflection) tekniğinin temel amacı nedir?",
+    "secenekler": [
+      "A. Hastayı yönlendirmek",
+      "B. Hastanın duygularını ve düşüncelerini ona geri yansıtmak",
+      "C. Terapistin kendi yorumunu aktarmak",
+      "D. Görüşmeyi sonlandırmak",
+      "E. Hastayı konudan uzaklaştırmak"
+    ],
+    "dogru_cevap": "B. Hastanın duygularını ve düşüncelerini ona geri yansıtmak",
+    "aciklama": "Yansıtma, hastanın ifade ettiği duygu ve içeriklerin tekrar edilerek anlaşılmasının gösterildiği iletişim tekniğidir (kaynak 580–581)."
+  },
+  {
+    "id": "1.6",
+    "soru": "Aktif dinlemenin temel özelliği aşağıdakilerden hangisidir?",
+    "secenekler": [
+      "A. Hızlıca tanı koymak",
+      "B. Hastayı sık sık bölmek",
+      "C. Sözel ve sözel olmayan mesajlara dikkat etmek",
+      "D. Yalnızca terapistin konuşması",
+      "E. Yalnızca semptom sorgulamak"
+    ],
+    "dogru_cevap": "C. Sözel ve sözel olmayan mesajlara dikkat etmek",
+    "aciklama": "Aktif dinleme hem sözel hem de sözel olmayan ipuçlarının dikkatle takip edilmesini içerir (kaynak 585)."
+  },
+  {
+    "id": "1.7",
+    "soru": "Aşağıdakilerden hangisi iyi bir terapötik ittifak oluşturmanın temel bileşenidir?",
+    "secenekler": [
+      "A. Sadece tanı ve tedavi planına odaklanmak",
+      "B. Terapistin duygusal olarak uzak durması",
+      "C. Karşılıklı güven ve iş birliği",
+      "D. Görüşmenin süresinin uzun olması",
+      "E. Hastanın pasif olması"
+    ],
+    "dogru_cevap": "C. Karşılıklı güven ve iş birliği",
+    "aciklama": "Terapötik ittifakın temelinde güven, iş birliği ve hedeflerde uyum vardır (kaynak 590)."
+  },
+  {
+    "id": "1.8",
+    "soru": "Psikiyatrik görüşmelerde yapılandırılmış değerlendirmeler ne zaman tercih edilir?",
+    "secenekler": [
+      "A. Serbest görüşme yeterliyken",
+      "B. Tanısal doğruluğun artırılması gerektiğinde",
+      "C. Hastanın konuşmak istemediği durumlarda",
+      "D. Sadece psikoterapi başlangıcında",
+      "E. Sadece tıbbi değerlendirmelerde"
+    ],
+    "dogru_cevap": "B. Tanısal doğruluğun artırılması gerektiğinde",
+    "aciklama": "Yapılandırılmış değerlendirmeler tanısal standartlaşmayı sağlar ve özellikle araştırmalarda tercih edilir (kaynak 593)."
+  },
+  {
+    "id": "1.9",
+    "soru": "Klasik projektif soruların kullanım amacı nedir?",
+    "secenekler": [
+      "A. Hastanın bilinçdışı süreçlerini değerlendirmek",
+      "B. Motor işlevleri değerlendirmek",
+      "C. Bilişsel kapasiteyi ölçmek",
+      "D. Bellek işlevlerini belirlemek",
+      "E. Tanıyı kesinleştirmek"
+    ],
+    "dogru_cevap": "A. Hastanın bilinçdışı süreçlerini değerlendirmek",
+    "aciklama": "Projektif sorular, kişinin içsel çatışmalarını ve bilinçdışı süreçlerini açığa çıkarmayı amaçlar; örn. 'Sokakta damgalı bir zarf bulsan ne yapardın?' (kaynak 597–598)."
+  },
+  {
+    "id": "1.10",
+    "soru": "Empati kullanmak, hastanın güçlü yönlerini not etmek ve ambivalansı keşfetmek aşağıdaki tekniklerden hangisinin bir parçasıdır?",
+    "secenekler": [
+      "A. Duyguların kabulü",
+      "B. Hastaların endişelerini en aza indirmek",
+      "C. Motivasyonel görüşme",
+      "D. Erken yorumlama",
+      "E. Özetleme"
+    ],
+    "dogru_cevap": "C. Motivasyonel görüşme",
+    "aciklama": "Motivasyonel görüşmede empatiyi iletmek, ambivalansı keşfetmek ve hastayı değişime motive etmek temel öğelerdir (kaynak 603–604)."
+  },
+  {
+    "id": "1.11",
+    "soru": "Aşağıdakilerden hangisi pasif intihar ifadesidir?",
+    "secenekler": [
+      "A. Yaşamak için birçok neden belirtebilmek",
+      "B. Düşüncelere göre hareket etme niyetinin reddi",
+      "C. Bir planın olmaması",
+      "D. Araçlara sahip olmamak",
+      "E. Hazırlık adımlarının olmaması"
+    ],
+    "dogru_cevap": "B. Düşüncelere göre hareket etme niyetinin reddi",
+    "aciklama": "Kişinin intihar düşünceleri olsa bile bu düşüncelere göre hareket etmeyi reddetmesi pasif intihar düşüncesi olarak değerlendirilir (kaynak 611)."
+  },
+  {
+    "id": "1.12",
+    "soru": "Anksiyete ile başvuran bir hastanın fiziksel bulgularında titreme, solukluk ve taşikardi varsa dışlanması gereken tıbbi durum nedir?",
+    "secenekler": [
+      "A. Tiroid fırtınası",
+      "B. Ortostatik hipotansiyon",
+      "C. Hipoglisemi",
+      "D. Migren",
+      "E. Viral enfeksiyon"
+    ],
+    "dogru_cevap": "C. Hipoglisemi",
+    "aciklama": "Hipoglisemi anksiyete belirtilerine çok benzeyen semptomlar verebilir; bu nedenle mutlaka dışlanmalıdır (kaynak 620)."
+  },
+  {
+  "id": "1.13",
+  "soru": "Bir psikoterapi notunda yer alan ancak izlem notunda yer almayan öğe aşağıdakilerden hangisidir?",
+  "secenekler": [
+    "A. Ayrıntılı değerlendirme ve plan",
+    "B. Karşı aktarım ve rüyalar üzerine yorumlar",
+    "C. Hastaya açıklanabilecek veriler",
+    "D. Psikoterapi notunun tıbbi kaydın geri kalanına dahil edilmesi",
+    "E. Üçüncü taraf olarak ödeme yapan kişinin erişimine ilişkin bilgiler"
+  ],
+  "dogru_cevap": "C. Hastaya açıklanabilecek veriler",
+  "aciklama": "Psikoterapi notları tıbbi kayıttan ayrı tutulur ve içindeki bilgiler hasta dahil kimseye açıklanmaz. Kitap cevabı C olarak işaretlemiş ancak açıklamada bu bilgilerin paylaşılmaması gerektiğini vurgulamıştır."
+},
+{
+  "id": "1.14",
+  "soru": "DSM için Yapılandırılmış Klinik Görüşmenin (SCID) güvenilirlik verileri, daha ciddi bozukluklarda aşağıdaki tanılardan hangisi için daha iyi performans gösterdiğini göstermektedir?",
+  "secenekler": [
+    "A. Alkol kötüye kullanımı",
+    "B. Bipolar duygudurum bozukluğu",
+    "C. Distimi",
+    "D. Sosyal fobi",
+    "E. Tanımlanmamış yeme bozukluğu"
+  ],
+  "dogru_cevap": "B. Bipolar duygudurum bozukluğu",
+  "aciklama": "SCID, distimi gibi daha hafif tanılara göre ciddi bozukluklarda (örneğin bipolar bozukluk, alkol bağımlılığı) daha yüksek güvenilirlik göstermektedir."
+},
+{
+  "id": "1.15",
+  "soru": "İşlevselliğinde önemli derecede bozulması olan ve yatarak tedavi gören psikotik hastayı değerlendirmek için tasarlanan derecelendirme ölçeği aşağıdakilerden hangisidir?",
+  "secenekler": [
+    "A. Kısa Psikiyatrik Derecelendirme Ölçeği (BPRS)",
+    "B. Hamilton Kaygı Derecelendirme Ölçeği (HAM-A)",
+    "C. Pozitif ve Negatif Sendrom Ölçeği (PANSS)",
+    "D. Pozitif Belirtileri Değerlendirme Ölçeği (SAPS)",
+    "E. DSM için Yapılandırılmış Klinik Görüşme (SCID)"
+  ],
+  "dogru_cevap": "A. Kısa Psikiyatrik Derecelendirme Ölçeği (BPRS)",
+  "aciklama": "BPRS psikotik belirtilerin şiddetini değerlendirmek için geliştirilmiş kısa bir ölçektir ve özellikle yatan hastalardaki değişiklikleri değerlendirmek için tasarlanmıştır."
+},
+{
+  "id": "1.16",
+  "soru": "Çocuk Davranışı Kontrol Listesi (CBCL) aşağıdakilerden hangisini değerlendiremez?",
+  "secenekler": [
+    "A. Klinik tanı",
+    "B. Sorunlara ilişkin kesme puanları",
+    "C. Ebeveyn derecelendirmeleri",
+    "D. Klinik aralıktaki belirtiler",
+    "E. Öğretmen derecelendirmeleri"
+  ],
+  "dogru_cevap": "A. Klinik tanı",
+  "aciklama": "CBCL tanı koydurmaz; klinik aralıktaki belirtileri, kesme puanlarını ve ebeveyn/öğretmen gözlemlerini değerlendirir."
+},
+{
+  "id": "1.17",
+  "soru": "Conners Derecelendirme Ölçeği en sık hangi psikiyatrik bozukluğun değerlendirilmesinde kullanılır?",
+  "secenekler": [
+    "A. Dikkat eksikliği ve hiperaktivite",
+    "B. Bipolar",
+    "C. Majör depresif",
+    "D. Obsesif kompulsif",
+    "E. Madde kullanımı"
+  ],
+  "dogru_cevap": "A. Dikkat eksikliği ve hiperaktivite",
+  "aciklama": "Conners Derecelendirme Ölçeği hem okul hem klinik popülasyonda DEHB taramasında en sık kullanılan ölçeklerden biridir."
+},
+{
+  "id": "1.18",
+  "soru": "Parmak agnozisi, diskalkuli, disgrafi ve sağ-sol yönelim bozukluğu aşağıdaki sendromlardan hangisinin bileşenleridir?",
+  "secenekler": [
+    "A. Giyinme apraksisi",
+    "B. Gerstmann",
+    "C. Hurler",
+    "D. İhmal (Neglect)",
+    "E. Pickwick"
+  ],
+  "dogru_cevap": "B. Gerstmann",
+  "aciklama": "Sol parietal lob lezyonları Gerstmann sendromuna yol açar; parmak agnozisi, diskalkuli, disgrafi ve sağ-sol oryantasyon bozukluğu bunun temel bileşenleridir."
+},
+{
+  "id": "1.19",
+  "soru": "Aşağıdaki özelliklerden hangisindeki bozukluk diğer afazi türlerinden farklı olarak Broca afazisine özgüdür?",
+  "secenekler": [
+    "A. Defisitin farkında olma",
+    "B. Sözdizimsel yapının bozulması",
+    "C. Anlama",
+    "D. Akıcılık",
+    "E. Yineleme"
+  ],
+  "dogru_cevap": "D. Akıcılık",
+  "aciklama": "Broca afazisi akıcı olmayan konuşma ile karakterizedir; anlamanın çoğunlukla korunduğu fakat ifade edici dilin bozulduğu bir afazi türüdür."
+},
+{
+  "id": "1.20",
+  "soru": "Hasta orta hatta yerleştirilen bir çizgiyi ikiye bölemez. Bu daha çok beynin aşağıdaki bölgelerinden hangisindeki bir lezyonun göstergesidir?",
+  "secenekler": [
+    "A. Serebellum",
+    "B. Medulla",
+    "C. Parietal",
+    "D. Pons",
+    "E. Temporal"
+  ],
+  "dogru_cevap": "C. Parietal",
+  "aciklama": "Çizgiyi ortalayamamak ihmal sendromuna işaret eder ve en sık sağ parietal lob lezyonlarında görülür."
+},
+{
+  "id": "1.21",
+  "soru": "Yaşlı kişilere saat çizdirme tekniği aşağıdaki nöropsikolojik işlevlerden hangisinin hassas bir ölçüsüdür?",
+  "secenekler": [
+    "A. Dikkat ve konsantrasyon",
+    "B. Planlama ve organizasyon",
+    "C. Uzak ve yakın bellek",
+    "D. Duyusal ve motor",
+    "E. Konuşma ve dil"
+  ],
+  "dogru_cevap": "B. Planlama ve organizasyon",
+  "aciklama": "Saat çizme testi, özellikle demans riski olan yaşlı bireylerde planlama ve organizasyon becerilerini değerlendirmede hassas bir nöropsikolojik ölçümdür."
+},
+{
+  "id": "1.22",
+  "soru": "Hipokondriyi ölçen bir test, yüksek puan alan hastanın fiziksel yakınmaları nedeniyle daha fazla doktor ziyareti yaptığını gösterirse, aşağıdaki geçerlilik türlerinden hangisinin yüksek düzeyde olduğu anlaşılır?",
+  "secenekler": [
+    "A. Ölçüt geçerliliği",
+    "B. Diskriminasyon",
+    "C. Yüzey geçerliliği",
+    "D. Faktör geçerliliği",
+    "E. Tahmin geçerliliği"
+  ],
+  "dogru_cevap": "A. Ölçüt geçerliliği",
+  "aciklama": "Ölçüt geçerliliği, test sonuçlarının dış dünyadaki ölçütlerle ilişkilendirilmesiyle değerlendirilir. Bu durumda doktor ziyareti sayısıyla yüksek ilişki ölçüt geçerliliğini gösterir."
+},
+{
+  "id": "1.23",
+  "soru": "Hangi nörogörüntüleme türü hem moleküllerini endojen kontrast madde olarak kullanarak kan akışını ölçer?",
+  "secenekler": [
+    "A. fMRI (fonksiyonel manyetik rezonans görüntüleme)",
+    "B. MRA (manyetik rezonans anjiyografi)",
+    "C. MRS (manyetik rezonans spektroskopi)",
+    "D. PET (pozitron emisyon tomografisi)",
+    "E. SPECT (tek foton emisyonlu bilgisayarlı tomografi)"
+  ],
+  "dogru_cevap": "A. fMRI (fonksiyonel manyetik rezonans görüntüleme)",
+  "aciklama": "fMRI, endojen kontrast olarak oksijenli ve oksijensiz hemoglobini kullanarak bölgesel kan akımını ölçer."
+},
+{
+  "id": "1.24",
+  "soru": "Kronik madde kullanımı olan genç bir yetişkinin beyin MR'ında belirgin gri-beyaz madde kaybı ve atrofi vardır. Muayenede kısa süreli bellek bozukluğu, tarama tarzı konuşma ve belirgin titreme görülür. Hangi maddeyi kötüye kullanması en olasıdır?",
+  "secenekler": [
+    "A. Alkol",
+    "B. Amfetaminler",
+    "C. Esrar",
+    "D. MDMA (ekstazi)",
+    "E. Toluen"
+  ],
+  "dogru_cevap": "E. Toluen",
+  "aciklama": "Toluen tipi inhalanlar ciddi nörotoksisiteye yol açarak yaygın gri-beyaz madde kaybı, atrofiler, titreme ve konuşma bozuklukları oluşturabilir."
+},
+{
+  "id": "1.25",
+  "soru": "Yakın zamanda valproat kullanmaya başlayan bir hasta konfüze ve letarjik görünmektedir. Aşağıdaki kan değerlerinden hangisinin acilen kontrol edilmesi gerekir?",
+  "secenekler": [
+    "A. Amonyak",
+    "B. BUN",
+    "C. Trombositler",
+    "D. Sodyum",
+    "E. WBC"
+  ],
+  "dogru_cevap": "A. Amonyak",
+  "aciklama": "Valproat, hiperammonemiye yol açabilir. Letarji veya konfüzyon geliştiğinde ilk bakılması gereken değer amonyaktır."
+},
+{
+  "id": "1.26",
+  "soru": "MAOI tedavisinin başlangıcında ve sonrasında periyodik olarak aşağıdaki testlerden hangisi yapılmalıdır?",
+  "secenekler": [
+    "A. Bazal metabolik panel",
+    "B. Tam kan sayımı",
+    "C. Lipid paneli",
+    "D. Karaciğer fonksiyon testleri (KCFT)",
+    "E. Böbrek fonksiyon paneli"
+  ],
+  "dogru_cevap": "D. Karaciğer fonksiyon testleri (KCFT)",
+  "aciklama": "MAOI'ler hepatotoksisite ile ilişkili olabileceğinden tedavi süresince karaciğer fonksiyonları düzenli olarak izlenmelidir."
+},
+{
+  "id": "1.27",
+  "soru": "Demans için standart bir araştırmanın parçası olarak hangi vitamin veya mineral düzeyi test edilmelidir?",
+  "secenekler": [
+    "A. Magnezyum",
+    "B. B12 Vitamini",
+    "C. C vitamini",
+    "D. D vitamini",
+    "E. Çinko"
+  ],
+  "dogru_cevap": "B. B12 Vitamini",
+  "aciklama": "B12 eksikliği demans benzeri bilişsel bozukluklara yol açabilir; bu nedenle demans araştırmalarında mutlaka değerlendirilir."
+},
+{
+  "id": "1.28",
+  "soru": "Aşağıdaki laboratuvar veya vital bulgu anormalliklerinden hangisi antipsikotik ilaç kullanan bir hastada QTc aralığının uzamasına katkıda bulunabilir?",
+  "secenekler": [
+    "A. Hiperkalemi",
+    "B. Hipertansiyon",
+    "C. Hipomagnezemi",
+    "D. Hiponatremi",
+    "E. Taşikardi"
+  ],
+  "dogru_cevap": "C. Hipomagnezemi",
+  "aciklama": "QTc uzaması riskini artıran faktörler arasında hipokalemi ve hipomagnezemi gibi elektrolit bozuklukları vardır."
+},
+{
+  "id": "1.29",
+  "soru": "Aşağıdaki tıbbi durumlardan hangisinde oral ziprasidon kontrendikedir?",
+  "secenekler": [
+    "A. Yakın zamanda geçirilmiş miyokard enfarktüsü",
+    "B. Hipoglisemi",
+    "C. Hiperprolaktinemi",
+    "D. Lökositoz",
+    "E. Böbrek yetmezliği"
+  ],
+  "dogru_cevap": "A. Yakın zamanda geçirilmiş miyokard enfarktüsü",
+  "aciklama": "Ziprasidon doza bağlı QTc uzamasına neden olabileceği için yakın zamanda MI geçiren hastalarda kontrendikedir."
+},
+{
+  "id": "1.30",
+  "soru": "Bilgisayarlı tomografi (BT) taramalarında MRI'ya kıyasla daha iyi görülen beyindeki tek anormallik hangisidir?",
+  "secenekler": [
+    "A. Atrofi",
+    "B. Kalsifikasyonlar",
+    "C. Enflamasyon",
+    "D. İnmeler",
+    "E. Tümörler"
+  ],
+  "dogru_cevap": "B. Kalsifikasyonlar",
+  "aciklama": "Kalsifikasyonlar BT'de MRI'ya göre çok daha iyi görüntülenir ve bazı nörolojik hastalıkların değerlendirilmesinde kritik öneme sahiptir."
+},
+{
+  "id": "1.31",
+  "soru": "Görece daha büyük bebekler ve okul öncesi çocuklarda gelişim testleri kullanılırken aşağıdaki alanlardan hangisi ana odak olmalıdır?",
+  "secenekler": [
+    "A. Dil",
+    "B. Motor",
+    "C. Algısal",
+    "D. Duyusal",
+    "E. Sosyal"
+  ],
+  "dogru_cevap": "A. Dil",
+  "aciklama": "Daha büyük bebekler ve okul öncesi çocuklar için gelişim testlerinde ana vurgu dil edinimi üzerindedir."
+},
+{
+  "id": "1.32",
+  "soru": "Hangi test tipik belirtilerin yanı sıra görme, işitme, duygusal veya entelektüel bozukluğu olan çocuk ve ergenler için iletişimi, günlük yaşam becerilerini, sosyalleşmeyi ve motor alanları ölçer?",
+  "secenekler": [
+    "A. Çocuklara Yönelik Davranış Değerlendirme Sistemi (BASC)",
+    "B. Ev Ortamı Tarama Aracı-Revize (HSQ-R)",
+    "C. Luria-Nebraska Nöropsikolojik Bataryası (LNNB:C)",
+    "D. Tematik Algı Testi (TAT)",
+    "E. Vineland Adaptif Davranış Ölçeği"
+  ],
+  "dogru_cevap": "E. Vineland Adaptif Davranış Ölçeği",
+  "aciklama": "Vineland Ölçeği iletişim, adaptif davranış, günlük yaşam becerileri, motor gelişim ve sosyalleşme alanlarını değerlendirir."
+},
+{
+  "id": "1.33",
+  "soru": "Hipotoni, küçük el ve ayaklar, istifleme, gündüz aşırı uykululuk, kompulsif davranış ve deri yolma görülen obez bir çocukta aşağıdaki kromozomlardan hangisinde delesyon olması muhtemeldir?",
+  "secenekler": [
+    "A. 7q11-23'e odaklanan elastin",
+    "B. 16q13.3'te mikrodelesyon",
+    "C. Paternal orijinli 15q12",
+    "D. 5p'de paternal",
+    "E. Gebelikle ilişkili plazma proteini-A (PAPP-A)"
+  ],
+  "dogru_cevap": "C. Paternal orijinli 15q12",
+  "aciklama": "Prader–Willi sendromu paternal 15q12 delesyonuyla ilişkilidir ve belirtilerle uyumludur."
+},
+{
+  "id": "1.34",
+  "soru": "Bir çocuk DEHB açısından değerlendiriliyor. Muayenede uzun yüz, büyük kulaklar; tıbbi öyküde mitral kapak prolapsusu ve entelektüel yetersizlik bulunuyor. Bu çocukta hangi genetik mutasyon en olasıdır?",
+  "secenekler": [
+    "A. 7q11-23'te delesyon",
+    "B. Maternal orijinli 15q12'de delesyon",
+    "C. FMR-1 geninde inaktivasyon",
+    "D. 5. kromozomda kısmi delesyon",
+    "E. Trizomi 21"
+  ],
+  "dogru_cevap": "C. FMR-1 geninde inaktivasyon",
+  "aciklama": "Frajil X sendromu, FMR-1 gen inaktivasyonu ile oluşur ve uzun yüz, büyük kulaklar, MVP ve DEHB benzeri belirtilerle seyreder."
+},
+{
+  "id": "1.35",
+  "soru": "İntihar etmeyi düşünen yaşlı yetişkinlerin en sık belirttiği neden nedir?",
+  "secenekler": [
+    "A. Kaygı",
+    "B. Mali zorluklar",
+    "C. Yalnızlık",
+    "D. Ağrı",
+    "E. Hastalık"
+  ],
+  "dogru_cevap": "C. Yalnızlık",
+  "aciklama": "Yaşlı bireylerde intihar düşüncesi sıklıkla yalnızlık hissiyle ilişkilidir."
+},
+{
+  "id": "1.36",
+  "soru": "Hap yuvarlama tremoru en sık aşağıdaki psikiyatrik ilaç sınıflarından hangisiyle ilişkilidir?",
+  "secenekler": [
+    "A. Benzodiazepinler",
+    "B. Fenotiyazin",
+    "C. Seçici serotonin geri alım inhibitörleri",
+    "D. Uyarıcılar",
+    "E. Trisiklikler"
+  ],
+  "dogru_cevap": "B. Fenotiyazin",
+  "aciklama": "Fenotiyazinler ekstrapiramidal yan etkilere yol açabilir; hap yuvarlama tremoru bunlara klasik bir örnektir."
+},
+{
+  "id": "1.37",
+  "soru": "Hangi agnozi türü yüzleri tanıyamamayı içerir?",
+  "secenekler": [
+    "A. Anosognozi",
+    "B. Anozmi",
+    "C. Atopognozi",
+    "D. Prosopagnozi",
+    "E. Vizüel agnozi"
+  ],
+  "dogru_cevap": "D. Prosopagnozi",
+  "aciklama": "Prosopagnozi yüzleri tanıyamama ile karakterizedir; genellikle temporal–oksipital bölge lezyonlarıyla ilişkilidir."
+},
+{
+  "id": "1.38",
+  "soru": "Açık tenli, mavi gözlü ve sarı saçlı bir çocukta dil gecikmesi, hiperaktivite, kendine zarar verme ve yeni nöbetler görülüyor. Büyük olasılıkla hangi maddenin birikimiyle ilişkili bir hastalığı vardır?",
+  "secenekler": [
+    "A. Galaktoz",
+    "B. İduronat 2-sülfataz",
+    "C. L-iduronidaz",
+    "D. Fenilalanin",
+    "E. Ürik asit"
+  ],
+  "dogru_cevap": "D. Fenilalanin",
+  "aciklama": "Fenilketonüri (FKÜ) fenilalanin birikimiyle oluşur ve belirgin fenotip ile nörolojik etkiler gösterir."
+},
+{
+  "id": "1.39",
+  "soru": "Bir çocukta geniş alın, çökkün burun kökü, elf benzeri yüz hatları, kalp/tiroid sorunları, hiperaktivite ve aşırı sosyallik görülüyor. En olası tanı nedir?",
+  "secenekler": [
+    "A. Cri-du-chat",
+    "B. Frajil X",
+    "C. Prader-Willi",
+    "D. Smith Magenis",
+    "E. Williams"
+  ],
+  "dogru_cevap": "E. Williams",
+  "aciklama": "Williams sendromu 7q11-23 bölgesindeki elastin delesyonuyla ilişkilidir ve aşırı sosyallik ile tipik yüz görünümüyle tanınır."
+},
+{
+  "id": "1.40",
+  "soru": "Hangi nöropsikolojik test duyu-motor, algısal ve bilişsel işlevleri ölçer?",
+  "secenekler": [
+    "A. Luria-Nebraska",
+    "B. Millon Adolesan",
+    "C. Mullen",
+    "D. Rotter",
+    "E. Tematik Algılama"
+  ],
+  "dogru_cevap": "A. Luria-Nebraska",
+  "aciklama": "Luria–Nebraska Nöropsikolojik Bataryası duyusal-motor, algısal ve bilişsel işlevleri kapsayan kapsamlı bir testtir."
+},
+{
+  "id": "1.41",
+  "soru": "İntihar, ruhsal durum muayenesinde hangi kategoriye girer?",
+  "secenekler": [
+    "A. Muhakeme",
+    "B. Duygudurum",
+    "C. Algı",
+    "D. Düşünce içeriği",
+    "E. Düşünce süreci"
+  ],
+  "dogru_cevap": "D. Düşünce içeriği",
+  "aciklama": "Hem intihar düşünceleri (suisidalite) hem de başkasına zarar verme düşünceleri (homisidalite), ruhsal durum muayenesinde düşünce içeriği kategorisine girer."
+},
+{
+  "id": "1.42",
+  "soru": "Aşağıdaki solunum belirtilerinden hangisi altta yatan bir akciğer hastalığından ziyade depresyonun göstergesidir?",
+  "secenekler": [
+    "A. Aktif iken nefes darlığı",
+    "B. Eforda küçük değişikliklerle birlikte olan nefes darlığı",
+    "C. Ekspirasyonda güçlük",
+    "D. Nefes darlığının saatler içinde dalgalanması",
+    "E. Sinsi başlayan nefes darlığı"
+  ],
+  "dogru_cevap": "B. Eforda küçük değişikliklerle birlikte olan nefes darlığı",
+  "aciklama": "Depresyonda nefes darlığı genellikle istirahatte olur ve eforla çok az değişir. Akciğer hastalıklarında ise ekspiratuar güçlük ve eforla belirgin değişiklik beklenir."
+},
+{
+  "id": "2.1",
+  "soru": "8 yaşındaki kızlarının okulda sınıf arkadaşlarına ayak uyduramadığından endişe eden ebeveynin görüşme talebini kabul eden sınıf öğretmeni, çocuğun okuma seviyesinin anaokulu düzeyinden bile düşük olduğunu bildirmiştir. IQ'su 64 olarak belirlenmiştir. Tanı konulmadan önce başka hangi öykü alınmalıdır?",
+  "secenekler": [
+    "A. Okula başlamadan önce dile maruziyet",
+    "B. Sosyal işlevselliğinin kapsamı",
+    "C. Motor yeteneklerinin gelişimi",
+    "D. Ailenin içme suyu kaynağı",
+    "E. Ebeveynlerin evlenme yaşı"
+  ],
+  "dogru_cevap": "B. Sosyal işlevselliğinin kapsamı",
+  "aciklama": "Zihinsel yetersizlik tanısı için yalnızca IQ düşüklüğü yeterli değildir; sosyal, pratik ve kavramsal alanlardaki adaptif işlevselliğin değerlendirilmesi zorunludur."
+},
+{
+  "id": "2.2",
+  "soru": "5 yaşında, tuvalet eğitimli, sosyal iletişimde ve etkileşimde önemli derecede yetersizlikleri olan bir kız çocuğu, bir yaşındaki kardeşini sürekli emzirmeye çalışmaktadır. Aşağıdakilerden hangisi zihinsel yetersizlik tanısı için gerekli değildir?",
+  "secenekler": [
+    "A. Başlangıç, gelişim dönemi boyunca",
+    "B. Yetersiz adaptif işlevsellik",
+    "C. Sosyal ortamlarda yetersiz iletişim",
+    "D. IQ'nun 70'in altında olması",
+    "E. Kavramsal, sosyal veya pratik alanlarda yetersizlikler"
+  ],
+  "dogru_cevap": "C. Sosyal ortamlarda yetersiz iletişim",
+  "aciklama": "Sosyal iletişimde belirgin yetersizlik, otizm spektrum bozukluğu veya sosyal iletişim bozukluğu için tipiktir. Zihinsel yetersizlik tanısında zorunlu bir ölçüt değildir."
+},
+{
+  "id": "2.3",
+  "soru": "Aşağıdaki nörogelişimsel bozukluklardan hangisi motor alandaki eksikliklerin yanı sıra zihinsel yetersizlik ve duygusal bozukluklar açısından daha yüksek risk taşır?",
+  "secenekler": [
+    "A. Disleksi",
+    "B. Sözsel anlatım bozukluğu",
+    "C. Koordinasyon bozukluğu",
+    "D. Tik bozukluğu",
+    "E. Dil bozukluğu"
+  ],
+  "dogru_cevap": "C. Koordinasyon bozukluğu",
+  "aciklama": "Gelişimsel koordinasyon bozukluğu olan çocukların yaklaşık yarısında duygusal sorunlar, öğrenme güçlüğü ve zihinsel yetersizlik eşlik eder."
+},
+{
+  "id": "2.4",
+  "soru": "Bir psikiyatrist, 6 yaşındaki hastasının sesleri kullanmada, heceleri birleştirmede ve kelimeleri kullanmada zorluk yaşadığını fark eder. Bu çocukta en olası tanı nedir?",
+  "secenekler": [
+    "A. Dil bozukluğu",
+    "B. Ses bozukluğu",
+    "C. Otizm spektrum bozukluğu",
+    "D. Sosyal (pragmatik) iletişim bozukluğu",
+    "E. Kekemelik"
+  ],
+  "dogru_cevap": "B. Ses bozukluğu",
+  "aciklama": "Ses bozuklukları seslerin üretimi, hecelerin doğru birleştirilmesi ve kelime oluşturma güçlükleriyle karakterizedir. Dil bozukluğu ise kelime dağarcığı ve gramerle ilişkilidir."
+},
+{
+  "id": "2.5",
+  "soru": "Otizm Spektrum Bozukluğu (OSB) tanısı için aşağıdakilerden hangisi gerekli bir ölçüt değildir?",
+  "secenekler": [
+    "A. Kısıtlı ilgi alanları",
+    "B. Tekrarlayan davranışlar",
+    "C. Zihinsel yetersizlik",
+    "D. Sosyal iletişimde eksiklikler",
+    "E. Karşılıklılıkta eksiklikler"
+  ],
+  "dogru_cevap": "C. Zihinsel yetersizlik",
+  "aciklama": "Zihinsel yetersizlik birçok OSB olgusunda eşlik eder ancak OSB tanısı için gerekli bir ölçüt değildir. Temel ölçütler sosyal iletişim/etkileşim sorunları ve tekrarlayıcı davranışlardır."
+},
+{
+  "id": "2.6",
+  "soru": "Otizm spektrum bozukluğu ve entelektüel yetersizlik tanıları olan 7 yaşındaki çocuk, son 6 ayda artan agresif davranışları nedeniyle getirilmiştir. Aşağıdaki ilaçlardan hangisi kısa süreli davranış kontrolü için en fazla kanıta sahiptir?",
+  "secenekler": [
+    "A. Gabapentin",
+    "B. Risperidon",
+    "C. Melatonin",
+    "D. Haloperidol",
+    "E. Olanzapin"
+  ],
+  "dogru_cevap": "B. Risperidon",
+  "aciklama": "Risperidon, OSB ile ilişkili irritabilite, saldırganlık ve kendine zarar verme davranışlarında kısa süreli etkinlik açısından en güçlü kanıta sahip ilaçlardan biridir."
+},
+{
+  "id": "2.7",
+  "soru": "5 yaşındaki bir erkek çocukta motor tikler ve vokal tikler mevcuttur. Tikler 1 yıl 1 aydır mevcuttur. Bu çocukta en olası tanı nedir?",
+  "secenekler": [
+    "A. Tourette bozukluğu",
+    "B. Kalıcı (kronik) motor veya vokal tik bozukluğu",
+    "C. Geçici tik bozukluğu",
+    "D. Tourette öncüsü",
+    "E. Belirtilmemiş tik bozukluğu"
+  ],
+  "dogru_cevap": "A. Tourette bozukluğu",
+  "aciklama": "Tourette bozukluğu, hem motor hem de vokal tiklerin bir yıldan uzun süredir devam etmesi ile tanımlanır."
+},
+{
+  "id": "2.8",
+  "soru": "Tourette bozukluğu olan çocuklarda, aşağıdaki durumların hangisi komorbid olarak en sık görülür?",
+  "secenekler": [
+    "A. Beslenme bozuklukları",
+    "B. Dikkat eksikliği ve hiperaktivite bozukluğu (DEHB)",
+    "C. Majör depresif bozukluk",
+    "D. Travma sonrası stres bozukluğu",
+    "E. Disosiyatif bozukluk"
+  ],
+  "dogru_cevap": "B. Dikkat eksikliği ve hiperaktivite bozukluğu (DEHB)",
+  "aciklama": "Tourette bozukluğu olan çocukların yaklaşık yarısında DEHB eşlik eder."
+},
+{
+  "id": "2.9",
+  "soru": "DEHB tanısı için aşağıdaki ölçütlerden hangisi gereklidir?",
+  "secenekler": [
+    "A. Belirtilerin 12 yaşından önce başlaması",
+    "B. Başlangıç, 7 yaşından önce",
+    "C. En az üç ortamda bozukluk",
+    "D. Sadece dikkat eksikliği belirtilerinin olması",
+    "E. Sadece hiperaktivite belirtilerinin olması"
+  ],
+  "dogru_cevap": "A. Belirtilerin 12 yaşından önce başlaması",
+  "aciklama": "DSM-5’e göre DEHB belirtilerinin bir kısmı 12 yaşından önce başlamalıdır ve belirtiler en az iki ortamda görülmelidir."
+},
+{
+  "id": "2.10",
+  "soru": "DEHB'si olan 10 yaşındaki bir çocuğun annesi, uyarıcı ilaçların iştah kaybı nedeniyle büyümeyi engellediğinden endişelenmektedir. Aşağıdaki uyarıcı olmayan ilaçlardan hangisi DEHB'nin tedavisinde etkilidir?",
+  "secenekler": [
+    "A. Guanfasin",
+    "B. Bupropion",
+    "C. Mirtazapin",
+    "D. Venlafaksin",
+    "E. Fluoksetin"
+  ],
+  "dogru_cevap": "A. Guanfasin",
+  "aciklama": "DEHB için FDA onaylı uyarıcı olmayan ilaçlar: atomoksetin, guanfasin (XR) ve klonidin (XR)."
+},
+{
+  "id": "2.11",
+  "soru": "Aşağıdaki uyarıcı ilaçlardan hangisi, yutma sorunları olan veya iğne ile ilaç almayı tercih eden hastalar için transdermal yama şeklinde mevcuttur?",
+  "secenekler": [
+    "A. Metilfenidat",
+    "B. Dekstroamfetamin",
+    "C. Amfetamin",
+    "D. Atomoksetin",
+    "E. Lityum"
+  ],
+  "dogru_cevap": "A. Metilfenidat",
+  "aciklama": "Metilfenidat transdermal yama formunda da bulunur."
+},
+{
+  "id": "2.12",
+  "soru": "Aşağıdakilerden hangisi, karşıt olma-karşı gelme bozukluğu (KOKGB) tanısının davranım bozukluğu gibi diğer bozukluklardan temel farkıdır?",
+  "secenekler": [
+    "A. Bozukluğun süresi (en az 6 ay)",
+    "B. Ebeveynler ve kardeşler dışındaki otorite figürlerine karşı davranış",
+    "C. Ciddi yasayı ihlal eden eylemlerin olmaması",
+    "D. Yıkıcı duygudurum düzensizliği bozukluğunun dışlanması",
+    "E. Sadece ev ortamında görülmesi"
+  ],
+  "dogru_cevap": "C. Ciddi yasayı ihlal eden eylemlerin olmaması",
+  "aciklama": "Davranım bozukluğunda ciddi yasa ihlalleri (şiddet, vandalizm, hırsızlık) görülür; KOKGB'de görülmez."
+},
+{
+  "id": "2.13",
+  "soru": "5 yaşındaki bir erkek çocukta davranış bozukluğu tanısı için gerekli ölçütlerden biri aşağıdakilerden hangisidir?",
+  "secenekler": [
+    "A. Belirtilerin 6 aydır mevcut olması",
+    "B. Belirtilerin en az üç ortamda görülmesi",
+    "C. En az 10 belirtinin bulunması",
+    "D. Saldırganlığın sadece fiziksel olması",
+    "E. Suçluluk duyma ve pişmanlık gösterme"
+  ],
+  "dogru_cevap": "A. Belirtilerin 6 aydır mevcut olması",
+  "aciklama": "Davranım bozukluğu tanısı için belirtilerin en az 6 ay sürmesi gerekir."
+},
+{
+  "id": "2.14",
+  "soru": "Davranım bozukluğu olan gençlerin tedavisi için aşağıdaki ilaçlardan hangisinin kullanılması önerilmez?",
+  "secenekler": [
+    "A. Alfa agonistler",
+    "B. Lityum",
+    "C. Atipik antipsikotikler",
+    "D. Tipik antipsikotikler",
+    "E. Uyarıcılar"
+  ],
+  "dogru_cevap": "D. Tipik antipsikotikler",
+  "aciklama": "Tipik antipsikotikler tardif diskinezi riski nedeniyle tercih edilmez."
+},
+{
+  "id": "2.15",
+  "soru": "10 yaşındaki bir kız, annesinden ayrılırken okulun ilk gününden beri sürekli ağlamaktadır. Annesi işteyken evde yalnız kalmayı reddetmekte ve geceleri annesinin yanında yatmak istemektedir. Bu durum en az 4 haftadır sürmektedir. En olası tanı nedir?",
+  "secenekler": [
+    "A. Sosyal kaygı bozukluğu",
+    "B. Yaygın kaygı bozukluğu",
+    "C. Ayrılma kaygısı bozukluğu",
+    "D. Travma sonrası stres bozukluğu",
+    "E. Selektif mutizm"
+  ],
+  "dogru_cevap": "C. Ayrılma kaygısı bozukluğu",
+  "aciklama": "Ayrılma kaygısı bozukluğu çocuklarda en az 4 hafta sürmelidir."
+},
+{
+  "id": "2.16",
+  "soru": "Aşağıdaki ilaçlardan hangisi çocuklarda ve ergenlerde ayrılma kaygısı bozukluğunun farmakolojik tedavisi için ilk seçenektir?",
+  "secenekler": [
+    "A. Benzodiazepinler",
+    "B. Fluoksetin",
+    "C. Buspiron",
+    "D. Lamotrijin",
+    "E. Haloperidol"
+  ],
+  "dogru_cevap": "B. Fluoksetin",
+  "aciklama": "Fluoksetin ve diğer SSRI’lar kaygı bozukluklarında ilk basamak farmakoterapidir."
+},
+{
+  "id": "2.17",
+  "soru": "Sadece evde konuşan ve okulda hiç konuşmayan 6 yaşındaki bir çocukta en olası tanı nedir?",
+  "secenekler": [
+    "A. Sosyal (pragmatik) iletişim bozukluğu",
+    "B. Selektif mutizm",
+    "C. Dil bozukluğu",
+    "D. Otizm spektrum bozukluğu",
+    "E. Asperger sendromu"
+  ],
+  "dogru_cevap": "B. Selektif mutizm",
+  "aciklama": "Selektif mutizm belirli sosyal ortamlarda konuşamama ile karakterizedir."
+},
+{
+  "id": "2.18",
+  "soru": "6 yaşındaki bir çocuğun annesi, çocuğun duygudurumundaki değişkenlik, günlük hiddet patlamaları ve sık sinirlilik nöbetlerinden şikayetçidir. Bu belirtiler 3 aydır devam etmektedir. Bu tabloyla en olası tanı hangisidir?",
+  "secenekler": [
+    "A. Bipolar bozukluk",
+    "B. Majör depresif bozukluk",
+    "C. Yıkıcı duygudurum düzensizliği bozukluğu (YDD)",
+    "D. Karşıt olma-karşı gelme bozukluğu",
+    "E. Adaptasyon bozukluğu"
+  ],
+  "dogru_cevap": "C. Yıkıcı duygudurum düzensizliği bozukluğu (YDD)",
+  "aciklama": "YDD kronik irritabilite ve sık öfke patlamalarıyla seyreder. Tanı başlangıcı 10 yaşından önce olmalıdır."
+},
+{
+  "id": "2.19",
+  "soru": "Yıkıcı duygudurum düzensizliği bozukluğu (YDD) olan bir çocuğun tedavisi için aşağıdaki ilaçlardan hangisi en uygundur?",
+  "secenekler": [
+    "A. Lityum",
+    "B. Valproat",
+    "C. Fluoksetin",
+    "D. Ziprasidon",
+    "E. Olanzapin"
+  ],
+  "dogru_cevap": "C. Fluoksetin",
+  "aciklama": "YDD tedavisinde psikoterapi + SSRI (fluoksetin gibi) tercih edilir."
+},
+{
+  "id": "2.20",
+  "soru": "Bir çocukta yıkıcı duygudurum düzensizliği bozukluğu tanısı için hangi yaş aralığı kullanılmaz?",
+  "secenekler": [
+    "A. 6-10",
+    "B. 10-14",
+    "C. 14-18",
+    "D. 18 ve üzeri",
+    "E. Hiçbiri"
+  ],
+  "dogru_cevap": "D. 18 ve üzeri",
+  "aciklama": "YDD tanısı yalnızca 6–18 yaş arasında konulabilir."
+},
+{
+  "id": "2.21",
+  "soru": "6 yaşındaki bir erkek çocukta yaklaşık 1 aydır enürezis (yatak ıslatma) mevcuttur. Daha önce hiç ıslatma olmamıştır. Aşağıdakilerden hangisi bu durumu açıklamaz?",
+  "secenekler": [
+    "A. Enürezis",
+    "B. İkincil enürezis",
+    "C. Birincil enürezis",
+    "D. Davranış bozukluğuna komorbid durum",
+    "E. İdrar yolu enfeksiyonu"
+  ],
+  "dogru_cevap": "C. Birincil enürezis",
+  "aciklama": "Birincil enürezis, çocuğun hiç kuru kalmayı öğrenemediği anlamına gelir. Soruda daha önce kuru olduğu için ikincil enürezis söz konusudur."
+},
+{
+  "id": "2.22",
+  "soru": "Enürezis tedavisinde ilk basamak tedavi aşağıdakilerden hangisidir?",
+  "secenekler": [
+    "A. Desmopressin",
+    "B. İmipramin",
+    "C. Tuvalet alarmı",
+    "D. Benzodiazepinler",
+    "E. Psikoterapi"
+  ],
+  "dogru_cevap": "C. Tuvalet alarmı",
+  "aciklama": "Tuvalet alarmı, enürezis tedavisinde birinci basamaktır ve en etkili tedavi seçeneğidir."
+},
+{
+  "id": "2.23",
+  "soru": "Enkoprezis (dışkı kaçırma) tanısı için gerekli minimum süre nedir?",
+  "secenekler": [
+    "A. 1 hafta",
+    "B. 1 ay",
+    "C. 3 ay",
+    "D. 6 ay",
+    "E. 12 ay"
+  ],
+  "dogru_cevap": "B. 1 ay",
+  "aciklama": "Enkoprezis tanısı için, en az 3 ay boyunca ayda en az bir kez dışkı kaçırma gereklidir."
+},
+{
+  "id": "2.24",
+  "soru": "Okul çağındaki bir çocukta enkoprezis varsa, ilk tedavi yaklaşımı aşağıdakilerden hangisi olmalıdır?",
+  "secenekler": [
+    "A. Metilfenidat",
+    "B. Çocuk psikoterapisi",
+    "C. Diyet ve dışkı sıkışmasını giderme",
+    "D. Tuvalet alarmı",
+    "E. SSRI'lar"
+  ],
+  "dogru_cevap": "C. Diyet ve dışkı sıkışmasını giderme",
+  "aciklama": "Enkoprezis genellikle dışkı sıkışmasına bağlıdır. Tedavi ilk olarak sıkışmanın giderilmesiyle başlar."
+},
+{
+  "id": "2.25",
+  "soru": "Çocukluk çağında gelişen aşağıdaki yeme bozukluklarından hangisi, 'yemeğe karşı isteksizlik veya yemekten kaçınma' ile karakterizedir, ancak beden algısı bozukluğu içermez?",
+  "secenekler": [
+    "A. Anoreksiya nervoza",
+    "B. Bulimiya nervoza",
+    "C. Kaçıngan/Kısıtlayıcı Yiyecek Alımı Bozukluğu (ARFID)",
+    "D. Pika",
+    "E. Ruminasyon bozukluğu"
+  ],
+  "dogru_cevap": "C. Kaçıngan/Kısıtlayıcı Yiyecek Alımı Bozukluğu (ARFID)",
+  "aciklama": "ARFID, beden algısı bozukluğu olmadan yeme isteksizliği veya kaçınma ile karakterizedir."
+},
+{
+  "id": "2.26",
+  "soru": "Yeme bozuklukları arasında en yüksek ölüm oranına sahip bozukluk hangisidir?",
+  "secenekler": [
+    "A. Anoreksiya nervoza",
+    "B. Bulimiya nervoza",
+    "C. Kaçıngan/Kısıtlayıcı Yiyecek Alımı Bozukluğu (ARFID)",
+    "D. Pika",
+    "E. Ruminasyon bozukluğu"
+  ],
+  "dogru_cevap": "A. Anoreksiya nervoza",
+  "aciklama": "Anoreksiya nervoza tüm psikiyatrik bozukluklar içinde en yüksek mortalite oranına sahiptir."
+},
+{
+  "id": "2.27",
+  "soru": "Aşağıdakilerden hangisi anoreksiya nervoza tanısı için gerekli değildir?",
+  "secenekler": [
+    "A. Vücut ağırlığının normalin altında olması",
+    "B. Kilo alma korkusu",
+    "C. Vücut ağırlığı/şekli algısında bozulma",
+    "D. Menstrüel döngünün durması (amenore)",
+    "E. Kilo almaktan aşırı korkma"
+  ],
+  "dogru_cevap": "D. Menstrüel döngünün durması (amenore)",
+  "aciklama": "Amenore DSM-5’ten çıkarılmıştır ve tanı için zorunlu değildir."
+},
+{
+  "id": "2.28",
+  "soru": "Anoreksiya nervoza tanısı konmuş 16 yaşındaki bir genç kızda, hangi psikoterapi yaklaşımı en fazla kanıta sahiptir?",
+  "secenekler": [
+    "A. Kognitif davranışçı terapi (KDT)",
+    "B. Diyalektik davranışçı terapi (DDT)",
+    "C. Psikodinamik psikoterapi",
+    "D. Aile temelli tedavi (FTT)",
+    "E. Çözüm odaklı kısa terapi"
+  ],
+  "dogru_cevap": "D. Aile temelli tedavi (FTT)",
+  "aciklama": "Ergenlerde anoreksiya için aile temelli tedavi (Maudsley modeli) en güçlü kanıt düzeyine sahiptir."
+},
+{
+  "id": "2.29",
+  "soru": "Anoreksiya nervoza hastalarında, kilo alma sırasında özellikle dikkat edilmesi gereken potansiyel olarak ölümcül tıbbi komplikasyon nedir?",
+  "secenekler": [
+    "A. Anemi",
+    "B. Hipertansiyon",
+    "C. Yeniden Beslenme Sendromu (Refeeding Syndrome)",
+    "D. Hiperglisemi",
+    "E. Hipotiroidizm"
+  ],
+  "dogru_cevap": "C. Yeniden Beslenme Sendromu (Refeeding Syndrome)",
+  "aciklama": "Refeeding sendromu hipofosfatemi ve elektrolit kaymaları ile ölümcül olabilir."
+},
+{
+  "id": "2.30",
+  "soru": "Aşağıdaki ilaçlardan hangisi bulimiya nervoza tedavisinde FDA tarafından onaylanmıştır?",
+  "secenekler": [
+    "A. Sitalopram",
+    "B. Fluoksetin",
+    "C. Venlafaksin",
+    "D. Bupropion",
+    "E. Lityum"
+  ],
+  "dogru_cevap": "B. Fluoksetin",
+  "aciklama": "Bulimiya nervoza için FDA onaylı tek ilaç fluoksetindir (60 mg/gün)."
+},
+{
+  "id": "2.31",
+  "soru": "7 yaşındaki bir erkek çocukta 5 aydır haftada iki kez tırnak yeme davranışı gözlemlenmektedir. Bu durum aşağıdakilerden hangisi olarak sınıflandırılır?",
+  "secenekler": [
+    "A. Tik bozukluğu",
+    "B. Obsesif kompulsif bozukluk",
+    "C. Trihotillomani",
+    "D. Vücut odaklı tekrarlayıcı davranış bozukluğu",
+    "E. Sadece 'tırnak yeme' belirtisi"
+  ],
+  "dogru_cevap": "D. Vücut odaklı tekrarlayıcı davranış bozukluğu",
+  "aciklama": "Tırnak yeme, DSM-5’te vücut odaklı tekrarlayıcı davranışlar arasında sınıflandırılır."
+},
+{
+  "id": "2.32",
+  "soru": "Trikotillomani (saç yolma) olan bir hastada aşağıdaki ilaçlardan hangisinin kullanılması önerilmez?",
+  "secenekler": [
+    "A. Klomipramin",
+    "B. SSRI'lar",
+    "C. N-asetilsistein",
+    "D. Benzodiazepinler",
+    "E. Kognitif davranışçı terapi"
+  ],
+  "dogru_cevap": "D. Benzodiazepinler",
+  "aciklama": "Benzodiazepinlerin trikotillomanide faydası yoktur ve bağımlılık riski nedeniyle önerilmez."
+},
+{
+  "id": "2.33",
+  "soru": "Tüm psikiyatrik bozukluklar arasında, psikoz (şizofreni spektrumu) için aşağıdaki etiyolojik faktörlerden hangisi en yüksek göreceli risk artışına neden olur?",
+  "secenekler": [
+    "A. Ebeveyn yaşı",
+    "B. Doğum ayı",
+    "C. İkiz çalışma",
+    "D. Erken ergenlikte esrar kullanımı",
+    "E. Doğum komplikasyonları"
+  ],
+  "dogru_cevap": "C. İkiz çalışma",
+  "aciklama": "Monozigotik ikizlerde şizofreni konkordansı %40–50 olup en güçlü bilinen risk artışlarından biridir."
+},
+{
+  "id": "2.34",
+  "soru": "Aşağıdaki genetik sendromlardan hangisinin şizofreni riski ile ilişkili olduğu bulunmuştur?",
+  "secenekler": [
+    "A. Cri-du-chat sendromu",
+    "B. Prader-Willi sendromu",
+    "C. 22q11.2 delesyon sendromu",
+    "D. Williams sendromu",
+    "E. Trizomi 21 (Down sendromu)"
+  ],
+  "dogru_cevap": "C. 22q11.2 delesyon sendromu",
+  "aciklama": "22q11.2 delesyon sendromu şizofreni gelişimi için en yüksek bilinen genetik risk faktörlerindendir."
+},
+{
+  "id": "2.35",
+  "soru": "Bir çocukta sürekli huzursuzluk, kaygı ve uyku güçlüğü mevcuttur. Ebeveynler, çocuklarının her zaman gergin göründüğünü söylemektedir. 6 yaşındaki bu çocuk için en olası kaygı bozukluğu tanısı nedir?",
+  "secenekler": [
+    "A. Sosyal kaygı bozukluğu",
+    "B. Yaygın kaygı bozukluğu (YKB)",
+    "C. Ayrılma kaygısı bozukluğu",
+    "D. Özgül fobi",
+    "E. Panik bozukluk"
+  ],
+  "dogru_cevap": "B. Yaygın kaygı bozukluğu (YKB)",
+  "aciklama": "Çocuklarda YKB, sürekli endişe, huzursuzluk ve uyku zorluklarıyla belirgindir; tanı için 3 ay yeterlidir."
+},
+{
+  "id": "2.36",
+  "soru": "Çocukluk çağı major depresif bozukluğu (MDB) tanısı için aşağıdakilerden hangisi bir ölçüt değildir?",
+  "secenekler": [
+    "A. En az 2 hafta sürmesi",
+    "B. En az bir majör depresif dönem olması",
+    "C. Duygudurumun 'aşırı sinirlilik' olarak ifade edilebilmesi",
+    "D. Günün çoğunda depresif duygudurumun olması",
+    "E. Anhedoni"
+  ],
+  "dogru_cevap": "B. En az bir majör depresif dönem olması",
+  "aciklama": "Majör depresif dönem zaten MDB tanısının kendisidir; ölçüt olarak ayrı değerlendirilmez."
+},
+{
+  "id": "2.37",
+  "soru": "Çocukluk çağı MDB tedavisinde, hangi SSRI'lar FDA tarafından onaylanmıştır?",
+  "secenekler": [
+    "A. Sitalopram",
+    "B. Essitalopram",
+    "C. Paroksetin",
+    "D. Sertralin",
+    "E. Fluoksetin ve essitalopram"
+  ],
+  "dogru_cevap": "E. Fluoksetin ve essitalopram",
+  "aciklama": "Fluoksetin (8 yaş+) ve essitalopram (12 yaş+) çocukluk çağı depresyonu için FDA onaylıdır."
+},
+{
+  "id": "2.38",
+  "soru": "Çocuk ve ergenlerde antidepresan kullanımının en önemli ve endişe verici yan etkisi nedir?",
+  "secenekler": [
+    "A. Sedasyon",
+    "B. İştah kaybı",
+    "C. İntihar düşüncesi ve davranışı",
+    "D. Hiponatremi",
+    "E. Bağımlılık riski"
+  ],
+  "dogru_cevap": "C. İntihar düşüncesi ve davranışı",
+  "aciklama": "25 yaş altındaki bireylerde intihar düşüncesi artışı nedeniyle kara kutu uyarısı bulunmaktadır."
+},
+{
+  "id": "2.39",
+  "soru": "7 yaşındaki bir erkek çocukta 1 yıldır haftada en az 3 kez öfke patlamaları mevcuttur. Ancak hiçbir dönemde mani veya hipomani gözlenmemiştir. Bu bilgi aşağıdaki bozukluklardan hangisini dışlamak için kritiktir?",
+  "secenekler": [
+    "A. Karşıt olma-karşı gelme bozukluğu",
+    "B. Davranım bozukluğu",
+    "C. Majör depresif bozukluk",
+    "D. Yıkıcı duygudurum düzensizliği bozukluğu (YDD)",
+    "E. Bipolar bozukluk"
+  ],
+  "dogru_cevap": "E. Bipolar bozukluk",
+  "aciklama": "Bipolar bozukluk için mani/hipomani dönemi zorunludur; YDD'de böyle bir dönem yoktur."
+},
+{
+  "id": "2.40",
+  "soru": "Bir çocukta yedi aylık okul dönemi boyunca okula gitmeme mevcuttur. Evde kalırken bilgisayar oyunu oynamakta, kaygı belirtisi göstermemektedir. En olası tanı nedir?",
+  "secenekler": [
+    "A. Ayrılma kaygısı bozukluğu",
+    "B. Yaygın kaygı bozukluğu",
+    "C. Selektif mutizm",
+    "D. Okul fobisi",
+    "E. Okuldan kaçma (truancy)"
+  ],
+  "dogru_cevap": "E. Okuldan kaçma (truancy)",
+  "aciklama": "Truancy kaygı olmaksızın okula gitmeme, evde eğlence arayışı ile karakterizedir."
+},
+{
+  "id": "2.41",
+  "soru": "Aşağıdaki risk faktörlerinden hangisi, çocukluk çağı majör depresif bozukluğunda ergenlik döneminde Bipolar bozukluğa geçiş için en güçlü belirleyicidir?",
+  "secenekler": [
+    "A. Psikotik özellikler",
+    "B. Şiddetli intihar düşünceleri",
+    "C. Ailede bipolar bozukluk öyküsü",
+    "D. İlk MDB atağının erken başlangıcı",
+    "E. Komorbid DEHB"
+  ],
+  "dogru_cevap": "C. Ailede bipolar bozukluk öyküsü",
+  "aciklama": "Ailede bipolar bozukluk bulunması en güçlü geçiş risk faktörüdür."
+},
+{
+  "id": "2.42",
+  "soru": "Çocukluk çağında gelişen aşağıdaki bozukluklardan hangisi, genellikle ergenlik döneminde kendiliğinden düzelir?",
+  "secenekler": [
+    "A. Otizm spektrum bozukluğu",
+    "B. Yıkıcı duygudurum düzensizliği bozukluğu",
+    "C. Tourette bozukluğu",
+    "D. Ayrılma kaygısı bozukluğu",
+    "E. Davranım bozukluğu"
+  ],
+  "dogru_cevap": "D. Ayrılma kaygısı bozukluğu",
+  "aciklama": "Ayrılma kaygısı bozukluğu sıklıkla ergenlik döneminde kendiliğinden düzelir."
+},
+{
+  "id": "2.43",
+  "soru": "Down sendromlu (Trizomi 21) bir yetişkinde bilişsel gerileme, konuşma bozukluğu, kişilik değişiklikleri ve yeni başlayan nöbetler gelişmiştir. Bu tablo en olası olarak hangi bozukluğu düşündürür?",
+  "secenekler": [
+    "A. Bipolar bozukluk",
+    "B. Alzheimer hastalığı",
+    "C. Erken başlangıçlı şizofreni",
+    "D. Yıkıcı duygudurum düzensizliği bozukluğu",
+    "E. Yaygın kaygı bozukluğu"
+  ],
+  "dogru_cevap": "B. Alzheimer hastalığı",
+  "aciklama": "Down sendromlularda APP geninin fazlalığı nedeniyle Alzheimer riski çok yüksektir ve erken başlar."
+},
+{
+  "id": "2.44",
+  "soru": "5 yaşındaki bir erkek çocuk, son 3 aydır neredeyse her gün bir nesneyi alıp onu ağzına koymaktadır. Bu nesneler arasında toprak, saç ve oyun hamuru bulunmaktadır. En olası tanı nedir?",
+  "secenekler": [
+    "A. Kaçıngan/Kısıtlayıcı Yiyecek Alımı Bozukluğu (ARFID)",
+    "B. Ruminasyon bozukluğu",
+    "C. Pika",
+    "D. Tourette bozukluğu",
+    "E. Obsesif kompulsif bozukluk"
+  ],
+  "dogru_cevap": "C. Pika",
+  "aciklama": "Pika, besleyici olmayan maddeleri en az 1 ay süreyle yeme ile karakterizedir."
+},
+{
+  "id": "2.45",
+  "soru": "Aşağıdakilerden hangisi, pediatrik psikiyatrik bozukluklar için psikoterapinin etkililiğini azaltan bir faktör değildir?",
+  "secenekler": [
+    "A. Ebeveyn katılımının eksikliği",
+    "B. Yüksek komorbidite",
+    "C. Okul performansında sürekli başarısızlık",
+    "D. Yüksek sosyoekonomik düzey",
+    "E. Ebeveynde psikiyatrik bozukluk"
+  ],
+  "dogru_cevap": "D. Yüksek sosyoekonomik düzey",
+  "aciklama": "Yüksek sosyoekonomik düzey genellikle iyi bir prognoz göstergesidir ve psikoterapiyi olumsuz etkilemez."
+},
+{
+  "id": "2.46",
+  "soru": "Genetik etiyolojisi olan aşağıdaki bozukluklardan hangisi, tekrarlayan davranışlar ve obsesif kompulsif belirtilerle karakterizedir, ancak diğer nörogelişimsel bozukluklar arasında en yüksek spontan remisyon oranına sahiptir?",
+  "secenekler": [
+    "A. Tourette bozukluğu",
+    "B. Otizm spektrum bozukluğu",
+    "C. Frajil X sendromu",
+    "D. Down sendromu",
+    "E. Williams sendromu"
+  ],
+  "dogru_cevap": "A. Tourette bozukluğu",
+  "aciklama": "Tourette bozukluğu çoğu hastada ergenlik sonlarında belirgin şekilde azalır veya tamamen kaybolabilir."
+},
+{
+  "id": "2.47",
+  "soru": "Rett sendromunda regresyon (gerileme) hangi yaş aralığında başlar?",
+  "secenekler": [
+    "A. 1-4 ay",
+    "B. 5-18 ay",
+    "C. 19-36 ay",
+    "D. 3-6 yaş",
+    "E. 6-12 yaş"
+  ],
+  "dogru_cevap": "B. 5-18 ay",
+  "aciklama": "Rett sendromunda gelişim 5–18 aya kadar normal olup, bu dönemden sonra gerileme başlar."
+},
+{
+  "id": "2.48",
+  "soru": "Aşağıdaki nörogelişimsel bozukluklardan hangisi, tekrarlayan el yıkama hareketleri, dilde bozukluk, iletişim eksiklikleri ve kazanılmış el becerilerinin kaybı ile karakterizedir?",
+  "secenekler": [
+    "A. Otizm spektrum bozukluğu",
+    "B. Rett sendromu",
+    "C. Frajil X sendromu",
+    "D. Williams sendromu",
+    "E. Cri-du-chat sendromu"
+  ],
+  "dogru_cevap": "B. Rett sendromu",
+  "aciklama": "Rett sendromu kaybedilen el becerileri, tekrarlayıcı el hareketleri ve iletişim bozuklukları ile karakterizedir."
+},
+{
+  "id": "2.49",
+  "soru": "Aşağıdaki çocukluk çağı bozukluklarından hangisinin, yetişkinlikte antisosyal kişilik bozukluğuna (ASKB) dönüşme riski en yüksektir?",
+  "secenekler": [
+    "A. Karşıt olma-karşı gelme bozukluğu (KOKGB)",
+    "B. Dikkat eksikliği ve hiperaktivite bozukluğu (DEHB)",
+    "C. Davranım bozukluğu",
+    "D. Ayrılma kaygısı bozukluğu",
+    "E. Yıkıcı duygudurum düzensizliği bozukluğu (YDD)"
+  ],
+  "dogru_cevap": "C. Davranım bozukluğu",
+  "aciklama": "Davranım bozukluğu olan çocukların önemli bir kısmında erişkinlikte ASKB gelişir."
+},
+{
+  "id": "2.50",
+  "soru": "Davranım bozukluğunun tedavisinde, agresif ve yıkıcı davranışlar için aşağıdaki ilaçlardan hangisinin kullanılması önerilebilir?",
+  "secenekler": [
+    "A. SSRI'lar",
+    "B. Benzodiazepinler",
+    "C. Lityum",
+    "D. Buspiron",
+    "E. Trisiklik antidepresanlar"
+  ],
+  "dogru_cevap": "C. Lityum",
+  "aciklama": "Agresif davranışlarda lityum ve valproat gibi ruh hali düzenleyiciler etkilidir."
+},
+{
+  "id": "3.1",
+  "soru": "75 yaşında yaşlı destek merkezinde kalan bir kadın, akşamları huzursuz davranışlar sergiler. Nerede olduğunu sorgular ve sabah olduğunda geceyi hatırlamaz. Bu akşam davranışında hangi nörotransmitterin rolü en olasıdır?",
+  "secenekler": [
+    "A. Asetilkolin",
+    "B. Dopamin",
+    "C. Siprofloksasin",
+    "D. Glutamat",
+    "E. Serotonin"
+  ],
+  "dogru_cevap": "A. Asetilkolin",
+  "aciklama": "Deliryumda asetilkolin eksikliği temel mekanizmalardan biridir."
+},
+{
+  "id": "3.2",
+  "soru": "75 yaşında kadın hasta, 3 gün önce başlayan ajitasyon ve unutkanlık nedeniyle acile getirildi. İdrar tahlilinde bakteri görülüyor. Bu hastadaki belirtilerin hangi ilaçla düzelmesi en olasıdır?",
+  "secenekler": [
+    "A. HCTZ",
+    "B. Metformin",
+    "C. Metronidazol",
+    "D. Memantin",
+    "E. Haloperidol"
+  ],
+  "dogru_cevap": "C. Metronidazol",
+  "aciklama": "Altta yatan idrar yolu enfeksiyonunun tedavisi deliryumu düzeltir."
+},
+{
+  "id": "3.3",
+  "soru": "Hangisi demansın en erken ve en belirgin özelliklerinden biridir?",
+  "secenekler": [
+    "A. Dikkat",
+    "B. Bellek",
+    "C. Yürütme işlevi",
+    "D. Sosyal biliş",
+    "E. Dil"
+  ],
+  "dogru_cevap": "B. Bellek",
+  "aciklama": "Demansın en belirgin erken bulgusu bellek bozukluğudur."
+},
+{
+  "id": "3.4",
+  "soru": "Deliryumun aksine, nörobilişin hangi yönü demansta bozulmadan kalır?",
+  "secenekler": [
+    "A. Dikkat",
+    "B. Yönelim",
+    "C. Bellek",
+    "D. Bilinç",
+    "E. Sosyal beceriler"
+  ],
+  "dogru_cevap": "D. Bilinç",
+  "aciklama": "Deliryumda bilinç bozulur; demansta bilinç genellikle korunur."
+},
+{
+  "id": "3.5",
+  "soru": "82 yaşında erkek hasta, isimleri hatırlamakta ve yolunu bulmakta zorlanmaktadır. Belirtileri zaman zaman ani kötüleşmeler göstermektedir. En olası tanı nedir?",
+  "secenekler": [
+    "A. Vasküler demans",
+    "B. Deliryum",
+    "C. Geçici iskemik ataklar",
+    "D. Alzheimer demansı",
+    "E. Normal yaşlanma"
+  ],
+  "dogru_cevap": "A. Vasküler demans",
+  "aciklama": "Ani kötüleşme ve basamaklı klinik seyir vasküler demansın tipik özelliğidir."
+},
+{
+  "id": "3.6",
+  "soru": "Bir kişiye Alzheimer tipi demans teşhisi konulduktan sonra ölümüne kadar geçen ortalama süre ne kadardır?",
+  "secenekler": [
+    "A. 3 yıl",
+    "B. 8 yıl",
+    "C. 13 yıl",
+    "D. 18 yıl",
+    "E. 23 yıl"
+  ],
+  "dogru_cevap": "B. 8 yıl",
+  "aciklama": "Alzheimer hastalarında tanı sonrası ortalama yaşam süresi 8 yıldır."
+},
+{
+  "id": "3.7",
+  "soru": "74 yaşındaki bir hastada görsel halüsinasyonlar, Parkinson bulguları ve dalgalanan uyanıklık seviyesi mevcuttur. En olası serebral patoloji hangisidir?",
+  "secenekler": [
+    "A. Substantia nigranın beyazlaşması",
+    "B. Frontotemporal bölgelerde pick cisimcikleri",
+    "C. Çoklu subkortikal beyaz madde enfarktüsleri",
+    "D. Korteks ve hipokampüste amiloid plaklar",
+    "E. Serebral kortekste Lewy inklüzyon cisimcikleri"
+  ],
+  "dogru_cevap": "E. Serebral kortekste Lewy inklüzyon cisimcikleri",
+  "aciklama": "Lewy cisimciği demansında görsel halüsinasyonlar ve Parkinsonizm ön plandadır."
+},
+{
+  "id": "3.8",
+  "soru": "Amnestik bozukluğu olan bir kişi kendisine yöneltilen hangi ruhsal durum muayenesi sorusuna büyük olasılıkla doğru yanıt verebilir?",
+  "secenekler": [
+    "A. 'Bayrak, top, ağaç. Bu üç kelimeyi tekrar edebilir misin?'",
+    "B. 'Bu sabah kahvaltıda ne yedin?'",
+    "C. 'Bu binanın adı nedir?'",
+    "D. 'Bugünün tarihi nedir?'",
+    "E. 'Dün nereye gittin?'"
+  ],
+  "dogru_cevap": "A. 'Bayrak, top, ağaç. Bu üç kelimeyi tekrar edebilir misin?'",
+  "aciklama": "Amnestik bozuklukta yakın bellek bozuktur ancak anlık bellek korunur."
+},
+{
+  "id": "3.9",
+  "soru": "60 yaşında erkek hasta, bellek kaybı ve konfabülasyon (masal anlatma) belirtileri gösteriyor. Kızı, babasının eşinin ölümünden sonra yalnız yaşadığını ve kötü beslendiğini, nefesinde alkol kokusu aldığını belirtiyor. Bu hasta için en uygun tedavi aşağıdakilerden hangisidir?",
+  "secenekler": [
+    "A. Seçici serotonin geri alım önleyicisi (SSRI)",
+    "B. Tiamin replasmanı",
+    "C. Bir kolinesteraz inhibitörü",
+    "D. Antihipertansif ilaç kullanımında artış",
+    "E. Bir N-metil-D-aspartat (NMDA) reseptör antagonisti"
+  ],
+  "dogru_cevap": "B. Tiamin replasmanı",
+  "aciklama": "Konfabülasyon ve bellek kaybı kronik alkol kullanımına bağlı Korsakoff sendromunu düşündürür."
+},
+{
+  "id": "3.10",
+  "soru": "66 yaşında bir kadın, EKT sonrası uyanıyor. Belleği test etmek için sorulan hangi soruya yanıt vermekte en çok zorlanacaktır?",
+  "secenekler": [
+    "A. 'Dün akşam yemekte ne yediniz?'",
+    "B. 'Çocuklarınızın isimleri nedir?'",
+    "C. 'Doğum tarihiniz nedir?'",
+    "D. 'Az önce sana sorduğum üç kelime neydi?'",
+    "E. 'Şu anda nerede yaşıyorsunuz?'"
+  ],
+  "dogru_cevap": "D. 'Az önce sana sorduğum üç kelime neydi?'",
+  "aciklama": "EKT sonrası anterograd amnezi görülür; yeni bilgiyi kaydetme güçleşir."
+},
+{
+  "id": "3.11",
+  "soru": "14 yaşındaki çocuk kafa travması sonrası bilinci yerine geldiğinde olayı hatırlamamaktadır. Ailesi kazayla ilgili ne hatırladığını sorar. En olası yanıt nedir?",
+  "secenekler": [
+    "A. 'Siz kimsiniz?'",
+    "B. 'Futbol oynuyordum ve düştüm.'",
+    "C. 'Ne kazası?'",
+    "D. 'Arabanın içindeydik ve çarpıldık.'",
+    "E. 'Biri bana doğru koşuyordu sonra bayıldım.'"
+  ],
+  "dogru_cevap": "C. 'Ne kazası?'",
+  "aciklama": "Kafa travması retrograd amneziye yol açabilir; kişi olayı hatırlamaz."
+},
+{
+  "id": "3.12",
+  "soru": "Serebrovasküler hastalık hipokampüsü ve beynin başka hangi bölgesini etkilediğinde amneziye neden olma olasılığı en yüksektir?",
+  "secenekler": [
+    "A. Medial talamus",
+    "B. Korpus kallosum",
+    "C. Suprakiazmatik çekirdek",
+    "D. Substantia nigra",
+    "E. Arkuat çekirdek"
+  ],
+  "dogru_cevap": "A. Medial talamus",
+  "aciklama": "Hipokampus + medial talamus hasarı tipik amnestik bozukluk tablosudur."
+},
+{
+  "id": "3.13",
+  "soru": "55 yaşında kadın hasta aniden şaşırmış görünür ve sürekli nerede olduğunu sorar. Adını bilir ancak yönelim bozukluğu vardır. 24 saat içinde en olası prognoz nedir?",
+  "secenekler": [
+    "A. Kendisi dışında herkesi unutacaktır",
+    "B. Bellek kaybı dalgalanacaktır",
+    "C. Geçmiş anılarını yeniden kazanacak ama yenilerini oluşturamayacaktır",
+    "D. Bellek kaybı aynı kalacaktır",
+    "E. Tamamen iyileşecektir"
+  ],
+  "dogru_cevap": "E. Tamamen iyileşecektir",
+  "aciklama": "Geçici global amnezi (TGA) tipik olarak 24 saat içinde tamamen düzelir."
+},
+{
+  "id": "3.14",
+  "soru": "Amnestik bozuklukların aksine, Alzheimer tipi demans aşağıdaki hangi işlevde bozulmaya yol açar?",
+  "secenekler": [
+    "A. İleriye dönük bellek",
+    "B. Geriye dönük bellek",
+    "C. Epizodik bellek",
+    "D. Anlamsal bellek (semantik)",
+    "E. Prosedürel bellek"
+  ],
+  "dogru_cevap": "D. Anlamsal bellek (semantik)",
+  "aciklama": "Alzheimer hastalığında dil ve genel bilgi (semantik bellek) bozulur."
+},
+{
+  "id": "3.15",
+  "soru": "Benzodiazepinlerin amnezi yapma olasılığı hangi maddenin eklenmesiyle artar?",
+  "secenekler": [
+    "A. Alkol",
+    "B. Antikolinerjikler",
+    "C. Psikodelikler",
+    "D. Barbitüratlar",
+    "E. Uyarıcılar"
+  ],
+  "dogru_cevap": "A. Alkol",
+  "aciklama": "Alkol + benzodiazepin birlikte ciddi düzeyde amnezi yapabilir."
+},
+{
+  "id": "3.16",
+  "soru": "34 yaşında kadın hasta kısa süreli çiğneme hareketleri ve boş bakma atakları yaşıyor. Ataklar arasında hangi psikiyatrik belirti en olasıdır?",
+  "secenekler": [
+    "A. Psikoz",
+    "B. Şiddet davranışı",
+    "C. Kişilik değişiklikleri",
+    "D. Manik belirtiler",
+    "E. Depresyon belirtileri"
+  ],
+  "dogru_cevap": "C. Kişilik değişiklikleri",
+  "aciklama": "Temporal lob epilepsisinde interiktal dönemde kişilik değişiklikleri sık görülür."
+},
+{
+  "id": "3.17",
+  "soru": "14 yaşındaki çocuk birkaç saniye durup bakakaldığı nöbetler yaşıyor. ‘Bakmakta olduğumu biliyorum ama hareket edemiyorum’ diyor. EEG temporal lob aktivitesi gösteriyor. Nöbet türü nedir?",
+  "secenekler": [
+    "A. Genelleştirilmiş nöbet",
+    "B. Absans nöbeti",
+    "C. Basit parsiyel",
+    "D. Kompleks parsiyel nöbet",
+    "E. Psikojenik nonepileptik nöbet"
+  ],
+  "dogru_cevap": "C. Basit parsiyel",
+  "aciklama": "Bilinç korunuyorsa nöbet basittir; temporal lob olduğu için parsiyeldir."
+},
+{
+  "id": "3.18",
+  "soru": "Beynin belleği en çok etkileyen tümörü muhtemelen beynin hangi bölgesinde bulunur?",
+  "secenekler": [
+    "A. Parietal",
+    "B. Temporal",
+    "C. Oksipital",
+    "D. Frontal",
+    "E. Beyincik"
+  ],
+  "dogru_cevap": "B. Temporal",
+  "aciklama": "Temporal lob tümörleri bellek fonksiyonlarını belirgin etkiler."
+},
+{
+  "id": "3.19",
+  "soru": "Kafa travması geçiren 23 yaşındaki hastanın nöropsikolojik testlerinde en olası bilişsel bozukluk nedir?",
+  "secenekler": [
+    "A. Bilgi işleme hızında azalma",
+    "B. Konuşulan dili anlamada güçlük",
+    "C. Bozulmuş yazma yeteneği",
+    "D. Sözel olmayan ipuçlarını okumada eksiklik",
+    "E. Sol-sağ el koordinasyon bozukluğu"
+  ],
+  "dogru_cevap": "A. Bilgi işleme hızında azalma",
+  "aciklama": "Kafa travmasından sonra en yaygın sorun dikkat ve işlem hızının azalmasıdır."
+},
+{
+  "id": "3.20",
+  "soru": "60 yaşında erkek hastada kişilik değişikliği, ataksi ve Argyll Robertson pupili görülüyor. En uygun tedavi hangisidir?",
+  "secenekler": [
+    "A. Doksisiklin",
+    "B. Penisilin",
+    "C. Radyoaktif iyot",
+    "D. Dolutegravir/rilpivirin",
+    "E. Asiklovir"
+  ],
+  "dogru_cevap": "B. Penisilin",
+  "aciklama": "Tabes dorsalis + Argyll Robertson pupili → nörosifiliz. Tedavi penisilindir."
+},
+{
+  "id": "3.21",
+  "soru": "Dermatit, diyare ve demans belirtileri olan kaşektik bir hastada hangi vitamin eksikliği düşünülmelidir?",
+  "secenekler": [
+    "A. A",
+    "B. B1",
+    "C. B3",
+    "D. B12",
+    "E. C"
+  ],
+  "dogru_cevap": "C. B3",
+  "aciklama": "Dermatit + Diyare + Demans → pellegra → niasin (B3) eksikliği."
+},
+{
+  "id": "3.22",
+  "soru": "İnşaat işçisi bir erkekte sinirlilik, uykusuzluk, kas ağrıları ve sakarlık görülüyor. Belirtiler hangi toksine maruziyetle açıklanabilir?",
+  "secenekler": [
+    "A. Kurşun",
+    "B. Cıva",
+    "C. Manganez",
+    "D. Arsenik",
+    "E. Toluen"
+  ],
+  "dogru_cevap": "A. Kurşun",
+  "aciklama": "Kurşun maruziyeti irritabilite, uyku sorunları ve kas ağrılarına yol açar."
+},
+{
+  "id": "4.1",
+  "soru": "Alkol kullanımı nedeniyle ciddi kayıplar yaşamasına rağmen tekrar alkol kullanma isteği duyan bir hasta DSM-5'e göre hangi tanıyı alır?",
+  "secenekler": [
+    "A. Kötüye kullanım",
+    "B. Bağımlılık (addiction)",
+    "C. Bağımlılık (dependence)",
+    "D. İntoksikasyon",
+    "E. Kullanım"
+  ],
+  "dogru_cevap": "E. Kullanım",
+  "aciklama": "DSM-5, kötüye kullanım/bağımlılık ayrımını kaldırdı; tek tanı 'madde kullanım bozukluğu'dur."
+},
+{
+  "id": "4.2",
+  "soru": "Madde kötüye kullananlarda intihar sıklığı hangi psikiyatrik bozukluktan sonra ikinci sıradadır?",
+  "secenekler": [
+    "A. Bipolar",
+    "B. Yeme bozuklukları",
+    "C. Yaygın anksiyete",
+    "D. Majör depresif",
+    "E. Panik"
+  ],
+  "dogru_cevap": "D. Majör depresif",
+  "aciklama": "İntihar riski en yüksek MDB'dedir; hemen ardından madde kullanım bozukluğu gelir."
+},
+{
+  "id": "4.3",
+  "soru": "Aşağıdaki ajanlardan hangisi tütün bağımlılığı tedavisinde kullanılır?",
+  "secenekler": [
+    "A. Akamprosat",
+    "B. Disülfiram",
+    "C. Levometadil asetat",
+    "D. Naltrekson",
+    "E. Vareniklin"
+  ],
+  "dogru_cevap": "E. Vareniklin",
+  "aciklama": "Vareniklin nikotin bağımlılığında kullanılan bir parsiyel agonisttir."
+},
+{
+  "id": "4.4",
+  "soru": "ABD’de yaşam boyu en yüksek madde kullanım oranına sahip etnik grup hangisidir?",
+  "secenekler": [
+    "A. Afrikalı Amerikalılar",
+    "B. Amerikan Yerlileri",
+    "C. Asyalılar",
+    "D. Kafkasyalılar",
+    "E. İspanyollar"
+  ],
+  "dogru_cevap": "B. Amerikan Yerlileri",
+  "aciklama": "En yüksek oran Amerikan Yerlileri ve Alaska yerlilerindedir."
+},
+{
+  "id": "4.5",
+  "soru": "Locus coeruleus aşağıdaki ilaçlardan hangisinin etkilerine aracılık eder?",
+  "secenekler": [
+    "A. Amfetaminler",
+    "B. Benzodiazepinler",
+    "C. Kenevir",
+    "D. Nikotin",
+    "E. Opioidler"
+  ],
+  "dogru_cevap": "E. Opioidler",
+  "aciklama": "Opioidlerin yoksunluk belirtilerinde locus coeruleus ana bölgedir."
+},
+{
+  "id": "4.6",
+  "soru": "ABD'de yasal intoksikasyon sınırı olan kan alkol konsantrasyonu nedir?",
+  "secenekler": [
+    "A. 20-40 mg/dL",
+    "B. 40-60 mg/dL",
+    "C. 80-100 mg/dL",
+    "D. 200-250 mg/dL",
+    "E. >300 mg/dL"
+  ],
+  "dogru_cevap": "C. 80-100 mg/dL",
+  "aciklama": "Yasal sınır çoğu eyalette 0.08–0.10 g/dL’dir."
+},
+{
+  "id": "4.7",
+  "soru": "Alkol yoksunluğunda görülen belirtilerden biri hangisidir?",
+  "secenekler": [
+    "A. Bradikardi",
+    "B. Hipotansiyon",
+    "C. Miyotik pupiller",
+    "D. Böbrek yetmezliği",
+    "E. Tremor"
+  ],
+  "dogru_cevap": "E. Tremor",
+  "aciklama": "Alkol yoksunluğu tremor ve otonomik hiperaktivite ile seyreder."
+},
+{
+  "id": "4.8",
+  "soru": "Uzun süreli yoğun alkol kullanımı aşağıdaki laboratuvar değerlerinden hangisini düşürerek nöbete neden olabilir?",
+  "secenekler": ["A. Albümin", "B. Ca", "C. Kreatinin", "D. K", "E. Na"],
+  "dogru_cevap": "E. Na",
+  "aciklama": "Hiponatremi, hipoglisemi ve hipomagnezemi alkol kullanımında nöbetlere yol açabilir."
+},
+{
+  "id": "4.9",
+  "soru": "Orta yaşlı alkolik bir hastada konfüzyon, ataksi ve nistagmus görülüyor. En olası tanı nedir?",
+  "secenekler": ["A. Alkole bağlı psikotik bozukluk", "B. Delirium tremens", "C. Korsakoff sendromu", "D. Belirtilmemiş alkol bozukluğu", "E. Wernicke ensefalopatisi"],
+  "dogru_cevap": "E. Wernicke ensefalopatisi",
+  "aciklama": "Klasik triad: ataksi, konfüzyon, oftalmopleji."
+},
+{
+  "id": "4.10",
+  "soru": "Ağır alkol kullanımı olan bir hasta depresif belirtiler gösteriyor. En uygun başlangıç yaklaşımı nedir?",
+  "secenekler": ["A. Atipik antipsikotik", "B. Eğitim ve 2-4 hafta alkolden uzak durma", "C. SSRI", "D. Kişilerarası psikoterapi", "E. Naltrekson"],
+  "dogru_cevap": "B. Eğitim ve 2-4 hafta alkolden uzak durma",
+  "aciklama": "Alkole bağlı depresyonların çoğu yoksunluk sonrası düzelir."
+},
+{
+  "id": "4.11",
+  "soru": "Alkol bağımlılığı olan bir hastada yorgunluk, konfüzyon ve miyoklonus varsa hangi vitamin eksikliği araştırılmalıdır?",
+  "secenekler": ["A. Siyanokobalamin", "B. D", "C. Folik asit", "D. Pantotenik asit", "E. Tiamin"],
+  "dogru_cevap": "E. Tiamin",
+  "aciklama": "Tiamin eksikliği Wernicke-Korsakoff ile ilişkilidir."
+},
+{
+  "id": "4.12",
+  "soru": "Hangi psikiyatrik tanı alkolle ilişkili bozukluklara en sık eşlik eder?",
+  "secenekler": ["A. Anoreksiya", "B. Antisosyal kişilik", "C. DEHB", "D. Otizm", "E. Şizofreni"],
+  "dogru_cevap": "B. Antisosyal kişilik",
+  "aciklama": "Eş tanılar içinde en sık olanıdır."
+},
+{
+  "id": "4.13",
+  "soru": "Psikiyatristin hastayı değişime motive etmeye çalıştığı danışmanlık yaklaşımı hangi terapiyle uyumludur?",
+  "secenekler": ["A. BDT", "B. Diyalektik", "C. Kişilerarası", "D. Motivasyonel görüşme", "E. On iki adım"],
+  "dogru_cevap": "D. Motivasyonel görüşme",
+  "aciklama": "Değişim motivasyonunu geliştirmeye odaklanır."
+},
+{
+  "id": "4.14",
+  "soru": "Alkole bağlı yoksunluk nöbetleri için standart tedavi nedir?",
+  "secenekler": ["A. Antikonvülzan", "B. Antipsikotik", "C. Barbitüratlar", "D. Benzodiazepinler", "E. Duygudurum düzenleyiciler"],
+  "dogru_cevap": "D. Benzodiazepinler",
+  "aciklama": "Alkol yoksunluk tedavisinde ilk tercihtir."
+},
+{
+  "id": "4.15",
+  "soru": "Alkol rehabilitasyonunda başlangıç danışmanlığında en yararlı odak nedir?",
+  "secenekler": ["A. Bozukluğun nedenleri", "B. Günlük yaşam sorunları", "C. Gelecek planları", "D. Sosyal kaygı", "E. Depresyon"],
+  "dogru_cevap": "B. Günlük yaşam sorunları",
+  "aciklama": "İlk aşamada yaşam düzeni ve stres yönetimi önemlidir."
+},
+{
+  "id": "4.16",
+  "soru": "Alkol detoksundan sonra devam eden anksiyete ve insomnia için en iyi yaklaşım nedir?",
+  "secenekler": ["A. Antidepresan", "B. Antihistaminik", "C. Benzodiazepin", "D. Davranış değişikliği", "E. Melatonin"],
+  "dogru_cevap": "D. Davranış değişikliği",
+  "aciklama": "İlaçlar nüks riskini artırabilir."
+},
+{
+  "id": "4.17",
+  "soru": "Hangi durum naltrekson için kontrendikasyondur?",
+  "secenekler": ["A. Metronidazol", "B. Alkol", "C. Koroner hastalık", "D. Opioid kullanmak", "E. Böbrek yetmezliği"],
+  "dogru_cevap": "D. Opioid kullanmak",
+  "aciklama": "Opioid kullanan hastada ani yoksunluk yapar."
+},
+{
+  "id": "4.18",
+  "soru": "ABD’de önlenebilir ölümlerin önde gelen nedeni nedir?",
+  "secenekler": ["A. Alkol", "B. Araba kazaları", "C. Silahlı şiddet", "D. İntihar", "E. Tütün"],
+  "dogru_cevap": "E. Tütün",
+  "aciklama": "En yüksek mortalite nedenidir."
+},
+{
+  "id": "4.19",
+  "soru": "Az miktarda esrar bile intoksikasyon sırasında neye yol açabilir?",
+  "secenekler": ["A. Gecikmiş reaksiyon süresi", "B. Depresif ruh hali", "C. Uzun süreli bellek bozulması", "D. Aktivite artışı", "E. Gerginlik"],
+  "dogru_cevap": "A. Gecikmiş reaksiyon süresi",
+  "aciklama": "Motor koordinasyon ve reaksiyon zamanı etkilenir."
+},
+{
+  "id": "4.20",
+  "soru": "Esrarın yol açtığı psikotik bozukluk en çok hangi premorbid durumla ilişkilidir?",
+  "secenekler": ["A. Anksiyete", "B. Bipolar", "C. Depresif", "D. Yeme bozukluğu", "E. Kişilik bozukluğu"],
+  "dogru_cevap": "E. Kişilik bozukluğu",
+  "aciklama": "Esrar psikozu nadirdir ve genellikle kişilik patolojisi vardır."
+},
+{
+  "id": "4.21",
+  "soru": "Apati ve motivasyon kaybı hangi maddeyle ilişkilidir?",
+  "secenekler": ["A. Barbitüratlar", "B. Kafein", "C. Esrar", "D. Halüsinojenler", "E. Opioidler"],
+  "dogru_cevap": "C. Esrar",
+  "aciklama": "Amotivasyonel sendrom ile ilişkilidir."
+},
+{
+  "id": "4.22",
+  "soru": "Dronabinol hangi durumda FDA onaylıdır?",
+  "secenekler": ["A. Kronik insomnia", "B. Kemoterapi bulantısı", "C. Uyku apnesi", "D. Sırt ağrısı", "E. Anoreksiya nervoza"],
+  "dogru_cevap": "B. Kemoterapi bulantısı",
+  "aciklama": "Ayrıca AIDS anoreksisi için onaylıdır."
+ },
+ {
+  "id": "4.23",
+  "soru": "Yüksek doz esrar kullanımında yaygın risk nedir?",
+  "secenekler": ["A. İştah baskılanması", "B. Ölüm", "C. Diyaforez", "D. Bradikardi", "E. Ortostatik hipotansiyon"],
+  "dogru_cevap": "E. Ortostatik hipotansiyon",
+  "aciklama": "Sempatik etkiler nedeniyle gelişebilir."
+ },
+ {
+  "id": "4.24",
+  "soru": "Opioid yoksunluğunda hangi belirti yaygındır?",
+  "secenekler": ["A. Kabızlık", "B. Hipotansiyon", "C. Lakrimasyon", "D. Psikoz", "E. Pupilla konstriksiyonu"],
+  "dogru_cevap": "C. Lakrimasyon",
+  "aciklama": "Burun akıntısı, esneme, diyare ve midriyazis eşlik eder."
+ },
+ {
+  "id": "4.25",
+  "soru": "Pinpoint pupil, bradikardi, sedasyon varsa antidot nedir?",
+  "secenekler": ["A. Flumazenil", "B. N-asetilsistein", "C. Nalokson", "D. Naltrekson", "E. Vareniklin"],
+  "dogru_cevap": "C. Nalokson",
+  "aciklama": "Opioid zehirlenmesinin antidotudur."
+ },
+ {
+  "id": "4.26",
+  "soru": "Opioid ikame tedavisinin (metadon/buprenorfin) avantajı nedir?",
+  "secenekler": ["A. Uyuşukluk minimumdur", "B. Ayakta tedavi garantidir", "C. Parenteral gerekmez", "D. Bağımlılık riski yoktur", "E. Tedavi 2 haftada biter"],
+  "dogru_cevap": "A. Uyuşukluk minimumdur",
+  "aciklama": "Daha az öfori ve daha stabil etki sağlar."
+ },
+ {
+  "id": "4.27",
+  "soru": "Meperidin hangi sınıfla etkileşip ölümcül olabilir?",
+  "secenekler": ["A. Benzodiazepin", "B. MAOI", "C. SSRI", "D. Stimülan", "E. TCA"],
+  "dogru_cevap": "B. MAOI",
+  "aciklama": "Birlikte kullanım serotonin sendromuna yol açabilir."
+ },
+ {
+  "id": "4.28",
+  "soru": "Kasıtsız aşırı doz alımında en ölümcül madde hangisidir?",
+  "secenekler": ["A. Alkol", "B. Barbitüratlar", "C. Benzodiazepinler", "D. LSD", "E. Uyarıcılar"],
+  "dogru_cevap": "B. Barbitüratlar",
+  "aciklama": "Solunum depresyonu nedeniyle ölüm oranı çok yüksektir."
+},
+{
+  "id": "4.29",
+  "soru": "Banyo tuzları hangi madde seviyesini artırır?",
+  "secenekler": ["A. Katekolaminler", "B. Enkefalin", "C. GABA", "D. Glutamat", "E. Oksitosin"],
+  "dogru_cevap": "A. Katekolaminler",
+  "aciklama": "Katinonlar dopamin ve norepinefrini yükseltir."
+ },
+ {
+  "id": "4.30",
+  "soru": "Taşikardi, midriyazis, terleme, göğüs ağrısı ile gelen ajitasyon… En olası madde?",
+  "secenekler": ["A. Alkol", "B. Barbitüratlar", "C. Halüsinojenler", "D. Opioidler", "E. Uyarıcılar"],
+  "dogru_cevap": "E. Uyarıcılar",
+  "aciklama": "Kokain/amfetamin ile uyumludur."
+ },
+ {
+  "id": "4.31",
+  "soru": "Bruksizm ve ‘meth mouth’ hangi madde ile ilişkilidir?",
+  "secenekler": ["A. Klonazepam", "B. Eroin", "C. Ketamin", "D. Metamfetamin", "E. Psilosibin"],
+  "dogru_cevap": "D. Metamfetamin",
+  "aciklama": "Vazokonstriksiyon + diş gıcırdatma ciddi çürük yapar."
+ },
+ {
+  "id": "4.32",
+  "soru": "Kalp krizi ve bulimia öyküsü olan bir hasta sigarayı bırakmak istiyor. Hangi ilaç uygundur?",
+  "secenekler": ["A. Bupropion", "B. Nikotin inhaler", "C. Nikotin bandı", "D. Polacrilex sakızı", "E. Vareniklin"],
+  "dogru_cevap": "D. Polacrilex sakızı",
+  "aciklama": "Bupropion bulimide nöbet riskli; varenicline KAH'da dikkat gerektirir."
+ },
+ {
+  "id": "4.33",
+  "soru": "LSD kullanımının bilinen bir riski nedir?",
+  "secenekler": ["A. SVO", "B. Kronik halüsinasyon", "C. Çapraz tolerans (amfetamin)", "D. Hipotansiyon", "E. Karaciğer yetmezliği"],
+  "dogru_cevap": "A. SVO",
+  "aciklama": "Sempatomimetik etkiyle hipertansiyon ve SVO riski artar."
+ },
+ {
+  "id": "4.34",
+  "soru": "Hipertansiyon, taşikardi, nistagmus, ağrı hissetmeme… En olası madde?",
+  "secenekler": ["A. Alprazolam", "B. Kafein", "C. Esrar", "D. Eroin", "E. Ketamin"],
+  "dogru_cevap": "E. Ketamin",
+  "aciklama": "Dissosiyatif tablo + nistagmus tipiktir."
+ },
+ {
+  "id": "4.35",
+  "soru": "'Flashback'lere en sık yol açan madde hangisidir?",
+  "secenekler": ["A. Alkol", "B. Halüsinojenler", "C. Inhalanlar", "D. Opioidler", "E. Uyarıcılar"],
+  "dogru_cevap": "B. Halüsinojenler",
+  "aciklama": "HPPD ile ilişkilidir."
+ },
+ {
+  "id": "4.36",
+  "soru": "Madde kullanımına bağlı flashback tanısı koymadan önce hangisi dışlanmalıdır?",
+  "secenekler": ["A. Astım", "B. Borderline", "C. Karaciğer yetmezliği", "D. Migren", "E. Şizofreni"],
+  "dogru_cevap": "D. Migren",
+  "aciklama": "Migren auraları görsel bozukluk yapar."
+ },
+ {
+  "id": "4.36",
+  "soru": "Madde kullanımına bağlı flashback tanısı koymadan önce hangisi dışlanmalıdır?",
+  "secenekler": ["A. Astım", "B. Borderline", "C. Karaciğer yetmezliği", "D. Migren", "E. Şizofreni"],
+  "dogru_cevap": "D. Migren",
+  "aciklama": "Migren auraları görsel bozukluk yapar."
+ },
+ {
+  "id": "4.38",
+  "soru": "Nistagmus, refleks azalması, ağız çevresi kızarıklık ve solvent kokusu… Tanı?",
+  "secenekler": ["A. Alkol", "B. Benzodiazepin", "C. Halüsinojenler", "D. Opioidler", "E. Inhalanlar"],
+  "dogru_cevap": "E. Inhalanlar",
+  "aciklama": "'Glue sniffer’s rash' tipiktir."
+ },
+ {
+  "id": "4.39",
+  "soru": "Hangi madde kronik kullanımda yaygın beyin atrofisi ve lökoensefalopatiye yol açabilir?",
+  "secenekler": ["A. Barbitüratlar", "B. Halüsinojenler", "C. Inhalanlar", "D. Stimülanlar", "E. Steroidler"],
+  "dogru_cevap": "C. Inhalanlar",
+  "aciklama": "Beyaz madde toksisitesi en belirgindir."
+ },
+ {
+  "id": "5.1",
+  "soru": "21 yaşındaki erkek hasta 24 saattir konuşmuyor ve hareketsiz. Bu hastanın varsanıları en olası hangi tiptedir?",
+  "secenekler": ["A. İşitsel", "B. Tat", "C. Koku", "D. Taktil", "E. Görsel"],
+  "dogru_cevap": "A. İşitsel",
+  "aciklama": "Katatoni genellikle şizofreni spektrumuna eşlik eder; işitsel varsanılar en yaygın psikotik belirtidir."
+  },
+  {
+    "id": "5.3",
+    "soru": "35 yaşındaki bir kadın, son 4 gündür sesler duyduğunu belirtiyor. Ancak bu sesleri son 10 yıldır ara ara duyduğunu ve 9 yıl önce intihar girişimi nedeniyle yattığını ekliyor. Hastalık sürecinde dikkati dağıtan sesler ve sık depresyon atakları nedeniyle çalışamıyor. En muhtemel tanı nedir?",
+    "secenekler": [
+      "A. Şizofreni",
+      "B. Şizofreniform bozukluk",
+      "C. Psikotik özellikli ağır depresif bozukluk",
+      "D. Şizoaffektif bozukluk",
+      "E. Kısa psikotik bozukluk"
+    ],
+    "dogru_cevap": "D. Şizoaffektif bozukluk",
+    "aciklama": "Hastada hem uzun süreli psikotik belirtiler (işitsel varsanılar) hem de majör depresif dönemler bulunmaktadır. Bu klinik tablo şizoaffektif bozuklukla uyumludur."
+  },
+  {
+    "id": "5.4",
+    "soru": "50 yaşındaki bir kadın, bir haber sunucusunun kendisine aşık olduğuna inanıyor ve bu nedenle evi gözetliyor. İşlevselliği bozulmamış ve başka psikotik belirti yok. En muhtemel tanı nedir?",
+    "secenekler": [
+      "A. Şizofreni",
+      "B. Şizoaffektif bozukluk",
+      "C. Sanrılı bozukluk",
+      "D. Şizotipal kişilik bozukluğu",
+      "E. Psikotik özellikli ağır depresif nöbet"
+    ],
+    "dogru_cevap": "C. Sanrılı bozukluk",
+    "aciklama": "Erotomanik içerikli sanrı ve korunmuş işlevsellik sanrılı bozukluğun tipik özellikleridir."
+  },
+  {
+    "id": "5.5",
+    "soru": "35 yıldır şizofreni tanısı olan 55 yaşındaki bir adam, aniden babasını bir vampir olarak görüp saldırıyor. Daha önce hiç görsel halüsinasyon yaşamamış. Yönetimde bir sonraki adım ne olmalıdır?",
+    "secenekler": [
+      "A. İntramüsküler antipsikotik uygulanması",
+      "B. Psikiyatri konsültasyonu",
+      "C. Genel tıbbi tetkiklerinin, muayenesinin yapılması",
+      "D. Psikiyatri kliniğine yatışının yapılması",
+      "E. Hastanın takip eden psikiyatri hekimine konsültasyonu"
+    ],
+    "dogru_cevap": "C. Genel tıbbi tetkiklerinin, muayenesinin yapılması",
+    "aciklama": "Şizofreni hastasında yeni başlayan görsel varsanılar tıbbi bir durumu düşündürmelidir. İlk adım tıbbi değerlendirmedir."
+  },
+  {
+    "id": "5.6",
+    "soru": "65 yaşında yalnız yaşayan bir kadın, yiyeceklerin zehirli olduğunu düşünerek yemeyi bırakmış, 14 kg zayıflamış ve dehidrate olmuştur. En uygun yaklaşım hangisidir?",
+    "secenekler": [
+      "A. Evde bakım hizmetlerine yönlendirilerek taburculuk",
+      "B. Bakımevine taburculuk",
+      "C. Oğluyla birlikte yaşaması koşulu ile taburculuk",
+      "D. Hastane yatışı",
+      "E. Sonraki güne psikiyatri randevusu ayarlanarak evine taburculuk"
+    ],
+    "dogru_cevap": "D. Hastane yatışı",
+    "aciklama": "Hasta akut psikotik durumda olup kendine bakım verememektedir. Dehidratasyon ve ciddi kilo kaybı nedeniyle yatış gerekir."
+  },
+  {
+    "id": "5.7",
+    "soru": "Haloperidol kullanan bir hastada bacaklarını hareket ettirme ve etrafta dolaşma dürtüsü (akatizi) gelişiyor. Bu semptomlar için ilk basamak tedavi nedir?",
+    "secenekler": [
+      "A. Ropirinol",
+      "B. Benztropin",
+      "C. Propranolol",
+      "D. Triheksifenidil",
+      "E. Valbenazin"
+    ],
+    "dogru_cevap": "C. Propranolol",
+    "aciklama": "Akatizinin ilk basamak tedavisi beta-blokerlerdir (ör: propranolol)."
+  },
+  {
+    "id": "5.8",
+    "soru": "Uzun süreli flufenazin kullanımına bağlı şiddetli tardif diskinezi gelişen bir hastada diğer tedaviler (VMAT-2 inhibitörleri vb.) başarısız olmuştur. En uygun tedavi nedir?",
+    "secenekler": [
+      "A. Haloperidole geçiş",
+      "B. Daha yavaş doz azaltımı",
+      "C. Tetrabenazin başlanması",
+      "D. Aripiprazole geçiş",
+      "E. Klozapine geçiş"
+    ],
+    "dogru_cevap": "E. Klozapine geçiş",
+    "aciklama": "Tedaviye dirençli şiddetli tardif diskinezide klozapin en etkili seçenektir."
+  },
+  {
+    "id": "5.9",
+    "soru": "İkinci kez akut psikotik atak geçiren ve ketiapin ile düzelen bir hasta, ilacı ne kadar süre kullanması gerektiğini soruyor. Doktorun yanıtı ne olmalıdır?",
+    "secenekler": [
+      "A. 2 yıl kullan",
+      "B. 1 yıl kullan",
+      "C. 5 yıl kullan",
+      "D. Düzenli değerlendirelim",
+      "E. İlacı sürekli kullanmalısınız"
+    ],
+    "dogru_cevap": "E. İlacı sürekli kullanmalısınız",
+    "aciklama": "Hasta iki psikotik atak geçirmiştir. Nüks riskini azaltmak için çoğu uzman yaşam boyu idame tedavisini önerir."
+  },
+  {
+    "id": "5.10",
+    "soru": "4 farklı antipsikotiği (oral ve depo) yeterli doz ve sürede kullanmasına rağmen fayda görmeyen şizofreni hastası için bir sonraki adım ne olmalıdır?",
+    "secenekler": [
+      "A. 1. kuşak eklemek",
+      "B. 1. kuşak depo enjeksiyona geçmek",
+      "C. Klozapine geçmek",
+      "D. 3 aylık enjeksiyona geçmek",
+      "E. Uzun etkili eklemek"
+    ],
+    "dogru_cevap": "C. Klozapine geçmek",
+    "aciklama": "Tedaviye dirençli şizofrenide klozapin bir sonraki adım olarak standarttır."
+  },
+  {
+    "id": "5.11",
+    "soru": "Belirli bir antipsikotik tedavisinden fayda gören hastalar, daha fazla iyileşmeyi izlemek için en az ne kadar süre bu ilacı kullanmalıdır?",
+    "secenekler": [
+      "A. 4 hafta",
+      "B. 6 hafta",
+      "C. 3 ay",
+      "D. 6 ay",
+      "E. 1 yıl"
+    ],
+    "dogru_cevap": "C. 3 ay",
+    "aciklama": "Yanıt alınan antipsikotikte klinik iyileşme genellikle 3 ay boyunca devam edebilir, bu nedenle en az 3 ay ilaç sürdürülmelidir."
+  },
+  {
+    "id": "5.12",
+    "soru": "Şizofreni hastalarının beyin BT taramalarında en sık görülen nöroanatomik anomali hangisidir?",
+    "secenekler": [
+      "A. Kaudat nükleusta D2 azalması",
+      "B. Ventriküllerde genişleme",
+      "C. Talamusta beyaz cevher artışı",
+      "D. Amigdalada büyüme",
+      "E. Nükleus akumbenste D2 azalması"
+    ],
+    "dogru_cevap": "B. Ventriküllerde genişleme",
+    "aciklama": "Şizofrenide en tutarlı nörogörüntüleme bulgusu lateral ve üçüncü ventriküllerin genişlemesidir."
+  },
+  {
+    "id": "5.13",
+    "soru": "Klozapin kullanan hastalara, ilacı kullanmaya devam edebilmeleri için düzenli olarak hangi laboratuvar testi uygulanmalıdır?",
+    "secenekler": [
+      "A. Tam kan sayımı",
+      "B. Geniş metabolik panel",
+      "C. Lipit profili",
+      "D. Hemoglobin A1c",
+      "E. Karaciğer fonksiyon testleri"
+    ],
+    "dogru_cevap": "A. Tam kan sayımı",
+    "aciklama": "Klozapin agranülositoz riski nedeniyle düzenli tam kan sayımı takibi gerektirir."
+  },
+  {
+    "id": "6.1",
+    "soru": "DSM-5-TR'ye göre hangi ölçüt maniyi hipomaniden ayırır?",
+    "secenekler": [
+      "A. Atak süresi",
+      "B. Belirti sayısı",
+      "C. Depresif bir atak boyunca işlev bozukluğu düzeyi",
+      "D. Yavaş başlangıç yerine ani başlangıç",
+      "E. Hastaneye yatış gerekliliği"
+    ],
+    "dogru_cevap": "E. Hastaneye yatış gerekliliği",
+    "aciklama": "Hipomani işlevsellik bozukluğu veya hastaneye yatış gerektirmez; mani ise gerektirebilir."
+  },
+  {
+    "id": "6.2",
+    "soru": "30 yaşındaki kadın, bazen yüksek enerjili ve az uyuduğu, bazen de düşük enerjili ve mutsuz olduğu dönemler tanımlıyor. Ancak bu dönemler tam mani veya majör depresyon kriterlerini karşılamıyor. En olası tanı nedir?",
+    "secenekler": [
+      "A. Kronik depresif bozukluk",
+      "B. Sınırdurum kişilik bozukluğu",
+      "C. Siklotimi",
+      "D. Bipolar II bozukluk",
+      "E. Bipolar I bozukluk"
+    ],
+    "dogru_cevap": "C. Siklotimi",
+    "aciklama": "2 yıldan uzun süren hipomani benzeri ve depresif dönemler, ancak tam epizod kriterlerini karşılamıyorsa siklotimi düşünülür."
+  },
+  {
+    "id": "6.3",
+    "soru": "İlk kez manik atak geçiren 21 yaşındaki bir hastada ilaç tedavisi ne kadar sürdürülmelidir?",
+    "secenekler": [
+      "A. En az 1 ay",
+      "B. En az 3 ay",
+      "C. En az 6 ay",
+      "D. En az 1 yıl",
+      "E. Belirsiz süreyle"
+    ],
+    "dogru_cevap": "B. En az 3 ay",
+    "aciklama": "Tedavi edilmeyen manik epizod yaklaşık 3 ay sürer; bu nedenle düzelme sağlansa bile en az 3 ay tedavi gerekir."
+  },
+  {
+    "id": "6.4",
+    "soru": "Bipolar I bozukluğu olan bir hasta için daha iyi prognozu yordayan etken hangisidir?",
+    "secenekler": [
+      "A. Erkek cinsiyet",
+      "B. Başlangıç yaşının ileri olması",
+      "C. Depresif özellikler",
+      "D. Ataklar arası depresif özellikler",
+      "E. Manik atakların daha uzun süreli olması"
+    ],
+    "dogru_cevap": "B. Başlangıç yaşının ileri olması",
+    "aciklama": "İleri başlangıç yaşı ve daha kısa manik dönemler daha iyi prognozla ilişkilidir."
+  },
+  {
+    "id": "6.5",
+    "soru": "Bipolar bozukluk öyküsü olan bir kadın, tatilde ilacını kestikten sonra akut mani (çıplak koşma, para harcama) tablosuyla geliyor. En uygun yaklaşım nedir?",
+    "secenekler": [
+      "A. Bir psikiyatri hastanesine yatışı için başvuru",
+      "B. Taburcu edip ertesi gün takip",
+      "C. Yarı zamanlı hastane programı",
+      "D. Yoğun ayakta tedavi",
+      "E. Sedatif reçete ile taburcu"
+    ],
+    "dogru_cevap": "A. Bir psikiyatri hastanesine yatışı için başvuru",
+    "aciklama": "Hasta belirgin olarak manik ve risk altındadır. Güvenlik ve tedavi açısından hastane yatışı gereklidir."
+  },
+  {
+    "id": "6.6",
+    "soru": "Akut bipolar depresyon için kanıt düzeyi en yüksek ilaç nedir?",
+    "secenekler": [
+      "A. Lityum",
+      "B. Fluoksetin",
+      "C. Olanzapin",
+      "D. Ketiyapin",
+      "E. Brekspiprazol"
+    ],
+    "dogru_cevap": "D. Ketiyapin",
+    "aciklama": "Ketiapin bipolar depresyonda birinci sırada önerilen ve en güçlü kanıt desteği olan ilaçtır."
+  },
+  {
+    "id": "6.7",
+    "soru": "Ciddi intihar girişimi olan ve ilaç uyumu zayıf olan bipolar depresyon hastası için en uygun tedavi nedir?",
+    "secenekler": [
+      "A. Lityum",
+      "B. Ketiyapin",
+      "C. Elektrokonvülzif tedavi (EKT)",
+      "D. Valproat",
+      "E. Lamotrijin"
+    ],
+    "dogru_cevap": "C. Elektrokonvülzif tedavi (EKT)",
+    "aciklama": "EKT, ağır bipolar depresyon ve intihar riskinde hızlı ve etkili bir tedavi sağlar."
+  },
+  {
+    "id": "6.8",
+    "soru": "Bipolar II bozukluğu ve hipotiroidizmi olan, valproattan kilo aldığı için şikayetçi olan bir hasta depresif belirtilerle geliyor. En uygun tedavi nedir?",
+    "secenekler": [
+      "A. Lityum",
+      "B. Ketiyapin",
+      "C. Aripiprazol",
+      "D. Fluoksetin",
+      "E. Lamotrijin"
+    ],
+    "dogru_cevap": "E. Lamotrijin",
+    "aciklama": "Lamotrijin bipolar depresyonda etkilidir ve kilo aldırmaz. Lityum ise hipotiroidiyi kötüleştirebilir."
+  }
+]
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
