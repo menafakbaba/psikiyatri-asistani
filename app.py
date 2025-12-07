@@ -14,34 +14,68 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Renk Paleti
+# Renk Paleti (Ana temalar için)
 primary_color = "#3A0CA3"
 secondary_color = "#F72585"
 bg_color = "#F8F9FA"
 
-# --- CSS VE ANİMASYON ---
+# --- CSS VE ANİMASYON (GÜNCELLENDİ) ---
 st.markdown(f"""
     <style>
     .stApp {{ background-color: {bg_color}; }}
     
+    /* Arka plan konteyneri */
     .psych-bg {{
         position: fixed; top: 0; left: 0; width: 100%; height: 100%;
         z-index: 0; overflow: hidden; pointer-events: none;
     }}
+
+    /* Ana İkon Stili (Opaklık Artırıldı, Renk Kaldırıldı) */
     .psych-icon {{
-        position: absolute; top: -50px; color: {primary_color};
-        opacity: 0.25; animation: fall linear infinite;
+        position: absolute; top: -100px;
+        opacity: 0.5; /* Opaklık 2 katına çıkarıldı (Daha belirgin) */
+        animation: fall linear infinite;
     }}
+
+    /* Düşme Animasyonu */
     @keyframes fall {{
         0% {{ transform: translateY(-10vh) rotate(0deg); }}
-        100% {{ transform: translateY(110vh) rotate(360deg); }}
+        100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
-    .i1 {{ left: 10%; animation-duration: 12s; font-size: 4rem; }}
-    .i2 {{ left: 25%; animation-duration: 15s; font-size: 3rem; }}
-    .i3 {{ left: 45%; animation-duration: 10s; font-size: 3.5rem; }}
-    .i4 {{ left: 70%; animation-duration: 18s; font-size: 4rem; }}
-    .i5 {{ left: 85%; animation-duration: 14s; font-size: 3rem; }}
+
+    /* --- İKON VARYASYONLARI (20 Adet - Renkli ve Farklı Konumlu) --- */
+    /* Renk Paleti: Mor, Pembe, Mavi, Yeşil, Turkuaz, Sarımsı */
     
+    /* Grup 1 */
+    .i1 {{ left: 5%;  animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }} /* Mor */
+    .i2 {{ left: 12%; animation-duration: 15s; animation-delay: 2s; font-size: 2.5rem; color: #F72585; }} /* Pembe */
+    .i3 {{ left: 20%; animation-duration: 10s; animation-delay: 4s; font-size: 3rem; color: #4361ee; }} /* Mavi */
+    .i4 {{ left: 28%; animation-duration: 18s; font-size: 2.2rem; color: #06d6a0; }} /* Yeşil */
+    .i5 {{ left: 35%; animation-duration: 14s; animation-delay: 1s; font-size: 3.5rem; color: #4cc9f0; }} /* Turkuaz */
+
+    /* Grup 2 */
+    .i6 {{ left: 42%; animation-duration: 11s; animation-delay: 3s; font-size: 2.8rem; color: #f9c74f; }} /* Sarı */
+    .i7 {{ left: 50%; animation-duration: 16s; animation-delay: 0.5s; font-size: 3rem; color: #3A0CA3; }}
+    .i8 {{ left: 58%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; color: #F72585; }}
+    .i9 {{ left: 65%; animation-duration: 19s; animation-delay: 2s; font-size: 3.2rem; color: #4361ee; }}
+    .i10 {{ left: 72%; animation-duration: 10s; animation-delay: 1.5s; font-size: 2.5rem; color: #06d6a0; }}
+
+    /* Grup 3 */
+    .i11 {{ left: 3%;  animation-duration: 17s; animation-delay: 6s; font-size: 3rem; color: #4cc9f0; }}
+    .i12 {{ left: 18%; animation-duration: 12s; animation-delay: 3.5s; font-size: 2.2rem; color: #f9c74f; }}
+    .i13 {{ left: 33%; animation-duration: 14s; animation-delay: 7s; font-size: 2.8rem; color: #3A0CA3; }}
+    .i14 {{ left: 48%; animation-duration: 20s; animation-delay: 0s; font-size: 3.5rem; color: #F72585; }}
+    .i15 {{ left: 63%; animation-duration: 11s; animation-delay: 4.5s; font-size: 2rem; color: #4361ee; }}
+
+    /* Grup 4 */
+    .i16 {{ left: 78%; animation-duration: 15s; animation-delay: 2.5s; font-size: 3rem; color: #06d6a0; }}
+    .i17 {{ left: 85%; animation-duration: 9s;  animation-delay: 1s; font-size: 2.4rem; color: #4cc9f0; }}
+    .i18 {{ left: 92%; animation-duration: 18s; animation-delay: 5.5s; font-size: 2.8rem; color: #3A0CA3; }}
+    .i19 {{ left: 10%; animation-duration: 13s; animation-delay: 8s; font-size: 3.2rem; color: #F72585; }}
+    .i20 {{ left: 55%; animation-duration: 16s; animation-delay: 3s; font-size: 2.5rem; color: #4361ee; }}
+    
+    
+    /* --- DİĞER CSS --- */
     .block-container {{ z-index: 1; position: relative; }}
     
     .glass-banner {{
@@ -81,8 +115,10 @@ st.markdown(f"""
     </style>
 
     <div class="psych-bg">
-        <div class="psych-icon i1">🧠</div><div class="psych-icon i2">🧩</div>
-        <div class="psych-icon i3">⚕️</div><div class="psych-icon i4">🧬</div><div class="psych-icon i5">💭</div>
+        <div class="psych-icon i1">🧠</div><div class="psych-icon i2">🧩</div><div class="psych-icon i3">⚕️</div><div class="psych-icon i4">🧬</div><div class="psych-icon i5">💭</div>
+        <div class="psych-icon i6">🧠</div><div class="psych-icon i7">🧩</div><div class="psych-icon i8">⚕️</div><div class="psych-icon i9">🧬</div><div class="psych-icon i10">💭</div>
+        <div class="psych-icon i11">🧠</div><div class="psych-icon i12">🧩</div><div class="psych-icon i13">⚕️</div><div class="psych-icon i14">🧬</div><div class="psych-icon i15">💭</div>
+        <div class="psych-icon i16">🧠</div><div class="psych-icon i17">🧩</div><div class="psych-icon i18">⚕️</div><div class="psych-icon i19">🧬</div><div class="psych-icon i20">💭</div>
     </div>
 """, unsafe_allow_html=True)
 
@@ -103,20 +139,12 @@ if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 def get_google_sheet():
     """Gspread ile Google Sheets'e bağlanır."""
     try:
-        # 1. Kapsam (Yetki Alanı)
         scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-        
-        # 2. Secrets'tan bilgileri al (Streamlit Secrets yapısına uygun)
-        # Secrets.toml dosyanızdaki [connections.gsheets] başlığı altındaki bilgileri kullanır.
         creds_dict = dict(st.secrets["connections"]["gsheets"])
-        
-        # 3. Kimlik doğrulama
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
-        
-        # 4. Tabloyu Aç (Link ile)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        # 'Sayfa1' kısmını gerekirse 'Liderlik Tablosu' olarak değiştirin
+        # DİKKAT: Sekme adınız farklıysa burayı değiştirin (Örn: 'Liderlik Tablosu')
         sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
     except Exception as e:
@@ -137,7 +165,6 @@ def save_score_to_db():
     sheet = get_google_sheet()
     if sheet:
         try:
-            # Yeni satırı listenin sonuna ekle
             tarih = pd.to_datetime('today').strftime('%Y-%m-%d %H:%M')
             sheet.append_row([st.session_state.user_name, st.session_state.score, tarih])
             return True, "Başarılı"
