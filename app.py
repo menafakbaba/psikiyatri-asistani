@@ -14,34 +14,47 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- RENK PALETİ (SİYAH/BEYAZ UYUMU) ---
+# --- RENK PALETİ ---
 primary_color = "#3A0CA3"   # Ana Mor
-secondary_color = "#F72585" # Pembe Vurgu
-bg_color = "#F8F9FA"        # Beyaz/Gri Arka Plan
-text_color = "#212529"      # Net Siyah Yazı
+secondary_color = "#F72585" # Pembe
+bg_color = "#F8F9FA"        # Beyaz/Gri Zemin
+text_color = "#212529"      # Siyah Yazı
 
-# --- CSS VE ANİMASYON ---
+# --- TEK PARÇA CSS VE ANİMASYON HTML'İ ---
+# Animasyonları ve stilleri tek blokta birleştirdim, böylece kaybolmazlar.
 st.markdown(f"""
     <style>
     /* 1. GENEL AYARLAR */
     .stApp {{
         background-color: {bg_color};
-        color: {text_color};
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }}
     
     h1, h2, h3, h4 {{ color: {primary_color} !important; font-weight: 700; }}
-    p {{ color: #495057; }} /* Koyu gri paragraflar */
+    p, span, div {{ color: {text_color}; }}
 
-    /* 2. ARKA PLAN ANİMASYONU (60 İKON, %50 OPAK) */
+    /* 2. ARKA PLAN ANİMASYONU (SABİTLENDİ) */
     .psych-bg {{
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        z-index: -1; overflow: hidden; pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; /* İçerikle çakışmasın diye 0 */
+        overflow: hidden;
+        pointer-events: none;
+    }}
+    
+    /* İçeriği öne çıkarmak için */
+    .block-container {{
+        position: relative;
+        z-index: 1; /* İçerik her zaman animasyonun üstünde */
     }}
 
     .psych-icon {{
-        position: absolute; top: -100px;
-        opacity: 0.5; /* İstenilen %50 Opaklık */
+        position: absolute;
+        top: -100px;
+        opacity: 0.5; /* %50 Opaklık */
         animation: fall linear infinite;
         font-weight: bold;
     }}
@@ -50,97 +63,122 @@ st.markdown(f"""
         0% {{ transform: translateY(-10vh) rotate(0deg); }}
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
-
-    /* Dinamik CSS Sınıfları (Aşağıda HTML ile oluşturulacak) */
     
-    /* 3. MERHABA BARI (%10 Kalınlık, Tam Genişlik) */
+    /* 60 ADET İKON POZİSYONLARI (Python döngüsü yerine saf CSS/HTML) */
+    .i1 {{ left: 2%; animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }}
+    .i2 {{ left: 5%; animation-duration: 15s; font-size: 2rem; color: #F72585; }}
+    .i3 {{ left: 10%; animation-duration: 10s; font-size: 3.5rem; color: #4361ee; }}
+    .i4 {{ left: 15%; animation-duration: 18s; font-size: 2.2rem; color: #06d6a0; }}
+    .i5 {{ left: 20%; animation-duration: 14s; font-size: 3rem; color: #3A0CA3; }}
+    .i6 {{ left: 25%; animation-duration: 11s; font-size: 2.8rem; color: #f9c74f; }}
+    .i7 {{ left: 30%; animation-duration: 16s; font-size: 3rem; color: #F72585; }}
+    .i8 {{ left: 35%; animation-duration: 13s; font-size: 2rem; color: #4361ee; }}
+    .i9 {{ left: 40%; animation-duration: 19s; font-size: 3.2rem; color: #06d6a0; }}
+    .i10 {{ left: 45%; animation-duration: 10s; font-size: 2.5rem; color: #3A0CA3; }}
+    .i11 {{ left: 50%; animation-duration: 17s; font-size: 3rem; color: #F72585; }}
+    .i12 {{ left: 55%; animation-duration: 12s; font-size: 2.2rem; color: #f9c74f; }}
+    .i13 {{ left: 60%; animation-duration: 14s; font-size: 2.8rem; color: #4361ee; }}
+    .i14 {{ left: 65%; animation-duration: 20s; font-size: 3.5rem; color: #3A0CA3; }}
+    .i15 {{ left: 70%; animation-duration: 11s; font-size: 2rem; color: #F72585; }}
+    .i16 {{ left: 75%; animation-duration: 15s; font-size: 3rem; color: #06d6a0; }}
+    .i17 {{ left: 80%; animation-duration: 9s; font-size: 2.4rem; color: #4361ee; }}
+    .i18 {{ left: 85%; animation-duration: 18s; font-size: 2.8rem; color: #3A0CA3; }}
+    .i19 {{ left: 90%; animation-duration: 13s; font-size: 3.2rem; color: #F72585; }}
+    .i20 {{ left: 95%; animation-duration: 16s; font-size: 2.5rem; color: #f9c74f; }}
+    /* Tekrar eden ekstra ikonlar */
+    .i21 {{ left: 3%; animation-duration: 22s; font-size: 2rem; color: #3A0CA3; animation-delay: 5s; }}
+    .i22 {{ left: 12%; animation-duration: 13s; font-size: 3rem; color: #F72585; animation-delay: 2s; }}
+    .i23 {{ left: 23%; animation-duration: 19s; font-size: 2.5rem; color: #4361ee; animation-delay: 7s; }}
+    .i24 {{ left: 33%; animation-duration: 15s; font-size: 3.2rem; color: #06d6a0; animation-delay: 1s; }}
+    .i25 {{ left: 43%; animation-duration: 11s; font-size: 2.8rem; color: #3A0CA3; animation-delay: 4s; }}
+    .i26 {{ left: 53%; animation-duration: 18s; font-size: 3rem; color: #f9c74f; animation-delay: 6s; }}
+    .i27 {{ left: 63%; animation-duration: 14s; font-size: 2.2rem; color: #F72585; animation-delay: 3s; }}
+    .i28 {{ left: 73%; animation-duration: 21s; font-size: 3.5rem; color: #4361ee; animation-delay: 8s; }}
+    .i29 {{ left: 83%; animation-duration: 10s; font-size: 2.5rem; color: #06d6a0; animation-delay: 2s; }}
+    .i30 {{ left: 93%; animation-duration: 16s; font-size: 3rem; color: #3A0CA3; animation-delay: 5s; }}
+
+
+    /* 3. BUTON DÜZELTMESİ (ÖNEMLİ) */
+    /* Primary butonun (Sınava Başla) rengini zorla mor yapıyoruz */
+    div.stButton > button[kind="primary"] {{
+        background-color: {primary_color} !important;
+        color: white !important;
+        border: none !important;
+        font-weight: bold !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
+    }}
+    div.stButton > button[kind="primary"]:hover {{
+        background-color: #4800b0 !important;
+        color: white !important;
+    }}
+    /* Diğer butonlar */
+    div.stButton > button {{
+        background-color: white;
+        color: {text_color};
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+    }}
+    div.stButton > button:hover {{
+        border-color: {primary_color};
+        color: {primary_color};
+    }}
+
+    /* 4. MERHABA BARI */
     .greeting-card {{
         background-color: white;
-        max-width: 500px; /* Banner ile aynı genişlik */
-        margin: 0 auto 10px auto; /* Banner'a yakın */
+        max-width: 500px;
+        margin: 0 auto 10px auto;
         padding: 10px 20px;
         border-radius: 12px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        display: flex;
-        align-items: center;
+        display: flex; align-items: center;
         border-left: 5px solid {secondary_color};
     }}
-    .greeting-text {{
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: {text_color};
-        margin: 0;
-    }}
 
-    /* 4. ANA BANNER (%50 KÜÇÜLTÜLMÜŞ) */
+    /* 5. KOMPAKT BANNER */
     .compact-banner {{
         background: linear-gradient(135deg, {primary_color} 0%, #7209B7 100%);
-        padding: 20px; /* Dolgu azaltıldı */
+        padding: 20px;
         border-radius: 20px;
         color: white !important;
         text-align: center;
-        max-width: 500px; /* Genişlik sınırlandı */
+        max-width: 500px;
         margin: 0 auto 30px auto;
         box-shadow: 0 10px 20px rgba(58, 12, 163, 0.2);
     }}
-    .compact-banner h2 {{
-        color: white !important;
-        margin: 0;
-        font-size: 1.8rem; /* Font küçüldü */
-    }}
-    .compact-banner p {{
-        color: rgba(255,255,255,0.9);
-        font-size: 0.9rem;
-        margin-top: 5px;
-    }}
+    .compact-banner h2 {{ color: white !important; margin: 0; font-size: 1.8rem; }}
+    .compact-banner p {{ color: rgba(255,255,255,0.9) !important; font-size: 0.9rem; margin-top: 5px; }}
 
-    /* 5. LİDERLİK TABLOSU GÜZELLEŞTİRME */
+    /* 6. LİDERLİK TABLOSU */
     .leaderboard-container {{
         background-color: white;
-        padding: 20px;
-        border-radius: 15px;
+        padding: 20px; border-radius: 15px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         border: 1px solid #eee;
     }}
-    
-    /* Butonlar */
-    div.stButton > button {{
-        border-radius: 10px; border: 1px solid #e0e0e0;
-        background-color: white; color: {text_color}; font-weight: 600;
-        transition: all 0.2s;
-    }}
-    div.stButton > button:hover {{
-        border-color: {primary_color}; color: {primary_color}; background-color: #f8f0fc;
-    }}
-    div.stButton > button[kind="primary"] {{
-        background-color: {primary_color}; color: white; border: none;
-    }}
-    div.stButton > button[kind="primary"]:hover {{
-        background-color: #4800b0;
-    }}
 
-    /* Elementleri gizle */
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
     </style>
-""", unsafe_allow_html=True)
 
-# --- 60 TANE ANİMASYON İKONU OLUŞTURUCU ---
-# Tek tek yazmak yerine Python ile HTML üretiyoruz (Kod kirliliğini önler)
-icons = ["🧠", "🧩", "⚕️", "🧬", "💭", "💊", "🩺", "💡"]
-colors = ["#3A0CA3", "#F72585", "#4361ee", "#06d6a0", "#f9c74f"]
-animation_html = '<div class="psych-bg">'
-for i in range(1, 61):
-    left = random.randint(1, 98)
-    dur = random.randint(10, 25)
-    delay = random.randint(0, 10)
-    size = random.uniform(1.5, 3.5)
-    icon = random.choice(icons)
-    color = random.choice(colors)
-    
-    style = f"left:{left}%; animation-duration:{dur}s; animation-delay:{delay}s; font-size:{size}rem; color:{color};"
-    animation_html += f'<div class="psych-icon" style="{style}">{icon}</div>'
-animation_html += '</div>'
-st.markdown(animation_html, unsafe_allow_html=True)
+    <div class="psych-bg">
+        <div class="psych-icon i1">🧠</div><div class="psych-icon i2">🧩</div><div class="psych-icon i3">⚕️</div>
+        <div class="psych-icon i4">🧬</div><div class="psych-icon i5">💭</div><div class="psych-icon i6">🧠</div>
+        <div class="psych-icon i7">🧩</div><div class="psych-icon i8">⚕️</div><div class="psych-icon i9">🧬</div>
+        <div class="psych-icon i10">💭</div><div class="psych-icon i11">💊</div><div class="psych-icon i12">🩺</div>
+        <div class="psych-icon i13">💡</div><div class="psych-icon i14">⚛️</div><div class="psych-icon i15">🧠</div>
+        <div class="psych-icon i16">🧠</div><div class="psych-icon i17">🧩</div><div class="psych-icon i18">⚕️</div>
+        <div class="psych-icon i19">🧬</div><div class="psych-icon i20">💭</div>
+        <div class="psych-icon i21">🧠</div><div class="psych-icon i22">🧩</div><div class="psych-icon i23">⚕️</div>
+        <div class="psych-icon i24">🧬</div><div class="psych-icon i25">💭</div><div class="psych-icon i26">🧠</div>
+        <div class="psych-icon i27">🧩</div><div class="psych-icon i28">⚕️</div><div class="psych-icon i29">🧬</div>
+        <div class="psych-icon i30">💭</div>
+        <div class="psych-icon i1" style="animation-delay:5s; left:15%;">🧠</div>
+        <div class="psych-icon i3" style="animation-delay:2s; left:35%;">⚕️</div>
+        <div class="psych-icon i5" style="animation-delay:7s; left:55%;">💭</div>
+        <div class="psych-icon i7" style="animation-delay:4s; left:75%;">🧩</div>
+        <div class="psych-icon i9" style="animation-delay:1s; left:95%;">🧬</div>
+    </div>
+""", unsafe_allow_html=True)
 
 
 # --- STATE YÖNETİMİ ---
@@ -165,7 +203,7 @@ def get_google_sheet():
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
         sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
-    except Exception as e:
+    except Exception:
         return None
 
 def fetch_leaderboard():
@@ -243,7 +281,7 @@ def quit_quiz():
 # --- SAYFALAR ---
 
 def home_page():
-    # GİRİŞ KONTROLÜ (GİZLİ)
+    # GİRİŞ KONTROLÜ
     if st.session_state.user_name == "Misafir":
         st.markdown(f"<div style='text-align:center; margin-bottom:20px;'><h3>👋 Hoş Geldiniz</h3></div>", unsafe_allow_html=True)
         name = st.text_input("Yarışmak için adını gir:", placeholder="Adınız...")
@@ -252,15 +290,15 @@ def home_page():
             st.query_params["kullanici"] = name
             st.rerun()
     else:
-        # 1. YENİ MERHABA BARI (İnce, Banner Genişliğinde)
+        # MERHABA BARI
         st.markdown(f"""
             <div class="greeting-card">
                 <span style="font-size:1.5rem; margin-right:10px;">👋</span>
-                <p class="greeting-text">Merhaba, {st.session_state.user_name}</p>
+                <p style="margin:0; font-weight:600; color:#333;">Merhaba, {st.session_state.user_name}</p>
             </div>
         """, unsafe_allow_html=True)
 
-    # 2. KOMPAKT BANNER (%50 Küçültüldü)
+    # BANNER
     st.markdown(f"""
         <div class="compact-banner">
             <div style="font-size: 2.5rem; margin-bottom: 5px;">🏆</div>
@@ -271,6 +309,7 @@ def home_page():
 
     c1, c2 = st.columns(2)
     with c1:
+        # PRİMARY BUTON
         if st.button("🚀 Sınava Başla", type="primary", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
@@ -304,7 +343,6 @@ def quiz_page():
     </div>
     """, unsafe_allow_html=True)
     
-    # Soru Kartı (Daha şık)
     st.markdown(f"""
     <div style="background:white; padding:20px; border-radius:12px; border-left:5px solid {secondary_color}; box-shadow:0 2px 10px rgba(0,0,0,0.05); margin-bottom:20px; color:#333; font-weight:600; font-size:1.1rem;">
         {q_data["soru"]}
@@ -367,7 +405,6 @@ def result_page():
             st.rerun()
 
 def leaderboard_page():
-    # ŞIK BAŞLIK
     st.markdown(f"""
     <div style="text-align:center; margin-bottom:20px;">
         <h2 style="color:{primary_color};">🏆 Liderlik Tablosu</h2>
@@ -378,7 +415,6 @@ def leaderboard_page():
     with st.spinner('Veriler yükleniyor...'):
         df = fetch_leaderboard()
     
-    # ŞIK TABLO GÖRÜNÜMÜ
     st.markdown('<div class="leaderboard-container">', unsafe_allow_html=True)
     
     if not df.empty:
@@ -389,7 +425,6 @@ def leaderboard_page():
                 df = df.sort_values(by=[skor_col], ascending=False).reset_index(drop=True)
                 df.index += 1
                 
-                # Tabloyu göster
                 st.dataframe(
                     df, 
                     use_container_width=True,
@@ -404,7 +439,7 @@ def leaderboard_page():
     else:
         st.info("Henüz kayıtlı veri yok.")
         
-    st.markdown('</div>', unsafe_allow_html=True) # Container bitiş
+    st.markdown('</div>', unsafe_allow_html=True)
     
     st.write("")
     if st.button("⬅ Ana Menü", use_container_width=True):
