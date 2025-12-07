@@ -26,24 +26,23 @@ st.markdown(f"""
         background-color: {bg_color};
     }}
     
-    /* --- 1. ARKA PLAN ANİMASYONU (DÜŞEN SEMBOLLER) --- */
+    /* --- 1. ARKA PLAN ANİMASYONU (DAHA BELİRGİN) --- */
     .psych-bg {{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 0; /* İçeriğin arkasında, arka planın önünde */
+        z-index: 0;
         overflow: hidden;
-        pointer-events: none; /* Tıklamayı engellemez */
+        pointer-events: none;
     }}
 
     .psych-icon {{
         position: absolute;
         top: -50px;
         color: {primary_color};
-        font-size: 2rem;
-        opacity: 0.08; /* Çok silik, göz yormaz */
+        opacity: 0.25; /* Opaklık artırıldı (Daha belirgin) */
         animation: fall linear infinite;
     }}
 
@@ -52,12 +51,12 @@ st.markdown(f"""
         100% {{ transform: translateY(110vh) rotate(360deg); }}
     }}
 
-    /* Sembollerin rastgele düşüş varyasyonları */
-    .i1 {{ left: 10%; animation-duration: 12s; animation-delay: 0s; font-size: 3rem; }}
-    .i2 {{ left: 25%; animation-duration: 15s; animation-delay: 2s; font-size: 2rem; }}
-    .i3 {{ left: 45%; animation-duration: 10s; animation-delay: 5s; font-size: 2.5rem; }}
-    .i4 {{ left: 70%; animation-duration: 18s; animation-delay: 1s; font-size: 3rem; }}
-    .i5 {{ left: 85%; animation-duration: 14s; animation-delay: 3s; font-size: 2rem; }}
+    /* Sembollerin boyutları ve hızları */
+    .i1 {{ left: 10%; animation-duration: 12s; animation-delay: 0s; font-size: 4rem; }}
+    .i2 {{ left: 25%; animation-duration: 15s; animation-delay: 2s; font-size: 3rem; }}
+    .i3 {{ left: 45%; animation-duration: 10s; animation-delay: 5s; font-size: 3.5rem; }}
+    .i4 {{ left: 70%; animation-duration: 18s; animation-delay: 1s; font-size: 4rem; }}
+    .i5 {{ left: 85%; animation-duration: 14s; animation-delay: 3s; font-size: 3rem; }}
     
     /* İçeriği öne çıkarmak için z-index ayarı */
     .block-container {{
@@ -65,31 +64,39 @@ st.markdown(f"""
         position: relative;
     }}
     
-    /* --- 2. GLASSMORPHISM BANNER (SİLİK BAŞLIK) --- */
+    /* --- 2. KOMPAKT VE TATLI BANNER --- */
     .glass-banner {{
-        background: rgba(58, 12, 163, 0.75); /* Mor renk ama %75 opak */
-        backdrop-filter: blur(8px); /* Arkadaki nesneleri flulaştırır */
-        -webkit-backdrop-filter: blur(8px);
-        padding: 30px 20px;
-        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(58, 12, 163, 0.85), rgba(114, 9, 183, 0.85));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 15px 20px; /* Daha az boşluk */
+        border-radius: 25px; /* Daha yuvarlak hatlar */
         color: white;
         text-align: center;
-        margin-bottom: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+        margin: 0 auto 30px auto; /* Ortalamak için */
+        max-width: 80%; /* Tam ekranı kaplamasın */
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 25px rgba(58, 12, 163, 0.3);
     }}
     
     .glass-banner h2 {{
         color: white !important;
         margin: 0;
-        font-size: 2.5rem;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        font-size: 1.8rem; /* Font küçültüldü */
+        font-weight: 700;
     }}
     
     .glass-banner p {{
-        font-size: 1.1rem;
+        font-size: 1rem;
         opacity: 0.9;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }}
+    
+    .banner-icon {{
+        font-size: 2rem;
+        margin-bottom: 5px;
+        display: block;
     }}
 
     /* --- DİĞER STİLLER --- */
@@ -102,7 +109,7 @@ st.markdown(f"""
         padding: 20px;
         border-radius: 15px;
         border-left: 5px solid {secondary_color};
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         margin-bottom: 20px;
         font-size: 18px;
         font-weight: 600;
@@ -112,17 +119,19 @@ st.markdown(f"""
     /* Butonlar */
     div.stButton > button {{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 12px;
         border: 1px solid #ddd;
         background-color: white;
         color: #333;
-        font-weight: 500;
-        transition: all 0.3s;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s;
     }}
     div.stButton > button:hover {{
         background-color: #F3E5F5;
         border-color: {primary_color};
         color: {primary_color};
+        transform: scale(1.02);
     }}
     
     /* Primary Butonlar */
@@ -134,6 +143,14 @@ st.markdown(f"""
     div.stButton > button[kind="primary"]:hover {{
         background-color: #4800b0;
         color: white;
+    }}
+
+    /* Çıkış Butonu (Kırmızımsı) */
+    .quit-btn {{
+        color: red;
+        font-size: 12px;
+        text-align: right;
+        cursor: pointer;
     }}
 
     /* Sonuç Kartı */
@@ -151,7 +168,12 @@ st.markdown(f"""
     </style>
 
     <div class="psych-bg">
-        <div class="psych-icon i1">🧠</div> <div class="psych-icon i2">🧩</div> <div class="psych-icon i3">⚕️</div> <div class="psych-icon i4">🧬</div> <div class="psych-icon i5">💭</div> </div>
+        <div class="psych-icon i1">🧠</div>
+        <div class="psych-icon i2">🧩</div>
+        <div class="psych-icon i3">⚕️</div>
+        <div class="psych-icon i4">🧬</div>
+        <div class="psych-icon i5">💭</div>
+    </div>
 """, unsafe_allow_html=True)
 
 # --- STATE YÖNETİMİ ---
@@ -249,6 +271,13 @@ def next_question():
         st.session_state.current_page = 'result'
         st.rerun()
 
+def quit_quiz():
+    """Sınavı iptal edip ana sayfaya döner, skor kaydetmez."""
+    st.session_state.current_page = 'home'
+    st.session_state.score = 0
+    st.session_state.question_index = 0
+    st.rerun()
+
 # --- SAYFALAR ---
 
 def home_page():
@@ -261,12 +290,12 @@ def home_page():
             st.query_params["kullanici"] = name
             st.rerun()
 
-    # YENİ GLASS BANNER YAPISI
+    # YENİ KÜÇÜLTÜLMÜŞ TATLI BANNER
     st.markdown(f"""
         <div class="glass-banner">
-            <div style="font-size: 3rem; margin-bottom: 10px;">🏆</div>
+            <span class="banner-icon">🏆</span>
             <h2>Psikiyatri Ligi</h2>
-            <p>Bilgini test et, ismini zirveye yazdır!</p>
+            <p>Bilgini test et, zirveye çık!</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -286,20 +315,29 @@ def quiz_page():
     if not st.session_state.quiz_data:
         st.session_state.current_page = 'home'
         st.rerun()
-        
+    
+    # SINAVDAN ÇIKIŞ BUTONU (Üst Kısım)
+    c_exit, c_score = st.columns([1, 3])
+    with c_exit:
+        # Kırmızımsı bir iptal butonu
+        if st.button("❌ Çıkış", help="Sınavı iptal et ve ana menüye dön (Puan kaydedilmez)", use_container_width=True):
+            quit_quiz()
+            
     total_q = len(st.session_state.quiz_data)
     idx = st.session_state.question_index
     q_data = st.session_state.quiz_data[idx]
     
     st.progress((idx + 1) / total_q)
     
+    # Soru Sayısı ve Puan Bilgisi
     st.markdown(f"""
-    <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <span>Soru {idx + 1} / {total_q}</span>
+    <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.9rem; color:#666;">
+        <span>Soru <b>{idx + 1}</b> / {total_q}</span>
         <span style="color:{primary_color}; font-weight:bold;">💎 Puan: {st.session_state.score}</span>
     </div>
     """, unsafe_allow_html=True)
     
+    # Soru Kartı
     st.markdown(f'<div class="question-card">{q_data["soru"]}</div>', unsafe_allow_html=True)
     
     if not st.session_state.answer_submitted:
@@ -317,7 +355,7 @@ def quiz_page():
         with st.expander("ℹ️ Açıklama", expanded=True):
             st.info(q_data.get('aciklama', 'Açıklama yok.'))
             
-        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir 🏁"
+        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir ve Kaydet 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
             next_question()
 
@@ -332,13 +370,12 @@ def result_page():
             st.warning("Lütfen Google Sheet 'client_email' adresine Editör yetkisi verdiğinizden emin olun.")
 
     st.markdown("<br>", unsafe_allow_html=True)
-    total_q = len(st.session_state.quiz_data)
     
     st.markdown(f"""
         <div class="result-box">
             <div style="font-size: 60px;">🎉</div>
-            <h2 style="color: {primary_color};">Sınav Bitti!</h2>
-            <p style="font-size: 18px;">Sayın <b>{st.session_state.user_name}</b>,</p>
+            <h2 style="color: {primary_color};">Sınav Tamamlandı!</h2>
+            <p style="font-size: 18px;">Tebrikler <b>{st.session_state.user_name}</b>,</p>
             <hr>
             <div style="font-size: 16px; color: #555;">Toplam Skorun</div>
             <h1 style="color: {secondary_color}; font-size: 50px; margin: 0;">
