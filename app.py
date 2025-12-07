@@ -20,8 +20,7 @@ secondary_color = "#F72585" # Pembe
 bg_color = "#F8F9FA"        # Beyaz/Gri Zemin
 text_color = "#212529"      # Siyah Yazı
 
-# --- TEK PARÇA CSS VE ANİMASYON HTML'İ ---
-# Animasyonları ve stilleri tek blokta birleştirdim, böylece kaybolmazlar.
+# --- TEK PARÇA CSS VE ANİMASYON ---
 st.markdown(f"""
     <style>
     /* 1. GENEL AYARLAR */
@@ -33,28 +32,27 @@ st.markdown(f"""
     h1, h2, h3, h4 {{ color: {primary_color} !important; font-weight: 700; }}
     p, span, div {{ color: {text_color}; }}
 
-    /* 2. ARKA PLAN ANİMASYONU (SABİTLENDİ) */
+    /* 2. ARKA PLAN ANİMASYONU (SABİT) */
     .psych-bg {{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 0; /* İçerikle çakışmasın diye 0 */
+        z-index: 0;
         overflow: hidden;
         pointer-events: none;
     }}
     
-    /* İçeriği öne çıkarmak için */
     .block-container {{
         position: relative;
-        z-index: 1; /* İçerik her zaman animasyonun üstünde */
+        z-index: 1;
     }}
 
     .psych-icon {{
         position: absolute;
         top: -100px;
-        opacity: 0.5; /* %50 Opaklık */
+        opacity: 0.5;
         animation: fall linear infinite;
         font-weight: bold;
     }}
@@ -64,7 +62,7 @@ st.markdown(f"""
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
     
-    /* 60 ADET İKON POZİSYONLARI (Python döngüsü yerine saf CSS/HTML) */
+    /* 60 İKON POZİSYONLARI */
     .i1 {{ left: 2%; animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }}
     .i2 {{ left: 5%; animation-duration: 15s; font-size: 2rem; color: #F72585; }}
     .i3 {{ left: 10%; animation-duration: 10s; font-size: 3.5rem; color: #4361ee; }}
@@ -85,7 +83,7 @@ st.markdown(f"""
     .i18 {{ left: 85%; animation-duration: 18s; font-size: 2.8rem; color: #3A0CA3; }}
     .i19 {{ left: 90%; animation-duration: 13s; font-size: 3.2rem; color: #F72585; }}
     .i20 {{ left: 95%; animation-duration: 16s; font-size: 2.5rem; color: #f9c74f; }}
-    /* Tekrar eden ekstra ikonlar */
+    /* Ekstra İkonlar */
     .i21 {{ left: 3%; animation-duration: 22s; font-size: 2rem; color: #3A0CA3; animation-delay: 5s; }}
     .i22 {{ left: 12%; animation-duration: 13s; font-size: 3rem; color: #F72585; animation-delay: 2s; }}
     .i23 {{ left: 23%; animation-duration: 19s; font-size: 2.5rem; color: #4361ee; animation-delay: 7s; }}
@@ -98,32 +96,34 @@ st.markdown(f"""
     .i30 {{ left: 93%; animation-duration: 16s; font-size: 3rem; color: #3A0CA3; animation-delay: 5s; }}
 
 
-    /* 3. BUTON DÜZELTMESİ (ÖNEMLİ) */
-    /* Primary butonun (Sınava Başla) rengini zorla mor yapıyoruz */
+    /* 3. BUTON DÜZELTMESİ (KESİN ÇÖZÜM) */
+    /* Primary butonun (Sınava Başla) hem kendisini hem içindeki yazıyı zorla beyaz/mor yapıyoruz */
     div.stButton > button[kind="primary"] {{
         background-color: {primary_color} !important;
         color: white !important;
         border: none !important;
-        font-weight: bold !important;
         box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
     }}
+    
+    /* İçindeki yazı (p etiketi) gri olmasın diye */
+    div.stButton > button[kind="primary"] p {{
+        color: white !important;
+    }}
+    
     div.stButton > button[kind="primary"]:hover {{
         background-color: #4800b0 !important;
         color: white !important;
     }}
-    /* Diğer butonlar */
+    
+    /* Normal Butonlar (Liderlik Tablosu vb.) */
     div.stButton > button {{
         background-color: white;
         color: {text_color};
         border: 1px solid #e0e0e0;
         border-radius: 10px;
     }}
-    div.stButton > button:hover {{
-        border-color: {primary_color};
-        color: {primary_color};
-    }}
 
-    /* 4. MERHABA BARI */
+    /* 4. MERHABA BARI (ORTALANDI) */
     .greeting-card {{
         background-color: white;
         max-width: 500px;
@@ -131,23 +131,35 @@ st.markdown(f"""
         padding: 10px 20px;
         border-radius: 12px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        display: flex; align-items: center;
         border-left: 5px solid {secondary_color};
+        
+        /* İçerik Ortalama Kodları */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Yatay Ortala */
+        align-items: center;     /* Dikey Ortala */
+        text-align: center;
     }}
 
-    /* 5. KOMPAKT BANNER */
+    /* 5. KOMPAKT BANNER (ORTALANDI) */
     .compact-banner {{
         background: linear-gradient(135deg, {primary_color} 0%, #7209B7 100%);
         padding: 20px;
         border-radius: 20px;
         color: white !important;
-        text-align: center;
         max-width: 500px;
         margin: 0 auto 30px auto;
         box-shadow: 0 10px 20px rgba(58, 12, 163, 0.2);
+        
+        /* İçerik Ortalama Kodları */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }}
-    .compact-banner h2 {{ color: white !important; margin: 0; font-size: 1.8rem; }}
-    .compact-banner p {{ color: rgba(255,255,255,0.9) !important; font-size: 0.9rem; margin-top: 5px; }}
+    .compact-banner h2 {{ color: white !important; margin: 5px 0; font-size: 1.8rem; }}
+    .compact-banner p {{ color: rgba(255,255,255,0.9) !important; font-size: 0.9rem; margin: 0; }}
 
     /* 6. LİDERLİK TABLOSU */
     .leaderboard-container {{
@@ -290,7 +302,7 @@ def home_page():
             st.query_params["kullanici"] = name
             st.rerun()
     else:
-        # MERHABA BARI
+        # MERHABA BARI (ORTALI)
         st.markdown(f"""
             <div class="greeting-card">
                 <span style="font-size:1.5rem; margin-right:10px;">👋</span>
@@ -298,7 +310,7 @@ def home_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # BANNER
+    # BANNER (ORTALI)
     st.markdown(f"""
         <div class="compact-banner">
             <div style="font-size: 2.5rem; margin-bottom: 5px;">🏆</div>
@@ -309,7 +321,7 @@ def home_page():
 
     c1, c2 = st.columns(2)
     with c1:
-        # PRİMARY BUTON
+        # PRİMARY BUTON (ZORLA BEYAZ YAZI)
         if st.button("🚀 Sınava Başla", type="primary", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
