@@ -84,7 +84,7 @@ st.markdown(f"""
 
     /* 5. SORU KARTI TASARIMI */
     .quiz-card {{
-        background-color: #ffffff; /* Tam Beyaz */
+        background-color: #ffffff;
         border: 1px solid #e2e8f0;
         border-radius: 20px;
         padding: 25px 20px;
@@ -102,7 +102,6 @@ st.markdown(f"""
     }}
     
     /* 6. BUTONLAR */
-    /* Primary */
     div.stButton > button[kind="primary"] {{
         background: linear-gradient(45deg, {primary_color}, {accent_color}) !important;
         color: white !important; border: none !important; border-radius: 12px !important;
@@ -110,7 +109,6 @@ st.markdown(f"""
         box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4) !important;
     }}
     
-    /* Şıklar */
     div.stButton > button {{
         width: 100%;
         border-radius: 12px;
@@ -126,7 +124,7 @@ st.markdown(f"""
         background-color: #eff6ff;
     }}
 
-    /* --- ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) --- */
+    /* ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) */
     div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
         background-color: #ef4444 !important;
         color: white !important;
@@ -149,7 +147,6 @@ st.markdown(f"""
     .fb-correct {{ border-left: 5px solid #22c55e; color: #14532d; background-color: #f0fdf4; }}
     .fb-wrong {{ border-left: 5px solid #ef4444; color: #7f1d1d; background-color: #fef2f2; }}
     
-    /* Liderlik Tablosu Bilgi Kutusu */
     .info-pill {{
         background: white; 
         padding: 12px; 
@@ -242,7 +239,9 @@ def save_score_to_db():
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
-            tarih = pd.to_datetime('today').strftime('%Y-%m-%d %H:%M')
+            # DÜZELTME: UTC Saatini alıp 3 saat (TR Saati) ekliyoruz
+            tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')
+            
             new_row = pd.DataFrame([{
                 'Kullanıcı': st.session_state.user_name,
                 'Skor': st.session_state.score,
@@ -452,7 +451,6 @@ def leaderboard_page():
     </div>
     """, unsafe_allow_html=True)
     
-    # YENİ BİLGİ KUTUSU
     st.markdown(f"""
     <div class="info-pill">
         ℹ️ Sıralama, yarışmacıların <b>en son</b> aldıkları puana göre belirlenir.
