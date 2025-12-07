@@ -14,12 +14,12 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Renk Paleti (Ana temalar için)
+# Renk Paleti
 primary_color = "#3A0CA3"
 secondary_color = "#F72585"
 bg_color = "#F8F9FA"
 
-# --- CSS VE ANİMASYON (GÜNCELLENDİ) ---
+# --- CSS VE ANİMASYON (40 İKONLU VERSİYON) ---
 st.markdown(f"""
     <style>
     .stApp {{ background-color: {bg_color}; }}
@@ -30,69 +30,88 @@ st.markdown(f"""
         z-index: 0; overflow: hidden; pointer-events: none;
     }}
 
-    /* Ana İkon Stili (Opaklık Artırıldı, Renk Kaldırıldı) */
+    /* Ana İkon Stili (ÇOK NET - Opaklık %95) */
     .psych-icon {{
         position: absolute; top: -100px;
-        opacity: 0.5; /* Opaklık 2 katına çıkarıldı (Daha belirgin) */
+        opacity: 0.95; /* Neredeyse tam net, çok belirgin */
         animation: fall linear infinite;
+        font-weight: bold;
     }}
 
-    /* Düşme Animasyonu */
     @keyframes fall {{
         0% {{ transform: translateY(-10vh) rotate(0deg); }}
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
 
-    /* --- İKON VARYASYONLARI (20 Adet - Renkli ve Farklı Konumlu) --- */
-    /* Renk Paleti: Mor, Pembe, Mavi, Yeşil, Turkuaz, Sarımsı */
+    /* --- 40 ADET İKON VARYASYONU (Konum, Hız, Renk) --- */
     
-    /* Grup 1 */
-    .i1 {{ left: 5%;  animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }} /* Mor */
-    .i2 {{ left: 12%; animation-duration: 15s; animation-delay: 2s; font-size: 2.5rem; color: #F72585; }} /* Pembe */
-    .i3 {{ left: 20%; animation-duration: 10s; animation-delay: 4s; font-size: 3rem; color: #4361ee; }} /* Mavi */
-    .i4 {{ left: 28%; animation-duration: 18s; font-size: 2.2rem; color: #06d6a0; }} /* Yeşil */
-    .i5 {{ left: 35%; animation-duration: 14s; animation-delay: 1s; font-size: 3.5rem; color: #4cc9f0; }} /* Turkuaz */
+    /* GRUP 1 (1-10) */
+    .i1 {{ left: 2%;  animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }} 
+    .i2 {{ left: 8%;  animation-duration: 15s; animation-delay: 2s; font-size: 2.5rem; color: #F72585; }} 
+    .i3 {{ left: 15%; animation-duration: 10s; animation-delay: 4s; font-size: 3rem; color: #4361ee; }} 
+    .i4 {{ left: 22%; animation-duration: 18s; font-size: 2.2rem; color: #06d6a0; }} 
+    .i5 {{ left: 29%; animation-duration: 14s; animation-delay: 1s; font-size: 3.5rem; color: #4cc9f0; }} 
+    .i6 {{ left: 36%; animation-duration: 11s; animation-delay: 3s; font-size: 2.8rem; color: #f9c74f; }} 
+    .i7 {{ left: 42%; animation-duration: 16s; animation-delay: 0.5s; font-size: 3rem; color: #7209B7; }}
+    .i8 {{ left: 48%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; color: #F72585; }}
+    .i9 {{ left: 55%; animation-duration: 19s; animation-delay: 2s; font-size: 3.2rem; color: #4361ee; }}
+    .i10 {{ left: 62%; animation-duration: 10s; animation-delay: 1.5s; font-size: 2.5rem; color: #06d6a0; }}
 
-    /* Grup 2 */
-    .i6 {{ left: 42%; animation-duration: 11s; animation-delay: 3s; font-size: 2.8rem; color: #f9c74f; }} /* Sarı */
-    .i7 {{ left: 50%; animation-duration: 16s; animation-delay: 0.5s; font-size: 3rem; color: #3A0CA3; }}
-    .i8 {{ left: 58%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; color: #F72585; }}
-    .i9 {{ left: 65%; animation-duration: 19s; animation-delay: 2s; font-size: 3.2rem; color: #4361ee; }}
-    .i10 {{ left: 72%; animation-duration: 10s; animation-delay: 1.5s; font-size: 2.5rem; color: #06d6a0; }}
+    /* GRUP 2 (11-20) */
+    .i11 {{ left: 68%; animation-duration: 17s; animation-delay: 6s; font-size: 3rem; color: #4cc9f0; }}
+    .i12 {{ left: 75%; animation-duration: 12s; animation-delay: 3.5s; font-size: 2.2rem; color: #f9c74f; }}
+    .i13 {{ left: 82%; animation-duration: 14s; animation-delay: 7s; font-size: 2.8rem; color: #3A0CA3; }}
+    .i14 {{ left: 88%; animation-duration: 20s; animation-delay: 0s; font-size: 3.5rem; color: #F72585; }}
+    .i15 {{ left: 95%; animation-duration: 11s; animation-delay: 4.5s; font-size: 2rem; color: #4361ee; }}
+    .i16 {{ left: 5%;  animation-duration: 15s; animation-delay: 2.5s; font-size: 3rem; color: #06d6a0; }}
+    .i17 {{ left: 12%; animation-duration: 9s;  animation-delay: 1s; font-size: 2.4rem; color: #4cc9f0; }}
+    .i18 {{ left: 33%; animation-duration: 18s; animation-delay: 5.5s; font-size: 2.8rem; color: #3A0CA3; }}
+    .i19 {{ left: 60%; animation-duration: 13s; animation-delay: 8s; font-size: 3.2rem; color: #F72585; }}
+    .i20 {{ left: 80%; animation-duration: 16s; animation-delay: 3s; font-size: 2.5rem; color: #4361ee; }}
 
-    /* Grup 3 */
-    .i11 {{ left: 3%;  animation-duration: 17s; animation-delay: 6s; font-size: 3rem; color: #4cc9f0; }}
-    .i12 {{ left: 18%; animation-duration: 12s; animation-delay: 3.5s; font-size: 2.2rem; color: #f9c74f; }}
-    .i13 {{ left: 33%; animation-duration: 14s; animation-delay: 7s; font-size: 2.8rem; color: #3A0CA3; }}
-    .i14 {{ left: 48%; animation-duration: 20s; animation-delay: 0s; font-size: 3.5rem; color: #F72585; }}
-    .i15 {{ left: 63%; animation-duration: 11s; animation-delay: 4.5s; font-size: 2rem; color: #4361ee; }}
+    /* GRUP 3 (21-30) - Yeni Eklenenler */
+    .i21 {{ left: 1%;  animation-duration: 22s; animation-delay: 1s; font-size: 2rem; color: #F72585; }}
+    .i22 {{ left: 10%; animation-duration: 13s; animation-delay: 5s; font-size: 2.8rem; color: #4361ee; }}
+    .i23 {{ left: 18%; animation-duration: 19s; animation-delay: 2s; font-size: 3.5rem; color: #3A0CA3; }}
+    .i24 {{ left: 25%; animation-duration: 14s; animation-delay: 9s; font-size: 2.2rem; color: #06d6a0; }}
+    .i25 {{ left: 32%; animation-duration: 11s; animation-delay: 0s; font-size: 3rem; color: #f9c74f; }}
+    .i26 {{ left: 45%; animation-duration: 17s; animation-delay: 4s; font-size: 2.5rem; color: #7209B7; }}
+    .i27 {{ left: 52%; animation-duration: 12s; animation-delay: 7s; font-size: 3.2rem; color: #4cc9f0; }}
+    .i28 {{ left: 65%; animation-duration: 21s; animation-delay: 3s; font-size: 2.1rem; color: #F72585; }}
+    .i29 {{ left: 72%; animation-duration: 15s; animation-delay: 6s; font-size: 2.9rem; color: #3A0CA3; }}
+    .i30 {{ left: 90%; animation-duration: 10s; animation-delay: 1s; font-size: 3.5rem; color: #06d6a0; }}
 
-    /* Grup 4 */
-    .i16 {{ left: 78%; animation-duration: 15s; animation-delay: 2.5s; font-size: 3rem; color: #06d6a0; }}
-    .i17 {{ left: 85%; animation-duration: 9s;  animation-delay: 1s; font-size: 2.4rem; color: #4cc9f0; }}
-    .i18 {{ left: 92%; animation-duration: 18s; animation-delay: 5.5s; font-size: 2.8rem; color: #3A0CA3; }}
-    .i19 {{ left: 10%; animation-duration: 13s; animation-delay: 8s; font-size: 3.2rem; color: #F72585; }}
-    .i20 {{ left: 55%; animation-duration: 16s; animation-delay: 3s; font-size: 2.5rem; color: #4361ee; }}
+    /* GRUP 4 (31-40) - Yeni Eklenenler */
+    .i31 {{ left: 4%;  animation-duration: 16s; animation-delay: 8s; font-size: 2.5rem; color: #4361ee; }}
+    .i32 {{ left: 14%; animation-duration: 24s; animation-delay: 2s; font-size: 3rem; color: #f9c74f; }}
+    .i33 {{ left: 28%; animation-duration: 13s; animation-delay: 5s; font-size: 2.2rem; color: #F72585; }}
+    .i34 {{ left: 39%; animation-duration: 18s; animation-delay: 1s; font-size: 3.1rem; color: #3A0CA3; }}
+    .i35 {{ left: 58%; animation-duration: 11s; animation-delay: 9s; font-size: 2.6rem; color: #4cc9f0; }}
+    .i36 {{ left: 70%; animation-duration: 20s; animation-delay: 4s; font-size: 3.3rem; color: #7209B7; }}
+    .i37 {{ left: 78%; animation-duration: 14s; animation-delay: 0s; font-size: 2rem; color: #06d6a0; }}
+    .i38 {{ left: 86%; animation-duration: 17s; animation-delay: 6s; font-size: 2.8rem; color: #F72585; }}
+    .i39 {{ left: 94%; animation-duration: 12s; animation-delay: 3s; font-size: 3.4rem; color: #4361ee; }}
+    .i40 {{ left: 50%; animation-duration: 23s; animation-delay: 5s; font-size: 2.4rem; color: #f9c74f; }}
     
     
-    /* --- DİĞER CSS --- */
+    /* --- DİĞER --- */
     .block-container {{ z-index: 1; position: relative; }}
     
     .glass-banner {{
-        background: linear-gradient(135deg, rgba(58, 12, 163, 0.85), rgba(114, 9, 183, 0.85));
-        backdrop-filter: blur(10px); padding: 15px 20px; border-radius: 25px;
+        background: linear-gradient(135deg, rgba(58, 12, 163, 0.9), rgba(114, 9, 183, 0.9));
+        backdrop-filter: blur(12px); padding: 15px 20px; border-radius: 25px;
         color: white; text-align: center; margin: 0 auto 30px auto; max-width: 80%;
-        border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 10px 25px rgba(58, 12, 163, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.4); box-shadow: 0 10px 30px rgba(58, 12, 163, 0.4);
     }}
-    .glass-banner h2 {{ color: white !important; margin: 0; font-size: 1.8rem; font-weight: 700; }}
-    .glass-banner p {{ font-size: 1rem; opacity: 0.9; margin-top: 5px; margin-bottom: 0; }}
+    .glass-banner h2 {{ color: white !important; margin: 0; font-size: 1.8rem; font-weight: 700; text-shadow: 0 2px 5px rgba(0,0,0,0.3); }}
+    .glass-banner p {{ font-size: 1rem; opacity: 1; margin-top: 5px; margin-bottom: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }}
     .banner-icon {{ font-size: 2rem; margin-bottom: 5px; display: block; }}
     
     h1, h2, h3, h4 {{ color: {primary_color} !important; }}
     
     .question-card {{
         background-color: white; padding: 20px; border-radius: 15px;
-        border-left: 5px solid {secondary_color}; box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        border-left: 5px solid {secondary_color}; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         margin-bottom: 20px; font-size: 18px; font-weight: 600; color: #333;
     }}
     
@@ -108,7 +127,7 @@ st.markdown(f"""
     
     .result-box {{
         background-color: white; padding: 30px; border-radius: 20px;
-        text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }}
     
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
@@ -119,6 +138,10 @@ st.markdown(f"""
         <div class="psych-icon i6">🧠</div><div class="psych-icon i7">🧩</div><div class="psych-icon i8">⚕️</div><div class="psych-icon i9">🧬</div><div class="psych-icon i10">💭</div>
         <div class="psych-icon i11">🧠</div><div class="psych-icon i12">🧩</div><div class="psych-icon i13">⚕️</div><div class="psych-icon i14">🧬</div><div class="psych-icon i15">💭</div>
         <div class="psych-icon i16">🧠</div><div class="psych-icon i17">🧩</div><div class="psych-icon i18">⚕️</div><div class="psych-icon i19">🧬</div><div class="psych-icon i20">💭</div>
+        <div class="psych-icon i21">💊</div><div class="psych-icon i22">🩺</div><div class="psych-icon i23">🧠</div><div class="psych-icon i24">🧩</div><div class="psych-icon i25">💡</div>
+        <div class="psych-icon i26">🧬</div><div class="psych-icon i27">⚕️</div><div class="psych-icon i28">💭</div><div class="psych-icon i29">🧠</div><div class="psych-icon i30">🧩</div>
+        <div class="psych-icon i31">🩺</div><div class="psych-icon i32">💊</div><div class="psych-icon i33">💡</div><div class="psych-icon i34">⚕️</div><div class="psych-icon i35">🧬</div>
+        <div class="psych-icon i36">🧠</div><div class="psych-icon i37">💭</div><div class="psych-icon i38">🧩</div><div class="psych-icon i39">🧬</div><div class="psych-icon i40">⚕️</div>
     </div>
 """, unsafe_allow_html=True)
 
@@ -137,14 +160,13 @@ if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 # --- YENİ VERİTABANI BAĞLANTISI (GSPREAD) ---
 
 def get_google_sheet():
-    """Gspread ile Google Sheets'e bağlanır."""
     try:
         scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
         creds_dict = dict(st.secrets["connections"]["gsheets"])
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        # DİKKAT: Sekme adınız farklıysa burayı değiştirin (Örn: 'Liderlik Tablosu')
+        # Eğer sekme isminiz farklıysa burayı düzeltmeyi unutmayın
         sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
     except Exception as e:
