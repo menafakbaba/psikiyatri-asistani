@@ -14,28 +14,48 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Renk Paleti
-primary_color = "#3A0CA3"
-secondary_color = "#F72585"
-bg_color = "#F8F9FA"
+# --- RENK PALETİ (DARK MODE) ---
+# Arka plan için koyu mor, vurgular için neon renkler
+dark_bg = "#1a0b2e"  # Çok koyu mor (Arka plan)
+card_bg = "#2d1b4e"  # Kartlar için biraz daha açık mor
+text_color = "#ffffff" # Beyaz yazılar
+primary_accent = "#7209B7" # Butonlar ve vurgular
+secondary_accent = "#F72585" # İkinci vurgu (Pembe)
 
-# --- CSS VE ANİMASYON (40 İKONLU VERSİYON) ---
+# --- CSS VE ANİMASYON ---
 st.markdown(f"""
     <style>
-    .stApp {{ background-color: {bg_color}; }}
+    /* 1. GENEL SAYFA YAPISI */
+    .stApp {{
+        background-color: {dark_bg};
+    }}
     
-    /* Arka plan konteyneri */
-    .psych-bg {{
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        z-index: 0; overflow: hidden; pointer-events: none;
+    /* Yazı renklerini beyaza çekiyoruz (Dark mode uyumu) */
+    h1, h2, h3, h4, h5, h6, p, span, div {{
+        color: {text_color} !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }}
 
-    /* Ana İkon Stili (ÇOK NET - Opaklık %95) */
+    /* 2. ARKA PLAN ANİMASYONU (EN ARKADA KALACAK) */
+    .psych-bg {{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* EKSİ BİR: Bu sayede yazıların hep arkasında kalır */
+        overflow: hidden;
+        pointer-events: none;
+    }}
+
+    /* İkon Stili (Neon Efektli) */
     .psych-icon {{
-        position: absolute; top: -100px;
-        opacity: 0.95; /* Neredeyse tam net, çok belirgin */
+        position: absolute;
+        top: -100px;
+        opacity: 0.3; /* Karanlık modda çok parlamaması için ayarlandı */
         animation: fall linear infinite;
         font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Hafif neon parlaması */
     }}
 
     @keyframes fall {{
@@ -43,105 +63,102 @@ st.markdown(f"""
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
 
-    /* --- 40 ADET İKON VARYASYONU (Konum, Hız, Renk) --- */
-    
-    /* GRUP 1 (1-10) */
-    .i1 {{ left: 2%;  animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }} 
+    /* 40 İKONLU ANİMASYON GRUPLARI */
+    /* Grup 1 */
+    .i1 {{ left: 2%;  animation-duration: 12s; font-size: 3rem; color: #7209B7; }} 
     .i2 {{ left: 8%;  animation-duration: 15s; animation-delay: 2s; font-size: 2.5rem; color: #F72585; }} 
     .i3 {{ left: 15%; animation-duration: 10s; animation-delay: 4s; font-size: 3rem; color: #4361ee; }} 
-    .i4 {{ left: 22%; animation-duration: 18s; font-size: 2.2rem; color: #06d6a0; }} 
-    .i5 {{ left: 29%; animation-duration: 14s; animation-delay: 1s; font-size: 3.5rem; color: #4cc9f0; }} 
+    .i4 {{ left: 22%; animation-duration: 18s; font-size: 2.2rem; color: #4cc9f0; }} 
+    .i5 {{ left: 29%; animation-duration: 14s; animation-delay: 1s; font-size: 3.5rem; color: #F72585; }} 
+    /* Grup 2 */
     .i6 {{ left: 36%; animation-duration: 11s; animation-delay: 3s; font-size: 2.8rem; color: #f9c74f; }} 
     .i7 {{ left: 42%; animation-duration: 16s; animation-delay: 0.5s; font-size: 3rem; color: #7209B7; }}
-    .i8 {{ left: 48%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; color: #F72585; }}
-    .i9 {{ left: 55%; animation-duration: 19s; animation-delay: 2s; font-size: 3.2rem; color: #4361ee; }}
-    .i10 {{ left: 62%; animation-duration: 10s; animation-delay: 1.5s; font-size: 2.5rem; color: #06d6a0; }}
-
-    /* GRUP 2 (11-20) */
-    .i11 {{ left: 68%; animation-duration: 17s; animation-delay: 6s; font-size: 3rem; color: #4cc9f0; }}
-    .i12 {{ left: 75%; animation-duration: 12s; animation-delay: 3.5s; font-size: 2.2rem; color: #f9c74f; }}
-    .i13 {{ left: 82%; animation-duration: 14s; animation-delay: 7s; font-size: 2.8rem; color: #3A0CA3; }}
-    .i14 {{ left: 88%; animation-duration: 20s; animation-delay: 0s; font-size: 3.5rem; color: #F72585; }}
-    .i15 {{ left: 95%; animation-duration: 11s; animation-delay: 4.5s; font-size: 2rem; color: #4361ee; }}
-    .i16 {{ left: 5%;  animation-duration: 15s; animation-delay: 2.5s; font-size: 3rem; color: #06d6a0; }}
-    .i17 {{ left: 12%; animation-duration: 9s;  animation-delay: 1s; font-size: 2.4rem; color: #4cc9f0; }}
-    .i18 {{ left: 33%; animation-duration: 18s; animation-delay: 5.5s; font-size: 2.8rem; color: #3A0CA3; }}
-    .i19 {{ left: 60%; animation-duration: 13s; animation-delay: 8s; font-size: 3.2rem; color: #F72585; }}
-    .i20 {{ left: 80%; animation-duration: 16s; animation-delay: 3s; font-size: 2.5rem; color: #4361ee; }}
-
-    /* GRUP 3 (21-30) - Yeni Eklenenler */
-    .i21 {{ left: 1%;  animation-duration: 22s; animation-delay: 1s; font-size: 2rem; color: #F72585; }}
-    .i22 {{ left: 10%; animation-duration: 13s; animation-delay: 5s; font-size: 2.8rem; color: #4361ee; }}
-    .i23 {{ left: 18%; animation-duration: 19s; animation-delay: 2s; font-size: 3.5rem; color: #3A0CA3; }}
-    .i24 {{ left: 25%; animation-duration: 14s; animation-delay: 9s; font-size: 2.2rem; color: #06d6a0; }}
-    .i25 {{ left: 32%; animation-duration: 11s; animation-delay: 0s; font-size: 3rem; color: #f9c74f; }}
-    .i26 {{ left: 45%; animation-duration: 17s; animation-delay: 4s; font-size: 2.5rem; color: #7209B7; }}
-    .i27 {{ left: 52%; animation-duration: 12s; animation-delay: 7s; font-size: 3.2rem; color: #4cc9f0; }}
-    .i28 {{ left: 65%; animation-duration: 21s; animation-delay: 3s; font-size: 2.1rem; color: #F72585; }}
-    .i29 {{ left: 72%; animation-duration: 15s; animation-delay: 6s; font-size: 2.9rem; color: #3A0CA3; }}
-    .i30 {{ left: 90%; animation-duration: 10s; animation-delay: 1s; font-size: 3.5rem; color: #06d6a0; }}
-
-    /* GRUP 4 (31-40) - Yeni Eklenenler */
-    .i31 {{ left: 4%;  animation-duration: 16s; animation-delay: 8s; font-size: 2.5rem; color: #4361ee; }}
-    .i32 {{ left: 14%; animation-duration: 24s; animation-delay: 2s; font-size: 3rem; color: #f9c74f; }}
-    .i33 {{ left: 28%; animation-duration: 13s; animation-delay: 5s; font-size: 2.2rem; color: #F72585; }}
-    .i34 {{ left: 39%; animation-duration: 18s; animation-delay: 1s; font-size: 3.1rem; color: #3A0CA3; }}
-    .i35 {{ left: 58%; animation-duration: 11s; animation-delay: 9s; font-size: 2.6rem; color: #4cc9f0; }}
-    .i36 {{ left: 70%; animation-duration: 20s; animation-delay: 4s; font-size: 3.3rem; color: #7209B7; }}
-    .i37 {{ left: 78%; animation-duration: 14s; animation-delay: 0s; font-size: 2rem; color: #06d6a0; }}
-    .i38 {{ left: 86%; animation-duration: 17s; animation-delay: 6s; font-size: 2.8rem; color: #F72585; }}
-    .i39 {{ left: 94%; animation-duration: 12s; animation-delay: 3s; font-size: 3.4rem; color: #4361ee; }}
-    .i40 {{ left: 50%; animation-duration: 23s; animation-delay: 5s; font-size: 2.4rem; color: #f9c74f; }}
+    .i8 {{ left: 48%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; color: #4361ee; }}
+    .i9 {{ left: 55%; animation-duration: 19s; animation-delay: 2s; font-size: 3.2rem; color: #4cc9f0; }}
+    .i10 {{ left: 62%; animation-duration: 10s; animation-delay: 1.5s; font-size: 2.5rem; color: #F72585; }}
+    /* Grup 3 (Ekstra) */
+    .i11 {{ left: 70%; animation-duration: 14s; font-size: 3rem; color: #7209B7; }}
+    .i12 {{ left: 78%; animation-duration: 12s; animation-delay: 2s; font-size: 2.5rem; color: #4361ee; }}
+    .i13 {{ left: 85%; animation-duration: 16s; font-size: 3.2rem; color: #f9c74f; }}
+    .i14 {{ left: 92%; animation-duration: 9s; animation-delay: 4s; font-size: 2.8rem; color: #F72585; }}
+    .i15 {{ left: 5%; animation-duration: 20s; animation-delay: 5s; font-size: 2.2rem; color: #4cc9f0; }}
     
+    /* 3. KART VE BANNER TASARIMLARI */
     
-    /* --- DİĞER --- */
-    .block-container {{ z-index: 1; position: relative; }}
-    
+    /* Ana Banner (Koyu Glassmorphism) */
     .glass-banner {{
-        background: linear-gradient(135deg, rgba(58, 12, 163, 0.9), rgba(114, 9, 183, 0.9));
-        backdrop-filter: blur(12px); padding: 15px 20px; border-radius: 25px;
-        color: white; text-align: center; margin: 0 auto 30px auto; max-width: 80%;
-        border: 1px solid rgba(255, 255, 255, 0.4); box-shadow: 0 10px 30px rgba(58, 12, 163, 0.4);
+        background: rgba(114, 9, 183, 0.25); /* Şeffaf mor */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 20px rgba(114, 9, 183, 0.3);
+        margin-bottom: 30px;
     }}
-    .glass-banner h2 {{ color: white !important; margin: 0; font-size: 1.8rem; font-weight: 700; text-shadow: 0 2px 5px rgba(0,0,0,0.3); }}
-    .glass-banner p {{ font-size: 1rem; opacity: 1; margin-top: 5px; margin-bottom: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }}
-    .banner-icon {{ font-size: 2rem; margin-bottom: 5px; display: block; }}
+    .glass-banner h2 {{ font-weight: 800; letter-spacing: 1px; margin-bottom: 5px; }}
     
-    h1, h2, h3, h4 {{ color: {primary_color} !important; }}
-    
+    /* Soru Kartı (Okunabilirlik için koyu arka plan + açık yazı) */
     .question-card {{
-        background-color: white; padding: 20px; border-radius: 15px;
-        border-left: 5px solid {secondary_color}; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        margin-bottom: 20px; font-size: 18px; font-weight: 600; color: #333;
+        background-color: {card_bg};
+        padding: 25px;
+        border-radius: 15px;
+        border-left: 6px solid {secondary_accent};
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        line-height: 1.6;
     }}
     
+    /* Buton Özelleştirmeleri */
     div.stButton > button {{
-        width: 100%; border-radius: 12px; border: 1px solid #ddd;
-        background-color: white; color: #333; font-weight: 600; padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 10px;
+        transition: all 0.3s ease;
     }}
     div.stButton > button:hover {{
-        background-color: #F3E5F5; border-color: {primary_color}; color: {primary_color};
+        background-color: {primary_accent};
+        border-color: {primary_accent};
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(114, 9, 183, 0.5);
     }}
-    div.stButton > button[kind="primary"] {{ background-color: {primary_color}; color: white; border: none; }}
-    div.stButton > button[kind="primary"]:hover {{ background-color: #4800b0; color: white; }}
     
+    /* Primary Buton (Sınava Başla vb.) */
+    div.stButton > button[kind="primary"] {{
+        background: linear-gradient(90deg, {primary_accent}, {secondary_accent});
+        border: none;
+        font-weight: bold;
+    }}
+    div.stButton > button[kind="primary"]:hover {{
+        opacity: 0.9;
+    }}
+    
+    /* Sonuç Kutusu */
     .result-box {{
-        background-color: white; padding: 30px; border-radius: 20px;
-        text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        background-color: {card_bg};
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 30px rgba(247, 37, 133, 0.2);
     }}
-    
+
+    /* Streamlit varsayılanlarını gizle */
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
     </style>
 
     <div class="psych-bg">
-        <div class="psych-icon i1">🧠</div><div class="psych-icon i2">🧩</div><div class="psych-icon i3">⚕️</div><div class="psych-icon i4">🧬</div><div class="psych-icon i5">💭</div>
-        <div class="psych-icon i6">🧠</div><div class="psych-icon i7">🧩</div><div class="psych-icon i8">⚕️</div><div class="psych-icon i9">🧬</div><div class="psych-icon i10">💭</div>
-        <div class="psych-icon i11">🧠</div><div class="psych-icon i12">🧩</div><div class="psych-icon i13">⚕️</div><div class="psych-icon i14">🧬</div><div class="psych-icon i15">💭</div>
-        <div class="psych-icon i16">🧠</div><div class="psych-icon i17">🧩</div><div class="psych-icon i18">⚕️</div><div class="psych-icon i19">🧬</div><div class="psych-icon i20">💭</div>
-        <div class="psych-icon i21">💊</div><div class="psych-icon i22">🩺</div><div class="psych-icon i23">🧠</div><div class="psych-icon i24">🧩</div><div class="psych-icon i25">💡</div>
-        <div class="psych-icon i26">🧬</div><div class="psych-icon i27">⚕️</div><div class="psych-icon i28">💭</div><div class="psych-icon i29">🧠</div><div class="psych-icon i30">🧩</div>
-        <div class="psych-icon i31">🩺</div><div class="psych-icon i32">💊</div><div class="psych-icon i33">💡</div><div class="psych-icon i34">⚕️</div><div class="psych-icon i35">🧬</div>
-        <div class="psych-icon i36">🧠</div><div class="psych-icon i37">💭</div><div class="psych-icon i38">🧩</div><div class="psych-icon i39">🧬</div><div class="psych-icon i40">⚕️</div>
+        <div class="psych-icon i1">🧠</div><div class="psych-icon i2">🧩</div><div class="psych-icon i3">⚕️</div>
+        <div class="psych-icon i4">🧬</div><div class="psych-icon i5">💭</div><div class="psych-icon i6">🧠</div>
+        <div class="psych-icon i7">🧩</div><div class="psych-icon i8">⚕️</div><div class="psych-icon i9">🧬</div>
+        <div class="psych-icon i10">💭</div><div class="psych-icon i11">💊</div><div class="psych-icon i12">🩺</div>
+        <div class="psych-icon i13">💡</div><div class="psych-icon i14">⚛️</div><div class="psych-icon i15">🧠</div>
+        <div class="psych-icon i1" style="animation-delay: 5s; left: 30%;">🧠</div>
+        <div class="psych-icon i3" style="animation-delay: 7s; left: 60%;">⚕️</div>
+        <div class="psych-icon i5" style="animation-delay: 3s; left: 90%;">💭</div>
     </div>
 """, unsafe_allow_html=True)
 
@@ -157,7 +174,7 @@ if 'quiz_data' not in st.session_state: st.session_state.quiz_data = []
 if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted = False
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 
-# --- YENİ VERİTABANI BAĞLANTISI (GSPREAD) ---
+# --- GÜÇLENDİRİLMİŞ VERİTABANI BAĞLANTISI ---
 
 def get_google_sheet():
     try:
@@ -166,19 +183,31 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        # Eğer sekme isminiz farklıysa burayı düzeltmeyi unutmayın
+        # "Sayfa1" veya "Liderlik Tablosu" - Kendi sekme adınızı buraya yazın
         sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
     except Exception as e:
-        st.error(f"Veritabanı bağlantı hatası: {e}")
+        st.error(f"Bağlantı Hatası: {e}")
         return None
 
 def fetch_leaderboard():
+    """Hatasız veri çekme fonksiyonu"""
     sheet = get_google_sheet()
     if sheet:
         try:
-            data = sheet.get_all_records()
-            return pd.DataFrame(data)
+            # Tüm verileri ham olarak al (Daha güvenli)
+            all_values = sheet.get_all_values()
+            
+            if len(all_values) < 2: # Sadece başlık varsa veya boşsa
+                return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
+            
+            headers = all_values[0]
+            data = all_values[1:]
+            
+            df = pd.DataFrame(data, columns=headers)
+            # Başlıklardaki olası boşlukları temizle
+            df.columns = df.columns.str.strip()
+            return df
         except Exception as e:
             return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
     return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
@@ -194,7 +223,7 @@ def save_score_to_db():
             return False, str(e)
     return False, "Bağlantı yok"
 
-# --- QUIZ FONKSİYONLARI ---
+# --- QUIZ MANTIĞI ---
 
 def load_questions():
     try:
@@ -204,7 +233,7 @@ def load_questions():
         st.session_state.quiz_data = random.sample(all_questions, question_count)
         return True
     except:
-        st.error("⚠️ sorular.json bulunamadı.")
+        st.error("⚠️ sorular.json dosyası bulunamadı! Lütfen GitHub'a yükleyin.")
         return False
 
 def start_quiz():
@@ -241,10 +270,11 @@ def quit_quiz():
     st.session_state.question_index = 0
     st.rerun()
 
-# --- SAYFALAR ---
+# --- SAYFA TASARIMLARI ---
 
 def home_page():
-    st.write(f"👋 **Merhaba, {st.session_state.user_name}**")
+    st.markdown(f"<h3 style='text-align:center;'>👋 Merhaba, <span style='color:{secondary_accent}'>{st.session_state.user_name}</span></h3>", unsafe_allow_html=True)
+    
     if st.session_state.user_name == "Misafir":
         name = st.text_input("Yarışmak için adını gir:", placeholder="Adınız...")
         if name:
@@ -254,9 +284,9 @@ def home_page():
 
     st.markdown(f"""
         <div class="glass-banner">
-            <span class="banner-icon">🏆</span>
+            <div style="font-size: 3rem; margin-bottom: 10px;">🏆</div>
             <h2>Psikiyatri Ligi</h2>
-            <p>Bilgini test et, zirveye çık!</p>
+            <p style="color: #ddd;">Bilgini test et, ismini zirveye yazdır!</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -277,22 +307,27 @@ def quiz_page():
         st.session_state.current_page = 'home'
         st.rerun()
     
-    c_exit, c_score = st.columns([1, 3])
+    # Çıkış Butonu
+    c_exit, c_score = st.columns([1, 4])
     with c_exit:
-        if st.button("❌ Çıkış", help="Sınavı iptal et (Puan kaydedilmez)", use_container_width=True):
+        if st.button("❌ Çıkış", help="Sınavı iptal et", use_container_width=True):
             quit_quiz()
-            
+    
     total_q = len(st.session_state.quiz_data)
     idx = st.session_state.question_index
     q_data = st.session_state.quiz_data[idx]
     
+    # Progress Bar Rengini Değiştirmek Zor Olduğu İçin Standart Kalır
     st.progress((idx + 1) / total_q)
+    
     st.markdown(f"""
-    <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.9rem; color:#666;">
+    <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.9rem; color:#bbb;">
         <span>Soru <b>{idx + 1}</b> / {total_q}</span>
-        <span style="color:{primary_color}; font-weight:bold;">💎 Puan: {st.session_state.score}</span>
+        <span style="color:{secondary_accent}; font-weight:bold;">💎 Puan: {st.session_state.score}</span>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Koyu Temalı Soru Kartı
     st.markdown(f'<div class="question-card">{q_data["soru"]}</div>', unsafe_allow_html=True)
     
     if not st.session_state.answer_submitted:
@@ -301,12 +336,15 @@ def quiz_page():
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct: st.success("✅ Doğru Cevap!")
+        if st.session_state.is_correct: 
+            st.success("✅ Doğru Cevap!")
         else:
             st.error("❌ Yanlış Cevap!")
-            st.write(f"Doğru Cevap: **{q_data['dogru_cevap']}**")
+            st.markdown(f"<div style='color:{text_color}; background-color:{card_bg}; padding:10px; border-radius:10px;'>Doğru Cevap: <b>{q_data['dogru_cevap']}</b></div>", unsafe_allow_html=True)
+        
         with st.expander("ℹ️ Açıklama", expanded=True):
             st.info(q_data.get('aciklama', 'Açıklama yok.'))
+            
         btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir ve Kaydet 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
             next_question()
@@ -318,18 +356,17 @@ def result_page():
             st.toast("Skor başarıyla kaydedildi!", icon="✅")
             st.session_state.score_saved = True
         else:
-            st.error(f"Skor kaydedilemedi! Hata: {msg}")
-            st.warning("Google Sheet bağlantısını kontrol et.")
+            st.error(f"Kayıt Hatası: {msg}")
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(f"""
         <div class="result-box">
             <div style="font-size: 60px;">🎉</div>
-            <h2 style="color: {primary_color};">Sınav Tamamlandı!</h2>
-            <p style="font-size: 18px;">Tebrikler <b>{st.session_state.user_name}</b>,</p>
-            <hr>
-            <div style="font-size: 16px; color: #555;">Toplam Skorun</div>
-            <h1 style="color: {secondary_color}; font-size: 50px; margin: 0;">
+            <h2 style="color: {secondary_accent};">Sınav Tamamlandı!</h2>
+            <p style="font-size: 18px; color: #ddd;">Tebrikler <b>{st.session_state.user_name}</b>,</p>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <div style="font-size: 16px; color: #aaa;">Toplam Skorun</div>
+            <h1 style="color: {secondary_accent}; font-size: 50px; margin: 0;">
                 {st.session_state.score}
             </h1>
         </div>
@@ -349,26 +386,33 @@ def result_page():
             st.rerun()
 
 def leaderboard_page():
-    st.markdown(f"<h3 style='text-align:center; color:{primary_color}'>🏆 Canlı Liderlik Tablosu</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='text-align:center; color:{primary_accent}'>🏆 Canlı Liderlik Tablosu</h3>", unsafe_allow_html=True)
+    
     with st.spinner('Veriler çekiliyor...'):
         df = fetch_leaderboard()
     
-    if not df.empty and 'Skor' in df.columns:
+    if not df.empty:
         try:
-            df['Skor'] = pd.to_numeric(df['Skor'], errors='coerce').fillna(0)
-            df = df.sort_values(by=['Skor', 'Tarih'], ascending=[False, False]).reset_index(drop=True)
-            df.index += 1
-            st.dataframe(df, use_container_width=True)
+            # Skor sütununu bul (Büyük/küçük harf duyarsız)
+            skor_col = next((col for col in df.columns if 'skor' in col.lower()), None)
+            
+            if skor_col:
+                df[skor_col] = pd.to_numeric(df[skor_col], errors='coerce').fillna(0)
+                df = df.sort_values(by=[skor_col], ascending=False).reset_index(drop=True)
+                df.index += 1
+                st.dataframe(df, use_container_width=True)
+            else:
+                st.dataframe(df)
         except Exception as e:
-             st.error(f"Tablo format hatası: {e}")
              st.dataframe(df)
     else:
-        st.info("Henüz veri yok veya bağlantı kurulamadı.")
+        st.info("Henüz veri yok.")
     
     if st.button("⬅ Ana Menü", use_container_width=True):
         st.session_state.current_page = 'home'
         st.rerun()
 
+# --- YÖNLENDİRİCİ ---
 if st.session_state.current_page == 'home': home_page()
 elif st.session_state.current_page == 'quiz': quiz_page()
 elif st.session_state.current_page == 'leaderboard': leaderboard_page()
