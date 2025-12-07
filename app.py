@@ -52,7 +52,7 @@ st.markdown(f"""
     .psych-icon {{
         position: absolute;
         top: -100px;
-        opacity: 0.7;
+        opacity: 0.8;
         animation: fall linear infinite;
         font-weight: bold;
     }}
