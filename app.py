@@ -17,8 +17,9 @@ st.set_page_config(
 # --- RENK PALETİ ---
 primary_color = "#3A0CA3"   # Ana Mor
 secondary_color = "#F72585" # Pembe
-bg_color = "#F8F9FA"        # Beyaz/Gri Zemin
-text_color = "#212529"      # Siyah Yazı
+# GÜNCELLEME: Gözü yormayan yumuşak gri arka plan
+bg_color = "#E5E7EB"        
+text_color = "#1F2937"      # Koyu Gri/Siyah (Okunabilirlik için)
 
 # --- TEK PARÇA CSS VE ANİMASYON ---
 st.markdown(f"""
@@ -32,27 +33,28 @@ st.markdown(f"""
     h1, h2, h3, h4 {{ color: {primary_color} !important; font-weight: 700; }}
     p, span, div {{ color: {text_color}; }}
 
-    /* 2. ARKA PLAN ANİMASYONU (SABİT) */
+    /* 2. ARKA PLAN ANİMASYONU (SABİT VE ARKADA) */
     .psych-bg {{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 0;
+        z-index: 0; /* En arkada */
         overflow: hidden;
         pointer-events: none;
     }}
     
+    /* İçeriğin bulunduğu ana katman */
     .block-container {{
         position: relative;
-        z-index: 1;
+        z-index: 1; /* Animasyonun üstünde */
     }}
 
     .psych-icon {{
         position: absolute;
         top: -100px;
-        opacity: 0.8;
+        opacity: 0.5; /* Animasyon opaklığı */
         animation: fall linear infinite;
         font-weight: bold;
     }}
@@ -62,7 +64,7 @@ st.markdown(f"""
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
     
-    /* 60 İKON POZİSYONLARI */
+    /* İKON POZİSYONLARI */
     .i1 {{ left: 2%; animation-duration: 12s; font-size: 3rem; color: #3A0CA3; }}
     .i2 {{ left: 5%; animation-duration: 15s; font-size: 2rem; color: #F72585; }}
     .i3 {{ left: 10%; animation-duration: 10s; font-size: 3.5rem; color: #4361ee; }}
@@ -83,7 +85,7 @@ st.markdown(f"""
     .i18 {{ left: 85%; animation-duration: 18s; font-size: 2.8rem; color: #3A0CA3; }}
     .i19 {{ left: 90%; animation-duration: 13s; font-size: 3.2rem; color: #F72585; }}
     .i20 {{ left: 95%; animation-duration: 16s; font-size: 2.5rem; color: #f9c74f; }}
-    /* Ekstra İkonlar */
+    /* Tekrar eden ikonlar */
     .i21 {{ left: 3%; animation-duration: 22s; font-size: 2rem; color: #3A0CA3; animation-delay: 5s; }}
     .i22 {{ left: 12%; animation-duration: 13s; font-size: 3rem; color: #F72585; animation-delay: 2s; }}
     .i23 {{ left: 23%; animation-duration: 19s; font-size: 2.5rem; color: #4361ee; animation-delay: 7s; }}
@@ -96,26 +98,20 @@ st.markdown(f"""
     .i30 {{ left: 93%; animation-duration: 16s; font-size: 3rem; color: #3A0CA3; animation-delay: 5s; }}
 
 
-    /* 3. BUTON DÜZELTMESİ (KESİN ÇÖZÜM) */
-    /* Primary butonun (Sınava Başla) hem kendisini hem içindeki yazıyı zorla beyaz/mor yapıyoruz */
+    /* 3. BUTON STİLLERİ (Sabitlendi) */
     div.stButton > button[kind="primary"] {{
         background-color: {primary_color} !important;
         color: white !important;
         border: none !important;
         box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
     }}
-    
-    /* İçindeki yazı (p etiketi) gri olmasın diye */
     div.stButton > button[kind="primary"] p {{
         color: white !important;
     }}
-    
     div.stButton > button[kind="primary"]:hover {{
         background-color: #4800b0 !important;
         color: white !important;
     }}
-    
-    /* Normal Butonlar (Liderlik Tablosu vb.) */
     div.stButton > button {{
         background-color: white;
         color: {text_color};
@@ -123,7 +119,49 @@ st.markdown(f"""
         border-radius: 10px;
     }}
 
-    /* 4. MERHABA BARI (ORTALANDI) */
+    /* 4. KART STİLLERİ (OPAK ARKA PLAN İÇİN) */
+    /* Bu sınıflar animasyonun arkadan görünmesini engeller */
+    
+    .solid-card {{
+        background-color: white; /* TAM BEYAZ (Saydam değil) */
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2; /* Animasyonun kesinlikle üstünde */
+    }}
+    
+    .feedback-box {{
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        background-color: white; /* Arka planı kapat */
+        border-left-width: 8px;
+        border-left-style: solid;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        position: relative;
+        z-index: 2;
+    }}
+    
+    .feedback-correct {{
+        border-left-color: #2ecc71; /* Yeşil */
+        color: #155724;
+    }}
+    
+    .feedback-wrong {{
+        border-left-color: #e74c3c; /* Kırmızı */
+        color: #721c24;
+    }}
+    
+    .feedback-info {{
+        border-left-color: #3498db; /* Mavi */
+        color: #0c5460;
+        font-weight: normal;
+    }}
+
+    /* Merhaba Barı */
     .greeting-card {{
         background-color: white;
         max-width: 500px;
@@ -132,42 +170,21 @@ st.markdown(f"""
         border-radius: 12px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         border-left: 5px solid {secondary_color};
-        
-        /* İçerik Ortalama Kodları */
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Yatay Ortala */
-        align-items: center;     /* Dikey Ortala */
-        text-align: center;
+        display: flex; justify-content: center; align-items: center; text-align: center;
+        position: relative; z-index: 2;
     }}
 
-    /* 5. KOMPAKT BANNER (ORTALANDI) */
+    /* Banner */
     .compact-banner {{
         background: linear-gradient(135deg, {primary_color} 0%, #7209B7 100%);
-        padding: 20px;
-        border-radius: 20px;
-        color: white !important;
-        max-width: 500px;
-        margin: 0 auto 30px auto;
+        padding: 20px; border-radius: 20px; color: white !important;
+        max-width: 500px; margin: 0 auto 30px auto;
         box-shadow: 0 10px 20px rgba(58, 12, 163, 0.2);
-        
-        /* İçerik Ortalama Kodları */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        position: relative; z-index: 2;
     }}
     .compact-banner h2 {{ color: white !important; margin: 5px 0; font-size: 1.8rem; }}
     .compact-banner p {{ color: rgba(255,255,255,0.9) !important; font-size: 0.9rem; margin: 0; }}
-
-    /* 6. LİDERLİK TABLOSU */
-    .leaderboard-container {{
-        background-color: white;
-        padding: 20px; border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        border: 1px solid #eee;
-    }}
 
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
     </style>
@@ -293,7 +310,6 @@ def quit_quiz():
 # --- SAYFALAR ---
 
 def home_page():
-    # GİRİŞ KONTROLÜ
     if st.session_state.user_name == "Misafir":
         st.markdown(f"<div style='text-align:center; margin-bottom:20px;'><h3>👋 Hoş Geldiniz</h3></div>", unsafe_allow_html=True)
         name = st.text_input("Yarışmak için adını gir:", placeholder="Adınız...")
@@ -302,7 +318,6 @@ def home_page():
             st.query_params["kullanici"] = name
             st.rerun()
     else:
-        # MERHABA BARI (ORTALI)
         st.markdown(f"""
             <div class="greeting-card">
                 <span style="font-size:1.5rem; margin-right:10px;">👋</span>
@@ -310,7 +325,6 @@ def home_page():
             </div>
         """, unsafe_allow_html=True)
 
-    # BANNER (ORTALI)
     st.markdown(f"""
         <div class="compact-banner">
             <div style="font-size: 2.5rem; margin-bottom: 5px;">🏆</div>
@@ -321,7 +335,6 @@ def home_page():
 
     c1, c2 = st.columns(2)
     with c1:
-        # PRİMARY BUTON (ZORLA BEYAZ YAZI)
         if st.button("🚀 Sınava Başla", type="primary", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
@@ -355,8 +368,9 @@ def quiz_page():
     </div>
     """, unsafe_allow_html=True)
     
+    # SORU KARTI (SOLID/OPAK BEYAZ)
     st.markdown(f"""
-    <div style="background:white; padding:20px; border-radius:12px; border-left:5px solid {secondary_color}; box-shadow:0 2px 10px rgba(0,0,0,0.05); margin-bottom:20px; color:#333; font-weight:600; font-size:1.1rem;">
+    <div class="solid-card" style="border-left:5px solid {secondary_color}; color:#333; font-weight:600; font-size:1.1rem;">
         {q_data["soru"]}
     </div>
     """, unsafe_allow_html=True)
@@ -367,14 +381,29 @@ def quiz_page():
                 submit_answer(opt)
                 st.rerun()
     else:
+        # CEVAP GERİ BİLDİRİMİ (ÖZEL HTML KULLANILARAK)
         if st.session_state.is_correct: 
-            st.success("✅ Doğru Cevap!")
+            st.markdown("""
+            <div class="feedback-box feedback-correct">
+                ✅ Doğru Cevap! Tebrikler.
+            </div>
+            """, unsafe_allow_html=True)
         else:
-            st.error("❌ Yanlış Cevap!")
-            st.markdown(f"<div style='background:#ffebee; padding:10px; border-radius:8px; color:#c62828; margin-bottom:10px;'>Doğru Cevap: <b>{q_data['dogru_cevap']}</b></div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class="feedback-box feedback-wrong">
+                ❌ Yanlış Cevap!
+                <div style="margin-top:5px; font-weight:400; color:#333;">Doğru Cevap: <b>{q_data['dogru_cevap']}</b></div>
+            </div>
+            """, unsafe_allow_html=True)
         
-        with st.expander("ℹ️ Açıklama", expanded=True):
-            st.info(q_data.get('aciklama', 'Açıklama yok.'))
+        # AÇIKLAMA KUTUSU (ÖZEL HTML)
+        if q_data.get('aciklama'):
+            st.markdown(f"""
+            <div class="feedback-box feedback-info">
+                ℹ️ <b>Açıklama:</b><br>
+                {q_data['aciklama']}
+            </div>
+            """, unsafe_allow_html=True)
             
         btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Sınavı Bitir ve Kaydet 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
@@ -391,7 +420,7 @@ def result_page():
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(f"""
-        <div style="background:white; padding:40px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+        <div class="solid-card" style="text-align:center; padding:40px;">
             <div style="font-size: 60px;">🎉</div>
             <h2 style="color: {primary_color}; margin:10px 0;">Sınav Tamamlandı!</h2>
             <p style="font-size: 18px; color: #555;">Tebrikler <b>{st.session_state.user_name}</b>,</p>
@@ -427,7 +456,8 @@ def leaderboard_page():
     with st.spinner('Veriler yükleniyor...'):
         df = fetch_leaderboard()
     
-    st.markdown('<div class="leaderboard-container">', unsafe_allow_html=True)
+    # LİDERLİK TABLOSU KUTUSU (SOLID)
+    st.markdown('<div class="solid-card">', unsafe_allow_html=True)
     
     if not df.empty:
         try:
