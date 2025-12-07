@@ -84,7 +84,7 @@ st.markdown(f"""
 
     /* 5. SORU KARTI TASARIMI */
     .quiz-card {{
-        background-color: #ffffff;
+        background-color: #ffffff; 
         border: 1px solid #e2e8f0;
         border-radius: 20px;
         padding: 25px 20px;
@@ -95,13 +95,11 @@ st.markdown(f"""
     }}
     
     .question-text {{
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #0f172a;
-        line-height: 1.5;
+        font-size: 1.2rem; font-weight: 700; color: #0f172a; line-height: 1.5;
     }}
     
     /* 6. BUTONLAR */
+    /* Primary */
     div.stButton > button[kind="primary"] {{
         background: linear-gradient(45deg, {primary_color}, {accent_color}) !important;
         color: white !important; border: none !important; border-radius: 12px !important;
@@ -109,22 +107,16 @@ st.markdown(f"""
         box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4) !important;
     }}
     
+    /* Şıklar */
     div.stButton > button {{
-        width: 100%;
-        border-radius: 12px;
-        background-color: #ffffff; 
-        border: 2px solid #cbd5e1;
-        color: #334155; 
-        font-weight: 600;
-        padding: 0.8rem 1rem;
+        width: 100%; border-radius: 12px; background-color: #ffffff; 
+        border: 2px solid #cbd5e1; color: #334155; font-weight: 600; padding: 0.8rem 1rem;
     }}
     div.stButton > button:hover {{
-        border-color: {primary_color};
-        color: {primary_color};
-        background-color: #eff6ff;
+        border-color: {primary_color}; color: {primary_color}; background-color: #eff6ff;
     }}
 
-    /* ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) */
+    /* --- ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) --- */
     div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
         background-color: #ef4444 !important;
         color: white !important;
@@ -147,15 +139,11 @@ st.markdown(f"""
     .fb-correct {{ border-left: 5px solid #22c55e; color: #14532d; background-color: #f0fdf4; }}
     .fb-wrong {{ border-left: 5px solid #ef4444; color: #7f1d1d; background-color: #fef2f2; }}
     
+    /* Liderlik Tablosu Bilgi Kutusu */
     .info-pill {{
-        background: white; 
-        padding: 12px; 
-        border-radius: 12px; 
-        border-left: 5px solid {primary_color};
-        margin-bottom: 20px; 
-        color: #555; 
-        font-size: 0.9rem; 
-        text-align: center;
+        background: white; padding: 12px; border-radius: 12px; 
+        border-left: 5px solid {primary_color}; margin-bottom: 20px; 
+        color: #555; font-size: 0.9rem; text-align: center;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }}
 
@@ -196,6 +184,9 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
+
+# YENİ: Çözülen soruları takip eden liste
+if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
 def get_google_sheet():
@@ -239,7 +230,7 @@ def save_score_to_db():
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
-            # DÜZELTME: UTC Saatini alıp 3 saat (TR Saati) ekliyoruz
+            # UTC+3 Saat Ayarı
             tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')
             
             new_row = pd.DataFrame([{
@@ -256,16 +247,36 @@ def save_score_to_db():
             return False, str(e)
     return False, "Bağlantı yok"
 
-# --- QUIZ FONKSİYONLARI ---
+# --- QUIZ FONKSİYONLARI (YENİLENMİŞ) ---
 def load_questions():
     try:
         with open('sorular.json', 'r', encoding='utf-8') as f:
             all_questions = json.load(f)
-        question_count = min(10, len(all_questions))
-        st.session_state.quiz_data = random.sample(all_questions, question_count)
+        
+        # 1. Daha önce çözülmemiş soruları bul
+        available_questions = [
+            q for q in all_questions 
+            if q['soru'] not in st.session_state.seen_questions
+        ]
+        
+        # 2. Havuz bittiyse veya 10'dan az kaldıysa sıfırla
+        if len(available_questions) < 10:
+            st.toast("Tüm soruları bitirdiniz! Havuz sıfırlandı ve baştan başlıyor. 🔄", icon="🚀")
+            st.session_state.seen_questions = []
+            available_questions = all_questions
+        
+        # 3. Rastgele 10 soru seç
+        question_count = min(10, len(available_questions))
+        selected_questions = random.sample(available_questions, question_count)
+        
+        # 4. Seçilenleri "Görüldü" listesine ekle
+        for q in selected_questions:
+            st.session_state.seen_questions.append(q['soru'])
+            
+        st.session_state.quiz_data = selected_questions
         return True
-    except:
-        st.error("⚠️ sorular.json bulunamadı!")
+    except Exception as e:
+        st.error(f"Soru yükleme hatası: {e}")
         return False
 
 def start_quiz():
@@ -274,6 +285,8 @@ def start_quiz():
     st.session_state.answer_submitted = False
     if st.session_state.user_name != "Misafir":
         st.query_params["kullanici"] = st.session_state.user_name
+    
+    # Soruları yükle (Yenilenmiş fonksiyon)
     if load_questions():
         st.session_state.current_page = 'quiz'
         st.rerun()
