@@ -17,10 +17,10 @@ st.set_page_config(
 # --- RENK PALETİ ---
 primary_color = "#4361ee"    # Modern Mavi
 accent_color = "#f72585"     # Pembe
-bg_color = "#f8f9fa"         # Arka Plan
-text_dark = "#2b2d42"        # Koyu Yazı
+bg_color = "#f0f4f8"         # Ferah Açık Gri/Mavi
+text_dark = "#1e293b"        # Koyu Lacivert/Siyah
 
-# --- CSS STİLLERİ (MOBİL UYUMLU) ---
+# --- CSS STİLLERİ ---
 st.markdown(f"""
     <style>
     /* 1. GENEL AYARLAR */
@@ -29,9 +29,9 @@ st.markdown(f"""
         font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }}
     
-    /* Mobil için kenar boşluklarını daralt */
+    /* Mobil kenar boşlukları */
     .block-container {{
-        padding-top: 2rem !important;
+        padding-top: 1rem !important;
         padding-bottom: 2rem !important;
         max-width: 700px;
     }}
@@ -49,88 +49,119 @@ st.markdown(f"""
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
 
-    /* 3. YENİ MOBİL UYUMLU İSTATİSTİK KUTULARI (FLEXBOX) */
-    /* Bu yapı mobilde yan yana durmayı zorlar */
+    /* 3. İSTATİSTİK KUTULARI (MOBİL DOSTU) */
     .stats-container {{
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 20px;
+        display: flex; justify-content: space-between; gap: 8px; margin-bottom: 20px;
     }}
-    
     .stat-mini-card {{
-        background: white;
-        flex: 1; /* Hepsi eşit genişlikte */
-        padding: 10px 5px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        text-align: center;
-        border-bottom: 3px solid {primary_color};
-        min-width: 0; /* İçerik taşmasını önler */
+        background: white; flex: 1; padding: 10px 5px; border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;
+        border-bottom: 4px solid {primary_color}; min-width: 0;
     }}
-    
     .stat-icon {{ font-size: 1.2rem; display: block; margin-bottom: 2px; }}
     .stat-value {{ font-size: 1.1rem; font-weight: 800; color: {text_dark}; line-height: 1.2; }}
-    .stat-label {{ font-size: 0.65rem; color: #666; font-weight: 700; text-transform: uppercase; white-space: nowrap; }}
+    .stat-label {{ font-size: 0.65rem; color: #666; font-weight: 700; text-transform: uppercase; }}
 
-    /* 4. MODERN HERO BANNER (MOBİL İÇİN KÜÇÜLTÜLDÜ) */
+    /* 4. MODERN HERO BANNER */
     .modern-hero {{
         background: linear-gradient(120deg, #ffffff 0%, #f0f4ff 100%);
-        border-radius: 20px;
-        padding: 20px 15px; /* Dolgu azaltıldı */
-        box-shadow: 0 5px 20px rgba(67, 97, 238, 0.1);
-        border: 1px solid rgba(255,255,255,0.8);
-        text-align: center;
-        margin-bottom: 25px;
-        position: relative;
-        overflow: hidden;
+        border-radius: 20px; padding: 25px 15px;
+        box-shadow: 0 8px 25px rgba(67, 97, 238, 0.15);
+        border: 2px solid white;
+        text-align: center; margin-bottom: 25px; position: relative; overflow: hidden;
     }}
     .modern-hero::after {{
-        content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+        content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
         background: linear-gradient(90deg, {primary_color}, {accent_color});
     }}
     .hero-title {{
-        font-size: 1.8rem; /* Mobilde küçültüldü */
+        font-size: 1.8rem;
         background: linear-gradient(45deg, {primary_color}, {accent_color});
         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         font-weight: 900; margin-bottom: 5px;
     }}
-    .hero-subtitle {{ font-size: 0.9rem; color: #6c757d; font-weight: 500; }}
+    .hero-subtitle {{ font-size: 0.9rem; color: #64748b; font-weight: 600; }}
 
-    /* 5. BUTONLAR */
+    /* 5. SORU KARTI TASARIMI */
+    .quiz-card {{
+        background-color: #ffffff; /* Tam Beyaz */
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        padding: 25px 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+    }}
+    
+    .question-text {{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.5;
+    }}
+    
+    /* 6. BUTONLAR */
+    /* Primary */
     div.stButton > button[kind="primary"] {{
         background: linear-gradient(45deg, {primary_color}, {accent_color}) !important;
         color: white !important; border: none !important; border-radius: 12px !important;
-        padding: 0.6rem 1rem !important; font-size: 1rem !important; width: 100%;
-        box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3) !important;
+        padding: 0.8rem 1rem !important; font-size: 1rem !important; width: 100%;
+        box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4) !important;
     }}
-    div.stButton > button {{
-        width: 100%; border-radius: 12px; border: 1px solid #eef0f5; background-color: white;
-        color: {text_dark}; font-weight: 600; padding: 0.6rem 1rem;
-    }}
-
-    /* 6. MERHABA BARI (KOMPAKT) */
-    .greeting-pill {{
-        background: white; display: inline-block; padding: 5px 15px; 
-        border-radius: 20px; font-size: 0.9rem; color: #555; font-weight: 600;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 15px;
-    }}
-
-    /* --- RESPONSIVE AYARLAR (TELEFON EKRANI İÇİN) --- */
-    @media only screen and (max-width: 600px) {{
-        .hero-title {{ font-size: 1.5rem !important; }}
-        .psych-icon {{ font-size: 1.5rem !important; opacity: 0.3 !important; }} /* İkonları küçült */
-        .stat-value {{ font-size: 1rem !important; }}
-        .stat-icon {{ font-size: 1rem !important; }}
-    }}
-
-    /* Diğer Stiller */
-    .quiz-card {{ background: white; border-radius: 20px; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); margin-bottom: 20px; }}
-    .question-text {{ font-size: 1.1rem; font-weight: 700; color: {text_dark}; line-height: 1.4; }}
-    .feedback-box {{ padding: 15px; border-radius: 12px; margin-top: 15px; }}
-    .fb-correct {{ background-color: #d1fae5; color: #065f46; }}
-    .fb-wrong {{ background-color: #fee2e2; color: #991b1b; }}
     
+    /* Şıklar */
+    div.stButton > button {{
+        width: 100%;
+        border-radius: 12px;
+        background-color: #ffffff; 
+        border: 2px solid #cbd5e1;
+        color: #334155; 
+        font-weight: 600;
+        padding: 0.8rem 1rem;
+    }}
+    div.stButton > button:hover {{
+        border-color: {primary_color};
+        color: {primary_color};
+        background-color: #eff6ff;
+    }}
+
+    /* --- ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) --- */
+    div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
+        background-color: #ef4444 !important;
+        color: white !important;
+        border: none !important;
+        box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4) !important;
+        font-weight: bold !important;
+    }}
+    div[data-testid="column"]:nth-of-type(1) div.stButton > button:hover {{
+        background-color: #dc2626 !important;
+        transform: scale(1.05);
+    }}
+
+    /* Diğer */
+    .greeting-pill {{
+        background: white; display: inline-block; padding: 6px 20px; 
+        border-radius: 20px; font-size: 0.9rem; color: #475569; font-weight: 700;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 15px;
+    }}
+    .feedback-box {{ padding: 15px; border-radius: 12px; margin-top: 15px; z-index:2; position:relative; background:white; }}
+    .fb-correct {{ border-left: 5px solid #22c55e; color: #14532d; background-color: #f0fdf4; }}
+    .fb-wrong {{ border-left: 5px solid #ef4444; color: #7f1d1d; background-color: #fef2f2; }}
+    
+    /* Liderlik Tablosu Bilgi Kutusu */
+    .info-pill {{
+        background: white; 
+        padding: 12px; 
+        border-radius: 12px; 
+        border-left: 5px solid {primary_color};
+        margin-bottom: 20px; 
+        color: #555; 
+        font-size: 0.9rem; 
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }}
+
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
     </style>
 """, unsafe_allow_html=True)
@@ -140,12 +171,12 @@ def create_dynamic_bg():
     icons = ["🧠", "🧩", "⚕️", "🧬", "💊", "🩺", "💡", "💭"]
     colors = ["#4361ee", "#f72585", "#7209b7", "#4cc9f0"]
     html_content = '<div class="psych-bg">'
-    for _ in range(50): # Mobilde kasma yapmasın diye sayıyı 50'ye çektim
+    for _ in range(50):
         left = random.randint(1, 99)
-        duration = random.uniform(10, 25)
-        delay = random.uniform(0, 15)
-        size = random.uniform(1, 3) # Boyutları biraz küçülttüm
-        opacity = random.uniform(0.1, 0.4)
+        duration = random.uniform(5, 12)
+        delay = random.uniform(0, 10)
+        size = random.uniform(1.5, 3.5)
+        opacity = random.uniform(0.3, 0.7)
         icon = random.choice(icons)
         color = random.choice(colors)
         style = f"position:absolute; left:{left}%; top:-10%; animation:fall {duration}s linear infinite; animation-delay:{delay}s; font-size:{size}rem; color:{color}; opacity:{opacity};"
@@ -286,15 +317,12 @@ def home_page():
             st.query_params["kullanici"] = name
             st.rerun()
     else:
-        # 1. KÜÇÜK KARŞILAMA
         st.markdown(f"""
         <div style="text-align:center;">
             <span class="greeting-pill">👋 {st.session_state.user_name}</span>
         </div>
         """, unsafe_allow_html=True)
 
-        # 2. KOMPAKT YAN YANA İSTATİSTİKLER (HTML FLEX)
-        # Bu kısım st.columns yerine HTML ile yapıldı, mobilde yan yana durması için
         st.markdown(f"""
         <div class="stats-container">
             <div class="stat-mini-card" style="border-bottom-color:#4cc9f0;">
@@ -315,7 +343,6 @@ def home_page():
         </div>
         """, unsafe_allow_html=True)
 
-    # 3. KÜÇÜLTÜLMÜŞ HERO BANNER
     st.markdown(f"""
         <div class="modern-hero">
             <div style="font-size: 2.5rem; margin-bottom: 5px;">🏆</div>
@@ -324,14 +351,13 @@ def home_page():
         </div>
     """, unsafe_allow_html=True)
 
-    # 4. BUTONLAR (ALT ALTA DAHA RAHAT BASILIR MOBİLDE)
     if st.button("🚀 Sınava Başla", type="primary", use_container_width=True):
         if st.session_state.user_name == "Misafir":
             st.warning("Lütfen isminizi girin.")
         else:
             start_quiz()
             
-    st.write("") # Küçük boşluk
+    st.write("") 
     
     if st.button("📊 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
@@ -342,9 +368,9 @@ def quiz_page():
         st.session_state.current_page = 'home'
         st.rerun()
     
-    c1, c2 = st.columns([1, 4])
+    c1, c2 = st.columns([1.5, 3.5])
     with c1:
-        if st.button("✕", help="Çıkış", use_container_width=True):
+        if st.button("🛑 SINAVI BİTİR", help="Sınavı iptal et", use_container_width=True):
             quit_quiz()
     with c2: pass 
     
@@ -356,7 +382,7 @@ def quiz_page():
     
     st.markdown(f"""
     <div class="quiz-card">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-size:0.8rem; color:#888;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-size:0.8rem; color:#64748b;">
             <span>SORU {idx + 1} / {total_q}</span>
             <span style="color:{accent_color}; font-weight:bold;">💎 {st.session_state.score}</span>
         </div>
@@ -377,10 +403,10 @@ def quiz_page():
             st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış!</b><br><small>Cevap: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
         
         if q_data.get('aciklama'):
-            st.markdown(f'<div style="background:white; padding:15px; border-radius:10px; margin-top:10px; border:1px solid #eee; font-size:0.9rem;"><b>💡 Bilgi:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="background:white; padding:15px; border-radius:10px; margin-top:10px; border:1px solid #e2e8f0; font-size:0.9rem;"><b>💡 Bilgi:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
             
         st.write("")
-        btn_txt = "Sonraki ➡️" if idx < total_q - 1 else "Bitir 🏁"
+        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Bitir 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
             next_question()
 
@@ -388,7 +414,7 @@ def result_page():
     if 'score_saved' not in st.session_state:
         status, msg = save_score_to_db()
         if status:
-            st.toast("Kaydedildi!", icon="✅")
+            st.toast("Skor kaydedildi!", icon="✅")
             st.session_state.score_saved = True
         else:
             st.error(f"Hata: {msg}")
@@ -398,9 +424,9 @@ def result_page():
         <div style="background:white; padding:30px 20px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
             <div style="font-size: 60px; margin-bottom:10px;">🎉</div>
             <h2 style="color: {primary_color}; margin:0;">Tebrikler!</h2>
-            <p style="color: #666; font-size:0.9rem;">{st.session_state.user_name}</p>
+            <p style="color: #64748b; font-size:0.9rem;">{st.session_state.user_name}</p>
             <div style="margin: 20px 0; padding: 15px; background:#f8f9fa; border-radius:15px;">
-                <span style="font-size: 12px; text-transform:uppercase; color:#888; font-weight:bold;">Skor</span>
+                <span style="font-size: 12px; text-transform:uppercase; color:#94a3b8; font-weight:bold;">Skor</span>
                 <div style="font-size: 50px; font-weight:900; color:{accent_color}; line-height:1;">{st.session_state.score}</div>
             </div>
         </div>
@@ -421,8 +447,15 @@ def result_page():
 
 def leaderboard_page():
     st.markdown(f"""
-    <div style="text-align:center; margin-bottom:20px;">
+    <div style="text-align:center; margin-bottom:10px;">
         <h3 style="color:{primary_color};">🏆 Şampiyonlar</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # YENİ BİLGİ KUTUSU
+    st.markdown(f"""
+    <div class="info-pill">
+        ℹ️ Sıralama, yarışmacıların <b>en son</b> aldıkları puana göre belirlenir.
     </div>
     """, unsafe_allow_html=True)
     
@@ -436,7 +469,9 @@ def leaderboard_page():
                 df[skor_col] = pd.to_numeric(df[skor_col], errors='coerce').fillna(0)
                 df = df.sort_values(by=[skor_col], ascending=False).reset_index(drop=True)
                 df.index += 1
+                st.markdown('<div style="background:white; padding:15px; border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">', unsafe_allow_html=True)
                 st.dataframe(df, use_container_width=True, column_config={"Skor": st.column_config.ProgressColumn("Skor", format="%d", min_value=0, max_value=100)})
+                st.markdown('</div>', unsafe_allow_html=True)
             else:
                 st.dataframe(df, use_container_width=True)
         except:
