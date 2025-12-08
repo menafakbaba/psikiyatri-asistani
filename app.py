@@ -49,7 +49,7 @@ st.markdown(f"""
         100% {{ transform: translateY(120vh) rotate(360deg); }}
     }}
 
-    /* 3. İSTATİSTİK KUTULARI (MOBİL DOSTU) */
+    /* 3. İSTATİSTİK KUTULARI */
     .stats-container {{
         display: flex; justify-content: space-between; gap: 8px; margin-bottom: 20px;
     }}
@@ -99,7 +99,6 @@ st.markdown(f"""
     }}
     
     /* 6. BUTONLAR */
-    /* Primary */
     div.stButton > button[kind="primary"] {{
         background: linear-gradient(45deg, {primary_color}, {accent_color}) !important;
         color: white !important; border: none !important; border-radius: 12px !important;
@@ -107,7 +106,6 @@ st.markdown(f"""
         box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4) !important;
     }}
     
-    /* Şıklar */
     div.stButton > button {{
         width: 100%; border-radius: 12px; background-color: #ffffff; 
         border: 2px solid #cbd5e1; color: #334155; font-weight: 600; padding: 0.8rem 1rem;
@@ -116,20 +114,12 @@ st.markdown(f"""
         border-color: {primary_color}; color: {primary_color}; background-color: #eff6ff;
     }}
 
-    /* --- ÖZEL: ÇIKIŞ BUTONU (KIRMIZI) --- */
+    /* ÇIKIŞ BUTONU */
     div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
-        background-color: #ef4444 !important;
-        color: white !important;
-        border: none !important;
-        box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4) !important;
-        font-weight: bold !important;
-    }}
-    div[data-testid="column"]:nth-of-type(1) div.stButton > button:hover {{
-        background-color: #dc2626 !important;
-        transform: scale(1.05);
+        background-color: #ef4444 !important; color: white !important;
+        border: none !important; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4) !important;
     }}
 
-    /* Diğer */
     .greeting-pill {{
         background: white; display: inline-block; padding: 6px 20px; 
         border-radius: 20px; font-size: 0.9rem; color: #475569; font-weight: 700;
@@ -139,14 +129,12 @@ st.markdown(f"""
     .fb-correct {{ border-left: 5px solid #22c55e; color: #14532d; background-color: #f0fdf4; }}
     .fb-wrong {{ border-left: 5px solid #ef4444; color: #7f1d1d; background-color: #fef2f2; }}
     
-    /* Liderlik Tablosu Bilgi Kutusu */
     .info-pill {{
         background: white; padding: 12px; border-radius: 12px; 
         border-left: 5px solid {primary_color}; margin-bottom: 20px; 
         color: #555; font-size: 0.9rem; text-align: center;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }}
-
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
     </style>
 """, unsafe_allow_html=True)
@@ -184,8 +172,8 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
-
-# YENİ: Çözülen soruları takip eden liste
+# YENİ: Hangi moddayız? (League veya Notes)
+if 'active_mode' not in st.session_state: st.session_state.active_mode = None
 if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
@@ -196,7 +184,7 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
+        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1")
         return sheet
     except:
         return None
@@ -226,6 +214,7 @@ def save_score_to_db():
                 data = all_values[1:]
                 df = pd.DataFrame(data, columns=headers)
                 df.columns = df.columns.str.strip()
+                # Sadece aynı isimli kişiyi filtrele (Mode ayrımı yapmıyoruz şimdilik, genel puan tablosu)
                 df_cleaned = df[df['Kullanıcı'] != st.session_state.user_name]
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
@@ -247,21 +236,24 @@ def save_score_to_db():
             return False, str(e)
     return False, "Bağlantı yok"
 
-# --- QUIZ FONKSİYONLARI (YENİLENMİŞ) ---
-def load_questions():
+# --- QUIZ FONKSİYONLARI (GÜNCELLENMİŞ) ---
+def load_questions(json_filename):
+    """
+    json_filename: Yüklenecek dosya adı ('sorular.json' veya 'ders_notlari.json')
+    """
     try:
-        with open('sorular.json', 'r', encoding='utf-8') as f:
+        with open(json_filename, 'r', encoding='utf-8') as f:
             all_questions = json.load(f)
         
         # 1. Daha önce çözülmemiş soruları bul
         available_questions = [
-            q for q in all_questions 
+            q for q in all_questions
             if q['soru'] not in st.session_state.seen_questions
         ]
         
         # 2. Havuz bittiyse veya 10'dan az kaldıysa sıfırla
         if len(available_questions) < 10:
-            st.toast("Tüm soruları bitirdiniz! Havuz sıfırlandı ve baştan başlıyor. 🔄", icon="🚀")
+            st.toast("Bu kategorideki sorular bitti! Havuz sıfırlandı. 🔄", icon="🚀")
             st.session_state.seen_questions = []
             available_questions = all_questions
         
@@ -276,18 +268,28 @@ def load_questions():
         st.session_state.quiz_data = selected_questions
         return True
     except Exception as e:
-        st.error(f"Soru yükleme hatası: {e}")
+        st.error(f"Soru yükleme hatası ({json_filename}): {e}")
         return False
 
-def start_quiz():
+def start_quiz(mode_type, filename):
+    """
+    mode_type: 'league' veya 'notes'
+    filename: json dosya adı
+    """
+    # Eğer farklı bir moda geçiş yapılıyorsa görülen soruları sıfırla ki karışmasın
+    if st.session_state.active_mode != mode_type:
+        st.session_state.seen_questions = []
+        st.session_state.active_mode = mode_type
+
     st.session_state.question_index = 0
     st.session_state.score = 0
     st.session_state.answer_submitted = False
+    
     if st.session_state.user_name != "Misafir":
         st.query_params["kullanici"] = st.session_state.user_name
     
-    # Soruları yükle (Yenilenmiş fonksiyon)
-    if load_questions():
+    # İlgili dosyadan yükle
+    if load_questions(filename):
         st.session_state.current_page = 'quiz'
         st.rerun()
 
@@ -363,13 +365,27 @@ def home_page():
         </div>
     """, unsafe_allow_html=True)
 
-    if st.button("🚀 Sınava Başla", type="primary", use_container_width=True):
-        if st.session_state.user_name == "Misafir":
-            st.warning("Lütfen isminizi girin.")
-        else:
-            start_quiz()
+    # --- BUTON SEÇİM ALANI ---
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        if st.button("🚀 Genel Sınav", type="primary", use_container_width=True):
+            if st.session_state.user_name == "Misafir":
+                st.warning("Lütfen isminizi girin.")
+            else:
+                # Orijinal mod (Soru Havuzu)
+                start_quiz("league", "sorular.json")
+    
+    with col2:
+        # Yeni eklenen mod için farklı bir stil (CSS ile otomatik şık duracaktır)
+        if st.button("📚 Ders Notları", use_container_width=True):
+            if st.session_state.user_name == "Misafir":
+                st.warning("Lütfen isminizi girin.")
+            else:
+                # Yeni JSON dosyası
+                start_quiz("notes", "ders_notlari.json")
             
-    st.write("") 
+    st.write("")
     
     if st.button("📊 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
@@ -384,7 +400,10 @@ def quiz_page():
     with c1:
         if st.button("🛑 SINAVI BİTİR", help="Sınavı iptal et", use_container_width=True):
             quit_quiz()
-    with c2: pass 
+    with c2:
+        # Hangi modda olduğumuzu sağ üstte gösterelim
+        mode_label = "Ders Notları" if st.session_state.active_mode == "notes" else "Genel Sınav"
+        st.markdown(f"<div style='text-align:right; color:#999; font-size:0.8rem;'>Mod: <b>{mode_label}</b></div>", unsafe_allow_html=True)
     
     total_q = len(st.session_state.quiz_data)
     idx = st.session_state.question_index
@@ -404,12 +423,12 @@ def quiz_page():
     
     if not st.session_state.answer_submitted:
         for i, opt in enumerate(q_data['secenekler']):
-            st.write("") 
+            st.write("")
             if st.button(opt, key=f"q{idx}_o{i}", use_container_width=True):
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct: 
+        if st.session_state.is_correct:
             st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Doğru Cevap!</b></div>', unsafe_allow_html=True)
         else:
             st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış!</b><br><small>Cevap: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
