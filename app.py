@@ -172,8 +172,7 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
-# YENİ: Hangi moddayız? (League veya Notes)
-if 'active_mode' not in st.session_state: st.session_state.active_mode = None
+if 'active_mode' not in st.session_state: st.session_state.active_mode = None 
 if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
@@ -184,7 +183,7 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1")
+        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
     except:
         return None
@@ -204,18 +203,28 @@ def fetch_leaderboard():
             return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
     return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
+# --- GÜNCELLENMİŞ KAYIT FONKSİYONU ---
 def save_score_to_db():
     sheet = get_google_sheet()
     if sheet:
         try:
+            # Hangi modda oynadığını kontrol et
+            kayit_ismi = st.session_state.user_name
+            
+            # Eğer Ders Notları modundaysa ismin formatını değiştir
+            if st.session_state.get("active_mode") == "notes":
+                kayit_ismi = f"{st.session_state.user_name}, ders notları puanı"
+
             all_values = sheet.get_all_values()
+            
             if len(all_values) > 0:
                 headers = all_values[0]
                 data = all_values[1:]
                 df = pd.DataFrame(data, columns=headers)
                 df.columns = df.columns.str.strip()
-                # Sadece aynı isimli kişiyi filtrele (Mode ayrımı yapmıyoruz şimdilik, genel puan tablosu)
-                df_cleaned = df[df['Kullanıcı'] != st.session_state.user_name]
+                
+                # Sadece aynı isme sahip eski skoru sil
+                df_cleaned = df[df['Kullanıcı'] != kayit_ismi]
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
@@ -223,10 +232,11 @@ def save_score_to_db():
             tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')
             
             new_row = pd.DataFrame([{
-                'Kullanıcı': st.session_state.user_name,
+                'Kullanıcı': kayit_ismi, # Yeni format
                 'Skor': st.session_state.score,
                 'Tarih': tarih
             }])
+            
             final_df = pd.concat([df_cleaned, new_row], ignore_index=True)
             sheet.clear()
             update_data = [final_df.columns.values.tolist()] + final_df.values.tolist()
@@ -236,7 +246,7 @@ def save_score_to_db():
             return False, str(e)
     return False, "Bağlantı yok"
 
-# --- QUIZ FONKSİYONLARI (GÜNCELLENMİŞ) ---
+# --- QUIZ FONKSİYONLARI ---
 def load_questions(json_filename):
     """
     json_filename: Yüklenecek dosya adı ('sorular.json' veya 'ders_notlari.json')
@@ -247,7 +257,7 @@ def load_questions(json_filename):
         
         # 1. Daha önce çözülmemiş soruları bul
         available_questions = [
-            q for q in all_questions
+            q for q in all_questions 
             if q['soru'] not in st.session_state.seen_questions
         ]
         
@@ -377,7 +387,7 @@ def home_page():
                 start_quiz("league", "sorular.json")
     
     with col2:
-        # Yeni eklenen mod için farklı bir stil (CSS ile otomatik şık duracaktır)
+        # Yeni eklenen mod
         if st.button("📚 Ders Notları", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
@@ -385,7 +395,7 @@ def home_page():
                 # Yeni JSON dosyası
                 start_quiz("notes", "ders_notlari.json")
             
-    st.write("")
+    st.write("") 
     
     if st.button("📊 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
@@ -400,8 +410,7 @@ def quiz_page():
     with c1:
         if st.button("🛑 SINAVI BİTİR", help="Sınavı iptal et", use_container_width=True):
             quit_quiz()
-    with c2:
-        # Hangi modda olduğumuzu sağ üstte gösterelim
+    with c2: 
         mode_label = "Ders Notları" if st.session_state.active_mode == "notes" else "Genel Sınav"
         st.markdown(f"<div style='text-align:right; color:#999; font-size:0.8rem;'>Mod: <b>{mode_label}</b></div>", unsafe_allow_html=True)
     
@@ -423,12 +432,12 @@ def quiz_page():
     
     if not st.session_state.answer_submitted:
         for i, opt in enumerate(q_data['secenekler']):
-            st.write("")
+            st.write("") 
             if st.button(opt, key=f"q{idx}_o{i}", use_container_width=True):
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct:
+        if st.session_state.is_correct: 
             st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Doğru Cevap!</b></div>', unsafe_allow_html=True)
         else:
             st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış!</b><br><small>Cevap: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
