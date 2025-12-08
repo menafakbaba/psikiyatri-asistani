@@ -1,0 +1,2017 @@
+[
+    {
+        "id": "1",
+        "soru": "Kişinin kendisinin veya organlarının olmadığını, ölü olduğunu iddia ettiği nihilistik sanrılarla karakterize sendrom aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Capgras Sendromu",
+            "B. Fregoli Sendromu",
+            "C. Cotard Sendromu",
+            "D. Ekbom Sendromu",
+            "E. De Clerambault Sendromu"
+        ],
+        "dogru_cevap": "C. Cotard Sendromu",
+        "aciklama": "Cotard Sendromu, kişinin kendini ve organlarının olmadığını sanması durumudur. Ekbom böceklenme sanrısı, De Clerambault ise erotomanidir. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "2",
+        "soru": "Şizofreni hastalarında prognozun (hastalık gidişatının) 'iyi' olacağını gösteren kriterlerden biri aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Erkek cinsiyet",
+            "B. Sinsi başlangıç",
+            "C. Negatif belirtilerin baskın olması",
+            "D. Paranoid türde olması",
+            "E. Erken yaşta başlama"
+        ],
+        "dogru_cevap": "D. Paranoid türde olması",
+        "aciklama": "Paranoid ve Katatonik türler, geç başlangıç, pozitif belirtilerin varlığı ve akut başlangıç iyi prognoz kriterleridir. Erkek cinsiyet ve sinsi başlangıç kötü prognoz kriteridir. (Kaynak: Dosya IMG_4951 / Şizofreni)"
+    },
+    {
+        "id": "3",
+        "soru": "Bipolar bozuklukta 'Karma Dönem' (Mixed Episode) tedavisiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "secenekler": [
+            "A. Tedavide antidepresanlar ilk tercihtir.",
+            "B. İlk tercih Valproat'tır ve antidepresanlar kesilmelidir.",
+            "C. Lamotrijin akut manide en etkili ilaçtır.",
+            "D. Lityum karma dönemde kontrendikedir.",
+            "E. Sadece benzodiazepin monoterapisi uygulanır."
+        ],
+        "dogru_cevap": "B. İlk tercih Valproat'tır ve antidepresanlar kesilmelidir.",
+        "aciklama": "Karma dönem tedavisinde antidepresanlar kesinlikle kullanılmamalıdır. Duygudurum düzenleyici olarak ilk tercih Valproat'tır. (Kaynak: Dosya IMG_4965 / Bipolar Tedavi)"
+    },
+    {
+        "id": "4",
+        "soru": "DSM-5 tanı kriterlerine göre Panik Bozukluk tanısı koyabilmek için, en az bir panik atağından sonra aşağıdaki durumlardan hangisinin en az 1 ay sürmesi gerekir?",
+        "secenekler": [
+            "A. Yaygın vücut ağrısı",
+            "B. Depresif duygudurum",
+            "C. Başka bir atak geçirme kaygısı veya kaçınma davranışı",
+            "D. İşitsel halüsinasyonlar",
+            "E. Uyku bozukluğu"
+        ],
+        "dogru_cevap": "C. Başka bir atak geçirme kaygısı veya kaçınma davranışı",
+        "aciklama": "Panik Bozukluk tanısı için atağın ardından en az 1 ay boyunca beklenti anksiyetesinin (atak geçirme korkusu) veya ataklara karşı uyumsuz kaçınma davranışının sürmesi gerekir. (Kaynak: Dosya IMG_4968 / Anksiyete)"
+    },
+    {
+        "id": "5",
+        "soru": "Aşağıdaki kişilik bozukluklarından hangisi 'A Kümesi' (Garip/Egzantrik) içerisinde yer alır?",
+        "secenekler": [
+            "A. Histrionik Kişilik Bozukluğu",
+            "B. Antisosyal Kişilik Bozukluğu",
+            "C. Şizotipal Kişilik Bozukluğu",
+            "D. Borderline Kişilik Bozukluğu",
+            "E. Bağımlı Kişilik Bozukluğu"
+        ],
+        "dogru_cevap": "C. Şizotipal Kişilik Bozukluğu",
+        "aciklama": "A Kümesi kişilik bozuklukları Paranoid, Şizoid ve Şizotipal olarak sınıflandırılır. Diğer seçenekler B ve C kümelerine aittir. (Kaynak: Dosya IMG_4986 / Kişilik Bozuklukları)"
+    },
+    {
+        "id": "6",
+        "soru": "Anoreksiya Nervoza hastalarında görülen hormonal değişikliklerden hangisi doğrudur?",
+        "secenekler": [
+            "A. Leptin artar, Ghrelin azalır.",
+            "B. Kortizol baskılanır.",
+            "C. LH ve FSH düzeyleri artar.",
+            "D. Leptin azalır, Ghrelin artar.",
+            "E. T3 düzeyi yükselir."
+        ],
+        "dogru_cevap": "D. Leptin azalır, Ghrelin artar.",
+        "aciklama": "Anoreksiya Nervoza'da tokluğu sağlayan Leptin düşer, açlığı sağlayan Ghrelin yükselir. Ayrıca stres yanıtı olarak Kortizol artar. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları)"
+    },
+    {
+        "id": "7",
+        "soru": "Antidepresanların kesilmesi sırasında en fazla 'kesilme belirtisi' (withdrawal) gösteren SSRI grubu ilaç hangisidir?",
+        "secenekler": [
+            "A. Fluoksetin",
+            "B. Sertralin",
+            "C. Sitalopram",
+            "D. Paroksetin",
+            "E. Essitalopram"
+        ],
+        "dogru_cevap": "D. Paroksetin",
+        "aciklama": "En fazla kesilme belirtisi çıkaran SSRI Paroksetin'dir. Yarı ömrü kısa olduğu için kesilme sendromu riski yüksektir. (Kaynak: Dosya IMG_4959 / Antidepresanlar)"
+    },
+    {
+        "id": "8",
+        "soru": "Obsesif Kompulsif Kişilik Bozukluğu'nda (OKKB) sıklıkla görülen savunma mekanizmaları aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Bölme (Splitting) ve Yansıtmalı Özdeşim",
+            "B. Yalıtma (İzolasyon), Karşıt Tepki Oluşturma ve Yap-Boz",
+            "C. İnkar ve Yansıtma",
+            "D. Dissosiyasyon ve Bastırma",
+            "E. Eyleme vurma (Acting out)"
+        ],
+        "dogru_cevap": "B. Yalıtma (İzolasyon), Karşıt Tepki Oluşturma ve Yap-Boz",
+        "aciklama": "Obsesif-Kompulsif Kişilik Bozukluğu'nun savunma düzenekleri İzolasyon, Reaksiyon Formasyon (Karşıt Tepki Kurma), Yap-Boz ve Entellektüalizasyondur. (Kaynak: Dosya IMG_4990 / Kişilik Bozuklukları)"
+    },
+    {
+        "id": "9",
+        "soru": "Depresyondaki uyku değişiklikleri (polisomnografi bulguları) ile ilgili aşağıdakilerden hangisi karakteristiktir?",
+        "secenekler": [
+            "A. REM latansı uzar.",
+            "B. REM uykusu süresi kısalır.",
+            "C. Derin uyku (yavaş dalga uykusu) artar.",
+            "D. REM latansı kısalır ve REM uykusu erken saatlere kayar.",
+            "E. Toplam uyku süresi her zaman artar."
+        ],
+        "dogru_cevap": "D. REM latansı kısalır ve REM uykusu erken saatlere kayar.",
+        "aciklama": "Depresyonda REM uykusunun erken saatlere kaydığı (latansın kısaldığı), REM süresinin uzadığı ve dinlendirici yavaş dalga uykusunun azaldığı görülür. (Kaynak: Dosya IMG_4958 / Depresyon Biyolojisi)"
+    },
+    {
+        "id": "10",
+        "soru": "Cinsel işlev bozuklukları tedavisinde 'Duyatevi Terapi' (Sensate Focus) öncelikle hangi durumda önerilir?",
+        "secenekler": [
+            "A. Erken boşalma",
+            "B. Cinsel birliktelik korkusu yaşayanlarda (Vajinismus vb.)",
+            "C. Düşük cinsel istek bozukluğu",
+            "D. Priapizm",
+            "E. Parafililer"
+        ],
+        "dogru_cevap": "B. Cinsel birliktelik korkusu yaşayanlarda (Vajinismus vb.)",
+        "aciklama": "Cinsel birliktelik korkusu yaşayanlarda aşamalı duyarsızlaştırma içeren Duyatevi Terapi önerilir. (Kaynak: Dosya IMG_4992 / Cinsellik)"
+    },
+    {
+        "id": "11",
+        "soru": "Aşağıdaki ilaçlardan hangisi mani tedavisinde etkili değildir ve hatta döngüyü hızlandırabilir?",
+        "secenekler": [
+            "A. Lityum",
+            "B. Valproat",
+            "C. Ketiapin",
+            "D. Lamotrijin",
+            "E. Olanzapin"
+        ],
+        "dogru_cevap": "D. Lamotrijin",
+        "aciklama": "Lamotrijin, Gabapentin ve Topiramat manide etkisizdir. Lamotrijin daha çok depresif dönemleri önlemede ve Bipolar II tedavisinde kullanılır. (Kaynak: Dosya IMG_4965 / Bipolar İlaçlar)"
+    },
+    {
+        "id": "12",
+        "soru": "Şizofreni tedavisinde kullanılan Klozapin ile ilgili en önemli risk ve mutlak takip zorunluluğu nedir?",
+        "secenekler": [
+            "A. Hipertansiyon riski",
+            "B. Nötropeni/Agranülositoz riski nedeniyle kan sayımı (ANC) takibi",
+            "C. Böbrek yetmezliği riski",
+            "D. Tiroid fonksiyon bozukluğu",
+            "E. Hiperprolaktinemi"
+        ],
+        "dogru_cevap": "B. Nötropeni/Agranülositoz riski nedeniyle kan sayımı (ANC) takibi",
+        "aciklama": "Klozapin kullanımında REMS programı ile nötrofil takibinin (ANC) yapılması zorunludur çünkü ölümcül agranülositoz riski taşır. (Kaynak: Dosya 2 / Şizofreni Tedavisi)"
+    },
+    {
+        "id": "13",
+        "soru": "Şizofrenide beyin görüntüleme çalışmalarında en sık karşılaşılan yapısal değişiklik nedir?",
+        "secenekler": [
+            "A. Hipokampus hacminde artış",
+            "B. Yan karıncıklarda (lateral ventrikül) genişleme ve gri cevher azalması",
+            "C. Frontal lob aktivitesinde artış",
+            "D. Bazal gangliyonlarda küçülme",
+            "E. Beyin ağırlığında artış"
+        ],
+        "dogru_cevap": "B. Yan karıncıklarda (lateral ventrikül) genişleme ve gri cevher azalması",
+        "aciklama": "Şizofrenide yan karıncıklar (ventriküller) genişlerken; hipokampus, amigdala, talamus ve genel gri madde hacminde azalma görülür. (Kaynak: Dosya IMG_4951 / Şizofreni Beyin)"
+    },
+    {
+        "id": "14",
+        "soru": "Travma Sonrası Stres Bozukluğu (TSSB) tedavisinde aşağıdaki ilaç gruplarından hangisi önerilmez?",
+        "secenekler": [
+            "A. SSRI (Sertralin, Paroksetin)",
+            "B. SNRI (Venlafaksin)",
+            "C. Prazosin (Kabuslar için)",
+            "D. Benzodiazepinler",
+            "E. Mirtazapin"
+        ],
+        "dogru_cevap": "D. Benzodiazepinler",
+        "aciklama": "TSSB tedavisinde Benzodiazepinler önerilmez. İlk basamak tedavide SSRI ve SNRI grubu ilaçlar ile psikoterapi (BDT, EMDR) kullanılır. (Kaynak: Dosya IMG_4976 / Travma)"
+    },
+    {
+        "id": "15",
+        "soru": "Yapay Bozukluk (Munchausen) ile Temaruz (Simülasyon) arasındaki temel fark nedir?",
+        "secenekler": [
+            "A. Yapay bozuklukta belirtiler gerçektir.",
+            "B. Temaruzda bilinçdışı bir süreç işler.",
+            "C. Yapay bozuklukta amaç sadece 'hasta rolü' oynamaktır, dışsal bir kazanç yoktur.",
+            "D. Temaruzda belirtiler istemsizdir.",
+            "E. Yapay bozukluk sadece kadınlarda görülür."
+        ],
+        "dogru_cevap": "C. Yapay bozuklukta amaç sadece 'hasta rolü' oynamaktır, dışsal bir kazanç yoktur.",
+        "aciklama": "Yapay bozuklukta amaç bilinçdışı bir dürtüyle hasta rolü oynamaktır ve maddi kazanç yoktur. Temaruzda ise askerlikten kaçma, tazminat alma gibi belirgin bir dışsal kazanç vardır. (Kaynak: Dosya IMG_4980 ve IMG_4981 / Somatoform)"
+    },
+    {
+        "id": "16",
+        "soru": "Şizofrenide 'negatif belirtiler' arasında aşağıdakilerden hangisi yer almaz?",
+        "secenekler": [
+            "A. Aloji (Konuşma fakirleşmesi)",
+            "B. Avolisyon (İstek ve enerji azlığı)",
+            "C. Anhedoni (Zevk alamama)",
+            "D. İşitme varsanıları (Halüsinasyonlar)",
+            "E. Duygusal küntlük"
+        ],
+        "dogru_cevap": "D. İşitme varsanıları (Halüsinasyonlar)",
+        "aciklama": "Varsanılar (halüsinasyonlar) ve sanrılar şizofreninin 'pozitif' belirtileridir. Aloji, avolisyon, anhedoni ve duygusal küntlük ise negatif belirtilerdir. (Kaynak: Dosya IMG_4947 / Şizofreni Genel Özellikler)"
+    },
+    {
+        "id": "17",
+        "soru": "Dopamin hipotezine göre, şizofrenideki negatif ve bilişsel belirtilerden sorumlu tutulan mekanizma nedir?",
+        "secenekler": [
+            "A. Mezolimbik yolakta dopamin artışı",
+            "B. Mezokortikal yolakta dopamin azalması",
+            "C. Nigrostriatal yolakta dopamin artışı",
+            "D. Tuberoinfundibular yolakta dopamin azalması",
+            "E. Serotonin reseptör sayısında artış"
+        ],
+        "dogru_cevap": "B. Mezokortikal yolakta dopamin azalması",
+        "aciklama": "Mezolimbik dopamin artışı pozitif belirtilere, mezokortikal dopamin azalması ise negatif ve bilişsel belirtilere yol açar. (Kaynak: Dosya IMG_4952 / Şizofreni Biyokimyası)"
+    },
+    {
+        "id": "18",
+        "soru": "Aşağıdaki antipsikotik yan etkilerinden hangisinin tedavisinde 'antikolinerjik ilaçlar' (Biperiden vb.) kullanılması önerilmez veya durumu kötüleştirebilir?",
+        "secenekler": [
+            "A. Akut Distoni",
+            "B. Parkinsonizm",
+            "C. Tardif Diskinezi",
+            "D. Akatizi (Kısmi yanıt)",
+            "E. Okülojirik kriz"
+        ],
+        "dogru_cevap": "C. Tardif Diskinezi",
+        "aciklama": "Tardif Diskinezi tedavisinde VMAT2 inhibitörleri önerilir. Antikolinerjikler Tardif Diskinezi tablosunu kötüleştirebilir. (Kaynak: Dosya 2 / Yan Etki Yönetimi)"
+    },
+    {
+        "id": "19",
+        "soru": "DSM-5 tanı kriterlerine göre, 'Şizofreniform Bozukluk' tanısı koymak için belirtilerin süresi ne kadar olmalıdır?",
+        "secenekler": [
+            "A. 1 günden az",
+            "B. 1 gün ile 1 ay arası",
+            "C. 1 ay ile 6 ay arası",
+            "D. En az 6 ay",
+            "E. En az 2 yıl"
+        ],
+        "dogru_cevap": "C. 1 ay ile 6 ay arası",
+        "aciklama": "Klinik belirtilerin 1 ay ile 6 ay arasında sürdüğü durumlarda Şizofreniform Bozukluk tanısı konur. 6 ayı geçerse Şizofreni, 1 aydan kısaysa Kısa Psikotik Bozukluk düşünülür. (Kaynak: Dosya IMG_4949 / Tanı Kriterleri)"
+    },
+    {
+        "id": "20",
+        "soru": "Katatoni tablosunda görülen, hastanın kendisine verilen pozisyonu uzun süre koruması (yerçekimine karşı edilgin konum alma) belirtisi nedir?",
+        "secenekler": [
+            "A. Ekolali",
+            "B. Katalepsi",
+            "C. Negativizm",
+            "D. Stereotipi",
+            "E. Manyerizm"
+        ],
+        "dogru_cevap": "B. Katalepsi",
+        "aciklama": "Katalepsi, hastanın yerçekimine karşı edilgin bir konumu uzun süre korumasıdır. Balmumu esnekliği de buna benzer bir durumdur. (Kaynak: Dosya IMG_4953 / Katatoni)"
+    },
+    {
+        "id": "21",
+        "soru": "Şizofreni tedavisinde 'Tedaviye Dirençli' (iki farklı antipsikotik denemesine yanıtsız) hastalarda kullanılması önerilen (Seviye 1B) ilaç hangisidir?",
+        "secenekler": [
+            "A. Haloperidol",
+            "B. Risperidon",
+            "C. Olanzapin",
+            "D. Klozapin",
+            "E. Aripiprazol"
+        ],
+        "dogru_cevap": "D. Klozapin",
+        "aciklama": "Yeterli doz ve sürede iki farklı antipsikotik denemesine yanıt alınamayan hastalarda Klozapin kullanımı önerilir. Ayrıca intihar riski yüksek hastalarda da tercih edilir. (Kaynak: Dosya 2 / Klozapin Kullanımı)"
+    },
+    {
+        "id": "22",
+        "soru": "Othello Sendromu olarak da bilinen, temelinde patolojik kıskançlık bulunan sanrı türü aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Erotomani",
+            "B. Somatik sanrı",
+            "C. Konjugal Paranoya",
+            "D. Büyüklük sanrısı (Megalomani)",
+            "E. Nihilistik sanrı"
+        ],
+        "dogru_cevap": "C. Konjugal Paranoya",
+        "aciklama": "Othello Sendromu, patolojik kıskançlık sanrıları ile karakterizedir ve 'Konjugal Paranoya' (Aldatma sanıları) olarak da adlandırılır. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "23",
+        "soru": "Şizoaffektif Bozukluk tanısı koyarken, Duygudurum Bozukluğu'ndan (Psikotik özellikli Depresyon/Bipolar) ayırmak için hangi kritere bakılır?",
+        "secenekler": [
+            "A. Halüsinasyonların işitsel olması",
+            "B. Duygudurum belirtilerinin daha şiddetli olması",
+            "C. Duygudurum dönemi olmadan en az 2 hafta sanrı ya da varsanının bulunması",
+            "D. Aile öyküsünün olması",
+            "E. Antidepresanlara yanıt vermesi"
+        ],
+        "dogru_cevap": "C. Duygudurum dönemi olmadan en az 2 hafta sanrı ya da varsanının bulunması",
+        "aciklama": "Şizoaffektif bozuklukta, duygudurum ataklarının (mani veya depresyon) olmadığı dönemlerde de en az 2 hafta süren sanrı veya varsanıların varlığı tanı için şarttır. (Kaynak: Dosya IMG_4948 / DSM-5 Tanı Kriterleri)"
+    },
+    {
+        "id": "24",
+        "soru": "Katatonik bir hastaya 'Lorezepam Testi' yapıldığında beklenen yanıt nedir?",
+        "secenekler": [
+            "A. Belirtilerde kötüleşme",
+            "B. 30 dakika içinde belirtilerde %50 azalma veya tam düzelme",
+            "C. Sadece uykuya dalma",
+            "D. Parkinsonizm belirtilerinin ortaya çıkması",
+            "E. Hiçbir değişiklik olmaması"
+        ],
+        "dogru_cevap": "B. 30 dakika içinde belirtilerde %50 azalma veya tam düzelme",
+        "aciklama": "Lorezepam testi uygulandığında (1-2 mg), katatoni hastalarında 30 dakika içinde (parenteral ise 5 dk) belirtilerde belirgin düzelme beklenir. (Kaynak: Dosya IMG_4953 / Katatoni Tedavisi)"
+    },
+    {
+        "id": "25",
+        "soru": "Şizofrenide 'kötü prognoz' (kötü gidişat) göstergelerinden biri aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Geç başlangıç",
+            "B. Akut başlangıç",
+            "C. Kadın cinsiyet",
+            "D. Sinsi başlangıç ve negatif belirtilerin baskın olması",
+            "E. Duygudurum belirtilerinin eşlik etmesi"
+        ],
+        "dogru_cevap": "D. Sinsi başlangıç ve negatif belirtilerin baskın olması",
+        "aciklama": "Erkek cinsiyet, sinsi başlangıç, erken yaşta başlama, negatif belirtilerin baskınlığı ve aile öyküsü kötü prognoz kriterleridir. (Kaynak: Dosya IMG_4951 / Prognoz)"
+    },
+    {
+        "id": "26",
+        "soru": "Antipsikotik ilaç kullanımına bağlı gelişebilen 'Akatizi' (yerinde duramama) durumunun tedavisinde aşağıdakilerden hangisi önerilir?",
+        "secenekler": [
+            "A. Dozu artırmak",
+            "B. Beta-bloker (Propranolol) eklemek",
+            "C. Dopamin agonisti vermek",
+            "D. Klozapin ile değiştirmek (ilk seçenek olarak)",
+            "E. Antidepresan eklemek"
+        ],
+        "dogru_cevap": "B. Beta-bloker (Propranolol) eklemek",
+        "aciklama": "Akatizi yönetiminde ilaç dozunun azaltılması, ilaç değişimi veya Beta-bloker (Propranolol) ya da benzodiazepin eklenmesi önerilir. (Kaynak: Dosya 2 / Yan Etki Yönetimi)"
+    },
+    {
+        "id": "27",
+        "soru": "Sanrılı Bozukluk (Delüzyonel Bozukluk) ile Şizofreni arasındaki en temel klinik fark nedir?",
+        "secenekler": [
+            "A. Sanrılı bozuklukta halüsinasyonlar çok sıktır.",
+            "B. Sanrılı bozuklukta işlevsellik korunmuştur ve davranışlar sanrı dışında garip değildir.",
+            "C. Şizofrenide sanrılar sistematiktir.",
+            "D. Sanrılı bozukluk her zaman 6 aydan kısa sürer.",
+            "E. Şizofrenide sanrılar daha gerçekçidir."
+        ],
+        "dogru_cevap": "B. Sanrılı bozuklukta işlevsellik korunmuştur ve davranışlar sanrı dışında garip değildir.",
+        "aciklama": "Sanrılı bozuklukta sanrılar sistematiktir, kişilik yıkımı yoktur ve işlevsellik (sanrı konusu hariç) bozulmamıştır. Şizofrenide ise sanrılar dağınık/acayiptir ve işlevsellik bozulur. (Kaynak: Dosya IMG_4954 / Sanrılı Bozukluklar)"
+    },
+    {
+        "id": "28",
+        "soru": "Yaşlılarda görülen 'Çok Geç Başlangıçlı Şizofreni' (60 yaş üstü) için hangisi bir risk faktörüdür?",
+        "secenekler": [
+            "A. Genetik yükün fazla olması",
+            "B. Erkek cinsiyet",
+            "C. Duyusal (işitme/görme) bozukluklar",
+            "D. Yüksek sosyoekonomik düzey",
+            "E. Madde kullanımı"
+        ],
+        "dogru_cevap": "C. Duyusal (işitme/görme) bozukluklar",
+        "aciklama": "60 yaş üstü başlayan şizofrenide genetik yük azdır; duyusal yoksunluklar (işitme/görme bozuklukları) önemli bir risk faktörüdür. (Kaynak: Dosya 8 / Yaşlılıkta Psikoz)"
+    },
+    {
+        "id": "29",
+        "soru": "Şizofreni hastalarında en sık görülen varsanı (halüsinasyon) türü hangisidir?",
+        "secenekler": [
+            "A. Görsel (Vizüel)",
+            "B. İşitsel (Odituar)",
+            "C. Dokunma (Taktil)",
+            "D. Koku (Olfaktör)",
+            "E. Tat (Gustatuar)"
+        ],
+        "dogru_cevap": "B. İşitsel (Odituar)",
+        "aciklama": "Şizofrenide en sık işitme varsanıları görülür. Görsel varsanılar daha çok organik nedenlerde (Lewy Cisimcikli Demans vb.) görülür. (Kaynak: Dosya IMG_4947 / Şizofreni)"
+    },
+    {
+        "id": "30",
+        "soru": "Aşağıdaki belirtilerden hangisi Bleuler'in şizofreni için tanımladığı 'Temel Belirtiler' (4A) arasında yer alır?",
+        "secenekler": [
+            "A. Sanrı (Delüzyon)",
+            "B. Varsanı (Halüsinasyon)",
+            "C. Ambivalans (Duygu ikilemi)",
+            "D. Katatoni",
+            "E. Ekolali"
+        ],
+        "dogru_cevap": "C. Ambivalans (Duygu ikilemi)",
+        "aciklama": "Bleuler'in temel belirtileri: Duygulanım bozukluğu (Affect), Çağrışım gevşekliği (Association), Ambivalans ve Otizm'dir. Sanrı ve varsanı ikincil belirtilerdir. (Kaynak: Dosya IMG_4947 / Bleuler Tanımlaması)"
+    },
+    {
+        "id": "31",
+        "soru": "Bir hastada 'Kudüs (Jerusalem) Sendromu' görülüyorsa, klinik tablo nasıldır?",
+        "secenekler": [
+            "A. Kutsal şehirlerde ortaya çıkan psikotik yaşantılar",
+            "B. Kendi bedeninin çürüdüğüne inanma",
+            "C. Yabancıların tanıdık kılığına girdiğine inanma",
+            "D. Ünlü birinin kendisine aşık olduğuna inanma",
+            "E. Hareket edememe ve konuşamama"
+        ],
+        "dogru_cevap": "A. Kutsal şehirlerde ortaya çıkan psikotik yaşantılar",
+        "aciklama": "Kudüs Sendromu, kutsal şehirlerde (Kudüs gibi) ortaya çıkan, dinsel içerikli psikotik yaşantıları tanımlar. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "32",
+        "soru": "Uzun Etkili Enjeksiyon (LAI) antipsikotiklerin oral ilaçlara göre kanıtlanmış en önemli avantajı nedir?",
+        "secenekler": [
+            "A. Daha az metabolik yan etki yapmaları",
+            "B. Hastaneye yeniden yatış riskini ve nüksü azaltmaları",
+            "C. Etkilerinin hemen başlaması",
+            "D. Daha ucuz olmaları",
+            "E. Tardif diskinezi riskini sıfıra indirmeleri"
+        ],
+        "dogru_cevap": "B. Hastaneye yeniden yatış riskini ve nüksü azaltmaları",
+        "aciklama": "LAI formları, uyum sorunu olan hastalarda hastaneye yeniden yatış riskini ve hastalığın nüksünü azaltmada oral ilaçlara göre daha üstün bulunmuştur. (Kaynak: Dosya 2 / Uzun Etkili Enjeksiyonlar)"
+    },
+    {
+        "id": "33",
+        "soru": "Şizofrenide 'Schneider'in Birinci Sıra Belirtileri'nden biri olan 'Düşünce Yayınlanması' (Thought Broadcasting) ne anlama gelir?",
+        "secenekler": [
+            "A. Düşüncelerin başkaları tarafından okunduğu veya yayıldığı hissi",
+            "B. Dış güçlerin zihne düşünce sokması",
+            "C. Zihinden düşüncelerin çalınması",
+            "D. Kendi düşüncelerini sesli işitme",
+            "E. Bedensel edilgenlik hissi"
+        ],
+        "dogru_cevap": "A. Düşüncelerin başkaları tarafından okunduğu veya yayıldığı hissi",
+        "aciklama": "Düşünce yayınlanması, kişinin düşüncelerinin başkaları tarafından okunduğu, bilindiği veya çevreye yayıldığı inancıdır. (Kaynak: Dosya IMG_4947 / Schneider Belirtileri)"
+    },
+    {
+        "id": "34",
+        "soru": "Aşağıdaki savunma mekanizmalarından hangisi Paranoid Kişilik Bozukluğu ve Paranoid Şizofreni ile yakından ilişkilidir?",
+        "secenekler": [
+            "A. Bastırma (Represyon)",
+            "B. Yansıtma (Projeksiyon)",
+            "C. Yap-boz (Undoing)",
+            "D. Yalıtma (İzolasyon)",
+            "E. Gerileme (Regresyon)"
+        ],
+        "dogru_cevap": "B. Yansıtma (Projeksiyon)",
+        "aciklama": "Paranoid durumlarda kişi kendi kabul edilemez dürtülerini veya düşmanlığını dışarıya atfederek (yansıtarak) çevresinden şüphelenir. Psikotik projeksiyon sık görülür. (Kaynak: Dosya IMG_4947 ve IMG_4986 / Savunma Mekanizmaları)"
+    },
+    {
+        "id": "35",
+        "soru": "Demanslı yaşlı hastalarda psikotik belirtiler için antipsikotik ilaç kullanılırken en çok dikkat edilmesi gereken risk nedir?",
+        "secenekler": [
+            "A. Bağımlılık yapması",
+            "B. Mortaliteyi (ölüm riskini) artırması",
+            "C. Böbrek yetmezliği",
+            "D. İştahta aşırı artış",
+            "E. Öfori oluşturması"
+        ],
+        "dogru_cevap": "B. Mortaliteyi (ölüm riskini) artırması",
+        "aciklama": "Demanslı yaşlı hastalarda antipsikotik kullanımı, serebrovasküler olaylar ve enfeksiyonlar gibi nedenlerle mortaliteyi artırır. (Kaynak: Dosya 8 / Yaşlılıkta Psikoz Tedavisi)"
+    },
+    {
+        "id": "36",
+        "soru": "DSM-5 tanı kriterlerine göre, 'Mani' ile 'Hipomani' dönemlerini birbirinden ayıran en temel süre ve şiddet farkı nedir?",
+        "secenekler": [
+            "A. Mani en az 4 gün, Hipomani en az 1 hafta sürer.",
+            "B. Mani en az 1 hafta sürer veya yatış gerektirir; Hipomani en az 4 gün sürer ve yatış gerektirmez.",
+            "C. Hipomanide psikotik özellikler görülür, Manide görülmez.",
+            "D. Hipomani işlevselliği tamamen bozar, Mani bozmaz.",
+            "E. Mani sadece antidepresan kullanımıyla tetiklenir."
+        ],
+        "dogru_cevap": "B. Mani en az 1 hafta sürer veya yatış gerektirir; Hipomani en az 4 gün sürer ve yatış gerektirmez.",
+        "aciklama": "Mani tanısı için belirtilerin en az 1 hafta sürmesi veya hastaneye yatış gerektirecek şiddette olması gerekir. Hipomani ise en az 4 gün sürer, işlevselliği belirgin şekilde bozmaz ve psikotik özellik göstermez. (Kaynak: Dosya IMG_4961 / Bipolar Bozukluk)"
+    },
+    {
+        "id": "37",
+        "soru": "Depresyon ile 'Yas' süreci arasındaki ayırıcı tanıda, yas lehine olan en önemli özellik hangisidir?",
+        "secenekler": [
+            "A. Sürekli değersizlik ve suçluluk düşünceleri",
+            "B. İntihar düşüncelerinin yoğun olması",
+            "C. Benlik saygısının korunmuş olması",
+            "D. İşlevselliğin tamamen bozulması",
+            "E. Psikomotor yavaşlamanın çok belirgin olması"
+        ],
+        "dogru_cevap": "C. Benlik saygısının korunmuş olması",
+        "aciklama": "Yasta benlik saygısı genellikle korunmuştur ve olumsuz düşünceler kayıpla ilgilidir. Depresyonda ise yaygın değersizlik, yetersizlik ve suçluluk duyguları hakimdir. (Kaynak: Dosya IMG_4957 / Depresyon ve Yas)"
+    },
+    {
+        "id": "38",
+        "soru": "Atipik özellikli depresyonun (Kurşun paralizisi gibi) tedavisinde klasik antidepresanların yanı sıra hangi ilaç grubunun özellikle faydalı olduğu belirtilmiştir?",
+        "secenekler": [
+            "A. MAO İnhibitörleri",
+            "B. Trisiklik Antidepresanlar (TCA)",
+            "C. Benzodiazepinler",
+            "D. Beta blokerler",
+            "E. Antipsikotikler"
+        ],
+        "dogru_cevap": "A. MAO İnhibitörleri",
+        "aciklama": "Atipik depresyon (aşırı uyuma, iştah artışı, kollar ve bacaklarda ağırlık hissi, reddedilmeye duyarlılık) tedavisinde MAO inhibitörleri etkili bir seçenektir. (Kaynak: Dosya IMG_4956 / Depresyon Türleri)"
+    },
+    {
+        "id": "39",
+        "soru": "Bipolar Bozuklukta 'Hızlı Döngü' (Rapid Cycling) tanısı koymak için bir yıl içinde en az kaç duygudurum dönemi (mani, hipomani veya depresyon) geçirilmiş olmalıdır?",
+        "secenekler": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 6",
+            "E. 10"
+        ],
+        "dogru_cevap": "C. 4",
+        "aciklama": "Bir yıl içinde en az 4 duygudurum dönemi geçirilmesi 'Hızlı Döngü' olarak tanımlanır. Bu durumda tedavide Valproat (Depakin) tercih edilir. (Kaynak: Dosya IMG_4963 / Bipolar Epidemiyoloji)"
+    },
+    {
+        "id": "40",
+        "soru": "Tedaviye dirençli depresyonda kullanılan 'California Rocket Fuel' kombinasyonu hangi iki ilaç grubunun birleşimidir?",
+        "secenekler": [
+            "A. SSRI + Antipsikotik",
+            "B. SNRI (Venlafaksin) + NaSSA (Mirtazapin)",
+            "C. SSRI + TCA",
+            "D. Lityum + Valproat",
+            "E. Bupropion + SSRI"
+        ],
+        "dogru_cevap": "B. SNRI (Venlafaksin) + NaSSA (Mirtazapin)",
+        "aciklama": "Güçlü bir antidepresan etki sağlamak için Venlafaksin (SNRI) ve Mirtazapin (NaSSA) kombinasyonuna 'California Rocket Fuel' adı verilir. (Kaynak: Dosya IMG_4959 / Güçlendirme Tedavisi)"
+    },
+    {
+        "id": "41",
+        "soru": "Aşağıdaki risk faktörlerinden hangisi bir kişide 'tamamlanmış intihar' (ölümle sonuçlanan) riskinin en yüksek olduğu grubu tanımlar?",
+        "secenekler": [
+            "A. Genç kadınlar",
+            "B. Ergenlik dönemindeki kızlar",
+            "C. 75 yaş üstü erkekler",
+            "D. Evli ve çocuklu kadınlar",
+            "E. Sosyal desteği yüksek bireyler"
+        ],
+        "dogru_cevap": "C. 75 yaş üstü erkekler",
+        "aciklama": "Kaba intihar oranının en yüksek olduğu yaş grubu 75 yaş üzeridir ve ölüm oranı erkeklerde kadınlara göre daha yüksektir. (Kaynak: Dosya IMG_4958 / İntihar)"
+    },
+    {
+        "id": "42",
+        "soru": "Yaşlı hastalarda 'Vasküler Depresyon' hipotezine göre, klinik tabloyu diğer depresyonlardan ayıran en belirgin özellikler nelerdir?",
+        "secenekler": [
+            "A. Aşırı suçluluk ve ağlama nöbetleri",
+            "B. Apati (ilgisizlik), yürütücü işlev bozukluğu ve antidepresan yanıtsızlığı",
+            "C. İşitsel varsanılar ve sanrılar",
+            "D. Sabah erken uyanma ve iştah kaybı",
+            "E. Öfori ve grandiyözite"
+        ],
+        "dogru_cevap": "B. Apati (ilgisizlik), yürütücü işlev bozukluğu ve antidepresan yanıtsızlığı",
+        "aciklama": "Vasküler depresyonda, frontal-subkortikal devrelerdeki iskemik lezyonlara bağlı olarak apati ve yürütücü işlev bozukluğu ön plandadır; antidepresanlara yanıt zayıftır. (Kaynak: Dosya 9 / Yaşlılarda Depresif Bozukluk)"
+    },
+    {
+        "id": "43",
+        "soru": "Akut Mani tedavisinde Lityum'un antimanik etkisinin tam olarak başlaması genellikle ne kadar sürer?",
+        "secenekler": [
+            "A. 1-2 saat",
+            "B. 24 saat",
+            "C. 5-12 gün",
+            "D. 4-6 hafta",
+            "E. 3 ay"
+        ],
+        "dogru_cevap": "C. 5-12 gün",
+        "aciklama": "Lityumun antimanik etkileri genellikle 5-12. günde ortaya çıkar. Bu süre zarfında semptom kontrolü için antipsikotikler veya benzodiazepinler eklenebilir. (Kaynak: Dosya IMG_4965 / Bipolar Tedavi)"
+    },
+    {
+        "id": "44",
+        "soru": "Premenstrüel Disforik Bozukluk (PMDD) tanısı için belirtilerin zamanlaması nasıl olmalıdır?",
+        "secenekler": [
+            "A. Adet döngüsü boyunca sürekli devam etmeli",
+            "B. Adet bitiminden sonraki hafta başlamalı",
+            "C. Menstrüasyon öncesindeki son hafta başlayıp, menstrüasyonla azalmalı",
+            "D. Sadece yumurtlama (ovülasyon) gününde görülmeli",
+            "E. Menopoz sonrasında ortaya çıkmalı"
+        ],
+        "dogru_cevap": "C. Menstrüasyon öncesindeki son hafta başlayıp, menstrüasyonla azalmalı",
+        "aciklama": "PMDD belirtileri menstrüel döngünün son haftasında (luteal fazın sonu) başlar, kanama ile birlikte azalır ve kaybolur. (Kaynak: Dosya IMG_4957 / PMDD)"
+    },
+    {
+        "id": "45",
+        "soru": "Bipolar II Bozukluk tanısı alan kadın hastalara sıklıkla yanlışlıkla hangi kişilik bozukluğu tanısı konulabilmektedir?",
+        "secenekler": [
+            "A. Narsisistik Kişilik Bozukluğu",
+            "B. Şizoid Kişilik Bozukluğu",
+            "C. Obsesif-Kompulsif Kişilik Bozukluğu",
+            "D. Borderline (Sınırda) Kişilik Bozukluğu",
+            "E. Paranoid Kişilik Bozukluğu"
+        ],
+        "dogru_cevap": "D. Borderline (Sınırda) Kişilik Bozukluğu",
+        "aciklama": "Bipolar II kadın hastalara sıklıkla yanlışlıkla Borderline KB tanısı konur. Ayrımda Borderline'ın süreklilik göstermesi ve ilişkisel tetikleyicilerle alevlenmesi, Bipolar II'nin ise epizodik olması önemlidir. (Kaynak: Dosya IMG_4962 / Bipolar Genel)"
+    },
+    {
+        "id": "46",
+        "soru": "Valproat yükleme dozu hesaplanırken genellikle hangi dozaj önerilir?",
+        "secenekler": [
+            "A. 5 mg/kg",
+            "B. 10 mg/kg",
+            "C. 20 mg/kg",
+            "D. 50 mg/kg",
+            "E. 100 mg/kg"
+        ],
+        "dogru_cevap": "C. 20 mg/kg",
+        "aciklama": "Valproat ile hızlı etki (3-5 gün) sağlamak için yükleme dozu genellikle 20 mg/kg olarak uygulanır. (Kaynak: Dosya IMG_4964 / İlaç Notları)"
+    },
+    {
+        "id": "47",
+        "soru": "DSM-5'e göre 'Distimi' (Süreğen Depresif Bozukluk) tanısı koyabilmek için çökkün duygudurumun en az ne kadar sürmesi gerekir?",
+        "secenekler": [
+            "A. 2 hafta",
+            "B. 1 ay",
+            "C. 6 ay",
+            "D. 1 yıl",
+            "E. 2 yıl"
+        ],
+        "dogru_cevap": "E. 2 yıl",
+        "aciklama": "Distimi tanısı için çökkün duygudurumun en az 2 yıl sürmesi ve bu süre içinde belirtisiz dönemin 2 aydan uzun olmaması gerekir. (Kaynak: Dosya IMG_4955 / Tanı Kriterleri)"
+    },
+    {
+        "id": "48",
+        "soru": "Depresyon nörobiyolojisinde, stres yanıtı ile ilişkili olarak hipokampal hacim azalmasına neden olduğu düşünülen temel faktör nedir?",
+        "secenekler": [
+            "A. Düşük Dopamin",
+            "B. Yüksek Oksitosin",
+            "C. Kronik Kortizol artışı ve BDNF azalması",
+            "D. Yüksek Serotonin",
+            "E. GABA artışı"
+        ],
+        "dogru_cevap": "C. Kronik Kortizol artışı ve BDNF azalması",
+        "aciklama": "Depresyonda HPA ekseni aktivasyonu sonucu kronik kortizol artışı ve nöroplastisiteyi sağlayan BDNF'in azalması, hipokampal hücre kaybına ve hacim azalmasına yol açar. (Kaynak: Dosya IMG_4958 / Nörobiyoloji)"
+    },
+    {
+        "id": "49",
+        "soru": "Aşağıdaki durumlardan hangisi 'Sekonder Mani' (İkincil Mani) nedeni olabilir ve altta yatan nedenin tedavisini gerektirir?",
+        "secenekler": [
+            "A. Mevsim geçişleri",
+            "B. Steroid veya Levodopa kullanımı",
+            "C. Uyku düzensizliği",
+            "D. İş stresi",
+            "E. Genetik yatkınlık"
+        ],
+        "dogru_cevap": "B. Steroid veya Levodopa kullanımı",
+        "aciklama": "İlaçlar (steroidler, levodopa), enfeksiyonlar veya tümörlere bağlı gelişen mani 'Sekonder Mani'dir ve altta yatan neden tedavi edilmelidir. (Kaynak: Dosya 1 / Risk Faktörleri)"
+    },
+    {
+        "id": "50",
+        "soru": "Bipolar Depresyon (Bipolar Bozukluğun depresif dönemi) tedavisinde tek başına antidepresan kullanımı neden önerilmez?",
+        "secenekler": [
+            "A. Etkisiz olduğu için",
+            "B. Uyku yapacağı için",
+            "C. Maniye kayma (switch) ve döngüyü hızlandırma riski olduğu için",
+            "D. Kilo aldıracağı için",
+            "E. Bağımlılık yapacağı için"
+        ],
+        "dogru_cevap": "C. Maniye kayma (switch) ve döngüyü hızlandırma riski olduğu için",
+        "aciklama": "Bipolar depresyonda antidepresanlar tek başına verilmez; mutlaka bir duygudurum düzenleyici (DDD) ile kombine edilmelidir. Aksi takdirde maniye kayma, disfori ve hızlı döngü riski artar. (Kaynak: Dosya IMG_4962 ve IMG_4965)"
+    },
+    {
+        "id": "51",
+        "soru": "Siklotimik Bozukluk tanımı aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Tek bir mani atağı geçirme",
+            "B. Sadece ağır depresyon atakları geçirme",
+            "C. En az 2 yıl süren, hafif taşkınlık ve hafif depresyon (sub-klinik) belirtileri",
+            "D. İlaçlara bağlı duygudurum değişimi",
+            "E. Şizofreni ile giden duygudurum bozukluğu"
+        ],
+        "dogru_cevap": "C. En az 2 yıl süren, hafif taşkınlık ve hafif depresyon (sub-klinik) belirtileri",
+        "aciklama": "Siklotimi, en az 2 yıl süren, majör depresyon veya mani kriterlerini karşılamayan hafif taşkınlık ve çökkünlük dönemleriyle giden bir bozukluktur. (Kaynak: Dosya IMG_4962 / Bipolar Genel)"
+    },
+    {
+        "id": "52",
+        "soru": "Yaşlılarda (geriatrik popülasyon) antidepresan olarak 'Trisiklik Antidepresanların' (TCA) (örn. Amitriptilin) ilk tercih olmamasının temel nedeni nedir?",
+        "secenekler": [
+            "A. Etkilerinin zayıf olması",
+            "B. Pahalı olmaları",
+            "C. Antikolinerjik (idrar retansiyonu, konfüzyon) ve kardiyak yan etkileri",
+            "D. Sadece enjeksiyon formunun olması",
+            "E. Uyku bozukluğu yapmaları"
+        ],
+        "dogru_cevap": "C. Antikolinerjik (idrar retansiyonu, konfüzyon) ve kardiyak yan etkileri",
+        "aciklama": "Yaşlılarda TCA'lar, antikolinerjik yan etkileri (konfüzyon, düşme, idrar tutukluğu) ve kardiyak riskleri nedeniyle BEERS kriterlerine göre uygunsuz ilaç kabul edilir. (Kaynak: Dosya 6 ve Dosya 9 / Geriatrik Psikiyatri)"
+    },
+    {
+        "id": "53",
+        "soru": "Postpartum (Peripartum) depresyon, tanımlayıcı olarak gebelik sırasında veya doğumdan sonraki ne kadar süre içinde başlamalıdır?",
+        "secenekler": [
+            "A. İlk 24 saat",
+            "B. İlk 1 hafta",
+            "C. İlk 4 hafta",
+            "D. İlk 6 ay",
+            "E. İlk 1 yıl"
+        ],
+        "dogru_cevap": "C. İlk 4 hafta",
+        "aciklama": "Peripartum başlangıçlı depresyon, gebelik sırasında veya doğumdan sonraki 4 hafta içinde başlayan depresyon olarak tanımlanır. (Kaynak: Dosya IMG_4956 / Depresyon Türleri)"
+    },
+    {
+        "id": "54",
+        "soru": "Bipolar bozuklukta 'Lityum'un koruyucu (idame) tedavisinde hedeflenen kan düzeyi aralığı nedir?",
+        "secenekler": [
+            "A. 0.1 - 0.3 mEq/L",
+            "B. 0.4 - 0.6 mEq/L",
+            "C. 0.6 - 0.8 mEq/L",
+            "D. 1.0 - 1.5 mEq/L",
+            "E. 1.5 - 2.0 mEq/L"
+        ],
+        "dogru_cevap": "C. 0.6 - 0.8 mEq/L",
+        "aciklama": "Lityumun akut manide hedef düzeyi 0.8-1.2 iken, koruyucu idame tedavisinde hedef düzey 0.6-0.8 mEq/L aralığıdır. (Kaynak: Dosya IMG_4965 / Bipolar Tedavi)"
+    },
+    {
+        "id": "55",
+        "soru": "Antidepresan kullanımı sırasında ortaya çıkan ve 'California Rocket Fuel' olarak bilinen kombinasyonda kullanılan 'Mirtazapin'in etki mekanizması nedir?",
+        "secenekler": [
+            "A. Serotonin geri alım inhibisyonu (SSRI)",
+            "B. Dopamin agonisti",
+            "C. Noradrenerjik ve Spesifik Serotonerjik Antidepresan (NaSSA)",
+            "D. MAO İnhibitörü",
+            "E. Glutamat reseptör blokajı"
+        ],
+        "dogru_cevap": "C. Noradrenerjik ve Spesifik Serotonerjik Antidepresan (NaSSA)",
+        "aciklama": "Mirtazapin, alfa-2 adrenerjik reseptörleri bloke ederek noradrenalin ve serotonini artıran bir NaSSA grubu antidepresandır. Uyku ve iştah artışı yapar. (Kaynak: Dosya 9 ve Genel Farmakoloji Bilgisi)"
+    },
+    {
+        "id": "56",
+        "soru": "OKB (Obsesif-Kompulsif Bozukluk) nörobiyolojisinde, 'saplantıların' (obsesyon) oluşumunda aktivite artışı gösteren ve 'zorlantıların' (kompulsiyon) oluşumunda rol oynayan beyin bölgeleri sırasıyla hangileridir?",
+        "secenekler": [
+            "A. Hipokampus - Amigdala",
+            "B. Orbitofrontal Korteks - Striatum (Kaudat)",
+            "C. Dorsolateral Prefrontal Korteks - Talamus",
+            "D. Temporal Lob - Oksipital Lob",
+            "E. Beyincik - Bazal Gangliyonlar"
+        ],
+        "dogru_cevap": "B. Orbitofrontal Korteks - Striatum (Kaudat)",
+        "aciklama": "OKB nörofizyolojisinde kortiko-striato-talamo-kortikal yolakta bozukluk vardır. Saplantı (obsesyon) Orbitofrontal kortekste aktivite artışı ile; zorlantı (kompulsiyon) ise Striatum ile ilişkilidir. (Kaynak: Dosya IMG_4972 / OKB)"
+    },
+    {
+        "id": "57",
+        "soru": "Travmatik bir olaydan sonra gelişen klinik tablonun 'Akut Stres Bozukluğu' olarak tanımlanabilmesi için belirtilerin süresi ne kadar olmalıdır?",
+        "secenekler": [
+            "A. 1 günden az",
+            "B. 3 gün ile 1 ay arası",
+            "C. 1 ay ile 3 ay arası",
+            "D. 6 aydan uzun",
+            "E. En az 1 yıl"
+        ],
+        "dogru_cevap": "B. 3 gün ile 1 ay arası",
+        "aciklama": "Travmadan hemen sonra başlayan belirtiler 3 gün ile 1 ay arasında sürerse Akut Stres Bozukluğu, 1 aydan uzun sürerse Travma Sonrası Stres Bozukluğu (TSSB) tanısı konur. (Kaynak: Dosya IMG_4975 / Travma Tanı Kriterleri)"
+    },
+    {
+        "id": "58",
+        "soru": "Travma Sonrası Stres Bozukluğu (TSSB) tedavisinde, özellikle sık görülen 'kabusların' (nightmares) tedavisinde kullanılan alfa-1 adrenerjik antagonist ilaç hangisidir?",
+        "secenekler": [
+            "A. Propranolol",
+            "B. Klonazepam",
+            "C. Prazosin",
+            "D. Haloperidol",
+            "E. Amitriptilin"
+        ],
+        "dogru_cevap": "C. Prazosin",
+        "aciklama": "TSSB hastalarında travmatik içeriğe sahip kabusların tedavisinde Prazosin kullanımı önerilmektedir. (Kaynak: Dosya IMG_4976 / Travma Tedavisi)"
+    },
+    {
+        "id": "59",
+        "soru": "Yaygın Anksiyete Bozukluğu (YAB) ile Majör Depresyon arasındaki en temel semptomatik fark nedir?",
+        "secenekler": [
+            "A. YAB hastalarında uyku bozukluğu olmaz.",
+            "B. Depresyonda anhedoni (zevk alamama) varken, YAB'da genellikle yoktur.",
+            "C. YAB hastalarında konsantrasyon güçlüğü görülmez.",
+            "D. Depresyonda somatik belirti görülmez.",
+            "E. YAB sadece çocuklarda görülür."
+        ],
+        "dogru_cevap": "B. Depresyonda anhedoni (zevk alamama) varken, YAB'da genellikle yoktur.",
+        "aciklama": "Depresyonun temel belirtilerinden biri anhedoni ve umutsuzluktur; Yaygın Anksiyete Bozukluğunda ise endişe ön plandadır ancak anhedoni tanısal bir kriter değildir. (Kaynak: Dosya IMG_4969 / Yaygın Anksiyete)"
+    },
+    {
+        "id": "60",
+        "soru": "Çocukluk çağında geçirilen 'Beta-hemolitik Streptokok' enfeksiyonlarından 4-6 hafta sonra aniden başlayan OKB veya Tik bozukluğu tablosuna ne ad verilir?",
+        "secenekler": [
+            "A. Tourette Sendromu",
+            "B. Sydenham Koresi",
+            "C. PANDAS",
+            "D. Asperger Sendromu",
+            "E. Rett Sendromu"
+        ],
+        "dogru_cevap": "C. PANDAS",
+        "aciklama": "Streptokok enfeksiyonu sonrası bazal gangliyon enflamasyonu ile tetiklenen ani başlangıçlı OKB veya tik bozukluklarına PANDAS (Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections) denir. (Kaynak: Dosya IMG_4972 / OKB Tanımı)"
+    },
+    {
+        "id": "61",
+        "soru": "Aşağıdaki fobi türlerinden hangisinde 'vazovagal senkop' (bayılma) görülme olasılığı en yüksektir?",
+        "secenekler": [
+            "A. Agorafobi",
+            "B. Sosyal Fobi",
+            "C. Kan-iğne-yaralanma fobisi",
+            "D. Hayvan fobisi",
+            "E. Yükseklik fobisi"
+        ],
+        "dogru_cevap": "C. Kan-iğne-yaralanma fobisi",
+        "aciklama": "Diğer anksiyete durumlarında taşikardi ve tansiyon artışı görülürken, kan-iğne-yaralanma fobisinde parasempatik aktivasyonla bradikardi ve hipotansiyon gelişerek bayılma (senkop) oluşabilir. (Kaynak: Genel Psikiyatri Bilgisi ve Dosya IMG_4966 Anksiyete Belirtileri karşılaştırması)"
+    },
+    {
+        "id": "62",
+        "soru": "Beden Dismorfik Bozukluğu (Vücut Algısı Bozukluğu) olan bir hastada en sık odaklanılan vücut bölgeleri hangileridir?",
+        "secenekler": [
+            "A. Eller ve ayaklar",
+            "B. Cilt, saç ve burun",
+            "C. Karın bölgesi",
+            "D. Dişler",
+            "E. Kas yapısı"
+        ],
+        "dogru_cevap": "B. Cilt, saç ve burun",
+        "aciklama": "Beden Dismorfik Bozukluğunda kişi en sık cildi, saçları veya burnundaki hayali veya çok hafif bir kusurla aşırı derecede uğraşır. (Kaynak: Dosya IMG_4974 / Beden Dismorfik)"
+    },
+    {
+        "id": "63",
+        "soru": "DSM-5'e göre 'Uyum Bozukluğu' tanısı koyabilmek için, stres etkeni ortadan kalktıktan sonra belirtilerin en fazla ne kadar daha sürmesi beklenir?",
+        "secenekler": [
+            "A. 1 ay",
+            "B. 3 ay",
+            "C. 6 ay",
+            "D. 1 yıl",
+            "E. 2 yıl"
+        ],
+        "dogru_cevap": "C. 6 ay",
+        "aciklama": "Uyum Bozukluğunda, tetikleyici etken ve sonuçları ortadan kalktıktan sonra belirtilerin 6 aydan uzun sürmemesi gerekir. (Kaynak: Dosya IMG_4977 / Uyum Bozukluğu)"
+    },
+    {
+        "id": "64",
+        "soru": "Obsesif Kompulsif Bozukluk (OKB) tedavisinde kullanılan 'Düşünce durdurma', 'Maruz bırakma (Exposure)' ve 'Tepki önleme' teknikleri hangi terapi ekolüne aittir?",
+        "secenekler": [
+            "A. Psikanalitik Terapi",
+            "B. Bilişsel Davranışçı Terapi (BDT)",
+            "C. Varoluşçu Terapi",
+            "D. EMDR",
+            "E. Destekleyici Terapi"
+        ],
+        "dogru_cevap": "B. Bilişsel Davranışçı Terapi (BDT)",
+        "aciklama": "OKB tedavisinde en etkili yöntemlerden olan maruz bırakma, tepki önleme ve düşünce durdurma teknikleri Davranışçı Terapi / BDT kapsamında uygulanır. (Kaynak: Dosya IMG_4974 / OKB Tedavisi)"
+    },
+    {
+        "id": "65",
+        "soru": "Biriktiricilik Bozukluğu (Hoarding) ile ilgili olarak aşağıdakilerden hangisi yanlıştır?",
+        "secenekler": [
+            "A. Eşyaları elden çıkarırken yoğun sıkıntı duyulur.",
+            "B. Genellikle obsesif (istenmeyen) düşünceler yoktur, davranış ego-sintoniktir.",
+            "C. Yaşam alanları kullanılamaz hale gelir.",
+            "D. Sadece maddi değeri yüksek eşyalar biriktirilir.",
+            "E. Singulat korteks işleviyle ilişkilidir."
+        ],
+        "dogru_cevap": "D. Sadece maddi değeri yüksek eşyalar biriktirilir.",
+        "aciklama": "Biriktiricilik bozukluğunda duygusal veya maddi değeri olmayan (çöp, eski gazete vb.) eşyalar da atılamaz. (Kaynak: Dosya IMG_4974 / Biriktiricilik)"
+    },
+    {
+        "id": "66",
+        "soru": "Panik Bozukluk tedavisinde Benzodiazepinlerin (örn. Alprazolam) kullanımı ile ilgili en önemli risk nedir?",
+        "secenekler": [
+            "A. Etkilerinin çok geç başlaması",
+            "B. Bağımlılık yapması ve kesildiğinde 'rebound' bunaltı oluşturması",
+            "C. Kilo kaybına neden olması",
+            "D. Panik atakları sıklaştırması",
+            "E. Hipertansiyon yapması"
+        ],
+        "dogru_cevap": "B. Bağımlılık yapması ve kesildiğinde 'rebound' bunaltı oluşturması",
+        "aciklama": "Benzodiazepinler hızlı etkilidir ancak bağımlılık riski taşır ve kesildiklerinde anksiyetenin daha şiddetli geri dönmesine (rebound) neden olabilir. Maksimum 4 hafta önerilir. (Kaynak: Dosya IMG_4969 / Bunaltı Tedavisi)"
+    },
+    {
+        "id": "67",
+        "soru": "Sosyal Anksiyete Bozukluğu (Sosyal Fobi) olan bir hastanın temel korkusu nedir?",
+        "secenekler": [
+            "A. Kalabalıkta sıkışıp kalmak",
+            "B. Hastalık kapmak",
+            "C. Başkaları tarafından olumsuz değerlendirilmek, küçük düşmek veya rezil olmak",
+            "D. Yalnız kalmak",
+            "E. Açık alanlara çıkmak"
+        ],
+        "dogru_cevap": "C. Başkaları tarafından olumsuz değerlendirilmek, küçük düşmek veya rezil olmak",
+        "aciklama": "Sosyal fobi, toplumsal durumlarda başkaları tarafından incelenme, eleştirilme, küçük düşme veya rezil olma korkusuyla karakterizedir. (Kaynak: Dosya IMG_4970 / Sosyal Fobi)"
+    },
+    {
+        "id": "68",
+        "soru": "Aşağıdakilerden hangisi Travma Sonrası Stres Bozukluğunun (TSSB) 'yeniden yaşantılama' (intrusion) belirtilerinden biridir?",
+        "secenekler": [
+            "A. İnsanlardan uzaklaşma",
+            "B. Olayı hatırlatan yerlerden kaçınma",
+            "C. Flashback (olayı tekrar yaşıyormuş hissi)",
+            "D. Uyku bozukluğu",
+            "E. Öfke patlamaları"
+        ],
+        "dogru_cevap": "C. Flashback (olayı tekrar yaşıyormuş hissi)",
+        "aciklama": "Flashbackler, rüyalar ve istenç dışı anılar, TSSB'nin yeniden yaşantılama (intrusion) belirtileri grubundadır. Kaçınma ve uyarılmışlık diğer kümelerdir. (Kaynak: Dosya IMG_4975 / TSSB Belirtileri)"
+    },
+    {
+        "id": "69",
+        "soru": "OKB hastalarında hangi savunma mekanizmaları sıklıkla görülür?",
+        "secenekler": [
+            "A. Yansıtma, İnkar, Bölme",
+            "B. Bastırma, Yansıtma, Özdeşleşme",
+            "C. Yalıtma (İzolasyon), Yapma-Bozma (Undoing), Karşıt Tepki Oluşturma",
+            "D. Somatizasyon, Konversiyon",
+            "E. Değersizleştirme, İdealizasyon"
+        ],
+        "dogru_cevap": "C. Yalıtma (İzolasyon), Yapma-Bozma (Undoing), Karşıt Tepki Oluşturma",
+        "aciklama": "OKB'de saplantılı kişiliğin savunma düzenekleri olan bastırma ve karşıt tepki oluşturmaya ek olarak, yer değiştirme ve yapma-bozma (undoing) sıkça kullanılır. (Kaynak: Dosya IMG_4972 / OKB Tanımı)"
+    },
+    {
+        "id": "70",
+        "soru": "Saç veya kıl yolma hastalığı olarak bilinen dürtü kontrol bozukluğu hangisidir?",
+        "secenekler": [
+            "A. Ekskoriasyon",
+            "B. Trikotillomani",
+            "C. Onikofaji",
+            "D. Kleptomani",
+            "E. Piromani"
+        ],
+        "dogru_cevap": "B. Trikotillomani",
+        "aciklama": "Trikotillomani, saç yitimi ile sonuçlanacak şekilde sürekli olarak saç veya kıl yolma davranışıdır. (Kaynak: Dosya IMG_4973 / OKB İlişkili Bozukluklar)"
+    },
+    {
+        "id": "71",
+        "soru": "Agorafobi tanısı için kişinin aşağıdaki durumlardan en az kaç tanesinden korku veya kaygı duyması gerekir? (Toplu taşıma, açık alan, kapalı alan, sıra bekleme, ev dışında tek olma)",
+        "secenekler": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4",
+            "E. 5"
+        ],
+        "dogru_cevap": "B. 2",
+        "aciklama": "DSM-5'e göre Agorafobi tanısı için belirtilen 5 durumdan (toplu taşıma, açık yer, kapalı yer, kalabalık/sıra, ev dışı tek olma) en az 2 tanesinden korku duyulması gerekir. (Kaynak: Dosya IMG_4970 / Agorafobi)"
+    },
+    {
+        "id": "72",
+        "soru": "Seçici Konuşmazlık (Selektif Mutizm) tanısı koyabilmek için bu durumun en az ne kadar sürmesi gerekir?",
+        "secenekler": [
+            "A. 1 hafta",
+            "B. 2 hafta",
+            "C. 1 ay",
+            "D. 3 ay",
+            "E. 6 ay"
+        ],
+        "dogru_cevap": "C. 1 ay",
+        "aciklama": "Selektif mutizm tanısı için belirtilerin (beklenen sosyal durumlarda konuşamama) en az 1 ay devam etmesi gerekir (okulun ilk ayı hariç). (Kaynak: Dosya IMG_4971 / Fobiler ve Mutizm)"
+    },
+    {
+        "id": "73",
+        "soru": "Travma sonrası beyin yapısında görülen en belirgin biyolojik değişiklik nedir?",
+        "secenekler": [
+            "A. Amigdala küçülmesi",
+            "B. Hipokampus hacminde azalma ve glutamat eksitotoksisitesi",
+            "C. Kortizol seviyesinde sürekli artış (TSSB'de)",
+            "D. Frontal lob büyümesi",
+            "E. Bazal gangliyon aktivite kaybı"
+        ],
+        "dogru_cevap": "B. Hipokampus hacminde azalma ve glutamat eksitotoksisitesi",
+        "aciklama": "Travmada prefrontal korteks ve hipokampüste aspartat ve glutamat artışı (eksitotoksisite) görülür, bu da hipokampal hücre ölümüne ve hacim azalmasına yol açar. (Kaynak: Dosya IMG_4976 / Travma Biyolojisi)"
+    },
+    {
+        "id": "74",
+        "soru": "OKB tedavisinde 'Klomipramin' (TCA) kullanımıyla ilgili en doğru ifade hangisidir?",
+        "secenekler": [
+            "A. İlk tercih edilen, yan etkisi en az olan ilaçtır.",
+            "B. En etkili ilaçlardan biridir ancak yan etkileri fazladır.",
+            "C. SSRI'lardan daha az etkilidir.",
+            "D. Sadece çocuklarda kullanılır.",
+            "E. Bağımlılık yapıcı etkisi vardır."
+        ],
+        "dogru_cevap": "B. En etkili ilaçlardan biridir ancak yan etkileri fazladır.",
+        "aciklama": "Klomipramin OKB tedavisinde en etkili ilaçlardan biridir (Serotonin üzerinden), ancak antikolinerjik yan etkileri nedeniyle genellikle SSRI'lardan sonra veya dirençli vakalarda tercih edilir. (Kaynak: Dosya IMG_4974 / OKB Tedavisi)"
+    },
+    {
+        "id": "75",
+        "soru": "Bir kişinin bedeninden kötü bir koku yayıldığına dair yanlış ve sarsılmaz bir inanca sahip olması durumuna ne ad verilir?",
+        "secenekler": [
+            "A. Beden Dismorfik Bozukluğu",
+            "B. Olfaktör Referans Sendromu",
+            "C. Somatizasyon Bozukluğu",
+            "D. Hipokondriazis",
+            "E. Capgras Sendromu"
+        ],
+        "dogru_cevap": "B. Olfaktör Referans Sendromu",
+        "aciklama": "Olfaktör Referans Sendromu, kişinin bedeninden etrafı rahatsız eden kötü bir koku yayıldığına dair yanlış inanç taşımasıdır. Genellikle genç erkeklerde görülür. (Kaynak: Dosya IMG_4974 / Diğer Bozukluklar)"
+    },
+    {
+        "id": "76",
+        "soru": "Aşağıdaki kişilik bozukluklarından hangisi DSM-5'e göre 'B Kümesi' (Dramatik, Duygusal, Dürtüsel) içerisinde yer almaz?",
+        "secenekler": [
+            "A. Antisosyal Kişilik Bozukluğu",
+            "B. Borderline (Sınırda) Kişilik Bozukluğu",
+            "C. Paranoid Kişilik Bozukluğu",
+            "D. Histrionik Kişilik Bozukluğu",
+            "E. Narsisistik Kişilik Bozukluğu"
+        ],
+        "dogru_cevap": "C. Paranoid Kişilik Bozukluğu",
+        "aciklama": "Paranoid Kişilik Bozukluğu A Kümesi (Garip/Egzantrik) içindedir. B Kümesi; Antisosyal, Borderline, Histrionik ve Narsisistik bozuklukları kapsar. (Kaynak: Dosya IMG_4986 / Kişilik Bozuklukları Tablosu)"
+    },
+    {
+        "id": "77",
+        "soru": "Borderline Kişilik Bozukluğu olan hastalarda, insanları 'tamamen iyi' veya 'tamamen kötü' olarak algılama şeklinde görülen ilkel savunma mekanizması nedir?",
+        "secenekler": [
+            "A. Yansıtma (Projeksiyon)",
+            "B. Bölme (Splitting)",
+            "C. İnkar (Denial)",
+            "D. Yalıtma (İzolasyon)",
+            "E. Yapma-Bozma (Undoing)"
+        ],
+        "dogru_cevap": "B. Bölme (Splitting)",
+        "aciklama": "Borderline hastalarında nesne ilişkilerinde bütünleşme sağlanamamıştır; kişiler ya hep iyidir ya hep kötüdür. Bu duruma 'Bölme' (Splitting) denir. (Kaynak: Dosya IMG_4988 / B Kümesi Detaylar)"
+    },
+    {
+        "id": "78",
+        "soru": "Antisosyal Kişilik Bozukluğu tanısı koyabilmek için kişinin en az 18 yaşında olması ve 15 yaşından önce hangi bozukluğun kanıtlarının bulunması gerekir?",
+        "secenekler": [
+            "A. Dikkat Eksikliği ve Hiperaktivite Bozukluğu (DEHB)",
+            "B. Karşıt Olma Karşı Gelme Bozukluğu",
+            "C. Davranım Bozukluğu",
+            "D. Ayrılma Kaygısı Bozukluğu",
+            "E. Öğrenme Güçlüğü"
+        ],
+        "dogru_cevap": "C. Davranım Bozukluğu",
+        "aciklama": "Antisosyal Kişilik Bozukluğu tanısı için 15 yaşından önce başlamış olan Davranım Bozukluğu (başkalarının haklarını ihlal etme, mala zarar verme vb.) öyküsü şarttır. (Kaynak: Dosya IMG_4987 / Antisosyal Tanı Kriterleri)"
+    },
+    {
+        "id": "79",
+        "soru": "Histrionik Kişilik Bozukluğu'nun temel klinik özellikleri nelerdir?",
+        "secenekler": [
+            "A. İnsanlardan uzak durma ve yalnızlık tercihi",
+            "B. Aşırı düzenlilik ve kuralcılık",
+            "C. İlgi odağı olma isteği, abartılı duygusal tepkiler ve ayartıcı davranışlar",
+            "D. Başkalarından şüphelenme ve kin gütme",
+            "E. Kendini yetersiz hissetme ve eleştirilme korkusu"
+        ],
+        "dogru_cevap": "C. İlgi odağı olma isteği, abartılı duygusal tepkiler ve ayartıcı davranışlar",
+        "aciklama": "Histrionik kişilik; ilgi odağı olmadığında rahatsız olma, sığ ve değişken duygular, baştan çıkarıcı davranışlar ve olayları dramatize etme ile karakterizedir. (Kaynak: Dosya IMG_4987 / Histrionik KB)"
+    },
+    {
+        "id": "80",
+        "soru": "Aşağıdaki ilaçlardan hangisi yan etki olarak 'Priapizm'e (ağrılı ve uzamış ereksiyon) neden olabilir?",
+        "secenekler": [
+            "A. Sertralin",
+            "B. Haloperidol",
+            "C. Trazodon",
+            "D. Diazepam",
+            "E. Lityum"
+        ],
+        "dogru_cevap": "C. Trazodon",
+        "aciklama": "Trazodon, alfa-adrenerjik blokaj etkisi nedeniyle nadir ama ciddi bir yan etki olan priapizme (uzamış ereksiyon) yol açabilir. (Kaynak: Dosya IMG_4991 / Cinsel Uyum Bozuklukları)"
+    },
+    {
+        "id": "81",
+        "soru": "Erken Boşalma (Prematür Ejakülasyon) tedavisinde yan etkisinden yararlanılarak kullanılan antidepresan grubu hangisidir?",
+        "secenekler": [
+            "A. Bupropion",
+            "B. SSRI (Seçici Serotonin Geri Alım İnhibitörleri)",
+            "C. MAO İnhibitörleri",
+            "D. Mirtazapin",
+            "E. Tiazid Diüretikler"
+        ],
+        "dogru_cevap": "B. SSRI (Seçici Serotonin Geri Alım İnhibitörleri)",
+        "aciklama": "SSRI grubu ilaçlar (özellikle Paroksetin ve Sertralin), yan etki olarak boşalmayı geciktirdikleri için erken boşalma tedavisinde kullanılırlar. (Kaynak: Dosya IMG_4991 / Tedaviler)"
+    },
+    {
+        "id": "82",
+        "soru": "Anoreksiya Nervoza'nın fiziksel belirtileri arasında aşağıdakilerden hangisi görülmez?",
+        "secenekler": [
+            "A. Lanugo tüylenmesi (ince ayva tüyü)",
+            "B. Bradikardi (kalp atımının yavaşlaması)",
+            "C. Hiperkolesterolemi (kolesterol yüksekliği)",
+            "D. Amenore (âdet kesilmesi)",
+            "E. Menoraji (aşırı âdet kanaması)"
+        ],
+        "dogru_cevap": "E. Menoraji (aşırı âdet kanaması)",
+        "aciklama": "Anoreksiya Nervoza'da östrojen düşüklüğüne bağlı amenore (âdet kesilmesi) görülür; menoraji (aşırı kanama) beklenmez. Diğer seçenekler tipik fiziksel bulgulardır. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları Belirtiler)"
+    },
+    {
+        "id": "83",
+        "soru": "Dissosiyatif Amnezi ile birlikte görülen, kişinin kimliğini unutup evinden ayrılarak yeni bir yerde, yeni bir kimlikle yaşamaya başlaması durumuna ne ad verilir?",
+        "secenekler": [
+            "A. Dissosiyatif Kimlik Bozukluğu",
+            "B. Depersonalizasyon",
+            "C. Dissosiyatif Füg",
+            "D. Derealizasyon",
+            "E. Ganser Sendromu"
+        ],
+        "dogru_cevap": "C. Dissosiyatif Füg",
+        "aciklama": "Dissosiyatif Füg, kişinin yaşadığı yeri ve kimliğini unutarak amaçsızca gezmesi veya yeni bir yerde yeni bir yaşama başlaması durumudur. (Kaynak: Dosya IMG_4978 / Dissosiyatif Bozukluklar)"
+    },
+    {
+        "id": "84",
+        "soru": "Konversiyon Bozukluğu (Fonksiyonel Nörolojik Belirti Bozukluğu) olan hastalarda, belirtilere karşı gösterilen kayıtsızlık haline ne ad verilir?",
+        "secenekler": [
+            "A. Aleksitimi",
+            "B. La belle indifference (Güzel aldırmazlık)",
+            "C. Ambitandans",
+            "D. Ekolali",
+            "E. Katarsis"
+        ],
+        "dogru_cevap": "B. La belle indifference (Güzel aldırmazlık)",
+        "aciklama": "Konversiyon bozukluğunda hastaların felç veya körlük gibi ciddi belirtilere karşı şaşırtıcı derecede kayıtsız kalmasına 'La belle indifference' (Güzel aldırmazlık) denir. (Kaynak: Dosya IMG_4982 / Konversiyon)"
+    },
+    {
+        "id": "85",
+        "soru": "Şizoid Kişilik Bozukluğu ile Şizotipal Kişilik Bozukluğu arasındaki en önemli ayrım nedir?",
+        "secenekler": [
+            "A. Şizoid hastalar çok konuşkandır, şizotipal hastalar suskundur.",
+            "B. Şizotipalde bilişsel/algısal çarpıklıklar ve büyüsel düşünce varken, Şizoidde sadece sosyal kopukluk vardır.",
+            "C. Şizoid hastalarda halüsinasyon görülür.",
+            "D. Şizotipal kişilik sadece kadınlarda görülür.",
+            "E. Şizoid kişilik bozukluğu B kümesindedir."
+        ],
+        "dogru_cevap": "B. Şizotipalde bilişsel/algısal çarpıklıklar ve büyüsel düşünce varken, Şizoidde sadece sosyal kopukluk vardır.",
+        "aciklama": "Şizoid KB'de temel özellik sosyal ilişkilerden kaçınma ve duygusal kısıtlılıktır. Şizotipal KB'de ise bunlara ek olarak büyüsel düşünce, referans fikirleri gibi bilişsel ve algısal gariplikler eşlik eder. (Kaynak: Dosya IMG_4986 / A Kümesi Detay)"
+    },
+    {
+        "id": "86",
+        "soru": "Bağımlı Kişilik Bozukluğu'nun temel özelliği nedir?",
+        "secenekler": [
+            "A. Sürekli ilgi odağı olma isteği",
+            "B. Başkaları tarafından bakılma ve ilgilenilme gereksinimi nedeniyle boyun eğici davranışlar",
+            "C. Kurallara aşırı bağlılık ve esneklik yoksunluğu",
+            "D. İnsanlardan şüphelenme",
+            "E. Sosyal ortamlarda eleştirilme korkusuyla kaçınma"
+        ],
+        "dogru_cevap": "B. Başkaları tarafından bakılma ve ilgilenilme gereksinimi nedeniyle boyun eğici davranışlar",
+        "aciklama": "Bağımlı kişilik bozukluğu; tek başına karar verememe, sorumluluk alamama, ayrılma korkusu ve aşırı bakım/destek arayışı ile karakterizedir. (Kaynak: Dosya IMG_4990 / C Kümesi Detay)"
+    },
+    {
+        "id": "87",
+        "soru": "Cinsel işlev bozuklukları nörobiyolojisinde, Dopamin ve Serotonin'in cinsel işlev üzerindeki etkileri nasıldır?",
+        "secenekler": [
+            "A. Her ikisi de cinsel işlevi artırır.",
+            "B. Her ikisi de cinsel işlevi baskılar.",
+            "C. Dopamin cinsel isteği artırır, Serotonin baskılar.",
+            "D. Dopamin baskılar, Serotonin artırır.",
+            "E. Nörotransmitterlerin cinsel işlevle ilgisi yoktur."
+        ],
+        "dogru_cevap": "C. Dopamin cinsel isteği artırır, Serotonin baskılar.",
+        "aciklama": "Dopamin cinsel isteği ve uyarılmayı artırırken (agonistleri libidoyu artırır), Serotonin (özellikle 5-HT2 reseptörleri üzerinden) cinsel işlevi inhibe eder. (Kaynak: Dosya IMG_4991 / Biyokimya)"
+    },
+    {
+        "id": "88",
+        "soru": "Pedofili tanısı koyabilmek için failin yaşı en az kaç olmalı ve mağdurdan en az kaç yaş büyük olmalıdır?",
+        "secenekler": [
+            "A. Fail >18, fark en az 3 yaş",
+            "B. Fail >16, fark en az 5 yaş",
+            "C. Fail >21, fark en az 10 yaş",
+            "D. Fail >15, fark en az 2 yaş",
+            "E. Fail >20, fark en az 7 yaş"
+        ],
+        "dogru_cevap": "B. Fail >16, fark en az 5 yaş",
+        "aciklama": "Pedofili tanısı için failin en az 16 yaşında olması ve mağdurdan (13 yaş altı) en az 5 yaş büyük olması gerekmektedir. (Kaynak: Dosya IMG_4992 / Cinsellik)"
+    },
+    {
+        "id": "89",
+        "soru": "Obsesif-Kompulsif Kişilik Bozukluğu (Anankastik) ile Obsesif-Kompulsif Bozukluk (OKB) arasındaki temel fark nedir?",
+        "secenekler": [
+            "A. OKKB'de gerçek obsesyon ve kompulsiyonlar (zorlantılar) yoktur; kişilik özelliği olarak mükemmeliyetçilik vardır.",
+            "B. OKKB'de işlevsellik bozulmaz.",
+            "C. OKB ilaçla tedavi edilmez.",
+            "D. OKKB'de belirtiler ego-distoniktir (kişiyi rahatsız eder).",
+            "E. OKB sadece çocuklukta görülür."
+        ],
+        "dogru_cevap": "A. OKKB'de gerçek obsesyon ve kompulsiyonlar (zorlantılar) yoktur; kişilik özelliği olarak mükemmeliyetçilik vardır.",
+        "aciklama": "OKKB'de yineleyen obsesyon ve kompulsiyonlar (el yıkama vb.) yoktur; bunun yerine düzen, titizlik, inatçılık ve mükemmeliyetçilik gibi kişilik özellikleri hakimdir. Ayrıca OKKB belirtileri genellikle ego-sintoniktir (kişi durumdan memnundur). (Kaynak: Dosya IMG_4990 / C Kümesi)"
+    },
+    {
+        "id": "90",
+        "soru": "Anoreksiya Nervoza tedavisinde, kilo alımını kolaylaştırdığı ve obsesif düşünceleri azalttığı için tercih edilen antipsikotik ilaç hangisidir?",
+        "secenekler": [
+            "A. Haloperidol",
+            "B. Klozapin",
+            "C. Olanzapin",
+            "D. Aripiprazol",
+            "E. Klorpromazin"
+        ],
+        "dogru_cevap": "C. Olanzapin",
+        "aciklama": "Olanzapin, hem kilo aldırıcı yan etkisi hem de anksiyete/obsesyon üzerindeki etkisi nedeniyle Anoreksiya Nervoza tedavisinde kullanılan bir seçenektir. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları Tedavi)"
+    },
+    {
+        "id": "91",
+        "soru": "Narsisistik Kişilik Bozukluğu'nun temelinde yatan ve kişilerarası ilişkileri en çok bozan eksiklik nedir?",
+        "secenekler": [
+            "A. Zeka geriliği",
+            "B. Empati (eşduyum) yapamama",
+            "C. Aşırı cömertlik",
+            "D. Sosyal fobi",
+            "E. Halüsinasyonlar"
+        ],
+        "dogru_cevap": "B. Empati (eşduyum) yapamama",
+        "aciklama": "Narsisistik kişilerde büyüklük ve beğenilme ihtiyacının yanı sıra, başkalarının duygu ve ihtiyaçlarını anlama (empati) yeteneğinin yoksunluğu temel özelliktir. (Kaynak: Dosya IMG_4987 / Narsisistik KB)"
+    },
+    {
+        "id": "92",
+        "soru": "Aşağıdaki ifadelerden hangisi 'Çekingen (Kaçıngan) Kişilik Bozukluğu'nu tanımlar?",
+        "secenekler": [
+            "A. Yalnız kalmaktan zevk alır, insanları umursamaz.",
+            "B. İnsanlarla ilişki kurmak ister ancak reddedilme ve eleştirilme korkusuyla kaçınır.",
+            "C. Başkalarını kendi çıkarları için kullanır.",
+            "D. Sürekli ilgi odağı olmak ister.",
+            "E. Şüpheci ve alıngandır."
+        ],
+        "dogru_cevap": "B. İnsanlarla ilişki kurmak ister ancak reddedilme ve eleştirilme korkusuyla kaçınır.",
+        "aciklama": "Şizoid kişilik bozukluğunun aksine, Çekingen kişilik bozukluğu olanlar ilişki kurmayı arzularlar ancak yetersizlik duygusu ve reddedilme korkusu nedeniyle sosyal temastan kaçınırlar. (Kaynak: Dosya IMG_4990 / Çekingen KB)"
+    },
+    {
+        "id": "93",
+        "soru": "Cinsel işlev bozuklukları tedavisinde kullanılan 'Sildenafil' (Viagra) etki mekanizması nedir?",
+        "secenekler": [
+            "A. Dopamin reseptör agonisti",
+            "B. Serotonin geri alım inhibitörü",
+            "C. Fosfodiesteraz-5 (PDE-5) inhibitörü",
+            "D. Alfa-2 adrenerjik blokör",
+            "E. Testosteron takviyesi"
+        ],
+        "dogru_cevap": "C. Fosfodiesteraz-5 (PDE-5) inhibitörü",
+        "aciklama": "Sildenafil ve Tadalafil gibi ilaçlar Fosfodiesteraz-5 (PDE-5) enzimini inhibe ederek sertleşme bozukluğu tedavisinde kullanılır. (Kaynak: Dosya IMG_4991 / Cinsellik Tedaviler)"
+    },
+    {
+        "id": "94",
+        "soru": "Bir kişide 'Dissosiyatif Kimlik Bozukluğu' (Çoğul Kişilik) gelişimi için en önemli risk faktörü nedir?",
+        "secenekler": [
+            "A. Genetik yatkınlık",
+            "B. İleri anne yaşı",
+            "C. Çocukluk çağı travması (özellikle cinsel/fiziksel istismar)",
+            "D. Kafa travması",
+            "E. Vitamin eksikliği"
+        ],
+        "dogru_cevap": "C. Çocukluk çağı travması (özellikle cinsel/fiziksel istismar)",
+        "aciklama": "Dissosiyatif Kimlik Bozukluğu sıklıkla çocukluk çağında yaşanan ağır travmalarla (istismar) ilişkilidir ve bir savunma mekanizması olarak gelişir. (Kaynak: Dosya IMG_4978 / Dissosiyatif Bozukluklar)"
+    },
+    {
+        "id": "95",
+        "soru": "Bulimiya Nervoza hastalarında sık kusmaya bağlı olarak gelişebilen metabolik tablo nedir?",
+        "secenekler": [
+            "A. Metabolik Asidoz",
+            "B. Hiperkalemi",
+            "C. Metabolik Alkaloz ve hipokalemi",
+            "D. Hipoglisemi",
+            "E. Hiperkalsemi"
+        ],
+        "dogru_cevap": "C. Metabolik Alkaloz ve hipokalemi",
+        "aciklama": "Tekrarlayan kusmalar mide asidi kaybına yol açarak 'Metabolik Alkaloz'a ve potasyum kaybına (hipokalemi) neden olur. Ayrıca tükürük amilazı artar. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları Belirtiler)"
+    },
+    {
+        "id": "96",
+        "soru": "Görme kaybı olan hastalarda, bilişsel fonksiyonlar korunmuşken ortaya çıkan karmaşık görsel halüsinasyonlarla karakterize sendrom aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Anton-Babinski Sendromu",
+            "B. Charles Bonnet Sendromu",
+            "C. Capgras Sendromu",
+            "D. Cotard Sendromu",
+            "E. Ekbom Sendromu"
+        ],
+        "dogru_cevap": "B. Charles Bonnet Sendromu",
+        "aciklama": "Charles Bonnet Sendromu, görme yollarında hasar veya görme kaybı olan bireylerde ortaya çıkan görsel varsanılar (halüsinasyonlar) durumudur. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "97",
+        "soru": "Kluver-Bucy Sendromu'nun klinik tablosunda aşağıdaki belirtilerden hangisi yer alır?",
+        "secenekler": [
+            "A. Hiperseksüalite, Hiperoralite ve Duygusuzluk (Placidity)",
+            "B. Görsel agnozi ve amnezi",
+            "C. Sol hemisferde felç ve afazi",
+            "D. Aşırı korku ve panik nöbetleri",
+            "E. Uyku bozukluğu ve iştahsızlık"
+        ],
+        "dogru_cevap": "A. Hiperseksüalite, Hiperoralite ve Duygusuzluk (Placidity)",
+        "aciklama": "Kluver-Bucy Sendromu, bilateral temporal lob (özellikle amigdala) hasarı sonucu gelişen; hiperseksüalite, hiperoralite (her şeyi ağza götürme) ve uysallık/duygusuzluk (placidity) ile karakterizedir. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "98",
+        "soru": "Şizofreni nörobiyolojisinde, sinaptik budanmaya (synaptic pruning) neden olarak patofizyolojide rol oynadığı düşünülen immünolojik faktör hangisidir?",
+        "secenekler": [
+            "A. İnterlökin-6 (IL-6)",
+            "B. Tümör Nekroz Faktörü (TNF-a)",
+            "C. Kompleman 4 (C4)",
+            "D. C-Reaktif Protein (CRP)",
+            "E. İnterferon Gama"
+        ],
+        "dogru_cevap": "C. Kompleman 4 (C4)",
+        "aciklama": "Şizofrenide C4 gen ekspresyonunun artışı, aşırı sinaptik budanmaya (synaptic pruning) yol açarak gri madde kaybına neden olur. (Kaynak: Dosya IMG_4952 / Biyokimya)"
+    },
+    {
+        "id": "99",
+        "soru": "DSM-5 tanı kriterlerine göre, 'Ayrılma Kaygısı Bozukluğu' tanısının çocuklarda konulabilmesi için belirtilerin en az ne kadar sürmesi gerekir?",
+        "secenekler": [
+            "A. 1 hafta",
+            "B. 2 hafta",
+            "C. 4 hafta",
+            "D. 3 ay",
+            "E. 6 ay"
+        ],
+        "dogru_cevap": "C. 4 hafta",
+        "aciklama": "Ayrılma Kaygısı Bozukluğu tanısı için belirtilerin çocuklarda ve ergenlerde en az 4 hafta, yetişkinlerde ise en az 6 ay sürmesi gerekmektedir. (Kaynak: Dosya IMG_4970 / Fobiler ve Tanıları)"
+    },
+    {
+        "id": "100",
+        "soru": "Gerstmann Sendromu, beynin hangi bölgesindeki hasar sonucu ortaya çıkar ve hangi belirtileri içerir?",
+        "secenekler": [
+            "A. Sağ frontal lob: Kişilik değişikliği, apati",
+            "B. Sol hemisfer angular gyrus: Sağ-sol dezoryantasyonu, parmak agnozisi, akalkuli, agrafi",
+            "C. Oksipital lob: Kortikal körlük",
+            "D. Temporal lob: İşitsel agnozi",
+            "E. Beyincik: Ataksi ve denge kaybı"
+        ],
+        "dogru_cevap": "B. Sol hemisfer angular gyrus: Sağ-sol dezoryantasyonu, parmak agnozisi, akalkuli, agrafi",
+        "aciklama": "Gerstmann Sendromu, dominant hemisferin (genellikle sol) angular gyrus hasarında görülür; parmak agnozisi, sağ-sol ayırt edememe, yazı yazamama (agrafi) ve hesap yapamama (akalkuli) ile seyreder. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "101",
+        "soru": "Kişilik bozukluklarında görülen, bireyin çevresini kendi ihtiyaçlarına ve davranışlarına uydurmaya çalışması şeklindeki uyum tarzına ne ad verilir?",
+        "secenekler": [
+            "A. Otoplastik uyum",
+            "B. Alloplastik uyum",
+            "C. Ego-distonik uyum",
+            "D. Regresif uyum",
+            "E. Nörotik uyum"
+        ],
+        "dogru_cevap": "B. Alloplastik uyum",
+        "aciklama": "Kişilik bozukluğu olan bireyler genellikle değişimi kendilerinde değil çevrede ararlar; çevreyi kendilerine uydurma çabasına 'Alloplastik Uyum' denir. (Kaynak: Dosya IMG_4945 ve IMG_4984 / Tanımlar)"
+    },
+    {
+        "id": "102",
+        "soru": "Şizofreni hastalarında düşünce içeriği bozukluğu olarak görülen, kişinin düşüncelerinin başkaları tarafından çalındığına inanması belirtisi nedir?",
+        "secenekler": [
+            "A. Düşünce sokulması (Thought insertion)",
+            "B. Düşünce yayınlanması (Thought broadcasting)",
+            "C. Düşünce çalınması (Thought withdrawal)",
+            "D. Referans sanrısı",
+            "E. Perseküsyon sanrısı"
+        ],
+        "dogru_cevap": "C. Düşünce çalınması (Thought withdrawal)",
+        "aciklama": "Düşünce çalınması, kişinin düşüncelerinin bir dış güç tarafından zihninden çekilip alındığına dair sanrısal inancıdır. Schneider'in birinci sıra belirtilerindendir. (Kaynak: Dosya IMG_4947 / Schneider Belirtileri)"
+    },
+    {
+        "id": "103",
+        "soru": "Postmenopozal dönemde cinsel istek azlığı yaşayan bir kadında bunun en olası hormonal/ilaç kaynaklı nedeni nedir?",
+        "secenekler": [
+            "A. Testosteron yüksekliği",
+            "B. Östrojen replasman tedavisi (ERT)",
+            "C. Prolaktin düşüklüğü",
+            "D. Oksitosin artışı",
+            "E. Dopamin agonistleri"
+        ],
+        "dogru_cevap": "B. Östrojen replasman tedavisi (ERT)",
+        "aciklama": "Postmenopozal östrojen replasman tedavisi, Serbest Testosteron seviyesini düşürerek (SHBG artışı yoluyla) cinsel istekte azalmaya neden olabilir. (Kaynak: Dosya IMG_4991 / Cinsel Uyum)"
+    },
+    {
+        "id": "104",
+        "soru": "Aşağıdaki tanımlardan hangisi 'Mitomani'yi ifade eder?",
+        "secenekler": [
+            "A. Çalma dürtüsü",
+            "B. Yangın çıkarma dürtüsü",
+            "C. Yalan uydurma eğilimi",
+            "D. Kendi saçını yolma",
+            "E. Hastalık taklidi yapma"
+        ],
+        "dogru_cevap": "C. Yalan uydurma eğilimi",
+        "aciklama": "Mitomani, patolojik ve dürtüsel bir şekilde yalan söyleme veya olay uydurma eğilimidir. (Kaynak: Dosya IMG_4945 / Tanımlar)"
+    },
+    {
+        "id": "105",
+        "soru": "Şizofrenide beyin görüntülemesinde işitme varsanılarının (halüsinasyonların) varlığı ile ilişkili bulunan metabolik aktivite artışı hangi bölgededir?",
+        "secenekler": [
+            "A. Oksipital lob",
+            "B. Temporal lob (İşitme korteksi)",
+            "C. Frontal lob (Prefrontal korteks)",
+            "D. Beyincik",
+            "E. Talamus"
+        ],
+        "dogru_cevap": "B. Temporal lob (İşitme korteksi)",
+        "aciklama": "Şizofreni hastalarında işitme varsanıları sırasında temporal lobda (işitme ile ilgili bölgelerde) metabolik etkinlik artışı saptanmıştır. (Kaynak: Dosya IMG_4951 / Şizofreni Beyin)"
+    },
+    {
+        "id": "106",
+        "soru": "Aşağıdaki 'Katatoni' belirtilerinden hangisi, muayene eden kişinin hareketlerine karşı hastanın, uygulanan güçle orantılı bir direnç göstermesi (karşı koyması) durumudur?",
+        "secenekler": [
+            "A. Mitgehen",
+            "B. Gegenhalten",
+            "C. Balmumu esnekliği",
+            "D. Katalepsi",
+            "E. Ambitandans"
+        ],
+        "dogru_cevap": "B. Gegenhalten",
+        "aciklama": "Gegenhalten, hastanın pasif hareketlere karşı, uygulanan güçle orantılı bir direnç (karşı koyma) göstermesidir. Mitgehen ise tam tersi, hafif dokunuşla kolun kalkmasıdır. (Kaynak: Dosya IMG_4953 / Katatoni Belirtileri)"
+    },
+    {
+        "id": "107",
+        "soru": "Anksiyete bozukluklarının tedavisinde kullanılan 'Paradoxal Intention' (Paradoksal Niyet) tekniğinin temel mantığı nedir?",
+        "secenekler": [
+            "A. Korkulan durumdan tamamen kaçınmak",
+            "B. Korkunun gelmesini istemek ve belirtiyi abartmak",
+            "C. Korkulan durumu analiz edip mantıksallaştırmak",
+            "D. İlaçla belirtileri baskılamak",
+            "E. Gevşeme egzersizleri yapmak"
+        ],
+        "dogru_cevap": "B. Korkunun gelmesini istemek ve belirtiyi abartmak",
+        "aciklama": "Paradoxal Intention, hastanın korktuğu belirtinin (örneğin terleme veya bayılma) olmasını istemesi, hatta bunu abartmaya çalışması ilkesine dayanır; bu sayede beklenti anksiyetesi kırılır. (Kaynak: Dosya IMG_4969 / Bunaltı Tedavisi)"
+    },
+    {
+        "id": "108",
+        "soru": "Şizofrenide 'Duygu Dışavurumu'nun (Expressed Emotion) yüksek olması, hastalık gidişatını nasıl etkiler?",
+        "secenekler": [
+            "A. İyileşmeyi hızlandırır.",
+            "B. Nüks (relaps) riskini artırır ve kötü prognoz kriteridir.",
+            "C. İlaç uyumunu artırır.",
+            "D. Negatif belirtileri azaltır.",
+            "E. Hastaneye yatış süresini kısaltır."
+        ],
+        "dogru_cevap": "B. Nüks (relaps) riskini artırır ve kötü prognoz kriteridir.",
+        "aciklama": "Ailenin duygu dışavurumunun (eleştirel, düşmanca veya aşırı koruyucu tutumlar) yüksek olması, şizofrenide nüks riskini artıran önemli bir çevresel faktördür. (Kaynak: Dosya IMG_4951 / Prognoz)"
+    },
+    {
+        "id": "109",
+        "soru": "Depresyon hastalarında intihar riskini değerlendirirken, aşağıdaki faktörlerden hangisi riski en çok artıran 'geçmiş öykü' bilgisidir?",
+        "secenekler": [
+            "A. Ailede depresyon öyküsü",
+            "B. Geçmiş intihar girişimi öyküsü",
+            "C. İş kaybı",
+            "D. Kronik fiziksel hastalık",
+            "E. Bekar olmak"
+        ],
+        "dogru_cevap": "B. Geçmiş intihar girişimi öyküsü",
+        "aciklama": "İntihar riskini artıran en güçlü yordayıcı faktör, kişinin geçmişte bir intihar girişiminde bulunmuş olmasıdır. (Kaynak: Dosya IMG_4958 / İntihar Riskleri)"
+    },
+    {
+        "id": "110",
+        "soru": "Aşağıdaki kişilik bozukluklarından hangisinde 'Büyüsel Düşünce' (Magical Thinking) ve 'Referans Fikirleri' tanısal kriterler arasındadır?",
+        "secenekler": [
+            "A. Paranoid Kişilik Bozukluğu",
+            "B. Şizoid Kişilik Bozukluğu",
+            "C. Şizotipal Kişilik Bozukluğu",
+            "D. Borderline Kişilik Bozukluğu",
+            "E. Histrionik Kişilik Bozukluğu"
+        ],
+        "dogru_cevap": "C. Şizotipal Kişilik Bozukluğu",
+        "aciklama": "Şizotipal Kişilik Bozukluğu; büyüsel düşünce, garip inanışlar, referans fikirleri ve olağandışı algısal yaşantılarla karakterizedir. (Kaynak: Dosya IMG_4985 / A Kümesi)"
+    },
+    {
+        "id": "111",
+        "soru": "DSM-5'e göre 'Seçici Konuşmazlık' (Selektif Mutizm) tanısı için aşağıdakilerden hangisi bir dışlama kriteridir (tanı konulmasını engeller)?",
+        "secenekler": [
+            "A. Belirtilerin 1 aydan uzun sürmesi",
+            "B. Okulun ilk ayında görülmesi",
+            "C. Başka durumlarda konuşabiliyor olması",
+            "D. İşlevselliğin bozulması",
+            "E. Utangaçlık özelliklerinin olması"
+        ],
+        "dogru_cevap": "B. Okulun ilk ayında görülmesi",
+        "aciklama": "Selektif mutizm tanısı konulabilmesi için belirtilerin 1 aydan uzun sürmesi gerekir, ancak bu süre 'okulun ilk ayı' ile sınırlı olmamalıdır. Okulun ilk ayındaki suskunluk uyum süreci sayılabilir. (Kaynak: Dosya IMG_4971 / Mutizm)"
+    },
+    {
+        "id": "112",
+        "soru": "Somatizasyon Bozukluğu (Bedensel Belirti Bozukluğu) olan hastalarda, duygularını tanıma ve ifade etmede güçlük çekme durumuna ne ad verilir?",
+        "secenekler": [
+            "A. Anhedoni",
+            "B. Avolisyon",
+            "C. Aleksitimi",
+            "D. Apati",
+            "E. Ambitandans"
+        ],
+        "dogru_cevap": "C. Aleksitimi",
+        "aciklama": "Somatizasyon bozukluğu olan hastalarda, duygusal sıkıntılarını bedensel dille ifade etmelerinin altında yatan 'duygularını tanıyamama ve söze dökememe' durumuna Aleksitimi denir. (Kaynak: Dosya IMG_4980 / Somatizasyon)"
+    },
+    {
+        "id": "113",
+        "soru": "Yeme bozukluklarında 'Reefeeding Sendromu' riskine karşı özellikle hangi elektrolit dengesizliği yakından izlenmelidir?",
+        "secenekler": [
+            "A. Hiperkalsemi",
+            "B. Hipofosfatemi",
+            "C. Hiperkalemi",
+            "D. Hipernatremi",
+            "E. Hipermagnezemi"
+        ],
+        "dogru_cevap": "B. Hipofosfatemi",
+        "aciklama": "Uzun süreli açlık sonrası beslenmeye (refeeding) başlandığında, insülin salınımıyla fosfor hücre içine girer ve ciddi 'Hipofosfatemi' gelişebilir; bu durum ölümcül olabilir. (Genel Tıbbi Bilgi ve Dosya IMG_4993 bağlamında)"
+    },
+    {
+        "id": "114",
+        "soru": "Bipolar bozuklukta nörobiyolojik olarak, hücre plastisitesinin azalmasıyla ilişkilendirilen ve düzeyinin düştüğü saptanan nörotrofik faktör hangisidir?",
+        "secenekler": [
+            "A. NGF (Sinir Büyüme Faktörü)",
+            "B. BDNF (Beyin Türevli Nörotrofik Faktör)",
+            "C. GDNF",
+            "D. VEGF",
+            "E. İnsülin"
+        ],
+        "dogru_cevap": "B. BDNF (Beyin Türevli Nörotrofik Faktör)",
+        "aciklama": "Bipolar bozuklukta ve depresyonda BDNF düzeyi düşer, bu da nöroplastisitenin azalmasına ve hücre hasarına neden olur. Lityum BDNF'yi artırabilir. (Kaynak: Dosya IMG_4963 / Bipolar Biyoloji)"
+    },
+    {
+        "id": "115",
+        "soru": "Aşağıdaki sendromlardan hangisi 'sağ-sol dezoryantasyonu', 'finger agnozi' (parmak tanımazlık), 'akalkuli' ve 'agrafi' tetradı ile tanınır?",
+        "secenekler": [
+            "A. Balint Sendromu",
+            "B. Anton-Babinski Sendromu",
+            "C. Gerstmann Sendromu",
+            "D. Kluver-Bucy Sendromu",
+            "E. Korsakoff Sendromu"
+        ],
+        "dogru_cevap": "C. Gerstmann Sendromu",
+        "aciklama": "Gerstmann Sendromu sol parietal lob (angular gyrus) hasarında görülür ve belirtilen dört temel bulgu (tetrad) ile karakterizedir. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "116",
+        "soru": "Transaksiyonel Analiz (TA) kuramına göre, kişinin çocuklukta öğrendiği ve ebeveynlerinden kopyaladığı, yargılayıcı veya koruyucu tutumları içeren ego durumu hangisidir?",
+        "secenekler": [
+            "A. Yetişkin (Adult) Ego Durumu",
+            "B. Doğal Çocuk Ego Durumu",
+            "C. Ebeveyn (Parent) Ego Durumu",
+            "D. Uygulayıcı Ego Durumu",
+            "E. Asi Çocuk Ego Durumu"
+        ],
+        "dogru_cevap": "C. Ebeveyn (Parent) Ego Durumu",
+        "aciklama": "Ebeveyn (Parent) ego durumu, kişinin yaşamında otorite figürlerinden (anne-baba) kopyaladığı, eleştirel veya koruyucu/besleyici davranış ve düşünce kalıplarını içerir."
+    },
+    {
+        "id": "117",
+        "soru": "Bilim felsefecisi Karl Popper'a göre, bir teorinin 'bilimsel' sayılabilmesi için taşıması gereken temel özellik nedir?",
+        "secenekler": [
+            "A. Doğrulanabilirlik (Verifiability)",
+            "B. Yanlışlanabilirlik (Falsifiability)",
+            "C. Tümevarımsal mantığa uygunluk",
+            "D. Kesinlik",
+            "E. Otorite tarafından kabul görme"
+        ],
+        "dogru_cevap": "B. Yanlışlanabilirlik (Falsifiability)",
+        "aciklama": "Karl Popper'a göre bilimsel bir hipotez kanıtlanmaya değil, yanlışlanmaya çalışılmalıdır. 'Tüm kuğular beyazdır' önermesi bir siyah kuğu ile çürütülebilir (yanlışlanabilir)."
+    },
+    {
+        "id": "118",
+        "soru": "Yaşlı hastalarda Bipolar Bozukluk tedavisinde 'Lamotrijin' kullanılırken, doz artışının yavaş yapılması (titrasyon) hangi ciddi yan etki riskini önlemek içindir?",
+        "secenekler": [
+            "A. Stevens-Johnson Sendromu",
+            "B. Hipotiroidi",
+            "C. Böbrek yetmezliği",
+            "D. Hipertansif kriz",
+            "E. Tardif diskinezi"
+        ],
+        "dogru_cevap": "A. Stevens-Johnson Sendromu",
+        "aciklama": "Lamotrijin, özellikle hızlı doz artışlarında ciltte döküntülerle başlayan ve ölümcül olabilen Stevens-Johnson Sendromu'na yol açabilir; bu nedenle doz yavaş artırılmalıdır."
+    },
+    {
+        "id": "119",
+        "soru": "William of Ockham tarafından ortaya atılan 'Ockham'ın Usturası' ilkesi bilimsel düşüncede neyi ifade eder?",
+        "secenekler": [
+            "A. En karmaşık açıklama her zaman en doğrudur.",
+            "B. Bilimsel devrimler sıçramalarla olur.",
+            "C. Zorunluluk olmadıkça olasılıklar çoğaltılmamalıdır (En basit açıklama tercih edilmelidir).",
+            "D. Bilim sadece gözlemlenebilir olanı inceler.",
+            "E. Evren matematiksel bir dille yazılmıştır."
+        ],
+        "dogru_cevap": "C. Zorunluluk olmadıkça olasılıklar çoğaltılmamalıdır (En basit açıklama tercih edilmelidir).",
+        "aciklama": "Ockham'ın Usturası, bir olayı açıklarken gereksiz varsayımlardan kaçınılması gerektiğini, en basit ve en az varsayıma dayanan açıklamanın genellikle doğru olduğunu savunur."
+    },
+    {
+        "id": "120",
+        "soru": "Eric Berne'in Transaksiyonel Analiz kuramında, 'gizli amacı olan, tekrarlayıcı ve sonunda kişilere kötü hissettiren (raket duygu)' etkileşimlere ne ad verilir?",
+        "secenekler": [
+            "A. Ritüel",
+            "B. Oyun (Game)",
+            "C. Vakit geçirme",
+            "D. Yakınlık",
+            "E. Çapraz transaksiyon"
+        ],
+        "dogru_cevap": "B. Oyun (Game)",
+        "aciklama": "Oyunlar; açık mesajın altında gizli bir psikolojik mesaj barındıran, 'Kurban-Kurtarıcı-Zalim' (Drama Üçgeni) rollerinin değiştiği ve sonunda olumsuz duygularla biten etkileşimlerdir."
+    },
+    {
+        "id": "121",
+        "soru": "Geriatrik (yaşlı) bipolar hastalarda 'Valproat' kullanımı ile ilgili olarak aşağıdaki ifadelerden hangisi doğrudur?",
+        "secenekler": [
+            "A. Gençlere göre hepatotoksisite riski daha yüksektir.",
+            "B. Serbest ilaç oranı artacağından, erişkinlere göre daha düşük dozlarda kullanılmalıdır.",
+            "C. Böbrek yetmezliği riski nedeniyle kontrendikedir.",
+            "D. Sadece mani tedavisinde değil, şizofrenide de ilk tercihtir.",
+            "E. Yarı ömrü çok kısaldığı için günde 4 kez verilmelidir."
+        ],
+        "dogru_cevap": "B. Serbest ilaç oranı artacağından, erişkinlere göre daha düşük dozlarda kullanılmalıdır.",
+        "aciklama": "Yaşlılarda albümin azaldığı için proteine bağlanan ilaçların (Valproat gibi) serbest oranı artar. Bu nedenle toksisiteyi önlemek için daha düşük dozlar hedeflenmelidir."
+    },
+    {
+        "id": "122",
+        "soru": "Bir ölçme aracının, ölçmeyi amaçladığı özelliği başka özelliklerle karıştırmadan doğru bir şekilde ölçebilmesine ne ad verilir?",
+        "secenekler": [
+            "A. Güvenirlik (Reliability)",
+            "B. Tutarlılık",
+            "C. Geçerlik (Validity)",
+            "D. Standart sapma",
+            "E. Korelasyon"
+        ],
+        "dogru_cevap": "C. Geçerlik (Validity)",
+        "aciklama": "Geçerlik, bir testin veya ölçeğin ölçmek istediği şeyi ne kadar doğru ölçtüğüdür. Güvenirlik ise ölçümün kararlılığı ve tutarlılığı ile ilgilidir."
+    },
+    {
+        "id": "123",
+        "soru": "Şizofreni tedavisinde kullanılan antipsikotiklere bağlı gelişebilen 'Tardif Diskinezi' riskini artıran faktörlerden biri aşağıdakilerden hangisidir?",
+        "secenekler": [
+            "A. Genç yaş",
+            "B. Klozapin kullanımı",
+            "C. İleri yaş ve uzun süre tipik antipsikotik kullanımı",
+            "D. Erkek cinsiyet",
+            "E. Yüksek sosyoekonomik düzey"
+        ],
+        "dogru_cevap": "C. İleri yaş ve uzun süre tipik antipsikotik kullanımı",
+        "aciklama": "Tardif Diskinezi riski, yaşın ilerlemesiyle ve klasik (tipik) antipsikotiklerin uzun süre kullanımıyla artar. Çok geç başlangıçlı şizofrenide bu risk yüksektir."
+    },
+    {
+        "id": "124",
+        "soru": "Transaksiyonel Analiz'de, açık bir mesajın altında gizli bir psikolojik mesajın verildiği (örneğin: 'Gel pullarıma bak' diyerek cinsel davette bulunmak) iletişim türü hangisidir?",
+        "secenekler": [
+            "A. Tamamlayıcı Transaksiyon",
+            "B. Çapraz Transaksiyon",
+            "C. Gizli (Ulterior) Transaksiyon",
+            "D. Ebeveyn-Ebeveyn Transaksiyonu",
+            "E. Yetişkin-Yetişkin Transaksiyonu"
+        ],
+        "dogru_cevap": "C. Gizli (Ulterior) Transaksiyon",
+        "aciklama": "Gizli transaksiyonlarda, sosyal düzeyde söylenen söz ile psikolojik düzeyde kastedilen anlam farklıdır; bu durum 'Oyunlar'ın temelini oluşturur."
+    },
+    {
+        "id": "125",
+        "soru": "Auguste Comte'un bilimler hiyerarşisine göre, en 'karmaşık' ancak 'genelliği en az' olan bilim dalı hangisidir?",
+        "secenekler": [
+            "A. Matematik",
+            "B. Astronomi",
+            "C. Fizik",
+            "D. Biyoloji",
+            "E. Sosyoloji"
+        ],
+        "dogru_cevap": "E. Sosyoloji",
+        "aciklama": "Comte'un hiyerarşisinde Matematik en temel ve genel bilim iken, hiyerarşinin en tepesindeki Sosyoloji en karmaşık ve genelliği en az (insana özgü) olan bilimdir."
+    },
+    {
+        "id": "126",
+        "soru": "Melankolik özellikli depresyonun klinik görünümünde aşağıdakilerden hangisi tipiktir?",
+        "secenekler": [
+            "A. Akşamları kötüleşen duygudurum",
+            "B. Çevresel olaylara aşırı tepkisellik (Duygudurum reaktivitesi)",
+            "C. Sabahları daha kötü olma ve sabah erken uyanma",
+            "D. Aşırı uyuma ve kilo alımı",
+            "E. Kurşun paralizisi hissi"
+        ],
+        "dogru_cevap": "C. Sabahları daha kötü olma ve sabah erken uyanma",
+        "aciklama": "Melankolik depresyonda duygudurum sabahları daha kötüdür (diurnal varyasyon), sabah erken uyanma, belirgin iştah kaybı ve suçluluk duyguları görülür. Diğer seçenekler Atipik özelliklerdir."
+    },
+    {
+        "id": "127",
+        "soru": "Yaşlılık dönemi anksiyete bozukluklarında, benzodiazepinlerin kullanımından neden kaçınılmalı veya çok dikkatli olunmalıdır?",
+        "secenekler": [
+            "A. Kalıcı işitme kaybı yapabilir.",
+            "B. Sedasyon, düşme riski ve bilişsel bozulmaya (demans benzeri) neden olabilir.",
+            "C. Hipertansiyon krizine yol açar.",
+            "D. Böbrek yetmezliğini tetikler.",
+            "E. İştahı tamamen kapatır."
+        ],
+        "dogru_cevap": "B. Sedasyon, düşme riski ve bilişsel bozulmaya (demans benzeri) neden olabilir.",
+        "aciklama": "Yaşlılarda metabolizma yavaşladığı için benzodiazepinler vücutta birikir; bu da sedasyon, denge kaybı (düşme/kalça kırığı) ve bilişsel işlevlerde bozulmaya yol açar."
+    },
+    {
+        "id": "128",
+        "soru": "Thomas Kuhn'un bilim felsefesine göre, bilimin doğrusal birikimle değil, devrimsel sıçramalarla değiştiği sürece ne ad verilir?",
+        "secenekler": [
+            "A. Yanlışlama",
+            "B. Paradigma Kayması (Paradigm Shift)",
+            "C. Tümevarım",
+            "D. Determinizm",
+            "E. Pozitivizm"
+        ],
+        "dogru_cevap": "B. Paradigma Kayması (Paradigm Shift)",
+        "aciklama": "Thomas Kuhn, bilimin 'normal bilim' dönemlerinden sonra krizler yaşadığını ve eski paradigmanın yerini yenisine bıraktığı devrimsel süreçlere 'Paradigma Kayması' adını vermiştir."
+    },
+    {
+        "id": "129",
+        "soru": "Aşağıdaki sendromlardan hangisi, kişinin 'ayrıcalıklı bir ailenin çocuğu olduğuna' dair yanlış ve sarsılmaz bir inanç taşımasıdır?",
+        "secenekler": [
+            "A. Capgras Sendromu",
+            "B. Fregoli Sendromu",
+            "C. Mignon Sanrısı",
+            "D. Cotard Sendromu",
+            "E. Ekbom Sendromu"
+        ],
+        "dogru_cevap": "C. Mignon Sanrısı",
+        "aciklama": "Mignon sanrısı, kişinin gerçek ailesinin soylu, zengin veya çok önemli kişiler olduğuna, şu anki ailesinin gerçek olmadığına inandığı bir sanrı türüdür."
+    },
+    {
+        "id": "130",
+        "soru": "Geriatrik psikiyatride 'BEERS Kriterleri' neyi amaçlar?",
+        "secenekler": [
+            "A. Depresyon şiddetini ölçmeyi",
+            "B. Yaşlılarda uygunsuz ilaç kullanımını belirlemeyi ve önlemeyi",
+            "C. Demans evrelemesini yapmayı",
+            "D. İntihar riskini hesaplamayı",
+            "E. Yasal ehliyeti değerlendirmeyi"
+        ],
+        "dogru_cevap": "B. Yaşlılarda uygunsuz ilaç kullanımını belirlemeyi ve önlemeyi",
+        "aciklama": "BEERS kriterleri, yaşlı hastalarda yan etki riski nedeniyle kaçınılması gereken veya dikkatli kullanılması gereken 'uygunsuz ilaçları' listeler (Örn: Tersiyer TCA'lar, uzun etkili BZD'ler)."
+    },
+    {
+        "id": "131",
+        "soru": "Transaksiyonel Analiz'de 'Yaşam Pozisyonları'ndan biri olan ve 'Sağlıklı' kabul edilen pozisyon hangisidir?",
+        "secenekler": [
+            "A. Ben iyi değilim, Sen iyisin (Depresif)",
+            "B. Ben iyiyim, Sen iyi değilsin (Paranoid)",
+            "C. Ben iyi değilim, Sen iyi değilsin (Umutsuz)",
+            "D. Ben iyiyim, Sen iyisin (Sağlıklı)",
+            "E. Sen iyisin, Ben yokum (Şizoid)"
+        ],
+        "dogru_cevap": "D. Ben iyiyim, Sen iyisin (Sağlıklı)",
+        "aciklama": "Kişinin hem kendisine hem de başkalarına değer verdiği, gerçekçi ve yapıcı 'Ben iyiyim (OK), Sen iyisin (OK)' pozisyonu sağlıklı yaşam pozisyonudur."
+    },
+    {
+        "id": "132",
+        "soru": "Şizofreni hastalarında beynin 'Dorsolateral Prefrontal Korteks' (DLPFC) bölgesindeki etkinlik azalması (hipofrontalite) klinik olarak hangi belirtilerle ilişkilidir?",
+        "secenekler": [
+            "A. İşitsel halüsinasyonlar",
+            "B. Pozitif belirtiler (Sanrılar)",
+            "C. Bilişsel bozulma ve negatif belirtiler",
+            "D. Tardif diskinezi",
+            "E. Görme bozuklukları"
+        ],
+        "dogru_cevap": "C. Bilişsel bozulma ve negatif belirtiler",
+        "aciklama": "DLPFC bölgesindeki etkinlik azalması (hipofrontalite) ve dopamin azlığı; yürütücü işlev bozuklukları, dikkat eksikliği ve negatif belirtilerle ilişkilidir."
+    },
+    {
+        "id": "133",
+        "soru": "Antidepresan ilaçların (özellikle SSRI) aniden kesilmesiyle ortaya çıkan 'Kesilme Sendromu' belirtileri arasında hangisi yer almaz?",
+        "secenekler": [
+            "A. Grip benzeri belirtiler (halsizlik, kas ağrısı)",
+            "B. Denge bozukluğu, baş dönmesi",
+            "C. Elektrik çarpması hissi (Brain zaps)",
+            "D. Öfori ve aşırı enerji artışı",
+            "E. Uykusuzluk ve canlı rüyalar"
+        ],
+        "dogru_cevap": "D. Öfori ve aşırı enerji artışı",
+        "aciklama": "Antidepresan kesilme sendromunda sersemlik, bulantı, grip benzeri belirtiler ve huzursuzluk görülür. Öfori ve enerji artışı maniye kayma belirtisidir, kesilme belirtisi değildir."
+    },
+    {
+        "id": "134",
+        "soru": "Bilişsel Davranışçı Terapi (BDT) açısından 'Meta-kognitif' görüşe göre, Yaygın Anksiyete Bozukluğu olan hastaların 'endişe' (tasalanma) hakkındaki inançları nasıldır?",
+        "secenekler": [
+            "A. Endişelenmenin kendilerini kötü olaylardan koruduğuna inanırlar.",
+            "B. Endişenin tamamen biyolojik olduğunu düşünürler.",
+            "C. Endişeyi görmezden gelirler.",
+            "D. Endişelenmenin hiçbir işe yaramadığını bilirler.",
+            "E. Endişe anında uyumayı tercih ederler."
+        ],
+        "dogru_cevap": "A. Endişelenmenin kendilerini kötü olaylardan koruduğuna inanırlar.",
+        "aciklama": "Meta-kognitif kurama göre hastalar endişelenmeyi bir savunma mekanizması olarak görür; 'Eğer endişelenirsem ve önlem alırsam kötü şeyler olmaz' inancı (pozitif meta-inanç) endişeyi sürdürür."
+    },
+    {
+        "id": "135",
+        "soru": "Lityum kullanan bir hastada, dehidrasyon (sıvı kaybı) veya sodyum kısıtlaması (tuzsuz diyet) durumunda lityum kan düzeyi nasıl değişir?",
+        "secenekler": [
+            "A. Değişmez.",
+            "B. Lityum kan düzeyi düşer.",
+            "C. Lityum atılımı artar.",
+            "D. Lityum kan düzeyi artar ve toksisite riski oluşur.",
+            "E. Lityum etkisiz hale gelir."
+        ],
+        "dogru_cevap": "D. Lityum kan düzeyi artar ve toksisite riski oluşur.",
+        "aciklama": "Lityum böbreklerden sodyum ile benzer mekanizmayla atılır. Vücut susuz kaldığında veya tuz alımı azaldığında böbrekler sodyumu (ve dolayısıyla lityumu) tutar, bu da lityum düzeyinin toksik seviyelere çıkmasına neden olur."
+    },
+    {
+        "id": "136",
+        "soru": "Donald Winnicott'ın Nesne İlişkileri Kuramı'nda, bebeğin anneden ayrışma sürecinde kaygısını yatıştırmak için kullandığı (ayıcık, battaniye vb.) nesnelere ne ad verilir?",
+        "secenekler": [
+            "A. Kendilik Nesnesi",
+            "B. Geçiş Nesnesi (Transitional Object)",
+            "C. Kötü Nesne",
+            "D. Paranoid Nesne",
+            "E. Fetiş Nesne"
+        ],
+        "dogru_cevap": "B. Geçiş Nesnesi (Transitional Object)",
+        "aciklama": "Winnicott'a göre geçiş nesneleri, iç dünya ile dış dünya arasında bir köprü görevi görür ve bebeğin anneyle ayrışırken yaşadığı kaygıyı yatıştırmasına yardımcı olur. (Kaynak: Dosya 5 / Nesne İlişkileri)"
+    },
+    {
+        "id": "137",
+        "soru": "Melanie Klein'a göre, bebeğin nesneyi (anneyi) 'iyi' ve 'kötü' olarak böldüğü ve zulmedici (persekütif) kaygıların hakim olduğu gelişimsel konum hangisidir?",
+        "secenekler": [
+            "A. Depresif Konum",
+            "B. Otistik Konum",
+            "C. Paranoid-Şizoid Konum",
+            "D. Sembiyotik Konum",
+            "E. Narsisistik Konum"
+        ],
+        "dogru_cevap": "C. Paranoid-Şizoid Konum",
+        "aciklama": "Klein'ın kuramında ilk evre olan Paranoid-Şizoid konumda bebek nesneleri bütünleştiremez, 'iyi meme' ve 'kötü meme' olarak böler. Daha sonra bütünleştirmeyle 'Depresif Konum'a geçilir. (Kaynak: Dosya 5 / Melanie Klein)"
+    },
+    {
+        "id": "138",
+        "soru": "Margaret Mahler'in 'Ayrılma-Bireyleşme' sürecinde, çocuğun dünyayı keşfetmeye başladığı ancak anneye geri dönerek duygusal yakıt ikmali yaptığı (rapprochement) evre hangisidir?",
+        "secenekler": [
+            "A. Normal Otizm",
+            "B. Sembiyoz",
+            "C. Farklılaşma",
+            "D. Yeniden Yakınlaşma",
+            "E. Nesne Sürekliliği"
+        ],
+        "dogru_cevap": "D. Yeniden Yakınlaşma",
+        "aciklama": "Mahler'in kuramında 6-24 ay arası süreçte, çocuğun anneden uzaklaştıktan sonra tekrar ona dönüp güven tazelediği evre 'Yeniden Yakınlaşma'dır. (Kaynak: Dosya 5 / Margaret Mahler)"
+    },
+    {
+        "id": "139",
+        "soru": "Yaşlı hastalarda (geriatrik farmakokinetik), vücut yağ oranının artmasına bağlı olarak hangi tür ilaçların yarı ömrü uzar ve birikim riski artar?",
+        "secenekler": [
+            "A. Hidrofilik (suda çözünen) ilaçlar (örn. Lityum)",
+            "B. Lipofilik (yağda çözünen) ilaçlar (örn. Diazepam)",
+            "C. Sadece antibiyotikler",
+            "D. Sadece vitaminler",
+            "E. İlaçların yarı ömrü yaşlılarda kısalır."
+        ],
+        "dogru_cevap": "B. Lipofilik (yağda çözünen) ilaçlar (örn. Diazepam)",
+        "aciklama": "Yaşla birlikte vücut yağ oranı artar, bu da Diazepam gibi lipofilik ilaçların yağ dokusunda birikmesine ve yarı ömrünün uzamasına neden olur. (Kaynak: Dosya 6 / Geriatrik Psikofarmakoloji)"
+    },
+    {
+        "id": "140",
+        "soru": "Yaşlı hastalarda vücut suyunun azalması, aşağıdaki ilaçlardan hangisinin kan düzeyinin artmasına ve toksisite riskine neden olur?",
+        "secenekler": [
+            "A. Diazepam",
+            "B. Lityum",
+            "C. Fluoksetin",
+            "D. Haloperidol",
+            "E. Karbamazepin"
+        ],
+        "dogru_cevap": "B. Lityum",
+        "aciklama": "Lityum suda çözünen bir ilaçtır. Yaşlılarda toplam vücut suyu azaldığı için lityumun dağılım hacmi düşer ve kan konsantrasyonu artar. (Kaynak: Dosya 6 / Geriatrik Psikofarmakoloji)"
+    },
+    {
+        "id": "141",
+        "soru": "Kortikal körlüğü olan bir hastanın, kör olduğunu inkar etmesi ve gördüğünü iddia etmesi (konfabülasyon) durumu hangi sendromdur?",
+        "secenekler": [
+            "A. Charles Bonnet Sendromu",
+            "B. Anton-Babinski Sendromu",
+            "C. Balint Sendromu",
+            "D. Gerstmann Sendromu",
+            "E. Capgras Sendromu"
+        ],
+        "dogru_cevap": "B. Anton-Babinski Sendromu",
+        "aciklama": "Anton-Babinski Sendromu'nda hasta kortikal körlük yaşamasına rağmen bunu reddeder (anozognozi) ve gördüğünü iddia ederek hayali görüntüler anlatır. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "142",
+        "soru": "Aşağıdaki sendromlardan hangisi 'Simultanagnozi' (bütünsel algılayamama), 'Optik Ataksi' (görsel uyaranı yakalayamama) ve 'Okülomotor Apraksi' (istemli göz hareketi bozukluğu) üçlüsüyle karakterizedir?",
+        "secenekler": [
+            "A. Gerstmann Sendromu",
+            "B. Kluver-Bucy Sendromu",
+            "C. Balint Sendromu",
+            "D. Korsakoff Sendromu",
+            "E. Wernicke Ensefalopatisi"
+        ],
+        "dogru_cevap": "C. Balint Sendromu",
+        "aciklama": "Balint Sendromu, bilateral parietal-oksipital bileşke hasarında görülür ve belirtilen üç temel bulgu (triad) ile seyreder. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "143",
+        "soru": "Sorulan sorulara 'yaklaşık cevaplar' verme (örneğin: 2+2=5, köpeğin kaç bacağı var=3) ile karakterize dissosiyatif durum hangisidir?",
+        "secenekler": [
+            "A. Ganser Sendromu",
+            "B. Cotard Sendromu",
+            "C. Capgras Sendromu",
+            "D. Tourette Sendromu",
+            "E. Munchausen Sendromu"
+        ],
+        "dogru_cevap": "A. Ganser Sendromu",
+        "aciklama": "Ganser Sendromu, genellikle hapishane psikozlarında veya dissosiyatif durumlarda görülen, basit sorulara saçma ama yaklaşık cevaplar verme (vorbeireden) durumudur. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "144",
+        "soru": "Ekbom Sendromu olarak da bilinen, kişinin vücudunda böceklerin veya parazitlerin gezindiğine inandığı sanrısal bozukluk nedir?",
+        "secenekler": [
+            "A. Erotomani",
+            "B. Dermatozoi (Böceklenme) Sanrısı",
+            "C. Nihilistik Sanrı",
+            "D. Referans Sanrısı",
+            "E. Büyüklük Sanrısı"
+        ],
+        "dogru_cevap": "B. Dermatozoi (Böceklenme) Sanrısı",
+        "aciklama": "Ekbom Sendromu, hastanın derisinin altında veya üzerinde böceklerin/parazitlerin gezindiğine dair sarsılmaz bir inanç taşımasıdır. (Kaynak: Dosya IMG_4945 / Sendromlar)"
+    },
+    {
+        "id": "145",
+        "soru": "Bilim felsefesinde 'Tekil gözlemlerden yola çıkarak genel yasalara ulaşma' (Tümevarım) yöntemini savunan düşünür kimdir?",
+        "secenekler": [
+            "A. Karl Popper",
+            "B. Thomas Kuhn",
+            "C. Francis Bacon",
+            "D. William of Ockham",
+            "E. Auguste Comte"
+        ],
+        "dogru_cevap": "C. Francis Bacon",
+        "aciklama": "Francis Bacon, modern bilimin temeli olan tümevarım (induction) yöntemini, yani deney ve gözlemlerden genel doğrulara ulaşmayı savunmuştur. (Kaynak: Dosya 3 / Bilim Felsefesi)"
+    },
+    {
+        "id": "146",
+        "soru": "İstatistiksel analizde, 'Ölçülmek istenen özelliğin ne kadar doğru ve hatasız ölçüldüğünü' ifade eden kavram hangisidir?",
+        "secenekler": [
+            "A. Güvenirlik (Reliability)",
+            "B. Geçerlik (Validity)",
+            "C. Standart Sapma",
+            "D. Hipotez Testi",
+            "E. Korelasyon"
+        ],
+        "dogru_cevap": "B. Geçerlik (Validity)",
+        "aciklama": "Geçerlik (validity), bir ölçme aracının ölçmeyi amaçladığı özelliği başka değişkenlerle karıştırmadan tam ve doğru ölçebilmesidir. Güvenirlik ise kararlılıktır. (Kaynak: Dosya 3 / İstatistik)"
+    },
+    {
+        "id": "147",
+        "soru": "Tarihteki ilk filozof ve bilim insanı olarak kabul edilen, evreni anlamaya yönelik ilk teorik faaliyetleri başlatan isim kimdir?",
+        "secenekler": [
+            "A. Aristoteles",
+            "B. Platon",
+            "C. Thales",
+            "D. Sokrates",
+            "E. Hipokrat"
+        ],
+        "dogru_cevap": "C. Thales",
+        "aciklama": "Milet okulunun kurucusu Thales, mitolojik açıklamalar yerine doğayı gözlemleyerek açıklamaya çalıştığı için tarihteki ilk bilim insanı ve filozof kabul edilir. (Kaynak: Dosya 3 / Bilim Tarihi)"
+    },
+    {
+        "id": "148",
+        "soru": "Antidepresan ilaçlardan 'Bupropion'un cinsel işlev üzerindeki etkisi nasıldır?",
+        "secenekler": [
+            "A. Cinsel isteği azaltır.",
+            "B. Sertleşme bozukluğu yapar.",
+            "C. Cinsel dürtüyü ve isteği artırır.",
+            "D. Orgazm olamama (anorgazmi) yapar.",
+            "E. Prolaktini artırarak cinsel işlevi bozar."
+        ],
+        "dogru_cevap": "C. Cinsel dürtüyü ve isteği artırır.",
+        "aciklama": "Dopaminerjik etkisi nedeniyle Bupropion, SSRI'ların aksine cinsel yan etki yapmaz, hatta cinsel dürtüyü artırıcı etkisi vardır. (Kaynak: Dosya IMG_4991 / Cinsel Uyum)"
+    },
+    {
+        "id": "149",
+        "soru": "Anoreksiya Nervoza hastalarında görülen 'Hiperkolesterolemi'nin (Kolesterol yüksekliği) yanı sıra hangi hormonal direnç durumu tipiktir?",
+        "secenekler": [
+            "A. İnsülin direnci",
+            "B. Büyüme Hormonu (GH) direnci ve kanda GH artışı",
+            "C. Kortizol düşüklüğü",
+            "D. TSH yüksekliği",
+            "E. Leptin yüksekliği"
+        ],
+        "dogru_cevap": "B. Büyüme Hormonu (GH) direnci ve kanda GH artışı",
+        "aciklama": "Anoreksiyada açlık durumuna bağlı olarak Büyüme Hormonu (GH) salınımı artar ancak dokularda direnç oluşur (GH direnci). Ayrıca hiperkolesterolemi sık görülür. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları)"
+    },
+    {
+        "id": "150",
+        "soru": "Bulimiya Nervoza'da sık kusmaya bağlı olarak tükürük bezlerinde görülen değişiklik ve buna eşlik eden laboratuvar bulgusu nedir?",
+        "secenekler": [
+            "A. Tükürük bezlerinde küçülme",
+            "B. Parotis bezinde büyüme ve amilaz artışı",
+            "C. Ağız kuruluğu",
+            "D. Tükürükte asit azalması",
+            "E. Diş etlerinde kanama"
+        ],
+        "dogru_cevap": "B. Parotis bezinde büyüme ve amilaz artışı",
+        "aciklama": "Tekrarlayan kusmalar parotis bezlerinin büyümesine (şiş yüz görünümü) ve serum/tükürük amilaz düzeylerinin artmasına neden olur. (Kaynak: Dosya IMG_4993 / Yeme Bozuklukları)"
+    },
+    {
+        "id": "151",
+        "soru": "Depresyon hastalarında yapılan uyku çalışmalarında (Polisomnografi), 'Delta uykusu' (Derin uyku) oranı ile ilgili bulgu nedir?",
+        "secenekler": [
+            "A. %50'nin üzerindedir.",
+            "B. Normalden fazladır.",
+            "C. %10'un altındadır (Azalmıştır).",
+            "D. Değişiklik göstermez.",
+            "E. REM uykusundan daha fazladır."
+        ],
+        "dogru_cevap": "C. %10'un altındadır (Azalmıştır).",
+        "aciklama": "Depresyonda dinlendirici olan yavaş dalga uykusu (Delta) azalır, oranı %10'un altına düşer; REM uykusu ise artar ve öne kayar. (Kaynak: Dosya IMG_4957 / Depresyon Uyku)"
+    },
+    {
+        "id": "152",
+        "soru": "Bipolar Bozukluk hastalarının beyin görüntülemelerinde (MR), özellikle ventrikül çevresinde saptanan yapısal değişiklik nedir?",
+        "secenekler": [
+            "A. Tümör oluşumu",
+            "B. Beyaz cevherde hiperintens lezyonlar",
+            "C. Hipofiz büyümesi",
+            "D. Kortikal kalınlaşma",
+            "E. Beyincik atrofisi"
+        ],
+        "dogru_cevap": "B. Beyaz cevherde hiperintens lezyonlar",
+        "aciklama": "Bipolar bozuklukta ventriküllerin çevresindeki beyaz maddede ve subkortikal bölgelerde parlak noktalar şeklinde 'hiperintens lezyonlar' sıkça görülür. (Kaynak: Dosya IMG_4963 / Bipolar Biyoloji)"
+    },
+    {
+        "id": "153",
+        "soru": "Şizofreni hastalarında frontal lobda nöron kaybının bir göstergesi olarak kabul edilen biyokimyasal bulgu nedir?",
+        "secenekler": [
+            "A. Dopamin artışı",
+            "B. N-asetil aspartat (NAA) azalması",
+            "C. Serotonin artışı",
+            "D. GABA artışı",
+            "E. Glutamat fazlalığı"
+        ],
+        "dogru_cevap": "B. N-asetil aspartat (NAA) azalması",
+        "aciklama": "N-asetil aspartat (NAA) bir nöronal bütünlük belirtecidir. Şizofrenide frontal bölgede NAA azalması, nöron kaybı veya işlev bozukluğunu gösterir. (Kaynak: Dosya IMG_4951 / Şizofreni Beyin)"
+    },
+    {
+        "id": "154",
+        "soru": "Panik Bozukluğu olan hastalarda, sağ temporal lobda görülebilen yapısal değişiklik nedir?",
+        "secenekler": [
+            "A. Hipertrofi (Büyüme)",
+            "B. Atrofi (Küçülme)",
+            "C. Tümör",
+            "D. Kanama",
+            "E. Kireçlenme"
+        ],
+        "dogru_cevap": "B. Atrofi (Küçülme)",
+        "aciklama": "Panik bozukluğu olan bazı hastalarda sağ temporal lobda atrofi (küçülme) görülebildiği notlarda belirtilmiştir. (Kaynak: Dosya IMG_4969 / Panik Bozukluğu)"
+    },
+    {
+        "id": "155",
+        "soru": "R.A. Fisher tarafından yapılan ve modern istatistikte 'Hipotez Testi' ile 'p değeri' kavramının temellerini atan ünlü deney hangisidir?",
+        "secenekler": [
+            "A. Pavlov'un Köpeği",
+            "B. Schrödinger'in Kedisi",
+            "C. Lady Tasting Tea (Çay Tadan Hanımefendi)",
+            "D. Little Albert",
+            "E. Stanford Hapishane Deneyi"
+        ],
+        "dogru_cevap": "C. Lady Tasting Tea (Çay Tadan Hanımefendi)",
+        "aciklama": "R.A. Fisher, bir kadının çaya sütün mü yoksa süte çayın mı eklendiğini anlayıp anlayamayacağını test ettiği 'Lady Tasting Tea' deneyi ile istatistiksel hipotez testinin temellerini atmıştır. (Kaynak: Dosya 3 / İstatistik)"
+    }
+]
