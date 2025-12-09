@@ -14,7 +14,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- CSS STİLLERİ (YENİ TASARIM) ---
+# --- CSS STİLLERİ (DERİN CAM TASARIM) ---
 st.markdown(f"""
     <style>
     /* 1. HAREKETLİ GRADIENT ARKA PLAN */
@@ -41,109 +41,117 @@ st.markdown(f"""
     /* 2. GENEL YAZI RENGİ (BEYAZ) */
     h1, h2, h3, h4, h5, h6, p, span, div, label {{
         color: #ffffff !important;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        text-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }}
 
-    /* 3. GLASSMORPHISM (CAM ETKİSİ) KUTULAR */
+    /* 3. ULTRA-GERÇEKÇİ DERİN CAM (DEEP GLASSMORPHISM) KUTULAR */
     .glass-card {{
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        padding: 25px;
-        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.05); /* Daha şeffaf */
+        backdrop-filter: blur(15px); /* Daha fazla bulanıklık */
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 24px;
+        /* Kenarlık ve Çoklu Gölgeler ile Derinlik */
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 
+            0 8px 32px 0 rgba(0, 0, 0, 0.3), /* Dış gölge */
+            inset 2px 2px 5px 0 rgba(255, 255, 255, 0.4), /* Sol üst iç parlama */
+            inset -2px -2px 5px 0 rgba(0, 0, 0, 0.2); /* Sağ alt iç gölge */
+        padding: 30px;
+        margin-bottom: 25px;
         text-align: center;
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
     }}
     
     .glass-card:hover {{
         transform: translateY(-3px);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 
+            0 15px 35px 0 rgba(0, 0, 0, 0.4),
+            inset 2px 2px 8px 0 rgba(255, 255, 255, 0.5),
+            inset -2px -2px 8px 0 rgba(0, 0, 0, 0.3);
+        border-color: rgba(255, 255, 255, 0.4);
     }}
 
-    /* LİDERLİK TABLOSU İÇİN ÖZEL SATIR STİLİ */
+    /* LİDERLİK TABLOSU SATIRLARI İÇİN DERİN CAM STİLİ */
     .leader-row {{
         display: flex; 
         align-items: center; 
         justify-content: space-between;
         padding: 15px 20px;
-        margin-bottom: 12px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(5px);
+        margin-bottom: 15px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        /* Satırlara da derinlik */
+        box-shadow: 
+            0 4px 15px rgba(0,0,0,0.1),
+            inset 1px 1px 3px rgba(255, 255, 255, 0.3),
+            inset -1px -1px 3px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }}
+    .leader-row:hover {{
+         transform: scale(1.02);
     }}
 
     /* 4. İSTATİSTİK KUTULARI (Minimal) */
     .stats-container {{
-        display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;
+        display: flex; justify-content: space-between; gap: 12px; margin-bottom: 25px;
     }}
     .stat-mini-card {{
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(5px);
-        flex: 1; padding: 15px 5px; border-radius: 15px;
-        border: 1px solid rgba(255,255,255,0.2);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        flex: 1; padding: 15px 5px; border-radius: 18px;
+        border: 2px solid rgba(255,255,255,0.2);
+        box-shadow: inset 1px 1px 3px rgba(255,255,255,0.2);
         text-align: center;
     }}
     .stat-value {{ font-size: 1.5rem; font-weight: 800; color: white; }}
-    .stat-label {{ font-size: 0.75rem; color: rgba(255,255,255,0.8); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }}
+    .stat-label {{ font-size: 0.7rem; color: rgba(255,255,255,0.8); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }}
 
     /* 5. BUTON TASARIMLARI */
-    /* Normal Butonlar */
     div.stButton > button {{
         background: rgba(255, 255, 255, 0.1) !important;
         color: white !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border: 2px solid rgba(255, 255, 255, 0.3) !important;
         border-radius: 15px !important;
         padding: 0.8rem 1rem !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
+        backdrop-filter: blur(5px) !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
         transition: all 0.3s ease !important;
     }}
     div.stButton > button:hover {{
         background: rgba(255, 255, 255, 0.3) !important;
         border-color: white !important;
-        transform: scale(1.02);
-        box-shadow: 0 0 15px rgba(255,255,255,0.5);
+        transform: scale(1.03);
+        box-shadow: 0 8px 25px rgba(255,255,255,0.3) !important;
     }}
 
-    /* Primary (Özel) Butonlar - Daha parlak */
+    /* Primary (Özel) Butonlar */
     div.stButton > button[kind="primary"] {{
         background: linear-gradient(90deg, #ff00cc, #333399) !important;
         border: none !important;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4) !important;
     }}
 
-    /* Çıkış Butonu (Kırmızımsı) */
-    div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
-        background: rgba(239, 68, 68, 0.2) !important;
-        border: 1px solid rgba(239, 68, 68, 0.5) !important;
-    }}
-    div[data-testid="column"]:nth-of-type(1) div.stButton > button:hover {{
-        background: rgba(239, 68, 68, 0.5) !important;
-    }}
-
-    /* 6. INPUT ALANI (İsim Girişi) */
+    /* 6. INPUT ALANI */
     div[data-testid="stTextInput"] input {{
         background-color: rgba(255, 255, 255, 0.1) !important;
         color: white !important;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }}
-    div[data-testid="stTextInput"] label {{
-        color: rgba(255,255,255,0.9) !important;
+        border-radius: 12px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 15px;
     }}
 
     /* 7. GERİ BİLDİRİM KUTULARI */
     .feedback-box {{ 
-        padding: 20px; border-radius: 15px; margin-top: 15px; 
-        backdrop-filter: blur(10px); color: white !important;
-        text-shadow: none; border: 1px solid rgba(255,255,255,0.3);
+        padding: 25px; border-radius: 20px; margin-top: 20px; 
+        backdrop-filter: blur(12px); color: white !important;
+        text-shadow: none; border: 2px solid rgba(255,255,255,0.3);
+        box-shadow: inset 1px 1px 4px rgba(255,255,255,0.3);
     }}
-    .fb-correct {{ background-color: rgba(34, 197, 94, 0.3); border-left: 5px solid #4ade80; }}
-    .fb-wrong {{ background-color: rgba(239, 68, 68, 0.3); border-left: 5px solid #f87171; }}
+    .fb-correct {{ background-color: rgba(34, 197, 94, 0.2); border-color: #4ade80; }}
+    .fb-wrong {{ background-color: rgba(239, 68, 68, 0.2); border-color: #f87171; }}
     
     /* GİZLEME */
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
@@ -164,7 +172,7 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
-if 'active_mode' not in st.session_state: st.session_state.active_mode = None 
+if 'active_mode' not in st.session_state: st.session_state.active_mode = None
 if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
@@ -175,7 +183,7 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
+        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1")
         return sheet
     except:
         return None
@@ -201,7 +209,7 @@ def save_score_to_db():
         try:
             kayit_ismi = st.session_state.user_name
             if st.session_state.get("active_mode") == "notes":
-                kayit_ismi = f"{st.session_state.user_name}, ders notları puanı"
+                kayit_ismi = f"{st.session_state.user_name} (Notlar)"
 
             all_values = sheet.get_all_values()
             
@@ -214,7 +222,8 @@ def save_score_to_db():
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
-            tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')
+            # UTC+3 Saat Ayarı ve Formatı
+            tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%d.%m.%Y %H:%M')
             
             new_row = pd.DataFrame([{
                 'Kullanıcı': kayit_ismi,
@@ -238,7 +247,7 @@ def load_questions(json_filename):
             all_questions = json.load(f)
         
         available_questions = [
-            q for q in all_questions 
+            q for q in all_questions
             if q['soru'] not in st.session_state.seen_questions
         ]
         
@@ -308,9 +317,9 @@ def home_page():
     # Başlık Alanı
     st.markdown(f"""
         <div class="glass-card" style="padding: 40px 20px;">
-            <div style="font-size: 3rem; margin-bottom: 10px; text-shadow: 0 0 20px rgba(255,255,255,0.5);">🧠</div>
-            <div style="font-size: 2.2rem; font-weight: 900; margin-bottom: 5px;">Psikiyatri Ligi</div>
-            <div style="font-size: 1rem; opacity: 0.9;">Bilginle Işılda ✨</div>
+            <div style="font-size: 3.5rem; margin-bottom: 15px; text-shadow: 0 0 30px rgba(255,255,255,0.6);">🧠</div>
+            <div style="font-size: 2.5rem; font-weight: 900; margin-bottom: 5px; letter-spacing: -1px;">Psikiyatri Ligi</div>
+            <div style="font-size: 1.1rem; opacity: 0.9; font-weight: 300;">Bilginin derinliklerine in ✨</div>
         </div>
     """, unsafe_allow_html=True)
 
@@ -327,7 +336,7 @@ def home_page():
         else:
             success_rate = 0
 
-        st.markdown(f"""<div style="text-align:center; margin-bottom:20px; font-weight:bold; font-size:1.2rem;">Hoşgeldin, {st.session_state.user_name} 👋</div>""", unsafe_allow_html=True)
+        st.markdown(f"""<div style="text-align:center; margin-bottom:25px; font-weight:800; font-size:1.4rem;">Hoşgeldin, {st.session_state.user_name} 👋</div>""", unsafe_allow_html=True)
         
         # İstatistikler
         st.markdown(f"""
@@ -363,7 +372,7 @@ def home_page():
             else:
                 start_quiz("notes", "ders_notlari.json")
     
-    st.write("") 
+    st.write("")
     
     if st.button("🏆 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
@@ -378,9 +387,9 @@ def quiz_page():
     with c1:
         if st.button("Kapat ✖", use_container_width=True):
             quit_quiz()
-    with c2: 
+    with c2:
         mode_label = "NOTLAR" if st.session_state.active_mode == "notes" else "GENEL"
-        st.markdown(f"<div style='text-align:right; opacity:0.8; font-size:0.9rem; padding-top:10px;'>MOD: <b>{mode_label}</b></div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align:right; opacity:0.8; font-size:0.9rem; padding-top:15px; font-weight:700;'>MOD: {mode_label}</div>", unsafe_allow_html=True)
     
     total_q = len(st.session_state.quiz_data)
     idx = st.session_state.question_index
@@ -390,29 +399,29 @@ def quiz_page():
     
     # Soru Kartı
     st.markdown(f"""
-    <div class="glass-card" style="text-align:left;">
-        <div style="display:flex; justify-content:space-between; margin-bottom:15px; opacity:0.8; font-size:0.85rem;">
+    <div class="glass-card" style="text-align:left; padding: 35px;">
+        <div style="display:flex; justify-content:space-between; margin-bottom:20px; opacity:0.8; font-size:0.9rem; font-weight:600;">
             <span>SORU {idx + 1} / {total_q}</span>
-            <span style="font-weight:bold;">💎 {st.session_state.score}</span>
+            <span style="font-weight:bold; color:#ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);">💎 {st.session_state.score}</span>
         </div>
-        <div style="font-size: 1.3rem; font-weight: 700; line-height: 1.5;">{q_data["soru"]}</div>
+        <div style="font-size: 1.4rem; font-weight: 800; line-height: 1.4;">{q_data["soru"]}</div>
     </div>
     """, unsafe_allow_html=True)
     
     if not st.session_state.answer_submitted:
         for i, opt in enumerate(q_data['secenekler']):
-            st.write("") 
+            st.write("")
             if st.button(opt, key=f"q{idx}_o{i}", use_container_width=True):
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct: 
+        if st.session_state.is_correct:
             st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Mükemmel! Doğru Cevap.</b></div>', unsafe_allow_html=True)
         else:
-            st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış Cevap</b><br><small>Doğrusu: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış Cevap</b><br><small style="opacity:0.8;">Doğrusu: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
         
         if q_data.get('aciklama'):
-            st.markdown(f'<div style="background:rgba(255,255,255,0.1); padding:15px; border-radius:10px; margin-top:10px; border:1px solid rgba(255,255,255,0.2);"><b>💡 Açıklama:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="background:rgba(255,255,255,0.08); padding:20px; border-radius:15px; margin-top:15px; border:2px solid rgba(255,255,255,0.15); box-shadow: inset 1px 1px 3px rgba(255,255,255,0.2);"><b>💡 Açıklama:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
             
         st.write("")
         btn_txt = "Sonraki ➡️" if idx < total_q - 1 else "Sonuçları Gör 🏁"
@@ -430,13 +439,13 @@ def result_page():
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(f"""
-        <div class="glass-card">
-            <div style="font-size: 60px; margin-bottom:10px;">🎉</div>
-            <h2 style="margin:0;">Tebrikler!</h2>
-            <p style="opacity:0.8;">{st.session_state.user_name}</p>
-            <div style="margin: 20px 0; padding: 20px; background:rgba(255,255,255,0.1); border-radius:15px; border:1px solid rgba(255,255,255,0.2);">
-                <span style="font-size: 14px; text-transform:uppercase; opacity:0.7; font-weight:bold;">TOPLAM SKOR</span>
-                <div style="font-size: 60px; font-weight:900; text-shadow:0 0 30px rgba(255,255,255,0.6);">{st.session_state.score}</div>
+        <div class="glass-card" style="padding: 50px 30px;">
+            <div style="font-size: 70px; margin-bottom:15px; text-shadow: 0 0 30px rgba(255,255,255,0.6);">🎉</div>
+            <h2 style="margin:0; font-size: 2.5rem; font-weight: 900;">Tebrikler!</h2>
+            <p style="opacity:0.9; font-size: 1.2rem; margin-top: 10px;">{st.session_state.user_name}</p>
+            <div style="margin: 30px 0; padding: 25px; background:rgba(255,255,255,0.08); border-radius:20px; border:2px solid rgba(255,255,255,0.2); box-shadow: inset 2px 2px 5px rgba(255,255,255,0.2);">
+                <span style="font-size: 1rem; text-transform:uppercase; opacity:0.7; font-weight:800; letter-spacing: 1px;">TOPLAM SKOR</span>
+                <div style="font-size: 70px; font-weight:900; text-shadow:0 0 40px rgba(255,255,255,0.8); color:#ffd700;">{st.session_state.score}</div>
             </div>
         </div>
     """, unsafe_allow_html=True)
@@ -456,17 +465,19 @@ def result_page():
 
 def leaderboard_page():
     st.markdown(f"""
-    <div style="text-align:center; margin-bottom:20px;">
-        <h3>🏆 Şampiyonlar Ligi</h3>
+    <div style="text-align:center; margin-bottom:30px;">
+        <h3 style="font-weight: 900; font-size: 2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.2);">🏆 Şampiyonlar Ligi</h3>
     </div>
     """, unsafe_allow_html=True)
     
-    with st.spinner('Yükleniyor...'):
+    with st.spinner('Sıralama yükleniyor...'):
         df = fetch_leaderboard()
     
     if not df.empty:
         try:
             skor_col = next((col for col in df.columns if 'skor' in col.lower()), None)
+            tarih_col = next((col for col in df.columns if 'tarih' in col.lower()), None)
+
             if skor_col:
                 # Skora göre sırala
                 df[skor_col] = pd.to_numeric(df[skor_col], errors='coerce').fillna(0)
@@ -479,29 +490,34 @@ def leaderboard_page():
                     # İkon Seçimi (İlk 3 için madalya)
                     if rank == 1:
                         rank_display = "🥇"
-                        extra_style = "border: 2px solid #FFD700; background: rgba(255, 215, 0, 0.2);" # Altın
+                        extra_style = "border: 2px solid #FFD700; background: rgba(255, 215, 0, 0.15); box-shadow: inset 1px 1px 10px rgba(255, 215, 0, 0.3);"
                     elif rank == 2:
                         rank_display = "🥈"
-                        extra_style = "border: 2px solid #C0C0C0; background: rgba(192, 192, 192, 0.2);" # Gümüş
+                        extra_style = "border: 2px solid #C0C0C0; background: rgba(192, 192, 192, 0.15); box-shadow: inset 1px 1px 10px rgba(192, 192, 192, 0.3);"
                     elif rank == 3:
                         rank_display = "🥉"
-                        extra_style = "border: 2px solid #CD7F32; background: rgba(205, 127, 50, 0.2);" # Bronz
+                        extra_style = "border: 2px solid #CD7F32; background: rgba(205, 127, 50, 0.15); box-shadow: inset 1px 1px 10px rgba(205, 127, 50, 0.3);"
                     else:
                         rank_display = f"#{rank}"
                         extra_style = ""
+                    
+                    # Tarih bilgisini al (yoksa boş bırak)
+                    date_str = row.get(tarih_col, '') if tarih_col else ''
 
                     st.markdown(f"""
                     <div class="leader-row" style="{extra_style}">
-                        <div style="font-size:1.5rem; font-weight:900; width:50px; text-align:center;">{rank_display}</div>
-                        <div style="flex:1; padding:0 15px; font-weight:600; font-size:1.1rem; text-align:left;">
-                            {row['Kullanıcı']}
+                        <div style="font-size:1.8rem; font-weight:900; width:60px; text-align:center; text-shadow: 0 2px 5px rgba(0,0,0,0.2);">{rank_display}</div>
+                        <div style="flex:1; padding:0 15px; text-align:left;">
+                            <div style="font-weight:800; font-size:1.2rem; margin-bottom: 2px;">{row['Kullanıcı']}</div>
+                            <div style="font-weight:500; font-size:0.8rem; opacity:0.6;">📅 {date_str}</div>
                         </div>
-                        <div style="font-weight:800; font-size:1.2rem; background:rgba(255,255,255,0.2); padding:5px 15px; border-radius:10px;">
+                        <div style="font-weight:900; font-size:1.4rem; background:rgba(255,255,255,0.15); padding:8px 20px; border-radius:12px; border: 2px solid rgba(255,255,255,0.2); box-shadow: inset 1px 1px 5px rgba(255,255,255,0.3); text-shadow: 0 0 10px rgba(255,255,255,0.4);">
                             {int(row['Skor'])}
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
             else:
+                st.warning("Skor sütunu bulunamadı.")
                 st.dataframe(df, use_container_width=True)
         except Exception as e:
              st.error(f"Hata oluştu: {e}")
