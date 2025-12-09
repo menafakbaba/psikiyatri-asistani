@@ -59,8 +59,22 @@ st.markdown(f"""
     }}
     
     .glass-card:hover {{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
         border: 1px solid rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.15);
+    }}
+
+    /* LİDERLİK TABLOSU İÇİN ÖZEL SATIR STİLİ */
+    .leader-row {{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        padding: 15px 20px;
+        margin-bottom: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
     }}
 
     /* 4. İSTATİSTİK KUTULARI (Minimal) */
@@ -150,7 +164,7 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
-if 'active_mode' not in st.session_state: st.session_state.active_mode = None
+if 'active_mode' not in st.session_state: st.session_state.active_mode = None 
 if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
@@ -161,7 +175,7 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1")
+        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
         return sheet
     except:
         return None
@@ -224,7 +238,7 @@ def load_questions(json_filename):
             all_questions = json.load(f)
         
         available_questions = [
-            q for q in all_questions
+            q for q in all_questions 
             if q['soru'] not in st.session_state.seen_questions
         ]
         
@@ -349,7 +363,7 @@ def home_page():
             else:
                 start_quiz("notes", "ders_notlari.json")
     
-    st.write("")
+    st.write("") 
     
     if st.button("🏆 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
@@ -364,7 +378,7 @@ def quiz_page():
     with c1:
         if st.button("Kapat ✖", use_container_width=True):
             quit_quiz()
-    with c2:
+    with c2: 
         mode_label = "NOTLAR" if st.session_state.active_mode == "notes" else "GENEL"
         st.markdown(f"<div style='text-align:right; opacity:0.8; font-size:0.9rem; padding-top:10px;'>MOD: <b>{mode_label}</b></div>", unsafe_allow_html=True)
     
@@ -387,12 +401,12 @@ def quiz_page():
     
     if not st.session_state.answer_submitted:
         for i, opt in enumerate(q_data['secenekler']):
-            st.write("")
+            st.write("") 
             if st.button(opt, key=f"q{idx}_o{i}", use_container_width=True):
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct:
+        if st.session_state.is_correct: 
             st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Mükemmel! Doğru Cevap.</b></div>', unsafe_allow_html=True)
         else:
             st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış Cevap</b><br><small>Doğrusu: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
@@ -454,17 +468,43 @@ def leaderboard_page():
         try:
             skor_col = next((col for col in df.columns if 'skor' in col.lower()), None)
             if skor_col:
+                # Skora göre sırala
                 df[skor_col] = pd.to_numeric(df[skor_col], errors='coerce').fillna(0)
                 df = df.sort_values(by=[skor_col], ascending=False).reset_index(drop=True)
-                df.index += 1
                 
-                # Tablo için özel stil
-                st.markdown('<div class="glass-card" style="padding:10px;">', unsafe_allow_html=True)
-                st.dataframe(df, use_container_width=True)
-                st.markdown('</div>', unsafe_allow_html=True)
+                # Tablo yerine her kişi için bir KART oluştur
+                for index, row in df.iterrows():
+                    rank = index + 1
+                    
+                    # İkon Seçimi (İlk 3 için madalya)
+                    if rank == 1:
+                        rank_display = "🥇"
+                        extra_style = "border: 2px solid #FFD700; background: rgba(255, 215, 0, 0.2);" # Altın
+                    elif rank == 2:
+                        rank_display = "🥈"
+                        extra_style = "border: 2px solid #C0C0C0; background: rgba(192, 192, 192, 0.2);" # Gümüş
+                    elif rank == 3:
+                        rank_display = "🥉"
+                        extra_style = "border: 2px solid #CD7F32; background: rgba(205, 127, 50, 0.2);" # Bronz
+                    else:
+                        rank_display = f"#{rank}"
+                        extra_style = ""
+
+                    st.markdown(f"""
+                    <div class="leader-row" style="{extra_style}">
+                        <div style="font-size:1.5rem; font-weight:900; width:50px; text-align:center;">{rank_display}</div>
+                        <div style="flex:1; padding:0 15px; font-weight:600; font-size:1.1rem; text-align:left;">
+                            {row['Kullanıcı']}
+                        </div>
+                        <div style="font-weight:800; font-size:1.2rem; background:rgba(255,255,255,0.2); padding:5px 15px; border-radius:10px;">
+                            {int(row['Skor'])}
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
             else:
                 st.dataframe(df, use_container_width=True)
-        except:
+        except Exception as e:
+             st.error(f"Hata oluştu: {e}")
              st.dataframe(df, use_container_width=True)
     else:
         st.info("Henüz veri yok.")
