@@ -14,150 +14,128 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- RENK PALETİ ---
-primary_color = "#4361ee"    # Modern Mavi
-accent_color = "#f72585"     # Pembe
-bg_color = "#f0f4f8"         # Ferah Açık Gri/Mavi
-text_dark = "#1e293b"        # Koyu Lacivert/Siyah
-
-# --- CSS STİLLERİ ---
+# --- CSS STİLLERİ (YENİ TASARIM) ---
 st.markdown(f"""
     <style>
-    /* 1. GENEL AYARLAR */
+    /* 1. HAREKETLİ GRADIENT ARKA PLAN */
     .stApp {{
-        background-color: {bg_color};
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        font-family: 'Poppins', 'Segoe UI', sans-serif;
     }}
     
+    @keyframes gradientBG {{
+        0% {{ background-position: 0% 50%; }}
+        50% {{ background-position: 100% 50%; }}
+        100% {{ background-position: 0% 50%; }}
+    }}
+
     /* Mobil kenar boşlukları */
     .block-container {{
-        padding-top: 1rem !important;
-        padding-bottom: 2rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 3rem !important;
         max-width: 700px;
     }}
 
-    h1, h2, h3 {{ color: {primary_color} !important; font-weight: 800; letter-spacing: -0.5px; }}
-    p, span, div {{ color: {text_dark}; }}
-
-    /* 2. ARKA PLAN ANİMASYONU */
-    .psych-bg {{
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        z-index: 0; overflow: hidden; pointer-events: none;
-    }}
-    @keyframes fall {{
-        0% {{ transform: translateY(-10vh) rotate(0deg); }}
-        100% {{ transform: translateY(120vh) rotate(360deg); }}
+    /* 2. GENEL YAZI RENGİ (BEYAZ) */
+    h1, h2, h3, h4, h5, h6, p, span, div, label {{
+        color: #ffffff !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }}
 
-    /* 3. İSTATİSTİK KUTULARI */
+    /* 3. GLASSMORPHISM (CAM ETKİSİ) KUTULAR */
+    .glass-card {{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        padding: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }}
+    
+    .glass-card:hover {{
+        transform: translateY(-5px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }}
+
+    /* 4. İSTATİSTİK KUTULARI (Minimal) */
     .stats-container {{
-        display: flex; justify-content: space-between; gap: 8px; margin-bottom: 20px;
+        display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px;
     }}
     .stat-mini-card {{
-        background: white; flex: 1; padding: 10px 5px; border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;
-        border-bottom: 4px solid {primary_color}; min-width: 0;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        flex: 1; padding: 15px 5px; border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
     }}
-    .stat-icon {{ font-size: 1.2rem; display: block; margin-bottom: 2px; }}
-    .stat-value {{ font-size: 1.1rem; font-weight: 800; color: {text_dark}; line-height: 1.2; }}
-    .stat-label {{ font-size: 0.65rem; color: #666; font-weight: 700; text-transform: uppercase; }}
+    .stat-value {{ font-size: 1.5rem; font-weight: 800; color: white; }}
+    .stat-label {{ font-size: 0.75rem; color: rgba(255,255,255,0.8); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }}
 
-    /* 4. MODERN HERO BANNER */
-    .modern-hero {{
-        background: linear-gradient(120deg, #ffffff 0%, #f0f4ff 100%);
-        border-radius: 20px; padding: 25px 15px;
-        box-shadow: 0 8px 25px rgba(67, 97, 238, 0.15);
-        border: 2px solid white;
-        text-align: center; margin-bottom: 25px; position: relative; overflow: hidden;
-    }}
-    .modern-hero::after {{
-        content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
-        background: linear-gradient(90deg, {primary_color}, {accent_color});
-    }}
-    .hero-title {{
-        font-size: 1.8rem;
-        background: linear-gradient(45deg, {primary_color}, {accent_color});
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        font-weight: 900; margin-bottom: 5px;
-    }}
-    .hero-subtitle {{ font-size: 0.9rem; color: #64748b; font-weight: 600; }}
-
-    /* 5. SORU KARTI TASARIMI */
-    .quiz-card {{
-        background-color: #ffffff; 
-        border: 1px solid #e2e8f0;
-        border-radius: 20px;
-        padding: 25px 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-        position: relative;
-        z-index: 2;
-    }}
-    
-    .question-text {{
-        font-size: 1.2rem; font-weight: 700; color: #0f172a; line-height: 1.5;
-    }}
-    
-    /* 6. BUTONLAR */
-    div.stButton > button[kind="primary"] {{
-        background: linear-gradient(45deg, {primary_color}, {accent_color}) !important;
-        color: white !important; border: none !important; border-radius: 12px !important;
-        padding: 0.8rem 1rem !important; font-size: 1rem !important; width: 100%;
-        box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4) !important;
-    }}
-    
+    /* 5. BUTON TASARIMLARI */
+    /* Normal Butonlar */
     div.stButton > button {{
-        width: 100%; border-radius: 12px; background-color: #ffffff; 
-        border: 2px solid #cbd5e1; color: #334155; font-weight: 600; padding: 0.8rem 1rem;
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        border-radius: 15px !important;
+        padding: 0.8rem 1rem !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
     }}
     div.stButton > button:hover {{
-        border-color: {primary_color}; color: {primary_color}; background-color: #eff6ff;
+        background: rgba(255, 255, 255, 0.3) !important;
+        border-color: white !important;
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(255,255,255,0.5);
     }}
 
-    /* ÇIKIŞ BUTONU */
+    /* Primary (Özel) Butonlar - Daha parlak */
+    div.stButton > button[kind="primary"] {{
+        background: linear-gradient(90deg, #ff00cc, #333399) !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+    }}
+
+    /* Çıkış Butonu (Kırmızımsı) */
     div[data-testid="column"]:nth-of-type(1) div.stButton > button {{
-        background-color: #ef4444 !important; color: white !important;
-        border: none !important; box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4) !important;
+        background: rgba(239, 68, 68, 0.2) !important;
+        border: 1px solid rgba(239, 68, 68, 0.5) !important;
+    }}
+    div[data-testid="column"]:nth-of-type(1) div.stButton > button:hover {{
+        background: rgba(239, 68, 68, 0.5) !important;
     }}
 
-    .greeting-pill {{
-        background: white; display: inline-block; padding: 6px 20px; 
-        border-radius: 20px; font-size: 0.9rem; color: #475569; font-weight: 700;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 15px;
+    /* 6. INPUT ALANI (İsim Girişi) */
+    div[data-testid="stTextInput"] input {{
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }}
-    .feedback-box {{ padding: 15px; border-radius: 12px; margin-top: 15px; z-index:2; position:relative; background:white; }}
-    .fb-correct {{ border-left: 5px solid #22c55e; color: #14532d; background-color: #f0fdf4; }}
-    .fb-wrong {{ border-left: 5px solid #ef4444; color: #7f1d1d; background-color: #fef2f2; }}
+    div[data-testid="stTextInput"] label {{
+        color: rgba(255,255,255,0.9) !important;
+    }}
+
+    /* 7. GERİ BİLDİRİM KUTULARI */
+    .feedback-box {{ 
+        padding: 20px; border-radius: 15px; margin-top: 15px; 
+        backdrop-filter: blur(10px); color: white !important;
+        text-shadow: none; border: 1px solid rgba(255,255,255,0.3);
+    }}
+    .fb-correct {{ background-color: rgba(34, 197, 94, 0.3); border-left: 5px solid #4ade80; }}
+    .fb-wrong {{ background-color: rgba(239, 68, 68, 0.3); border-left: 5px solid #f87171; }}
     
-    .info-pill {{
-        background: white; padding: 12px; border-radius: 12px; 
-        border-left: 5px solid {primary_color}; margin-bottom: 20px; 
-        color: #555; font-size: 0.9rem; text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }}
+    /* GİZLEME */
     #MainMenu {{visibility: hidden;}} footer {{visibility: hidden;}} header {{visibility: hidden;}}
+    
     </style>
 """, unsafe_allow_html=True)
-
-# --- DİNAMİK ARKA PLAN ---
-def create_dynamic_bg():
-    icons = ["🧠", "🧩", "⚕️", "🧬", "💊", "🩺", "💡", "💭"]
-    colors = ["#4361ee", "#f72585", "#7209b7", "#4cc9f0"]
-    html_content = '<div class="psych-bg">'
-    for _ in range(50):
-        left = random.randint(1, 99)
-        duration = random.uniform(5, 12)
-        delay = random.uniform(0, 10)
-        size = random.uniform(1.5, 3.5)
-        opacity = random.uniform(0.3, 0.7)
-        icon = random.choice(icons)
-        color = random.choice(colors)
-        style = f"position:absolute; left:{left}%; top:-10%; animation:fall {duration}s linear infinite; animation-delay:{delay}s; font-size:{size}rem; color:{color}; opacity:{opacity};"
-        html_content += f'<div style="{style}">{icon}</div>'
-    html_content += '</div>'
-    st.markdown(html_content, unsafe_allow_html=True)
-
-create_dynamic_bg()
 
 # --- STATE YÖNETİMİ ---
 query_params = st.query_params
@@ -172,7 +150,7 @@ if 'answer_submitted' not in st.session_state: st.session_state.answer_submitted
 if 'is_correct' not in st.session_state: st.session_state.is_correct = False
 if 'total_solved' not in st.session_state: st.session_state.total_solved = 0
 if 'total_wrong' not in st.session_state: st.session_state.total_wrong = 0
-if 'active_mode' not in st.session_state: st.session_state.active_mode = None 
+if 'active_mode' not in st.session_state: st.session_state.active_mode = None
 if 'seen_questions' not in st.session_state: st.session_state.seen_questions = []
 
 # --- VERİTABANI BAĞLANTISI ---
@@ -183,7 +161,7 @@ def get_google_sheet():
         creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
         client = gspread.authorize(creds)
         sheet_url = st.secrets["connections"]["gsheets"]["spreadsheet"]
-        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1") 
+        sheet = client.open_by_url(sheet_url).worksheet("Sayfa1")
         return sheet
     except:
         return None
@@ -203,15 +181,11 @@ def fetch_leaderboard():
             return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
     return pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
-# --- GÜNCELLENMİŞ KAYIT FONKSİYONU ---
 def save_score_to_db():
     sheet = get_google_sheet()
     if sheet:
         try:
-            # Hangi modda oynadığını kontrol et
             kayit_ismi = st.session_state.user_name
-            
-            # Eğer Ders Notları modundaysa ismin formatını değiştir
             if st.session_state.get("active_mode") == "notes":
                 kayit_ismi = f"{st.session_state.user_name}, ders notları puanı"
 
@@ -222,17 +196,14 @@ def save_score_to_db():
                 data = all_values[1:]
                 df = pd.DataFrame(data, columns=headers)
                 df.columns = df.columns.str.strip()
-                
-                # Sadece aynı isme sahip eski skoru sil
                 df_cleaned = df[df['Kullanıcı'] != kayit_ismi]
             else:
                 df_cleaned = pd.DataFrame(columns=['Kullanıcı', 'Skor', 'Tarih'])
 
-            # UTC+3 Saat Ayarı
             tarih = (pd.Timestamp.now('UTC') + pd.Timedelta(hours=3)).strftime('%Y-%m-%d %H:%M')
             
             new_row = pd.DataFrame([{
-                'Kullanıcı': kayit_ismi, # Yeni format
+                'Kullanıcı': kayit_ismi,
                 'Skor': st.session_state.score,
                 'Tarih': tarih
             }])
@@ -248,45 +219,33 @@ def save_score_to_db():
 
 # --- QUIZ FONKSİYONLARI ---
 def load_questions(json_filename):
-    """
-    json_filename: Yüklenecek dosya adı ('sorular.json' veya 'ders_notlari.json')
-    """
     try:
         with open(json_filename, 'r', encoding='utf-8') as f:
             all_questions = json.load(f)
         
-        # 1. Daha önce çözülmemiş soruları bul
         available_questions = [
-            q for q in all_questions 
+            q for q in all_questions
             if q['soru'] not in st.session_state.seen_questions
         ]
         
-        # 2. Havuz bittiyse veya 10'dan az kaldıysa sıfırla
         if len(available_questions) < 10:
-            st.toast("Bu kategorideki sorular bitti! Havuz sıfırlandı. 🔄", icon="🚀")
+            st.toast("Sorular bitti, havuz yenilendi! 🔄", icon="✨")
             st.session_state.seen_questions = []
             available_questions = all_questions
         
-        # 3. Rastgele 10 soru seç
         question_count = min(10, len(available_questions))
         selected_questions = random.sample(available_questions, question_count)
         
-        # 4. Seçilenleri "Görüldü" listesine ekle
         for q in selected_questions:
             st.session_state.seen_questions.append(q['soru'])
             
         st.session_state.quiz_data = selected_questions
         return True
     except Exception as e:
-        st.error(f"Soru yükleme hatası ({json_filename}): {e}")
+        st.error(f"Hata: {e}")
         return False
 
 def start_quiz(mode_type, filename):
-    """
-    mode_type: 'league' veya 'notes'
-    filename: json dosya adı
-    """
-    # Eğer farklı bir moda geçiş yapılıyorsa görülen soruları sıfırla ki karışmasın
     if st.session_state.active_mode != mode_type:
         st.session_state.seen_questions = []
         st.session_state.active_mode = mode_type
@@ -298,7 +257,6 @@ def start_quiz(mode_type, filename):
     if st.session_state.user_name != "Misafir":
         st.query_params["kullanici"] = st.session_state.user_name
     
-    # İlgili dosyadan yükle
     if load_questions(filename):
         st.session_state.current_page = 'quiz'
         st.rerun()
@@ -333,71 +291,67 @@ def quit_quiz():
 # --- SAYFALAR ---
 
 def home_page():
+    # Başlık Alanı
+    st.markdown(f"""
+        <div class="glass-card" style="padding: 40px 20px;">
+            <div style="font-size: 3rem; margin-bottom: 10px; text-shadow: 0 0 20px rgba(255,255,255,0.5);">🧠</div>
+            <div style="font-size: 2.2rem; font-weight: 900; margin-bottom: 5px;">Psikiyatri Ligi</div>
+            <div style="font-size: 1rem; opacity: 0.9;">Bilginle Işılda ✨</div>
+        </div>
+    """, unsafe_allow_html=True)
+
     if st.session_state.user_name == "Misafir":
-        st.markdown(f"<div style='text-align:center; margin-bottom:30px;'><h1 style='font-size:3rem;'>👋</h1><h3>Psikiyatri Ligi</h3></div>", unsafe_allow_html=True)
-        name = st.text_input("Yarışmak için adını gir:", placeholder="Adınız...")
+        name = st.text_input("Yarışmak için adını gir:", placeholder="İsminiz...")
         if name:
             st.session_state.user_name = name
             st.query_params["kullanici"] = name
             st.rerun()
     else:
-        st.markdown(f"""
-        <div style="text-align:center;">
-            <span class="greeting-pill">👋 {st.session_state.user_name}</span>
-        </div>
-        """, unsafe_allow_html=True)
+        # BAŞARI ORANI HESAPLAMA
+        if st.session_state.total_solved > 0:
+            success_rate = int(((st.session_state.total_solved - st.session_state.total_wrong) / st.session_state.total_solved) * 100)
+        else:
+            success_rate = 0
 
+        st.markdown(f"""<div style="text-align:center; margin-bottom:20px; font-weight:bold; font-size:1.2rem;">Hoşgeldin, {st.session_state.user_name} 👋</div>""", unsafe_allow_html=True)
+        
+        # İstatistikler
         st.markdown(f"""
         <div class="stats-container">
-            <div class="stat-mini-card" style="border-bottom-color:#4cc9f0;">
-                <span class="stat-icon">📝</span>
-                <span class="stat-value">{st.session_state.total_solved}</span>
+            <div class="stat-mini-card">
+                <div class="stat-value">{st.session_state.total_solved}</div>
                 <div class="stat-label">Soru</div>
             </div>
-            <div class="stat-mini-card" style="border-bottom-color:#f72585;">
-                <span class="stat-icon">🚨</span>
-                <span class="stat-value">{st.session_state.total_wrong}</span>
+            <div class="stat-mini-card">
+                <div class="stat-value">{st.session_state.total_wrong}</div>
                 <div class="stat-label">Hata</div>
             </div>
-            <div class="stat-mini-card" style="border-bottom-color:#2ecc71;">
-                <span class="stat-icon">🟢</span>
-                <span class="stat-value">Aktif</span>
-                <div class="stat-label">Durum</div>
+            <div class="stat-mini-card">
+                <div class="stat-value">%{success_rate}</div>
+                <div class="stat-label">BAŞARI</div>
             </div>
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown(f"""
-        <div class="modern-hero">
-            <div style="font-size: 2.5rem; margin-bottom: 5px;">🏆</div>
-            <div class="hero-title">Psikiyatri Ligi</div>
-            <div class="hero-subtitle">Bilgini sına, zirveye çık!</div>
-        </div>
-    """, unsafe_allow_html=True)
-
-    # --- BUTON SEÇİM ALANI ---
+    # Butonlar
     col1, col2 = st.columns(2)
-    
     with col1:
         if st.button("🚀 Genel Sınav", type="primary", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
             else:
-                # Orijinal mod (Soru Havuzu)
                 start_quiz("league", "sorular.json")
     
     with col2:
-        # Yeni eklenen mod
         if st.button("📚 Ders Notları", use_container_width=True):
             if st.session_state.user_name == "Misafir":
                 st.warning("Lütfen isminizi girin.")
             else:
-                # Yeni JSON dosyası
                 start_quiz("notes", "ders_notlari.json")
-            
-    st.write("") 
     
-    if st.button("📊 Liderlik Tablosu", use_container_width=True):
+    st.write("")
+    
+    if st.button("🏆 Liderlik Tablosu", use_container_width=True):
         st.session_state.current_page = 'leaderboard'
         st.rerun()
 
@@ -408,11 +362,11 @@ def quiz_page():
     
     c1, c2 = st.columns([1.5, 3.5])
     with c1:
-        if st.button("🛑 SINAVI BİTİR", help="Sınavı iptal et", use_container_width=True):
+        if st.button("Kapat ✖", use_container_width=True):
             quit_quiz()
-    with c2: 
-        mode_label = "Ders Notları" if st.session_state.active_mode == "notes" else "Genel Sınav"
-        st.markdown(f"<div style='text-align:right; color:#999; font-size:0.8rem;'>Mod: <b>{mode_label}</b></div>", unsafe_allow_html=True)
+    with c2:
+        mode_label = "NOTLAR" if st.session_state.active_mode == "notes" else "GENEL"
+        st.markdown(f"<div style='text-align:right; opacity:0.8; font-size:0.9rem; padding-top:10px;'>MOD: <b>{mode_label}</b></div>", unsafe_allow_html=True)
     
     total_q = len(st.session_state.quiz_data)
     idx = st.session_state.question_index
@@ -420,33 +374,34 @@ def quiz_page():
     
     st.progress((idx + 1) / total_q)
     
+    # Soru Kartı
     st.markdown(f"""
-    <div class="quiz-card">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-size:0.8rem; color:#64748b;">
+    <div class="glass-card" style="text-align:left;">
+        <div style="display:flex; justify-content:space-between; margin-bottom:15px; opacity:0.8; font-size:0.85rem;">
             <span>SORU {idx + 1} / {total_q}</span>
-            <span style="color:{accent_color}; font-weight:bold;">💎 {st.session_state.score}</span>
+            <span style="font-weight:bold;">💎 {st.session_state.score}</span>
         </div>
-        <div class="question-text">{q_data["soru"]}</div>
+        <div style="font-size: 1.3rem; font-weight: 700; line-height: 1.5;">{q_data["soru"]}</div>
     </div>
     """, unsafe_allow_html=True)
     
     if not st.session_state.answer_submitted:
         for i, opt in enumerate(q_data['secenekler']):
-            st.write("") 
+            st.write("")
             if st.button(opt, key=f"q{idx}_o{i}", use_container_width=True):
                 submit_answer(opt)
                 st.rerun()
     else:
-        if st.session_state.is_correct: 
-            st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Doğru Cevap!</b></div>', unsafe_allow_html=True)
+        if st.session_state.is_correct:
+            st.markdown(f'<div class="feedback-box fb-correct"><b>✅ Mükemmel! Doğru Cevap.</b></div>', unsafe_allow_html=True)
         else:
-            st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış!</b><br><small>Cevap: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="feedback-box fb-wrong"><b>❌ Yanlış Cevap</b><br><small>Doğrusu: {q_data["dogru_cevap"]}</small></div>', unsafe_allow_html=True)
         
         if q_data.get('aciklama'):
-            st.markdown(f'<div style="background:white; padding:15px; border-radius:10px; margin-top:10px; border:1px solid #e2e8f0; font-size:0.9rem;"><b>💡 Bilgi:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="background:rgba(255,255,255,0.1); padding:15px; border-radius:10px; margin-top:10px; border:1px solid rgba(255,255,255,0.2);"><b>💡 Açıklama:</b><br>{q_data["aciklama"]}</div>', unsafe_allow_html=True)
             
         st.write("")
-        btn_txt = "Sonraki Soru ➡️" if idx < total_q - 1 else "Bitir 🏁"
+        btn_txt = "Sonraki ➡️" if idx < total_q - 1 else "Sonuçları Gör 🏁"
         if st.button(btn_txt, type="primary", use_container_width=True):
             next_question()
 
@@ -461,13 +416,13 @@ def result_page():
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(f"""
-        <div style="background:white; padding:30px 20px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+        <div class="glass-card">
             <div style="font-size: 60px; margin-bottom:10px;">🎉</div>
-            <h2 style="color: {primary_color}; margin:0;">Tebrikler!</h2>
-            <p style="color: #64748b; font-size:0.9rem;">{st.session_state.user_name}</p>
-            <div style="margin: 20px 0; padding: 15px; background:#f8f9fa; border-radius:15px;">
-                <span style="font-size: 12px; text-transform:uppercase; color:#94a3b8; font-weight:bold;">Skor</span>
-                <div style="font-size: 50px; font-weight:900; color:{accent_color}; line-height:1;">{st.session_state.score}</div>
+            <h2 style="margin:0;">Tebrikler!</h2>
+            <p style="opacity:0.8;">{st.session_state.user_name}</p>
+            <div style="margin: 20px 0; padding: 20px; background:rgba(255,255,255,0.1); border-radius:15px; border:1px solid rgba(255,255,255,0.2);">
+                <span style="font-size: 14px; text-transform:uppercase; opacity:0.7; font-weight:bold;">TOPLAM SKOR</span>
+                <div style="font-size: 60px; font-weight:900; text-shadow:0 0 30px rgba(255,255,255,0.6);">{st.session_state.score}</div>
             </div>
         </div>
     """, unsafe_allow_html=True)
@@ -475,26 +430,20 @@ def result_page():
     st.write("")
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("🏠 Menü", use_container_width=True):
+        if st.button("🏠 Ana Menü", use_container_width=True):
             if 'score_saved' in st.session_state: del st.session_state.score_saved
             st.session_state.current_page = 'home'
             st.rerun()
     with c2:
-        if st.button("🏆 Liste", type="primary", use_container_width=True):
+        if st.button("🏆 Sıralama", type="primary", use_container_width=True):
             if 'score_saved' in st.session_state: del st.session_state.score_saved
             st.session_state.current_page = 'leaderboard'
             st.rerun()
 
 def leaderboard_page():
     st.markdown(f"""
-    <div style="text-align:center; margin-bottom:10px;">
-        <h3 style="color:{primary_color};">🏆 Şampiyonlar</h3>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown(f"""
-    <div class="info-pill">
-        ℹ️ Sıralama, yarışmacıların <b>en son</b> aldıkları puana göre belirlenir.
+    <div style="text-align:center; margin-bottom:20px;">
+        <h3>🏆 Şampiyonlar Ligi</h3>
     </div>
     """, unsafe_allow_html=True)
     
@@ -508,18 +457,20 @@ def leaderboard_page():
                 df[skor_col] = pd.to_numeric(df[skor_col], errors='coerce').fillna(0)
                 df = df.sort_values(by=[skor_col], ascending=False).reset_index(drop=True)
                 df.index += 1
-                st.markdown('<div style="background:white; padding:15px; border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.05);">', unsafe_allow_html=True)
-                st.dataframe(df, use_container_width=True, column_config={"Skor": st.column_config.ProgressColumn("Skor", format="%d", min_value=0, max_value=100)})
+                
+                # Tablo için özel stil
+                st.markdown('<div class="glass-card" style="padding:10px;">', unsafe_allow_html=True)
+                st.dataframe(df, use_container_width=True)
                 st.markdown('</div>', unsafe_allow_html=True)
             else:
                 st.dataframe(df, use_container_width=True)
         except:
              st.dataframe(df, use_container_width=True)
     else:
-        st.info("Veri yok.")
+        st.info("Henüz veri yok.")
         
     st.write("")
-    if st.button("⬅ Geri", use_container_width=True):
+    if st.button("⬅ Geri Dön", use_container_width=True):
         st.session_state.current_page = 'home'
         st.rerun()
 
